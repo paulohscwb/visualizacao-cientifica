@@ -13,11 +13,13 @@
 		<a-sky src="#ceu"></a-sky>
 		<a-camera position="0 2 4"></a-camera>
 		
-		<a-sphere position="1 2 0.5" radius="1" side="double" color="silver" metalness="1" roughness="0" segments-height="36" shadow="" segments-width="64" camera-cube-env="distance: 500; resolution: 512; repeat: true; interval: 1; metalness:1; roughness:0"></a-sphere>
+		<!--<a-sphere position="1 2 0.5" radius="1" side="double" color="silver" metalness="1" roughness="0" segments-height="36" shadow="" segments-width="64" camera-cube-env="distance: 500; resolution: 512; repeat: true; interval: 1; metalness:1; roughness:0"></a-sphere>-->
+		<a-sphere position="1 2 0.5" radius="1" side="double" color="silver" metalness="1" roughness="0" segments-height="36" shadow="" segments-width="64"></a-sphere>
+		<!--<a-sphere position="-2 1.5 -0.5" color="green" radius="1" side="double" metalness="1" roughness="0" segments-height="36" shadow="" segments-width="64" camera-cube-env="distance: 500; resolution: 512; repeat: true; interval: 1; metalness:1; roughness:0"></a-sphere>-->
+	    	<a-sphere position="-2 1.5 -0.5" color="green" radius="1" side="double" metalness="1" roughness="0" segments-height="36" shadow="" segments-width="64"></a-sphere>
 		
-		<a-sphere position="-2 1.5 -0.5" color="green" radius="1" side="double" metalness="1" roughness="0" segments-height="36" shadow="" segments-width="64" camera-cube-env="distance: 500; resolution: 512; repeat: true; interval: 1; metalness:1; roughness:0"></a-sphere>
-		
-		<a-cylinder src="#metal" position="-3 0.5 1.5" color="white" radius="0.5" height="1.5" side="double" metalness="1" roughness="0" shadow="" camera-cube-env="distance: 500; resolution: 512; repeat: true; interval: 1; metalness:1; roughness:0"></a-cylinder>
+		<!--<a-cylinder src="#metal" position="-3 0.5 1.5" color="white" radius="0.5" height="1.5" side="double" metalness="1" roughness="0" shadow="" camera-cube-env="distance: 500; resolution: 512; repeat: true; interval: 1; metalness:1; roughness:0"></a-cylinder>-->
+	    <a-cylinder src="#metal" position="-3 0.5 1.5" color="white" radius="0.5" height="1.5" side="double" metalness="1" roughness="0" shadow=""></a-cylinder>
 		
 		<a-light type="ambient" color="#eaeaea" intensity="0.3"></a-light>
 		<a-light id="dirlight" type="spot" intensity="0.75" angle="60" penumbra="0.5" light="castShadow:true; shadowCameraVisible:false;" position="-2 2 4"></a-light>
