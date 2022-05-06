@@ -6,13 +6,14 @@
   <body>
     <a-scene>
 		<a-assets>
+			<img id="ceu" src="./imagens/equi1.png">
 			<img id="metal" src="./imagens/metal1.png">
 		</a-assets>
 
 		<a-camera position="0 2 2"></a-camera>
 		<a-sphere src="#metal" position="0 2 0" radius="1"  metalness="0.8" roughness="0" side="double" mirror></a-sphere>
 
-		<a-sky color="#66ccff"></a-sky>
+		<a-sky src="#ceu"></a-sky>
     </a-scene>
   </body>
 </html>
