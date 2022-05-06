@@ -1,10 +1,9 @@
 <html>
   <head>
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-	
+    <script src="./java/camera-cube-env.js"></script>
   </head>
   <body>
-	<!--<script src="./java/camera-cube-env.js"></script>-->
     <a-scene shadow="type:pcfsoft" reflection="directionalLight:a-light#dirlight;">
 		<a-assets>
 			<img id="ceu" src="./imagens/equi1.jpg">
@@ -21,7 +20,6 @@
 	    		
 		<a-light type="ambient" color="#eaeaea" intensity="0.3"></a-light>
 		<a-light id="dirlight" type="spot" intensity="0.75" angle="60" penumbra="0.5" light="castShadow:true; shadowCameraVisible:false;" position="-2 2 4"></a-light>
-		
     </a-scene>
   </body>
 </html>
