@@ -9,7 +9,7 @@
 			<img id="ceu" src="./imagens/equi1.jpg">
 			<img id="metal" src="./imagens/metal1.png">
 		</a-assets>
-
+		<a-sky src="#ceu"></a-sky>
 		<a-camera position="0 2 2"></a-camera>
 		<a-sphere position="0 2 0" radius="1"  metalness="1" roughness="0.1" side="double" color="#FFC65D" shadow="receive: true; cast: true" camera-cube-env="distance: 5000; resolution: 512; repeat: true; interval: 50;metalness:1;roughness:0.1"></a-sphere>
 		
@@ -17,7 +17,7 @@
 
 		<a-entity position="-3.25 6.437 3.45" id="spotlight" light="castShadow:true;penumbra:0.78;angle:20.59;target:#sphere;shadowMapHeight:2048;shadowMapWidth:2048;shadowCameraFov:50;shadowCameraFar:492.95;shadowCameraVisible:false;shadowCameraTop:30;shadowCameraRight:15;shadowCameraBottom:-15;shadowCameraLeft:-15"></a-entity>
 
-		<a-sky src="#ceu"></a-sky>
+		
     </a-scene>
   </body>
 </html>
