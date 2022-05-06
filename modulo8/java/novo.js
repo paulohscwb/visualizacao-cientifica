@@ -54,9 +54,8 @@ AFRAME.registerComponent('camera-cube-env', {
 	        
 	        if(this.mesh){
 	            this.mesh.visible = false;
-				AFRAME.scenes[0].renderer.autoClear = true;
-				// getWorldPosition FIX
-	            myCam.position.copy(this.el.object3D.worldToLocal(this.el.object3D.getWorldPosition(myCam.position)));
+	            AFRAME.scenes[0].renderer.autoClear = true;
+	            myCam.position.copy(this.el.object3D.worldToLocal(this.el.object3D.getWorldPosition()));
 	            myCam.update( AFRAME.scenes[0].renderer, this.el.sceneEl.object3D );
 
 	            this.mesh.traverse( function( child ) { 
