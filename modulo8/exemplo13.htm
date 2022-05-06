@@ -7,13 +7,21 @@
 		<a-assets>
 			<img id="ceu" src="./imagens/equi1.jpg">
 			<img id="metal" src="./imagens/metal1.png">
+			<a-cubemap id="ceu2">
+			      <img src="./imagens/Right.png">
+			      <img src="./imagens/Left.png">
+			      <img src="./imagens/Top.png">
+			      <img src="./imagens/Bottom.png">
+			      <img src="./imagens/Front.png">
+			      <img src="./imagens/Back.png">
+			</a-cubemap>
 		</a-assets>
 		<a-sky src="#ceu"></a-sky>
 		<a-camera position="0 2 4"></a-camera>
 		
-		<a-sphere position="1 2 0.5" radius="1" side="double" color="silver" metalness="1" roughness="0" segments-height="36" shadow="" segments-width="64" material="envMap: #ceu;"></a-sphere>
+		<a-sphere position="1 2 0.5" radius="1" side="double" color="silver" metalness="1" roughness="0" segments-height="36" shadow="" segments-width="64" material="envMap: #ceu2;"></a-sphere>
 		
-		<a-sphere position="-2 1.5 -0.5" color="green" radius="1" side="double" metalness="1" roughness="0" segments-height="36" shadow="" segments-width="64" material="envMap: #ceu;"></a-sphere>
+		<a-sphere position="-2 1.5 -0.5" color="green" radius="1" side="double" metalness="1" roughness="0" segments-height="36" shadow="" segments-width="64" material="envMap: #ceu2;"></a-sphere>
 	    			
 		<a-cylinder src="#metal" position="-3 0.5 1.5" color="white" radius="0.5" height="1.5" side="double" metalness="1" roughness="0" shadow=""></a-cylinder>
 	    		
