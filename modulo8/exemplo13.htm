@@ -18,7 +18,7 @@
                 mesh.traverse(function(el) {
                   if (el.material) {
                     el.material.envMap = cubeTex.texture;
-                    el.material.envMap.intensity = 3;
+                    el.material.envMap.intensity = 100;
                     el.material.needsUpdate = true;
                   }
                 });
