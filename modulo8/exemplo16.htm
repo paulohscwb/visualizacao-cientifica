@@ -17,13 +17,15 @@
 			      <img src="./imagens/cubemap/Back.png">
 			</a-cubemap>
 			<a-mixin id="padrao" material="metalness:1; roughness:0; side:double; envMap: #ceu2;" shadow=""></a-mixin>
+			<a-mixin id="padrao" material="metalness:1; roughness:0; side:double; envMap: #ceu2;" shadow=""></a-mixin>
+			<a-mixin id="padrao2" geometry="segments-height:36; segments-width:64; radius:1;"></a-mixin>
 		</a-assets>
 		<a-sky src="#ceu"></a-sky>
 		<a-camera orbit-controls="target: -1 1.5 1; minDistance: 0.5; maxDistance: 180; initialPosition: -1 1.6 3.5"></a-camera>
 			
-		<a-sphere position="1 2 0.5" radius="1" color="silver" segments-height="36" segments-width="64" mixin="padrao"></a-sphere>
-		
-		<a-sphere position="-2 1.5 -0.5" color="green" radius="1"  segments-height="36" segments-width="64" mixin="padrao"></a-sphere>
+		<a-sphere position="1 2 0.5" color="silver" mixin="padrao padrao2"></a-sphere>
+		<a-sphere position="-2 1.5 -0.5" color="green" mixin="padrão padrao2"></a-sphere>
+
 	    			
 		<a-cylinder src="#metal" position="-3 0.5 1.5" color="white" radius="0.5" height="1.5" mixin="padrao"></a-cylinder>
 	    		
