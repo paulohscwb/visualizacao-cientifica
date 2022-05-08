@@ -20,11 +20,11 @@
 		<a-sky src="#ceu"></a-sky>
 		<a-camera orbit-controls="target: -1 1.5 1; minDistance: 0.5; maxDistance: 180; initialPosition: -1 1.6 3.5"></a-camera>
 			
-		<a-sphere position="1 2 0.5" radius="1" side="double" color="silver" metalness="1" roughness="0" segments-height="36" shadow="" segments-width="64" material="envMap: #ceu2;"></a-sphere>
+		<a-sphere position="1 2 0.5" radius="1" side="double" color="silver" metalness="1" roughness="0" segments-height="36" shadow="" segments-width="64" material="sphericalEnvMap: #ceu2;"></a-sphere>
 		
-		<a-sphere position="-2 1.5 -0.5" color="green" radius="1" side="double" metalness="1" roughness="0" segments-height="36" shadow="" segments-width="64" material="envMap: #ceu2;"></a-sphere>
+		<a-sphere position="-2 1.5 -0.5" color="green" radius="1" side="double" metalness="1" roughness="0" segments-height="36" shadow="" segments-width="64" material="sphericalEnvMap: #ceu2;"></a-sphere>
 	    			
-		<a-cylinder src="#metal" position="-3 0.5 1.5" color="white" radius="0.5" height="1.5" side="double" metalness="1" roughness="0" shadow=""></a-cylinder>
+		<a-cylinder src="#metal" position="-3 0.5 1.5" color="white" radius="0.5" height="1.5" side="double" metalness="1" roughness="0" shadow="" material="sphericalEnvMap: #ceu2;"></a-cylinder>
 	    		
 		<a-light type="ambient" color="#eaeaea" intensity="0.3"></a-light>
 		<a-light type="spot" intensity="0.75" angle="60" penumbra="0.5" shadow="cast: true; receive: false" position="-2 2 4"></a-light>
