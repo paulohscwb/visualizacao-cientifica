@@ -10,7 +10,7 @@
   <script src="https://unpkg.com/aframe-physics-extras@0.1.2/dist/aframe-physics-extras.min.js"></script>
 </head>
 <body>
-    <a-scene physics>
+    <a-scene physics shadow="type: pcfsoft">
       <a-assets>
         <a-mixin id="cubo" geometry="primitive: box; width: 0.5; height: 0.5; depth: 0.5;" hoverable grabbable stretchable draggable droppable event-set__hoveron="_event: hover-start; material.opacity: 0.7; transparent: true" event-set__hoveroff="_event: hover-end; material.opacity: 1; transparent: false" dynamic-body="linearDamping:0.1; angularDamping:0.8; mass:0.5;" shadow>
         </a-mixin>
