@@ -25,17 +25,17 @@
         </a-mixin>
 		<a-mixin id="pino1" scale="0.9 1 0.9" hoverable grabbable stretchable draggable droppable
                  sleepy shadow dynamic-body="linearDamping:0.8; angularDamping:0.8; mass:0.2;"</a-mixin>
-		<a-asset-item id="bow-obj" src="/objetos/bowling.obj"></a-asset-item>
-		<a-asset-item id="bow-mtl" src="/objetos/bowling.mtl"></a-asset-item>
+		<a-asset-item id="bow-obj" src="./objetos/bowling.obj"></a-asset-item>
+		<a-asset-item id="bow-mtl" src="./objetos/bowling.mtl"></a-asset-item>
 		<a-mixin static-body id="plataforma" geometry="primitive: box; height:0.1; width:18; depth:1.5;" 
 				 material="src:#piso2; repeat:25 2; side:double; metalness:0.3; roughness:0.3" shadow></a-mixin>
 		<a-mixin static-body id="lateral" geometry="primitive: box;" 
 				 material="src:#piso2; repeat:25 1; side:double; metalness:0.3; roughness:0.3" shadow></a-mixin>
 		<a-mixin static-body id="piso" geometry="primitive: box; height:0.1; width:30; depth:15;" 
 				 material="src:#piso1; repeat:45 23; side:double; metalness:0.3; roughness:0.3" shadow></a-mixin>
-		<img id="ceu" src="imagens/bowling.jpg">
-		<img id="piso1" src="imagens/piso_madeira.jpg">
-		<img id="piso2" src="imagens/piso.jpg">
+		<img id="ceu" src="./imagens/bowling.jpg">
+		<img id="piso1" src="./imagens/piso_madeira.jpg">
+		<img id="piso2" src="./imagens/piso.jpg">
 		<a-mixin id="controllers-right" vive-controls="hand: right"
                  oculus-touch-controls="hand: right"
                  windows-motion-controls="hand: right"
