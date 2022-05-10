@@ -8,10 +8,10 @@ newmtl Standard_7
 	Tr 0.0000
 	Tf 1.0000 1.0000 1.0000 
 	illum 9
-	Ka 0.1880 0.1880 0.1880
-	Kd 0.1880 0.1880 0.1880
+	Ka 0.6880 0.6880 0.6880
+	Kd 0.6880 0.6880 0.6880
 	Ks 0.3000 0.3000 0.3000
-	Ke 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
 	map_Ka bowling.jpg
 	map_Kd bowling.jpg
 	map_Ks bowling.jpg
