@@ -1,6 +1,7 @@
 <html>
   <head>
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
 	<script src="https://unpkg.com/aframe-orbit-controls@1.3.0/dist/aframe-orbit-controls.min.js"></script>
   </head>
   <body>
@@ -15,7 +16,7 @@
 		<a-entity position="0 0 0.5" scale="0.05 0.05 0.05">
 			<a-gltf-model src="#objeto" shadow animation-mixer></a-gltf-model>
 		</a-entity>
-		<a-box scale="7 0.1 7" position="0 -0.01 0" shadow color="rgb(100,180,100)"></a-box>
+		<a-box scale="7 0.1 7" position="0 -0.05 0" shadow color="rgb(100,180,100)"></a-box>
 		
 		<a-light type="ambient" color="#white" intensity="0.3"></a-light>
 		<a-light type="directional" color="white" intensity="0.6" position="-1 1 1" light="castShadow:true"></a-light>
