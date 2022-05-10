@@ -211,8 +211,8 @@
       "doubleSided": true,
       "name": "Material.001",
       "pbrMetallicRoughness": {
-        "metallicFactor": 0.0,
-        "roughnessFactor": 0.5
+        "metallicFactor": 0.6,
+        "roughnessFactor": 0.2
       }
     },
     {
@@ -225,8 +225,8 @@
           0.0,
           1.0
         ],
-        "metallicFactor": 0.0,
-        "roughnessFactor": 0.5
+        "metallicFactor": 0.6,
+        "roughnessFactor": 0.2
       }
     },
     {
@@ -239,8 +239,8 @@
           0.0,
           1.0
         ],
-        "metallicFactor": 0.0,
-        "roughnessFactor": 0.5
+        "metallicFactor": 0.6,
+        "roughnessFactor": 0.2
       }
     }
   ],

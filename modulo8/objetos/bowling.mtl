@@ -10,7 +10,8 @@ newmtl Standard_7
 	illum 2
 	Ka 0.5880 0.5880 0.5880
 	Kd 0.5880 0.5880 0.5880
-	Ks 0.0000 0.0000 0.0000
+	Ks 0.5000 0.5000 0.5000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka bowling.jpg
-	map_Kd bowling.jpg
+	map_Ka Bowling.jpg
+	map_Kd Bowling.jpg
+	map_Ks Bowling.jpg
