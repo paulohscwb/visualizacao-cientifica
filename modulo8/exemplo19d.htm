@@ -11,15 +11,15 @@
 		</a-assets>
 		
 		<a-sky color="#66ccff"></a-sky>
-		<a-camera orbit-controls="target: 0 0 0; minDistance: 0.5; maxDistance: 180; initialPosition: 1 0 1.75"></a-camera>
+		<a-camera orbit-controls="target: 0 0 0; minDistance: 0.05; maxDistance: 180; initialPosition: 1 0 1.75"></a-camera>
 			
-		<a-entity position="0 0 0.5" scale="0.7 0.7 0.7">
+		<a-entity position="0 0 0" scale="0.7 0.7 0.7">
 			<a-gltf-model src="#objeto" shadow animation-mixer></a-gltf-model>
 		</a-entity>
 		<a-box scale="7 0.1 7" position="0 -0.07 0" shadow color="rgb(100,180,100)"></a-box>
 		
-		<a-light type="ambient" color="#white" intensity="0.3"></a-light>
-		<a-light type="directional" color="white" intensity="0.6" position="-1 1 1" light="castShadow:true"></a-light>
+		<a-light type="ambient" color="#white" intensity="0.2"></a-light>
+		<a-light type="directional" color="white" intensity="0.5" position="-1 1 1" light="castShadow:true"></a-light>
     </a-scene>
   </body>
 </html>
