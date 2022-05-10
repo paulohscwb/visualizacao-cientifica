@@ -4,11 +4,11 @@
 	<script src="https://unpkg.com/aframe-orbit-controls@1.3.0/dist/aframe-orbit-controls.min.js"></script>
   </head>
   <body>
-    <a-scene reflection>
+    <a-scene reflection shadow="type: pcfsoft">
 		<a-assets>
 			<a-asset-item id="objeto" src="objetos/aviao.glb"></a-asset-item>
 			<a-asset-item id="objeto1" src="objetos/helice.glb"></a-asset-item>
-			<a-mixin id="texto" text="color: black; align: left; width: 8; side:double;" shadow></a-mixin>
+			<a-mixin id="texto" text="color: black; align: left; width: 8; side:double;"></a-mixin>
 		</a-assets>
 		
 		<a-sky color="#66ccff"></a-sky>
