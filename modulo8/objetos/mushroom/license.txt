@@ -1,0 +1,11 @@
+Model Information:
+* title:	Dancing Mushroom
+* source:	https://sketchfab.com/3d-models/dancing-mushroom-5d809b37b90945e08d0e48dc49103b02
+* author:	Aaron XR Dev (https://sketchfab.com/AaronXRdev)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Dancing Mushroom" (https://sketchfab.com/3d-models/dancing-mushroom-5d809b37b90945e08d0e48dc49103b02) by Aaron XR Dev (https://sketchfab.com/AaronXRdev) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
