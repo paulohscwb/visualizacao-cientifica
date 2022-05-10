@@ -8,12 +8,11 @@
     <a-scene reflection>
 		<a-assets>
 			<a-asset-item id="objeto" src="objetos/robo/scene.gltf"></a-asset-item>
-			<a-mixin id="texto" text="color: black; align: left; width: 8; side:double;" rotation="-45 0 0"></a-mixin>
 			<img id="ceu" src="imagens/equi1.jpg">
 		</a-assets>
 		
 		<a-sky src="#ceu"></a-sky>
-		<a-camera orbit-controls="target: 0 0 0; minDistance: 0.5; maxDistance: 180; initialPosition: 1 0 3"></a-camera>
+		<a-camera orbit-controls="target: 0 0 0; minDistance: 0.5; maxDistance: 180; initialPosition: 0 0 3"></a-camera>
 			
 		<a-entity position="0 0 0" scale="0.15 0.15 0.15">
 			<a-gltf-model src="#objeto" shadow camera-cube-env="distance: 500; resolution: 512; repeat: true; interval: 1;"></a-gltf-model>
