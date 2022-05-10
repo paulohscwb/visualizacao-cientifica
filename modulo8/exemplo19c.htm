@@ -7,8 +7,7 @@
   <body>
     <a-scene reflection>
 		<a-assets>
-			<a-asset-item id="objeto" src="objetos/aviao.glb"></a-asset-item>
-			<a-asset-item id="objeto1" src="objetos/helice.glb"></a-asset-item>
+			<a-asset-item id="objeto" src="objetos/robo/scene.gltf"></a-asset-item>
 			<a-mixin id="texto" text="color: black; align: left; width: 8; side:double;" rotation="-45 0 0"></a-mixin>
 			<img id="ceu" src="imagens/equi1.jpg">
 		</a-assets>
@@ -16,18 +15,14 @@
 		<a-sky src="#ceu"></a-sky>
 		<a-camera orbit-controls="target: 0 0 0; minDistance: 0.5; maxDistance: 180; initialPosition: 1 1 3"></a-camera>
 			
-		<a-entity position="0 0 0" scale="0.8 0.8 0.8" rotation="0 -15 0">
+		<a-entity position="0 0 0" scale="0.8 0.8 0.8">
 			<a-gltf-model src="#objeto" shadow camera-cube-env="distance: 500; resolution: 512; repeat: true; interval: 1;"></a-gltf-model>
-			<a-entity position="3.54 2.14 0.03" rotation="0 0 13.3">
-				<a-gltf-model src="#objeto1" animation="property: rotation; to: 360 0 0; loop: true; dur: 5000; easing: linear" shadow camera-cube-env="distance: 500; resolution: 512; repeat: true; interval: 1;"></a-gltf-model>
-			</a-entity>
-			<a-text position="0 0 3.5" mixin="texto" value="A airplane  |  design: Jeroen Hut" text="" rotation=""></a-text>
 		</a-entity>
 
-		<a-light type="ambient" color="#bbb" intensity="0.2"></a-light>
-		<a-light type="directional" color="bbb" intensity="0.4" position="-1 1 1" light="castShadow:true"></a-light>
-		<a-light type="directional" color="bbb" intensity="0.4" position="1 1 1" light="castShadow:true"></a-light>
-		<a-light type="directional" color="bbb" intensity="0.4" position="1 0 -1" light="castShadow:true"></a-light>
+		<a-light type="ambient" color="#bbb" intensity="0.5"></a-light>
+		<a-light type="directional" color="bbb" intensity="0.6" position="-1 1 1" light="castShadow:true"></a-light>
+		<a-light type="directional" color="bbb" intensity="0.6" position="1 1 1" light="castShadow:true"></a-light>
+		<a-light type="directional" color="bbb" intensity="0.6" position="1 0 -1" light="castShadow:true"></a-light>
     </a-scene>
   </body>
 </html>
