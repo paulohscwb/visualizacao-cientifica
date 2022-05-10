@@ -6,14 +6,20 @@
   <body>
     <a-scene>
 		<a-assets>
-			<a-asset-item id="venice" src="objetos/venice/scene.gltf"></a-asset-item>
+			<a-asset-item id="objeto" src="objetos/aviao.glb"></a-asset-item>
+			<a-asset-item id="objeto1" src="objetos/helice.glb"></a-asset-item>
 		</a-assets>
 		
 		<a-sky color="#66ccff"></a-sky>
 		<a-camera orbit-controls="target: 0 1 0.7; minDistance: 0.5; maxDistance: 180; initialPosition: 0 1.6 3"></a-camera>
 		
-		<a-entity position="0 0 0">
-			<a-gltf-model src="#venice"></a-gltf-model>
+		<a-entity position="0 0 0" scale="0.8 0.8 0.8" rotation="0 -15 0">
+			<a-gltf-model src="#objeto"></a-gltf-model>
+			<a-entity position="3.54 2.14 0.03" rotation="0 0 13.3">
+				<a-gltf-model src="#objeto1" animation="property: rotation; to: 360 0 0; loop: true; dur: 5000;">
+				</a-gltf-model>
+			</a-entity>
+			<a-text position="0 0 3.5" mixin="texto" value="A airplane  |  design: Jeroen Hut" text="" rotation=""></a-text>
 		</a-entity>
 
 		<a-light type="ambient" color="#eaeaea" intensity="0.3"></a-light>
