@@ -7,16 +7,14 @@
     <a-scene reflection>
 		<a-assets>
 			<a-asset-item id="objeto" src="objetos/igreja/scene.gltf"></a-asset-item>
-			
-			<a-mixin id="plataforma" geometry="primitive: box; height:0.1; width:18; depth:1.5;" material="src:#piso; repeat:25 2; side:double; metalness:0.2; roughness:0.7" shadow></a-mixin>
-			<a-mixin id="piso" geometry="primitive: box; height:0.1; width:30; depth:15;" material="src:#piso1; repeat:45 23; side:double; metalness:0; roughness:0.8" shadow></a-mixin>
+			<a-mixin id="piso" geometry="primitive: box; height:0.1; width:10; depth:20;" material="src:#piso1; repeat:20 10; side:double; metalness:0; roughness:0.8" shadow></a-mixin>
 			<img id="ceu" src="imagens/equi2.jpg">
 			<img id="piso1" src="imagens/snow.jpg">
 		</a-assets>
 		
 		<a-sky src="#ceu"></a-sky>
 		
-		<a-entity id="cameraRig" position="0.5 1.6 8">
+		<a-entity id="cameraRig" position="0.5 1.6 9">
 			<a-entity id="head" camera wasd-controls look-controls gearvr-controls daydream-controls></a-entity>
 			<a-entity id="left-hand" teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head;"></a-entity>
 			<a-entity id="right-hand" teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head;
