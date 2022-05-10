@@ -301,10 +301,10 @@
       },
       "pbrMetallicRoughness": {
         "baseColorTexture": {
-          "index": 0.5
+          "index": 1
         },
         "metallicRoughnessTexture": {
-          "index": 0.1
+          "index": 1
         }
       }
     }
