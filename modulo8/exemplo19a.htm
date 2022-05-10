@@ -1,22 +1,31 @@
 <html>
   <head>
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
-	<script src="https://unpkg.com/aframe-orbit-controls@1.3.0/dist/aframe-orbit-controls.min.js"></script>
+	<script src="https://fernandojsg.github.io/aframe-teleport-controls/dist/aframe-teleport-controls.min.js"></script>
   </head>
   <body>
-    <a-scene>
+    <a-scene reflection>
 		<a-assets>
 			<a-asset-item id="objeto" src="objetos/igreja/scene.gltf"></a-asset-item>
+			
+			<a-mixin id="plataforma" geometry="primitive: box; height:0.1; width:18; depth:1.5;" material="src:#piso; repeat:25 2; side:double; metalness:0.2; roughness:0.7" shadow></a-mixin>
+			<img id="ceu" src="imagens/equi2.jpg">
 		</a-assets>
 		
-		<a-sky color="#66ccff"></a-sky>
-		<a-camera orbit-controls="target: 0 1 0.7; minDistance: 0.5; maxDistance: 180; initialPosition: 0 1.6 3"></a-camera>
+		<a-sky src="#ceu"></a-sky>
 		
-		<a-entity rotation="0 180 0">
-			<a-entity position="-45 0 -35">
-				<a-gltf-model src="#objeto"></a-gltf-model>
-			</a-entity>
+		<a-entity id="cameraRig" position="3 1.6 2">
+			<a-entity id="head" camera wasd-controls look-controls gearvr-controls daydream-controls></a-entity>
+			<a-entity id="left-hand" teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head;"></a-entity>
+			<a-entity id="right-hand" teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head;
+			collisionEntities: [mixin='box'], [mixin='piso'], [mixin='objeto']"
+			></a-entity>
 		</a-entity>
+		
+		<a-entity position="-45 0 -35">
+			<a-gltf-model src="#objeto" shadow></a-gltf-model>
+		</a-entity>
+		
     </a-scene>
   </body>
 </html>
