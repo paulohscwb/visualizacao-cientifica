@@ -1,7 +1,7 @@
 # 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
 # File Created: 19.04.2011 11:11:02
 
-mtllib 10492_Bowling Pin_v1_max2011_iteration-2.mtl
+mtllib bowling.mtl
 
 #
 # object objCylinder01
