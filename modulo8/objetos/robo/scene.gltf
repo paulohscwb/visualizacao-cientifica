@@ -300,12 +300,8 @@
         "index": 3
       },
       "pbrMetallicRoughness": {
-        "baseColorTexture": {
-          "index": 1
-        },
-        "metallicRoughnessTexture": {
-          "index": 1
-        }
+        "metallicFactor": 0.2,
+        "roughnessFactor": 0.2
       }
     }
   ],
