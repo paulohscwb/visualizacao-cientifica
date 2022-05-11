@@ -11,7 +11,7 @@ newmtl Standard_7
 	Ka 0.6 0.6 0.6
 	Kd 0.6 0.6 0.6
 	Ks 0.3 0.3 0.3
-	Ke 1 1 1
+	Ke 0.6 0.6 0.6
 	map_Ka bowling.jpg
 	map_Kd bowling.jpg
 	map_Ks bowling.jpg
