@@ -2,11 +2,17 @@
 # File Created: 08.11.2016 11:30:46
 
 newmtl defaultMat
-	Ns 96
-	Ka 0 0 0
-	Kd 0.8 0.8 0.8
-	Ks 0.06 0.06 0.06
-	Ni 1
+	Ns 400
+	Ni 2
 	d 1
+	Tr 0
+	Tf 1 1 1 
 	illum 2
+	Ka 0.6 0.6 0.6
+	Kd 0.6 0.6 0.6
+	Ks 0.3 0.3 0.3
+	Ke 1 1 1
+	map_Ka bd9dc47176b72bc5c32a2c78cc53c7a1.jpg
 	map_Kd bd9dc47176b72bc5c32a2c78cc53c7a1.jpg
+	map_Ks bd9dc47176b72bc5c32a2c78cc53c7a1.jpg
+	map_Ke bd9dc47176b72bc5c32a2c78cc53c7a1.jpg
