@@ -3,11 +3,11 @@
 
 newmtl Standard_7
 	Ns 100
-	Ni 1.000
-	d 1.0000
-	Tr 0.0000
-	Tf 1.0000 1.0000 1.0000 
-	illum 2
+	Ni 1
+	d 1
+	Tr 0
+	Tf 0 0 0 
+	illum 3
 	Ka 0.8 0.8 0.8
 	Kd 0.8 0.8 0.8
 	Ks 0.1 0.1 0.1
