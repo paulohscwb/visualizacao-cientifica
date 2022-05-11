@@ -2,7 +2,7 @@
 # File Created: 08.11.2016 11:30:46
 
 newmtl defaultMat
-	Ns 400
+	Ns 250
 	Ni 2
 	d 1
 	Tr 0
