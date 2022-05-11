@@ -7,7 +7,7 @@ newmtl Standard_7
 	#d 1
 	#Tr 0
 	#Tf 0 0 0 
-	illum 0
+	#illum 0
 	map_Ka bowling.jpg
 	map_Kd bowling.jpg
-	map_Ks bowling.jpg
+	#map_Ks bowling.jpg
