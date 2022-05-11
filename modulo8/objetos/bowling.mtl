@@ -2,16 +2,6 @@
 # File Created: 19.04.2011 11:11:02
 
 newmtl Standard_7
-	Ns 100
-	Ni 1
-	d 1
-	Tr 0
-	Tf 0 0 0 
-	illum 3
-	Ka 0.8 0.8 0.8
-	Kd 0.8 0.8 0.8
-	Ks 0.1 0.1 0.1
-	Ke 0 0 0
 	map_Ka bowling.jpg
 	map_Kd bowling.jpg
 	map_Ks bowling.jpg
