@@ -12,6 +12,6 @@ newmtl Standard_7
 	#Kd 0.6 0.6 0.6
 	#Ks 0 0 0
 	#Ke 0 0 0
-	#map_Ka bowling.jpg
+	map_Ka bowling.jpg
 	map_Kd bowling.jpg
-	#map_Ks bowling.jpg
+	map_Ks bowling.jpg
