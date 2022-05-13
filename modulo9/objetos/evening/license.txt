@@ -1,0 +1,11 @@
+Model Information:
+* title:	Evening Begins - 3D Editor Challenge
+* source:	https://sketchfab.com/3d-models/evening-begins-3d-editor-challenge-2d9e69a1ab5c45ae9b30fddd69f5b7c4
+* author:	AutoRunFail (https://sketchfab.com/AutoRunFail)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Evening Begins - 3D Editor Challenge" (https://sketchfab.com/3d-models/evening-begins-3d-editor-challenge-2d9e69a1ab5c45ae9b30fddd69f5b7c4) by AutoRunFail (https://sketchfab.com/AutoRunFail) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
