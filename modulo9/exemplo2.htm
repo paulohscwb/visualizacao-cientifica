@@ -23,7 +23,7 @@
 			<a-asset-item id="modelo2" src="objetos/heliceb.glb"></a-asset-item>
 		</a-assets>
 
-		<a-entity scale="1 1 1" look-at="[gps-camera]" gps-entity-place="latitude: -25.40788; longitude: -49.26468;">
+		<a-entity scale="0.3 0.3 0.3" rotation="0 120 0" look-at="[gps-camera]" gps-entity-place="latitude: -25.40788; longitude: -49.26468;">
 			<a-gltf-model src="#modelo"></a-gltf-model>
 			<a-entity position="0 0 0">
 				<a-gltf-model src="#modelo1" animation="property: rotation; to: 0 360 0; loop: true; dur: 4000; easing: linear" shadow></a-gltf-model>
@@ -34,7 +34,7 @@
 		</a-entity>
 		
         <a-camera gps-camera rotation-reader></a-camera>
-		<a-light type="ambient" color="#bbb" intensity="0.6"></a-light>
-		<a-light type="directional" color="bbb" intensity="0.8" position="-1 1 1" light="castShadow:true"></a-light>
+		<a-light type="ambient" color="white" intensity="1.5"></a-light>
+		<a-light type="directional" color="white" intensity="2" position="-1 1 1" light="castShadow:true"></a-light>
 	</a-scene>
 </body>
