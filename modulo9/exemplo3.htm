@@ -9,7 +9,7 @@
 	<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 </head>
 
-<body>
+<body style="margin: 0px; overflow: hidden;">
     <a-scene vr-mode-ui="enabled: false" embedded arjs='sourceType: webcam; trackingMethod: best; detectionMode: mono_and_matrix; matrixCodeType: 3x3; debugUIEnabled: false;'>
 		<a-assets>
 			<a-asset-item id="modelo" src="objetos/helicoptero.glb"></a-asset-item>
@@ -17,7 +17,7 @@
 			<a-asset-item id="modelo2" src="objetos/heliceb.glb"></a-asset-item>
 		</a-assets>
 
-		<a-marker preset="hiro" smooth="smooth:true; smoothCount:1;">
+		<a-marker preset="hiro">
 			<a-entity scale="0.1 0.1 0.1">
 				<a-gltf-model src="#modelo"></a-gltf-model>
 				<a-entity position="0 0 0">
