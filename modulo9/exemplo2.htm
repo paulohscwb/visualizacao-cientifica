@@ -17,9 +17,22 @@
         vr-mode-ui="enabled: false"
 		embedded
 		arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
+		<a-assets>
+			<a-asset-item id="modelo" src="objetos/helicoptero.glb"></a-asset-item>
+			<a-asset-item id="modelo1" src="objetos/helicea.glb"></a-asset-item>
+			<a-asset-item id="modelo2" src="objetos/heliceb.glb"></a-asset-item>
+		</a-assets>
 
-        <a-text value="This will always face the user." look-at="[gps-camera]" scale="75 75 75" gps-entity-place="latitude: -29.40788; longitude: -49.26468;"></a-text>
-        <a-camera gps-camera rotation-reader>
-		</a-camera>
+		<a-entity position="0 -1 0" scale="1 1 1 " rotation="0 160 0" look-at="[gps-camera]" scale="75 75 75" gps-entity-place="latitude: -29.40788; longitude: -49.26468;">
+			<a-entity  gltf-model="#modelo"></a-entity>
+			<a-entity position="0 0 0">
+				<a-gltf-model src="#modelo1" animation="property: rotation; to: 0 360 0; loop: true; dur: 4000; easing: linear" shadow></a-gltf-model>
+			</a-entity>
+			<a-entity position="0.037 1.947 5.267" rotation="10 0 0">
+				<a-gltf-model src="#modelo2" animation="property: rotation; to: 360 0 0; loop: true; dur: 3200; easing: linear"></a-gltf-model>
+			</a-entity>
+		</a-entity>
+		
+        <a-camera gps-camera rotation-reader></a-camera>
 	</a-scene>
 </body>
