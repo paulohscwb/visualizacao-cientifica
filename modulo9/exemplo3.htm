@@ -18,7 +18,7 @@
 		</a-assets>
 
 		<a-marker preset="hiro">
-			<a-entity scale="0.25 0.25 0.25" position="0 0.1 0">
+			<a-entity scale="0.5 0.5 0.5" position="0 0.5 0">
 				<a-gltf-model src="#modelo"></a-gltf-model>
 				<a-entity position="0 0 0">
 					<a-gltf-model src="#modelo1" animation="property: rotation; to: 0 360 0; loop: true; dur: 4000; easing: linear" shadow></a-gltf-model>
@@ -30,5 +30,7 @@
 		</a-marker>
 		
         <a-entity camera></a-entity>
+		<a-light type="ambient" color="#bbb" intensity="0.6"></a-light>
+		<a-light type="directional" color="bbb" intensity="0.8" position="-1 1 1" light="castShadow:true"></a-light>
 	</a-scene>
 </body>
