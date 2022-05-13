@@ -14,7 +14,7 @@
 		<a-asset-item id="modelo2" src="objetos/heliceb.glb"></a-asset-item>
 	</a-assets>
 	  	  
-	  <a-sky color="green"></a-sky>
+	  <a-sky color="aliceblue"></a-sky>
 		
 	  <a-entity camera="fov:20; near:1;" orbit-controls="target: 0 0 0; maxPolarAngle: 360; initialPosition: 5 7 21"></a-entity>
 	  	<a-entity position="0 -1 0" scale="1 1 1 " rotation="0 160 0">
@@ -26,8 +26,8 @@
 				<a-gltf-model src="#modelo2" animation="property: rotation; to: 360 0 0; loop: true; dur: 3200; easing: linear"></a-gltf-model>
 			</a-entity>
 		</a-entity>
-		<a-light type="ambient" color="#bbb" intensity="0.6"></a-light>
-		<a-light type="directional" color="bbb" intensity="0.8" position="-1 1 1" light="castShadow:true"></a-light>
+		<a-light type="ambient" color="white" intensity="1.5"></a-light>
+		<a-light type="directional" color="white" intensity="2" position="-1 1 1" light="castShadow:true"></a-light>
 
   </a-scene>
 </body>
