@@ -7,7 +7,7 @@
   <script src="https://unpkg.com/super-hands@^3.0.3/dist/super-hands.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.misc.min.js"></script>
   <script src="https://unpkg.com/aframe-teleport-controls@0.3.1/dist/aframe-teleport-controls.min.js"></script>
-  <script src="https://rawgit.com/donmccurdy/aframe-physics-system/v3.2.0/dist/aframe-physics-system.min.js"></script>
+  <script src="https://rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
   <script src="https://unpkg.com/aframe-physics-extras@0.1.2/dist/aframe-physics-extras.min.js"></script>
   <script>
   document.querySelector('#blockHand').addEventListener(`click`, function (evt) {
@@ -51,9 +51,7 @@
 	  
 	  <a-sky src="#ceu"></a-sky>
 		<a-entity id="cameraRig" position="3 1.6 2">
-			<a-camera id="head" look-controls capture-mouse cursor="rayOrigin:mouse"></a-camera>
-			<a-entity sphere-collider="objects: #bola" super-hands hand-controls="hand: left"></a-entity>
-			<a-entity sphere-collider="objects: #bola" super-hands hand-controls="hand: right"></a-entity>
+			<a-camera id="head" look-controls capture-mouse cursor="rayOrigin:mouse" sphere-collider="objects: #bola" super-hands></a-camera>
 			<a-entity teleport-controls="cameraRig: #cameraRig; type: parabolic; collisionEntities:  [mixin='piso'], #plataforma; teleportOrigin: #head; button: grip;" gearvr-controls daydream-controls hand-controls="hand: left"></a-entity>
 			<a-entity id="blockHand" hand-controls="hand: right"  laser-controls raycaster="showLine:true; far:3;" line="color:rgb(0,255,0); opacity:0.33;"></a-entity>
 			<a-entity oculus-touch-controls="hand: left"></a-entity>
@@ -76,7 +74,7 @@
 		  <a-entity class="bola" mixin="bola" position="7.5 0 -2"></a-entity>
 		  <a-entity class="bola" mixin="bola" position="8 0 -2"></a-entity>
 		  <a-entity class="bola" mixin="bola" position="8.5 0 0"></a-entity>
-		  <a-entity position="0 0.75 0.1">
+		  <a-entity position="0 0.7 0.1">
 			  <a-entity class="pino" gltf-model="#bow-gltf" position="-8.6 0 0.15" mixin="pino"></a-entity>
 			  <a-entity class="pino" gltf-model="#bow-gltf" position="-8.6 0 -0.15" mixin="pino"></a-entity>
 			  <a-entity class="pino" gltf-model="#bow-gltf" position="-8.6 0 0.45" mixin="pino"></a-entity>
