@@ -27,8 +27,7 @@
 	  
 	  <a-sky src="#ceu"></a-sky>
 		<a-entity id="cameraRig" position="3 1.6 2">
-			<a-camera id="head" look-controls capture-mouse cursor="rayOrigin:mouse"></a-camera>
-			<a-entity sphere-collider="objects: #bola, #pino" super-hands hand-controls="hand: right"></a-entity>
+			<a-camera id="head" look-controls capture-mouse cursor="rayOrigin:mouse" sphere-collider="objects: #bola, #pino" super-hands hand-controls="hand: right"></a-camera>
 			<a-entity teleport-controls="cameraRig: #cameraRig; collisionEntities:  [mixin='piso'], #plataforma; teleportOrigin: #head; button: grip;" gearvr-controls daydream-controls hand-controls="hand: left"></a-entity>
 			<a-entity laser-controls raycaster="showLine:true; far:3;" line="color:rgb(0,255,0); opacity:0.33;" hand-controls="hand: right"></a-entity>
 			<a-entity oculus-touch-controls="hand: left"></a-entity>
