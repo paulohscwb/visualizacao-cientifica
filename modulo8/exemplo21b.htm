@@ -22,14 +22,14 @@
 		<img id="ceu" src="imagens/bowling.jpg">
 		<img id="piso1" src="imagens/piso_madeira.jpg">
 		<img id="piso2" src="imagens/piso.jpg">
-        <a-mixin id="point" raycaster="showLine: false; objects: .pino, .bola" line="color:rgb(255,255,255); opacity:0.33;"static-body="shape: sphere; sphereRadius: 0.1" super-hands="colliderEvent: raycaster-intersection; colliderEventProperty: els; colliderEndEvent:raycaster-intersection-cleared; colliderEndEventProperty: clearedEls;"></a-mixin>
+        <a-mixin id="point" raycaster="showLine: false; objects: .pino, .bola" line="color:rgb(255,255,255); opacity:0.33;"static-body="shape: sphere; sphereRadius: 0.1" super-hands="colliderEvent: raycaster-intersection; colliderEventProperty: els; colliderEndEvent: raycaster-intersection-cleared; colliderEndEventProperty: clearedEls;"></a-mixin>
       </a-assets>
 	  
 	  <a-sky src="#ceu"></a-sky>
 		<a-entity id="cameraRig" position="3 1.6 2">
-			<a-camera id="head" look-controls capture-mouse cursor="rayOrigin:mouse" sphere-collider="objects: [mixin='bola'], [mixin='pino']" super-hands hand-controls="hand: right"></a-camera>
+			<a-camera id="head" look-controls capture-mouse cursor="rayOrigin:mouse" static-body="shape: sphere; sphereRadius: 0.1" super-hands="colliderEvent: raycaster-intersection; colliderEventProperty: els; colliderEndEvent:raycaster-intersection-cleared; colliderEndEventProperty: clearedEls;"></a-camera>
 			<a-entity teleport-controls="cameraRig: #cameraRig; collisionEntities:  [mixin='piso'], [mixin='plataforma']; teleportOrigin: #head; button: grip;" gearvr-controls daydream-controls hand-controls="hand: left"></a-entity>
-			<a-entity laser-controls raycaster="showLine:true; far:3;" line="color:rgb(0,255,0); opacity:0.33;" hand-controls="hand: right"></a-entity>
+			<a-entity laser-controls mixin="point" hand-controls="hand: right"></a-entity>
 			<a-entity oculus-touch-controls="hand: left"></a-entity>
 			<a-entity oculus-touch-controls="hand: right"></a-entity>
 			<!--<a-entity hand-controls="left"></a-entity>
