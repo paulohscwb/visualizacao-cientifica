@@ -52,13 +52,13 @@
    <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-12.png"/>
    <p class="topop"><a href="#modulo1" class="topo">voltar ao topo</a></p>
    <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-13.png"/>
+   <p class="topop"><a href="#modulo1" class="topo">voltar ao topo</a></p>
 </details>
 
 <details>
   <summary id="modulo2">2. Conceitos básicos e estruturais de visualização</summary>
   <p>Material da página 14 até a página 24.</p>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-13.png"/>
-  <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-14.png"/>
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-15.png"/>
@@ -85,7 +85,6 @@
   <summary id="modulo3">3. Fundamentos dos dados</summary>
   <p>Material da página 24 até a página 54.</p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-23.png"/>
-  <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-24.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-25.png"/>
@@ -152,7 +151,6 @@
   <summary id="modulo4">4. Taxonomia dos dados</summary>
   <p>Material da página 54 até a página 81.</p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-53.png"/>
-  <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-54.png"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-55.png"/>
@@ -206,13 +204,13 @@
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-79.png"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-80.png"/>
+  <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
 </details>
 
 <details>
   <summary id="modulo5">5. Linhas, polígonos, poliedros e superfícies</summary>
   <p>Material da página 81 até a página 92.</p>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-80.png"/>
-  <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-81.png"/>
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-82.png"/>
@@ -241,7 +239,6 @@
   <summary id="modulo6">6. Modelos de iluminação</summary>
   <p>Material da página 92 até a página 105.</p>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-91.png"/>
-  <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-92.png"/>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-93.png"/>
@@ -274,7 +271,6 @@
   <summary id="modulo7">7. Câmera</summary>
   <p>Material da página 105 até a página 114.</p>
   <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-104.png"/>
-  <p class="topop"><a href="#modulo7" class="topo">voltar ao topo</a></p>
   <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-105.png"/>
   <p class="topop"><a href="#modulo7" class="topo">voltar ao topo</a></p>
   <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-106.png"/>
@@ -364,7 +360,6 @@
   <summary id="modulo9">9. Realidade Aumentada</summary>
   <p>Material da página 144 até a página 152.</p>
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-143.png"/>
-  <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-144.png"/>
   <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-145.png"/>
