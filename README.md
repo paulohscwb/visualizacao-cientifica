@@ -25,24 +25,7 @@
    <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-7.png"/>
    <p class="topop"><a href="#modulo1" class="topo">voltar ao topo</a></p>
    <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-8.png"/>
-   <div class="combo"><details class="sub"><summary>&#x1f4c3; Algoritmo comentado</summary>
-   <figcaption>Algoritmo da Rede Neural Perceptron:
-<pre><code>0. Inicializar os pesos, o bias e a taxa de aprendizado: <a alt="vetor de pesos">w = 0</a>, <a alt="bias">&theta; = 0</a>, <a alt="taxa de aprendizagem">&alpha; = 1</a> 
-    1. Enquanto o <a alt="critérios de parada mais usados:&#10;número máximo de iterações, erro mínimo alcançado,&#10;ou número máximo de iterações sem modificações nos pesos">critério de parada</a> não for satisfeito, execute os passos 2-6:
-        2. <a alt="cada par de treinamento deve ser apresentado à rede">Para cada par de dados de treinamento (x,d)</a>, execute os passos 3-5:
-        3. <a alt="calculamos o valor da variável y* sem a função de ativação">Calcule y* = &theta; + &sum;<sub>i</sub>x<sub>i</sub>w<sub>i</sub></a> 
-        4. <a alt="Neste passo, calculamos a função de ativação em y*">Se y* &gt; &delta;, então y = 1</a> 
-            Se -&delta; ≤ y* ≤ &delta;, então y = 0
-            Se y* &lt; -&delta;, então y = -1 
-        5. <a alt="A atualização dos pesos só é feita quando a rede erra a classificação">Atualize os pesos e a tendência:</a>
-            Se y ≠ d, faça
-               w<sub>i</sub><sup>atual</sup> = w<sub>i</sub><sup>anterior</sup> + &alpha;dx<sub>i</sub> e &theta;<sup>atual</sup> = &theta;<sup>anterior</sup> + &alpha;d 
-            Caso contrário
-               w<sub>i</sub><sup>atual</sup> = w<sub>i</sub><sup>anterior</sup> e &theta;<sup>atual</sup> = &theta;<sup>anterior</sup>
-6. <a alt="Neste passo, podemos calcular o erro quantitativo da rede">Teste a condição de parada.</a>
-
-</code></pre></figcaption>
-   </details></div>
+   <p class="topop"><a href="#modulo1" class="topo">voltar ao topo</a></p>
    <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-9.png"/>
    <p class="topop"><a href="#modulo1" class="topo">voltar ao topo</a></p>
    <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-10.png"/>
@@ -60,6 +43,37 @@
   <p>Material da página 14 até a página 24.</p>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-13.png"/>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-14.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código comentado</summary>
+  <figcaption>Código em C++ com Matplotlib:
+<pre><code>#include <a alt="vetores de coordenadas">&lt;vector&gt;</a> 
+#include <a alt="biblioteca matplotlib">"matplotlibcpp.h"</a> 
+Namespaceplt <a alt="gráfico que será construído">plt=matplotlibcpp;</a> 
+
+intmain(){
+std::vector&lt;double&gt;<a alt="coordenadas x">x={0, 1, 2, 3, 4, 5};</a>
+std::vector&lt;double&gt;<a alt="coordenadas y">y={1, 4, 9, 16, 32, 64};</a>
+<a alt="gráfico de dispersão, marcador circular e vermelho">plt::scatter(x,y,{{"color","red"},{"marker":"o"}});</a>
+<a alt="comando para visualizar o gráfico">plt::show();</a>
+
+return0;
+}
+
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-14a.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código comentado</summary>
+  <figcaption>Código em Python com Matplotlib:
+<pre><code>import <a alt="gráfico plt da biblioteca matplotlib ">matplotlib.pyplot as plt</a> 
+
+<a alt="coordenadas x">x = [0, 1, 2, 3, 4, 5]</a>
+<a alt="coordenadas y">y = [1, 4, 9, 16, 32, 64]</a>
+
+<a alt="gráfico de dispersão, marcador circular e vermelho">plt.scatter(x, y, color = 'red', marker = 'o')</a>
+<a alt="comando para visualizar o gráfico">plt.show()</a>
+
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-14b.png"/>
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-15.png"/>
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
