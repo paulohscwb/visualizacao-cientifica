@@ -46,7 +46,7 @@
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código comentado</summary>
   <figcaption>Código em C++ com Matplotlib:
 <pre><code>#include <a alt="vetores de coordenadas">&lt;vector&gt;</a> 
-#include <a alt="biblioteca matplotlib">"matplotlibcpp.h"</a> 
+&#x23;include <a alt="biblioteca matplotlib">"matplotlibcpp.h"</a> 
 Namespaceplt <a alt="gráfico que será construído">plt=matplotlibcpp;</a> 
 
 intmain(){
