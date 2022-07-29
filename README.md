@@ -49,14 +49,14 @@
 &#x23;include <a alt="biblioteca matplotlib">"matplotlibcpp.h"</a> 
 Namespaceplt <a alt="gráfico que será construído">plt=matplotlibcpp;</a> 
 
-intmain(){
-std::vector&lt;double&gt;<a alt="coordenadas x">x={0, 1, 2, 3, 4, 5};</a>
-std::vector&lt;double&gt;<a alt="coordenadas y">y={1, 4, 9, 16, 32, 64};</a>
-<a alt="gráfico de dispersão 2D, marcador circular e vermelho">plt::scatter(x,y,{{"color","red"},{"marker":"o"}});</a>
+intmain()&#123;
+std::vector&lt;double&gt;<a alt="coordenadas x">x=&#123;0, 1, 2, 3, 4, 5&#125;;</a>
+std::vector&lt;double&gt;<a alt="coordenadas y">y=&#123;1, 4, 9, 16, 32, 64&#125;;</a>
+<a alt="gráfico de dispersão 2D, marcador circular e vermelho">plt::scatter(x,y,{&#125;"color","red"&#123;,&#123;"marker":"o"&#125;&#125;);</a>
 <a alt="comando para visualizar o gráfico">plt::show();</a>
 
 return0;
-}
+&#125;
 
 </code></pre></figcaption>
   </details></div>
