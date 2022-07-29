@@ -52,7 +52,7 @@ Namespaceplt <a alt="gráfico que será construído">plt=matplotlibcpp;</a>
 intmain(){
 std::vector&lt;double&gt;<a alt="coordenadas x">x={0, 1, 2, 3, 4, 5};</a>
 std::vector&lt;double&gt;<a alt="coordenadas y">y={1, 4, 9, 16, 32, 64};</a>
-<a alt="gráfico de dispersão, marcador circular e vermelho">plt::scatter(x,y,{{"color","red"},{"marker":"o"}});</a>
+<a alt="gráfico de dispersão 2D, marcador circular e vermelho">plt::scatter(x,y,{{"color","red"},{"marker":"o"}});</a>
 <a alt="comando para visualizar o gráfico">plt::show();</a>
 
 return0;
@@ -68,7 +68,7 @@ return0;
 <a alt="coordenadas x">x = [0, 1, 2, 3, 4, 5]</a>
 <a alt="coordenadas y">y = [1, 4, 9, 16, 32, 64]</a>
 
-<a alt="gráfico de dispersão, marcador circular e vermelho">plt.scatter(x, y, color = 'red', marker = 'o')</a>
+<a alt="gráfico de dispersão 2D, marcador circular e vermelho">plt.scatter(x, y, color = 'red', marker = 'o')</a>
 <a alt="comando para visualizar o gráfico">plt.show()</a>
 
 </code></pre></figcaption>
@@ -76,6 +76,22 @@ return0;
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-14b.png"/>
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-15.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código comentado</summary>
+  <figcaption>Código em Python com Matplotlib:
+<pre><code>import <a alt="gráfico plt da biblioteca matplotlib ">matplotlib.pyplot as plt</a> 
+
+<a alt="coordenadas x">x = [0, 1, 2, 3, 4, 5]</a>
+<a alt="coordenadas y">y = [1, 4, 9, 16, 32, 64]</a>
+<a alt="coordenadas z">z = [2, 7, 11, 5, 3, 1]</a>
+
+<a alt="tipo de projeção 3D; gráfico atribuído na variável ax">ax = plt.figure().add_subplot(projection = '3d')</a>
+
+<a alt="gráfico de dispersão 3D, marcador circular e vermelho">ax.scatter(x, y, z, color = 'r', marker = 'o')</a>
+<a alt="comando para visualizar o gráfico">plt.show()</a>
+
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-15a.png"/>
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-16.png"/>
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
