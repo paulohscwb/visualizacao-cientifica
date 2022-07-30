@@ -528,7 +528,6 @@ plt.show()
   </details></div>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-41a.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <p>&#x1f4ca; <a href="modulo3/dados_teste.csv" target="_blank">Arquivo CSV</a></p>
   <figcaption>Dados vetoriais 2D:
 <pre><code>import matplotlib.pyplot as plt
 import numpy as np
@@ -550,6 +549,7 @@ ax.set_aspect('equal', 'box')
 plt.grid()
 plt.show()
 </code></pre></figcaption>
+  <p>&#x1f4ca; <a href="modulo3/dados_teste.csv" target="_blank">Arquivo CSV</a></p>
   </details></div>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-41b.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
@@ -621,7 +621,6 @@ plt.show()
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-44.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <p>&#x1f4ca; <a href="modulo3/flow_field.zip" target="_blank">Arquivo MAT</a></p>
   <figcaption>Dados vetoriais 3D:
 <pre><code>import matplotlib.pyplot as plt
 import numpy as np
@@ -649,12 +648,12 @@ ax.quiver(x[ind], y[ind], z[ind], u[ind], v[ind], w[ind], colors = c, length = 1
 
 plt.show()
 </code></pre></figcaption>
+  <p>&#x1f4ca; <a href="modulo3/flow_field.zip" target="_blank">Arquivo MAT</a></p>
   </details></div>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-44a.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-45.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <p>&#x1f4ca; <a href="modulo3/tornado3d.zip" target="_blank">Arquivo NC</a></p>
   <figcaption>Dados vetoriais 3D:
 <pre><code>import numpy as np
 import matplotlib.pyplot as plt
@@ -682,6 +681,7 @@ a = ax.quiver(x, z, y, w, u, v, colors = c, length = 0.05, normalize = True,
 
 plt.show()
 </code></pre></figcaption>
+  <p>&#x1f4ca; <a href="modulo3/tornado3d.zip" target="_blank">Arquivo NC</a></p>
   </details></div>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-45a.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
