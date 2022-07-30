@@ -621,14 +621,14 @@ plt.show()
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-44.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <p>&#x1f4ca; <a href="modulo3/flow_field.mat" target="_blank">Arquivo MAT</a></p>
+  <p>&#x1f4ca; <a href="modulo3/flow_field.zip" target="_blank">Arquivo MAT</a></p>
   <figcaption>Dados vetoriais 3D:
 <pre><code>import matplotlib.pyplot as plt
 import numpy as np
 <a alt="biblioteca para leitura do arquivo mat">from scipy.io import loadmat</a>
 
 ax = plt.figure().add_subplot(projection = '3d')
-<a alt="leitura do arquivo de dados">data_dict =</a> loadmat('c:/dados/flow_field.zip')
+<a alt="leitura do arquivo de dados">data_dict =</a> loadmat('c:/dados/flow_field.mat')
 
 x = np.transpose(data_dict['X'])
 y = np.transpose(data_dict['Y'])
@@ -653,6 +653,37 @@ plt.show()
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-44a.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-45.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <p>&#x1f4ca; <a href="modulo3/tornado3d.zip" target="_blank">Arquivo NC</a></p>
+  <figcaption>Dados vetoriais 3D:
+<pre><code>import numpy as np
+import matplotlib.pyplot as plt
+<a alt="biblioteca para leitura do arquivo nc">import netCDF4 as nc</a>
+
+<a alt="leitura do arquivo de dados">data =</a> nc.Dataset('C:/dados/tornado3d.nc')
+ax = plt.figure().add_subplot(projection = '3d')
+
+u = np.array(data['u'])
+v = np.array(data['v'])
+w = np.array(data['w'])
+xx = np.array(data['xdim'])
+yy = np.array(data['ydim'])
+zz = np.array(data['zdim'])
+
+x, y, z = np.meshgrid(xx, yy, zz)
+
+<a alt="relação de cores com a função arctan2 de v/u">c =</a> (np.arctan2(v, u))
+c = (c.flatten() - c.min()) / c.ptp()
+c = np.concatenate((c, np.repeat(c, 2)))
+<a alt="conversão de valores para o mapa de cores hsv">c =</a> plt.cm.hsv(c)
+
+a = ax.quiver(x, z, y, w, u, v, colors = c, length = 0.05, normalize = True, 
+    lw = 2, alpha = 0.1)
+
+plt.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-45a.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-46.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
