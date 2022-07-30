@@ -87,6 +87,7 @@ return0;
 <a alt="tipo de projeção 3D; gráfico atribuído na variável ax">ax = plt.figure().add_subplot(projection = '3d')</a>
 
 <a alt="gráfico de dispersão 3D, marcador circular e vermelho">ax.scatter(x, y, z, color = 'r', marker = 'o')</a>
+
 <a alt="comando para visualizar o gráfico">plt.show()</a>
 
 </code></pre></figcaption>
