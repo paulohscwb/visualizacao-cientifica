@@ -320,7 +320,6 @@ label = ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']
 j = 0
 
 <a alt="laço usado para separar as espécies">for k in i:</a>
-    <a alt="marcador de cada registro">marker = (2, 1, w[k])</a>
     if <a alt="com os dados ordenados, o marcador muda quando z[k] &ne; z[k-1]">z[k] == z[k-1]:</a>
         plt.scatter(x[k], y[k], marker = marker[j - 1], s = 200, facecolor = 'white', 
         hatch = 5*tex[j-1], alpha = 0.5)
@@ -338,6 +337,18 @@ plt.show()
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-27a.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-28.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Conjunto de dados Iris com Seaborn (cores):
+<pre><code>import pandas as pd
+<a alt="biblioteca Seaborn">import seaborn as sns</a>
+
+iris = pd.read_csv('C:/dados/iris.csv')
+
+<a alt="gráfico com comando hue de separação de classes">sns.relplot(data = iris, x = 'Comprimento da Sépala', y = 'Comprimento da Pétala',</a>
+    <a alt="paleta de cores em tom azul para separar as espécies">hue = 'Espécie', marker = '>', palette = 'Blues')</a>
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-28a.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-29.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
