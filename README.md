@@ -688,6 +688,47 @@ plt.show()
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-46.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-47.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Linhas de fluxo 2D:
+<pre><code>import plotly.figure_factory as ff
+import numpy as np
+import plotly.io as pio
+
+pio.renderers
+pio.renderers.default = 'browser'
+
+x = np.linspace(-1, 1, 10)
+y = np.linspace(-1, 1, 10)
+Y, X = np.meshgrid(x, y)
+u = 1 - X**2 + Y
+v = -1 + X - Y**2
+  
+fig = <a alt="função para criar as linhas de fluxo: streamlines">ff.create_streamline</a>(x, y, u, v, arrow_scale = 0.05)
+
+fig.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-47a.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Linhas de fluxo 3D:
+<pre><code>import plotly.graph_objects as go
+import pandas as pd
+import plotly.io as pio
+
+pio.renderers
+pio.renderers.default = 'browser'
+
+df = pd.read_csv('C:/dados/streamtube-wind.csv')
+
+fig = go.Figure(data = <a alt="função para criar as linhas de fluxo 3D: streamtubes">go.Streamtube</a>(x = df['x'], y = df['y'], z = df['z'], u = df['u'],
+    v = df['v'], w = df['w'], sizeref = 0.3, colorscale = 'rainbow', maxdisplayed = 3000))
+
+fig.update_layout(scene = dict(aspectratio = dict(x = 1.5, y = 1, z = 0.3)))
+
+fig.show()
+</code></pre></figcaption>
+  <p>&#x1f4ca; <a href="modulo3/streamtube-wind.zip" target="_blank">Arquivo CSV</a></p>
+  </details></div>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-48.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
