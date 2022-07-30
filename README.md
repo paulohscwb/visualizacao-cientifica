@@ -77,7 +77,7 @@ return0;
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-15.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código comentado</summary>
-  <figcaption>Código em Python com Matplotlib:
+  <figcaption>Gráfico de dispersão 3D:
 <pre><code>import <a alt="gráfico plt da biblioteca matplotlib ">matplotlib.pyplot as plt</a> 
 
 <a alt="coordenadas x">x = [0, 1, 2, 3, 4, 5]</a>
@@ -99,6 +99,23 @@ return0;
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-17.png"/>
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-18.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código comentado</summary>
+  <figcaption>Gráfico de dispersão 2D com rótulos:
+<pre><code>import matplotlib.pyplot as plt 
+
+x = [0, 1, 2, 3, 4, 5, 6]
+y = [1, 4, 9, 16, 32, 64, 128]
+<a alt="rótulos dos pontos">rotulos = ['A', 'B', 'C', 'D', 'E', 'F', 'G']</a>
+
+<a alt="laço para rotular cada ponto">for i, txt in enumerate(rotulos):</a>
+    plt.annotate(txt, (x[i], y[i]))
+	
+<a alt="Marcador triângular e laranja">plt.plot(x, y, color = 'orange', marker = '^', linestyle = '-')</a>
+
+plt.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-18a.png"/>
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-19.png"/>
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
