@@ -373,7 +373,8 @@ sns.relplot(data = iris, x = 'Comprimento da Sépala', y = 'Comprimento da Péta
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-32a.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-33.png"/>
-  <figcaption>Conjunto de dados Iris com Seaborn (cores e tamanhos):
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Conjunto de dados Iris com Seaborn (dispersão e frequência):
 <pre><code>import pandas as pd
 import seaborn as sns
 
