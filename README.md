@@ -405,6 +405,36 @@ sns.set_style("whitegrid")
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-34a.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-35.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Conjunto de dados dos pinguins com Seaborn (combinações de gráficos):
+<pre><code>import pandas as pd
+import seaborn as sns
+
+pinguins = pd.read_csv('C:/dados/penguin2.csv')
+
+sns.set_style("whitegrid")
+<a alt="dados que devem ser desconsiderados">pinguins.drop(['Id','Ano'],</a> inplace = True, axis = 1)
+<a alt="combinação de gráficos">sns.pairplot</a>(data = pinguins, hue = 'Espécie', <a alt="paleta de cores cubehelix">palette =</a> 'cubehelix')
+
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-35a.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Conjunto de dados dos pinguins com Seaborn (combinações de gráficos):
+<pre><code>import pandas as pd
+import seaborn as sns
+
+pinguins = pd.read_csv('C:/dados/penguin2.csv')
+
+sns.set_style("whitegrid")
+pinguins.drop(['Id','Ano'], inplace = True, axis = 1)
+<a alt="combinação de gráficos">g = sns.PairGrid</a>(data = pinguins, hue = 'Espécie', <a alt="paleta de cores mako">palette =</a> 'mako')
+<a alt="histogramas na diagonal">g.map_diag(sns.histplot)</a>
+<a alt="densidades de kernel fora da diagonal">g.map_offdiag(sns.kdeplot)</a>
+g.add_legend()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-35b.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-36.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
