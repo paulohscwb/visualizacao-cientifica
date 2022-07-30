@@ -527,6 +527,30 @@ plt.show()
 </code></pre></figcaption>
   </details></div>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-41a.png"/>
+  <figcaption>&#x1f4ca; <a href="modulo3/dados_teste.csv" target="_blank">Arquivo CSV</a></figcaption>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Dados vetoriais:
+<pre><code>import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
+dados = pd.read_csv('C:/dados/dados_teste.csv')
+
+X = dados.loc[:,'x']
+Y = dados.loc[:,'y']
+U = dados.loc[:,'u']
+V = dados.loc[:,'v']
+fig, ax = plt.subplots()
+
+<a alt="vetor usado para criar cores usando os valores U e V">M = np.hypot(U, V)</a>
+Q = ax.quiver(X, Y, U, V, M, units = 'x', width = 0.07, scale = 1.2)
+
+ax.set_aspect('equal', 'box')
+
+plt.grid()
+plt.show()
+</code></pre></figcaption>
+  </details></div>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-41b.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-42.png"/>
