@@ -596,6 +596,28 @@ plt.show()
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-42b.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-43.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Dados vetoriais 3D:
+<pre><code>import matplotlib.pyplot as plt
+import numpy as np
+
+ax = plt.figure().add_subplot(projection = '3d')
+
+<a alt="extremidades na grade">x, y, z =</a> np.meshgrid(np.arange(-2, 2, 0.5), np.arange(-2, 2, 0.5), np.arange(-2, 2, 0.5))
+<a alt="relação do deslocamento de x com x e z">u =</a> x - z
+<a alt="relação do deslocamento de y com y e z">v =</a> y + z
+<a alt="relação do deslocamento de z">w =</a> z + 1
+
+<a alt="relação de cores com a função arcsinh de v/u">cor =</a> np.arcsinh(v, u)
+cor = (cor.flatten() - cor.min()) / cor.ptp()
+<a alt="conversão de valores para o mapa de cores hsv">cor =</a> plt.cm.hsv(cor)
+
+a = ax.quiver(x, y, z, u, v, w, length = 0.4, normalize = True, colors = cor, lw = 0.8)
+
+plt.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-43a.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-44.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
