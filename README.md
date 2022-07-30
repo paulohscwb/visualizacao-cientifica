@@ -183,6 +183,24 @@ plt.show()
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-20a.png"/>
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-21.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Gráficos de curvas 2D:
+<pre><code>import matplotlib.pyplot as plt
+import numpy as np
+
+ax = plt.figure().add_subplot(projection = '3d')
+
+int = 10
+<a alt="intervalo de x com 10 pontos">x = np.linspace(-5, 5, int)</a>
+<a alt="intervalo de y com 10 pontos">y = np.linspace(-5, 5, int)</a>
+<a alt="intervalo de z com 10 pontos">z = np.linspace(-10, 10, int)</a>
+
+<a alt="gráfico da função quadrática com marcadores circulares vermelhos">ax.plot(x, y, z**2+5, 'ro-')</a>
+<a alt="gráfico da função linear com linha contínua laranja">ax.plot(x, y, 0, 'y--')</a>
+
+plt.show()
+</code></pre></figcaption>
+  </details></div>
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-22.png"/>
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
