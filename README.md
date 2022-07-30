@@ -43,7 +43,7 @@
   <p>Material da página 14 até a página 24.</p>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-13.png"/>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-14.png"/>
-  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código comentado</summary>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption>Código em C++ com Matplotlib:
 <pre><code>#include <a alt="vetores de coordenadas">&lt;vector&gt;</a> 
 &#x23;include <a alt="biblioteca matplotlib">"matplotlibcpp.h"</a> 
@@ -61,7 +61,7 @@ return0;
 </code></pre></figcaption>
   </details></div>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-14a.png"/>
-  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código comentado</summary>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption>Código em Python com Matplotlib:
 <pre><code>import <a alt="gráfico plt da biblioteca matplotlib ">matplotlib.pyplot as plt</a> 
 
@@ -76,7 +76,7 @@ return0;
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-14b.png"/>
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-15.png"/>
-  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código comentado</summary>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption>Gráfico de dispersão 3D:
 <pre><code>import <a alt="gráfico plt da biblioteca matplotlib ">matplotlib.pyplot as plt</a> 
 
@@ -99,7 +99,7 @@ return0;
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-17.png"/>
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-18.png"/>
-  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código comentado</summary>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption>Gráfico de dispersão 2D com rótulos:
 <pre><code>import matplotlib.pyplot as plt 
 
@@ -118,7 +118,7 @@ plt.show()
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-18a.png"/>
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-19.png"/>
-  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código comentado</summary>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption>Gráfico de dispersão 3D com rótulos:
 <pre><code>import matplotlib.pyplot as plt
 
@@ -139,7 +139,7 @@ plt.show()
 </code></pre></figcaption>
   </details></div>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-19a.png"/>
-  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código comentado</summary>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption>Gráfico de curvas 2D com legendas:
 <pre><code>import matplotlib.pyplot as plt
 import <a alt="biblioteca de operações matemáticas">numpy as np</a>
@@ -160,6 +160,27 @@ plt.legend()
   </details></div>
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-20.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Gráficos de curvas 2D:
+<pre><code>import matplotlib.pyplot as plt
+import numpy as np
+
+<a alt="definição da função f">def f(x):</a>
+    return np.exp(-x) * np.cos(2*np.pi*x)
+
+<a alt="intervalo do primeiro gráfico">x1 = np.arange(5, 12, 0.05)</a>
+<a alt="intervalo do segundo gráfico">x2 = np.arange(-2, 5, 0.05)</a>
+
+plt.figure()
+<a alt="1 linha e 2 colunas de gráficos: gráfico 121">plt.subplot(121)</a>
+<a alt="linha tracejada azul no intervalo x1">plt.plot(x1, f(x1), 'b--', x2, f(x2), 'g-.')</a>
+
+<a alt="1 linha e 2 colunas de gráficos: gráfico 122">plt.subplot(122)</a>
+<a alt="linha pontilhada laranja no intervalo x2">plt.plot(x2, np.cos(2*np.pi*x2), color = 'orange', linestyle = ':')</a>
+plt.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-20a.png"/>
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-21.png"/>
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
