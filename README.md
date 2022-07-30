@@ -284,11 +284,11 @@ j = 0
 <a alt="laço usado para separar as espécies">for k in i:</a>
     <a alt="marcador de cada registro">marker = (2, 1, w[k])</a>
     if <a alt="com os dados ordenados, o marcador muda quando z[k] &ne; z[k-1]">z[k] == z[k-1]:</a>
-        plt.plot(x[k], y[k], marker = marker, markersize = 10, color = cor[j - 1], alpha = 0.6)
+        plt.plot(x[k], y[k], <a alt="marcadores">marker =</a> marker, <a alt="tamanho dos marcadores">markersize =</a> 10, <a alt="cores dos marcadores">color =</a> cor[j - 1], <a alt="taxa de opacidade">alpha =</a> 0.6)
     else:
         j +=1
         plt.plot(x[k], y[k], marker = marker, markersize = 10, color = cor[j - 1], alpha = 0.6, 
-        label = label[j - 1] )
+        <a alt="alteração do rótulo">label =</a> label[j - 1] )
 
 <a alt="legendas dos dados e eixos">plt.legend(scatterpoints = 1)</a>
 plt.xlabel('Comprimento da Sépala')
@@ -321,8 +321,8 @@ j = 0
 
 <a alt="laço usado para separar as espécies">for k in i:</a>
     if <a alt="com os dados ordenados, o marcador muda quando z[k] &ne; z[k-1]">z[k] == z[k-1]:</a>
-        plt.scatter(x[k], y[k], marker = marker[j - 1], s = 200, facecolor = 'white', 
-        hatch = 5*tex[j-1], alpha = 0.5)
+        plt.scatter(x[k], y[k], <a alt="marcadores">marker = marker[j - 1]</a>, <a alt="tamanho dos marcadores">s =</a> 200, <a alt="cor dos marcadores">facecolor =</a> 'white', 
+        <a alt="textura">hatch =</a> 5*tex[j-1], alpha = 0.5)
     else:
         j += 1
         plt.scatter(x[k], y[k], marker = marker[j - 1], s = 200, facecolor = 'white', 
@@ -346,6 +346,7 @@ iris = pd.read_csv('C:/dados/iris.csv')
 
 sns.relplot(data = iris, x = 'Comprimento da Sépala', y = 'Comprimento da Pétala',
     <a alt="separação de classes: atributo Espécie">hue =</a> 'Espécie', <a alt="marcadores triangulares">marker =</a> '>', <a alt="paleta de cores em tons de azul">palette =</a> 'Blues')</a>
+	
 </code></pre></figcaption>
   </details></div>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-28a.png"/>
@@ -365,7 +366,8 @@ import seaborn as sns
 iris = pd.read_csv('C:/dados/iris.csv')
 
 sns.relplot(data = iris, x = 'Comprimento da Sépala', y = 'Comprimento da Pétala',
-    <a alt="separação de classes: atributo Espécie">hue =</a> 'Espécie', <a alt="marcadores quadrados">marker =</a> 's', <a alt="paleta de cores em tons de vermelho">palette =</a> 'Reds', <a alt="tamanhos dos marcadores">size = 'Largura da Sépala')</a>
+    <a alt="separação de classes: atributo Espécie">hue =</a> 'Espécie', <a alt="marcadores quadrados">marker =</a> 's', <a alt="paleta de cores em tons de vermelho">palette =</a> 'Reds', <a alt="tamanhos dos marcadores">size =</a> 'Largura da Sépala')
+	
 </code></pre></figcaption>
   </details></div>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-32a.png"/>
