@@ -515,7 +515,7 @@ Y = [2, 1, 2]
 cor = ['blue','red','orange']
 
 fig, ax = plt.subplots()
-Q = <a alt="gráfico vetorial: quiver">ax.quiver<a/>(X, Y, U, V, color = cor, units = 'xy', <a alt="espessura da linha e da seta">width =</a> 0.02, <a alt="escala do tamanho da seta">scale =</a> 1)
+Q = <a alt="gráfico vetorial: quiver">ax.quiver</a>(X, Y, U, V, color = cor, units = 'xy', <a alt="espessura da linha e da seta">width =</a> 0.02, <a alt="escala do tamanho da seta">scale =</a> 1)
 
 <a alt="pontos iniciais das setas">ax.plot(X, Y, 'og')</a>
 ax.set_aspect('equal', 'box')
