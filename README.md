@@ -373,6 +373,19 @@ sns.relplot(data = iris, x = 'Comprimento da Sépala', y = 'Comprimento da Péta
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-32a.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-33.png"/>
+  <figcaption>Conjunto de dados Iris com Seaborn (cores e tamanhos):
+<pre><code>import pandas as pd
+import seaborn as sns
+
+iris = pd.read_csv('C:/dados/iris.csv')
+
+<a alt="mostra a grade">sns.set_style("whitegrid")</a>
+sns.jointplot(data = iris, x = 'Comprimento da Sépala', y = 'Comprimento da Pétala',
+    hue = 'Espécie', <a alt="marcadores circulares">marker =</a> 'o', <a alt="paleta de cores em tons de vermelho">palette =</a> 'rainbow')
+	
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-33a.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-34.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
