@@ -118,6 +118,46 @@ plt.show()
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-18a.png"/>
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-19.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código comentado</summary>
+  <figcaption>Gráfico de dispersão 3D com rótulos:
+<pre><code>import matplotlib.pyplot as plt
+
+ax = plt.figure().add_subplot(projection = '3d')
+
+x = [0, 1, 2, 3, 4, 5]
+y = [1, 4, 9, 16, 32, 64]
+z = [2, 7, 11, 5, 3, 1]
+<a alt="rótulos dos pontos">rotulos = ['A', 'B', 'C', 'D', 'E', 'F']</a>
+
+<a alt="gráfico de dispersão 3D, marcador circular e vermelho">ax.scatter(x, y, z, color = 'r', marker = 'o')</a>
+
+<a alt="laço para rotular cada ponto">for x, y, z, tag in zip(x, y, z, rotulos):</a>
+    label = tag
+    ax.text3D(x, y, z, label, <a alt="direção dos rótulos: eixo z">zdir = 'z'</a>)
+	
+plt.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-19a.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código comentado</summary>
+  <figcaption>Gráfico de curvas 2D com legendas:
+<pre><code>import matplotlib.pyplot as plt
+import <a alt="biblioteca de operações matemáticas">numpy as np</a>
+
+<a alt="intervalo [0, 5] com espaçamento 0.1">x = np.arange(0, 5, 0.1)</a>
+
+<a alt="função linear, linha tracejada azul">plt.plot(x, x, 'b--', label = 'y = x')</a>
+<a alt="função linear, linha contínua verde">plt.plot(x, 2*x+1, 'g-', label = 'y = 2x + 1')</a>
+<a alt="função quadrática, linha traço-ponto vermelha">plt.plot(x, x**2+2*x+3, 'r-.', label = 'y = x^2 + 2x + 3')</a>
+
+<a alt="rótulo do eixo x">plt.xlabel('x')</a>
+<a alt="rótulo do eixo y">plt.ylabel('y')</a>
+<a alt="título do gráfico">plt.title('Gráfico de curvas 2D')</a>
+
+plt.show()
+plt.legend()
+</code></pre></figcaption>
+  </details></div>
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-20.png"/>
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
