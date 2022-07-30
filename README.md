@@ -184,7 +184,7 @@ plt.show()
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-21.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Gráficos de curvas 2D:
+  <figcaption>Gráficos de curvas 3D:
 <pre><code>import matplotlib.pyplot as plt
 import numpy as np
 
@@ -203,8 +203,46 @@ plt.show()
   </details></div>
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-22.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Gráfico da hélice cilíndrica:
+<pre><code>import matplotlib.pyplot as plt
+import numpy as np
+
+ax = plt.figure().add_subplot(projection = '3d')
+
+d = 5
+<a alt="grid para a variável z">z = np.linspace(-10, 10, 100)</a>
+<a alt="equação com parâmetro d para x">x = d * np.sin(z)</a>
+<a alt="equação com parâmetro d para y">y = d * np.cos(z)</a>
+
+<a alt="gráfico da hélice cilíndrica com linha contínua verde">ax.plot(x, y, z, 'g-', label = 'hélice cilíndrica')</a>
+ax.legend()
+
+plt.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-22a.png"/>
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-23.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Gráfico da hélice cilíndrica com segmentos projetantes:
+<pre><code>import matplotlib.pyplot as plt
+import numpy as np
+
+ax = plt.figure().add_subplot(projection = '3d')
+
+d = 5
+z = np.linspace(0, 2*np.pi, 25)
+x = d * np.sin(z)
+y = d * np.cos(z)
+
+<a alt="gráfico da hélice cilíndrica com segmentos projetantes">fig, ax = plt.subplots(subplot_kw = dict(projection = '3d'))</a>
+<a alt="direção padrão: eixo z">ax.stem(x, y, z)</a>
+
+plt.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-23a.png"/>
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
 </details>
 
