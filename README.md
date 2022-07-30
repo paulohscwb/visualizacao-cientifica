@@ -252,8 +252,51 @@ plt.show()
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-24.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-25.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f517; Links</summary>
+  <figcaption>Conjunto Iris: <a href="https://archive.ics.uci.edu/ml/datasets/iris" target="_blank">https://archive.ics.uci.edu/ml/datasets/iris</a>
+  <br>Conjunto dos Pinguins: <a href="https://inria.github.io/scikit-learn-mooc/python_scripts/trees_dataset.html" target="_blank">https://inria.github.io/scikit-learn-mooc/python_scripts/trees_dataset.html</a>
+  <br>Outros conjuntos de dados: <a href="https://www.maptive.com/free-data-visualization-data-sets/" target="_blank">https://www.maptive.com/free-data-visualization-data-sets/</a>
+  </figcaption></details></div>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-25a.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-26.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Conjunto de dados Iris com matplotlib:
+<pre><code><a alt="biblioteca para leitura dos dados em formato CSV">import pandas as pd</a>
+import numpy as np
+from matplotlib import pyplot as plt
+
+iris = <a alt="leitura do arquivo CSV">pd.read_csv('C:/dados/iris.csv')</a>
+
+<a alt="variável usada para contar o número de registros">incl = np.array(iris.loc[:,'Largura da Sépala'])</a>
+<a alt="variável x">x = np.array(iris.loc[:,'Comprimento da Sépala'])</a>
+<a alt="variável y">y = np.array(iris.loc[:,'Comprimento da Pétala'])</a>
+<a alt="atributo usado para separação dos dados">z = np.array(iris.loc[:,'Espécie'])</a>
+
+<a alt="criação da grade com a quantidade de registros">i = np.arange(0, len(incl), 1)</a>
+<a alt="ajuste dos dados usando os limites max e min">j = (incl - min(incl))/(max(incl) - min(incl))</a>
+<a alt="amplitude máxima de 45&deg;">w = -45*j</a>
+
+<a alt="rótulos dos dados com as espécies">label = ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']</a>
+<a alt="vetor com a cor de cada espécie">cor = ['orange', 'green', 'red']
+j = 0</a>
+
+<a alt="laço usado para separar as espécies">for k in i:</a>
+    <a alt="marcador de cada registro">marker = (2, 1, w[k])</a>
+    if <a alt="com os dados ordenados, o marcador muda quando z[k] &ne; z[k-1]">z[k] == z[k-1]:</a>
+        plt.plot(x[k], y[k], marker = marker, markersize = 10, color = cor[j - 1], alpha = 0.6)
+    else:
+        j +=1
+        plt.plot(x[k], y[k], marker = marker, markersize = 10, color = cor[j - 1], alpha = 0.6, label = label[j - 1] )
+
+<a alt="legendas dos dados e eixos">plt.legend(scatterpoints = 1)</a>
+plt.xlabel('Comprimento da Sépala')
+plt.ylabel('Comprimento da Pétala')
+plt.grid()
+plt.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-26a.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-27.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
