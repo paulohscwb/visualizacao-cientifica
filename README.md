@@ -236,8 +236,7 @@ z = np.linspace(0, 2*np.pi, 25)
 x = d * np.sin(z)
 y = d * np.cos(z)
 
-<a alt="gráfico da hélice cilíndrica com segmentos projetantes">fig, ax = plt.subplots(subplot_kw = dict(projection = '3d'))</a>
-<a alt="direção padrão: eixo z">ax.stem(x, y, z)</a>
+<a alt="gráfico da hélice cilíndrica com segmentos projetantes">ax.stem(x, y, z)</a>
 
 plt.show()
 </code></pre></figcaption>
