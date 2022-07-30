@@ -261,7 +261,7 @@ plt.show()
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-26.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Conjunto de dados Iris com matplotlib:
+  <figcaption>Conjunto de dados Iris com matplotlib (cor e movimento):
 <pre><code><a alt="biblioteca para leitura dos dados em formato CSV">import pandas as pd</a>
 import numpy as np
 from matplotlib import pyplot as plt
@@ -278,8 +278,8 @@ iris = <a alt="leitura do arquivo CSV">pd.read_csv('C:/dados/iris.csv')</a>
 <a alt="amplitude máxima de 45&deg;">w = -45*j</a>
 
 <a alt="rótulos dos dados com as espécies">label = ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']</a>
-<a alt="vetor com a cor de cada espécie">cor = ['orange', 'green', 'red']
-j = 0</a>
+<a alt="vetor com a cor de cada espécie">cor = ['orange', 'green', 'red']</a>
+j = 0
 
 <a alt="laço usado para separar as espécies">for k in i:</a>
     <a alt="marcador de cada registro">marker = (2, 1, w[k])</a>
@@ -287,7 +287,8 @@ j = 0</a>
         plt.plot(x[k], y[k], marker = marker, markersize = 10, color = cor[j - 1], alpha = 0.6)
     else:
         j +=1
-        plt.plot(x[k], y[k], marker = marker, markersize = 10, color = cor[j - 1], alpha = 0.6, label = label[j - 1] )
+        plt.plot(x[k], y[k], marker = marker, markersize = 10, color = cor[j - 1], alpha = 0.6, 
+        label = label[j - 1] )
 
 <a alt="legendas dos dados e eixos">plt.legend(scatterpoints = 1)</a>
 plt.xlabel('Comprimento da Sépala')
@@ -299,6 +300,42 @@ plt.show()
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-26a.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-27.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Conjunto de dados Iris com matplotlib (textura):
+<pre><code>import pandas as pd
+import numpy as np
+from matplotlib import pyplot as plt
+
+iris = pd.read_csv('C:/dados/iris.csv')
+
+x = np.array(iris.loc[:,'Comprimento da Sépala'])
+y = np.array(iris.loc[:,'Comprimento da Pétala'])
+z = np.array(iris.loc[:,'Espécie'])
+
+i = np.arange(0, len(x), 1)
+
+label = ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']
+<a alt="textura de cada espécie">tex = ['\\', '.', '+']</a>
+<a alt="marcadores de cada espécie">marker = ['^', 'X', 'o']</a>
+j = 0
+
+<a alt="laço usado para separar as espécies">for k in i:</a>
+    <a alt="marcador de cada registro">marker = (2, 1, w[k])</a>
+    if <a alt="com os dados ordenados, o marcador muda quando z[k] &ne; z[k-1]">z[k] == z[k-1]:</a>
+        plt.scatter(x[k], y[k], marker = marker[j - 1], s = 200, facecolor = 'white', 
+        hatch = 5*tex[j-1], alpha = 0.5)
+    else:
+        j += 1
+        plt.scatter(x[k], y[k], marker = marker[j - 1], s = 200, facecolor = 'white', 
+        hatch = 5*tex[j-1], alpha = 0.5, label = label[j-1])
+
+plt.xlabel('Comprimento da Sépala')
+plt.ylabel('Comprimento da Pétala')
+plt.legend(scatterpoints = 1)
+plt.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-27a.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-28.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
