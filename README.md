@@ -493,7 +493,7 @@ x = d * np.sin(z/e)
 y = d * np.cos(z/e)
 
 <a alt="laço para mudar opacidade dos pontos">for k in z:</a>
-    op*=0.99
+    op *= 0.99
     ax.scatter(x[k], z[k], y[k], zdir = 'z', color = 'steelblue', alpha = op)
     ax.scatter(y[k] - d, d - z[k], x[k], zdir = 'z', color = 'lightcoral', alpha = op)
 
