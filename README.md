@@ -381,14 +381,28 @@ import seaborn as sns
 iris = pd.read_csv('C:/dados/iris.csv')
 
 <a alt="mostra a grade">sns.set_style("whitegrid")</a>
-sns.jointplot(data = iris, x = 'Comprimento da Sépala', y = 'Comprimento da Pétala',
-    hue = 'Espécie', <a alt="marcadores circulares">marker =</a> 'o', <a alt="paleta de cores em tons de vermelho">palette =</a> 'rainbow')
+<a alt="função de dispersão e frequência">sns.jointplot</a>(data = iris, x = 'Comprimento da Sépala', y = 'Comprimento da Pétala',
+    hue = 'Espécie', <a alt="marcadores circulares">marker =</a> 'o', <a alt="paleta de cores rainbow">palette =</a> 'rainbow')
 	
 </code></pre></figcaption>
   </details></div>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-33a.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-34.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Conjunto de dados dos pinguins com Seaborn (regressão linear):
+<pre><code>import pandas as pd
+import seaborn as sns
+
+pinguins = pd.read_csv('C:/dados/penguin2.csv')
+
+sns.set_style("whitegrid")
+<a alt="função de dispersão e frequência">sns.lmplot</a>(data = pinguins, x = 'Comprimento do bico', y = 'Massa corporal',
+    hue = 'Espécie', <a alt="paleta de cores rocket">palette =</a> 'rocket')
+
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-34a.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-35.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
