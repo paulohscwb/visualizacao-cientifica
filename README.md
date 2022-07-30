@@ -344,8 +344,8 @@ plt.show()
 
 iris = pd.read_csv('C:/dados/iris.csv')
 
-<a alt="gráfico com comando hue de separação de classes">sns.relplot(data = iris, x = 'Comprimento da Sépala', y = 'Comprimento da Pétala',</a>
-    <a alt="paleta de cores em tom azul para separar as espécies">hue = 'Espécie', marker = '>', palette = 'Blues')</a>
+sns.relplot(data = iris, x = 'Comprimento da Sépala', y = 'Comprimento da Pétala',
+    <a alt="separação de classes: atributo Espécie">hue =</a> 'Espécie', <a alt="marcadores triangulares">marker =</a> '>', <a alt="paleta de cores em tons de azul">palette =</a> 'Blues')</a>
 </code></pre></figcaption>
   </details></div>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-28a.png"/>
@@ -357,6 +357,18 @@ iris = pd.read_csv('C:/dados/iris.csv')
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-31.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-32.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Conjunto de dados Iris com Seaborn (cores e tamanhos):
+<pre><code>import pandas as pd
+import seaborn as sns
+
+iris = pd.read_csv('C:/dados/iris.csv')
+
+sns.relplot(data = iris, x = 'Comprimento da Sépala', y = 'Comprimento da Pétala',
+    <a alt="separação de classes: atributo Espécie">hue =</a> 'Espécie', <a alt="marcadores quadrados">marker =</a> 's', <a alt="paleta de cores em tons de vermelho">palette =</a> 'Reds', <a alt="tamanhos dos marcadores">size = 'Largura da Sépala')</a>
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-32a.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-33.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
