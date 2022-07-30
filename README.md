@@ -628,7 +628,7 @@ import numpy as np
 <a alt="biblioteca para leitura do arquivo mat">from scipy.io import loadmat</a>
 
 ax = plt.figure().add_subplot(projection = '3d')
-<a alt="leitura do arquivo de dados">data_dict =</a> loadmat('c:/dados/flow_field.mat')
+<a alt="leitura do arquivo de dados">data_dict =</a> loadmat('c:/dados/flow_field.zip')
 
 x = np.transpose(data_dict['X'])
 y = np.transpose(data_dict['Y'])
