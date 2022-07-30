@@ -620,6 +620,37 @@ plt.show()
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-43a.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-44.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <p>&#x1f4ca; <a href="modulo3/flow_field.mat" target="_blank">Arquivo MAT</a></p>
+  <figcaption>Dados vetoriais 3D:
+<pre><code>import matplotlib.pyplot as plt
+import numpy as np
+<a alt="biblioteca para leitura do arquivo mat">from scipy.io import loadmat</a>
+
+ax = plt.figure().add_subplot(projection = '3d')
+<a alt="leitura do arquivo de dados">data_dict =</a> loadmat('c:/dados/flow_field.mat')
+
+x = np.transpose(data_dict['X'])
+y = np.transpose(data_dict['Y'])
+z = np.transpose(data_dict['Z'])
+u = np.transpose(data_dict['V_x'])
+v = np.transpose(data_dict['V_y'])
+w = np.transpose(data_dict['V_z'])
+
+ind = np.arange(0, len(x), 1500)
+
+<a alt="relação de cores com a função arctan2 de u/v">c =</a> (np.arctan2(u, v))
+c = (c.flatten() - c.min()) / c.ptp()
+c = np.concatenate((c, np.repeat(c, 2)))
+<a alt="conversão de valores para o mapa de cores hsv">c =</a> plt.cm.hsv(c)
+
+ax.quiver(x[ind], y[ind], z[ind], u[ind], v[ind], w[ind], colors = c, length = 1.5, 
+    normalize = True, lw = 0.7)
+
+plt.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-44a.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-45.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
