@@ -50,7 +50,7 @@ a[alt]:hover::after {
   left: 0;
   color: #3b444b;
   font-size: 16px;
-  background-color:linear-gradient(rgba(255,195,195,0.5),rgba(255,255,195,0.7));
+  background:linear-gradient(rgba(255,195,195,0.5),rgba(255,255,195,0.7));
   padding:1px 6px 1px 6px;
   border-radius:4px;
   z-index:2;
