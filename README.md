@@ -65,10 +65,10 @@ return0;
   <figcaption>Código em Python com Matplotlib:
 <pre><code>import <a alt="gráfico plt da biblioteca matplotlib ">matplotlib.pyplot as plt</a> 
 
-<a alt="coordenadas x">x = [0, 1, 2, 3, 4, 5]</a>
-<a alt="coordenadas y">y = [1, 4, 9, 16, 32, 64]</a>
+<a alt="coordenadas x">x =</a> [0, 1, 2, 3, 4, 5]
+<a alt="coordenadas y">y =</a> [1, 4, 9, 16, 32, 64]
 
-<a alt="gráfico de dispersão 2D, marcador circular e vermelho">plt.scatter(x, y, color = 'red', marker = 'o')</a>
+<a alt="gráfico de dispersão 2D">plt.scatter</a>(x, y, <a alt="marcador vermelho">color =</a> 'red', <a alt="marcador circular">marker =</a> 'o')</a>
 <a alt="comando para visualizar o gráfico">plt.show()</a>
 
 </code></pre></figcaption>
@@ -80,15 +80,15 @@ return0;
   <figcaption>Gráfico de dispersão 3D:
 <pre><code>import <a alt="gráfico plt da biblioteca matplotlib ">matplotlib.pyplot as plt</a> 
 
-<a alt="coordenadas x">x = [0, 1, 2, 3, 4, 5]</a>
-<a alt="coordenadas y">y = [1, 4, 9, 16, 32, 64]</a>
-<a alt="coordenadas z">z = [2, 7, 11, 5, 3, 1]</a>
+<a alt="coordenadas x">x =</a> [0, 1, 2, 3, 4, 5]
+<a alt="coordenadas y">y =</a> [1, 4, 9, 16, 32, 64]
+<a alt="coordenadas z">z =</a> [2, 7, 11, 5, 3, 1]
 
-<a alt="tipo de projeção 3D; gráfico atribuído na variável ax">ax = plt.figure().add_subplot(projection = '3d')</a>
+<a alt="tipo de projeção 3D; gráfico atribuído na variável ax">ax =</a> plt.figure().add_subplot(projection = '3d')
 
-<a alt="gráfico de dispersão 3D, marcador circular e vermelho">ax.scatter(x, y, z, color = 'r', marker = 'o')</a>
+<a alt="gráfico de dispersão 3D, marcador circular e vermelho">ax.scatter(x, y,</a> z, color = 'r', marker = 'o')
 
-<a alt="comando para visualizar o gráfico">plt.show()</a>
+plt.show()
 
 </code></pre></figcaption>
   </details></div>
@@ -105,12 +105,12 @@ return0;
 
 x = [0, 1, 2, 3, 4, 5, 6]
 y = [1, 4, 9, 16, 32, 64, 128]
-<a alt="rótulos dos pontos">rotulos = ['A', 'B', 'C', 'D', 'E', 'F', 'G']</a>
+<a alt="rótulos dos pontos">rotulos =</a> ['A', 'B', 'C', 'D', 'E', 'F', 'G']
 
 <a alt="laço para rotular cada ponto">for i, txt in enumerate(rotulos):</a>
     plt.annotate(txt, (x[i], y[i]))
 	
-<a alt="Marcador triângular e laranja">plt.plot(x, y, color = 'orange', marker = '^', linestyle = '-')</a>
+plt.plot(x, y, <a alt="marcador laranja">color =</a> 'orange', <a alt="marcador triângular">marker =</a> '^', <a alt="linha contínua">linestyle =</a> '-')</a>
 
 plt.show()
 </code></pre></figcaption>
@@ -127,9 +127,9 @@ ax = plt.figure().add_subplot(projection = '3d')
 x = [0, 1, 2, 3, 4, 5]
 y = [1, 4, 9, 16, 32, 64]
 z = [2, 7, 11, 5, 3, 1]
-<a alt="rótulos dos pontos">rotulos = ['A', 'B', 'C', 'D', 'E', 'F']</a>
+<a alt="rótulos dos pontos">rotulos =</a> ['A', 'B', 'C', 'D', 'E', 'F']
 
-<a alt="gráfico de dispersão 3D, marcador circular e vermelho">ax.scatter(x, y, z, color = 'r', marker = 'o')</a>
+<a alt="gráfico de dispersão 3D">ax.scatter(x, y,</a> z, color = 'r', marker = 'o')</a>
 
 <a alt="laço para rotular cada ponto">for x, y, z, tag in zip(x, y, z, rotulos):</a>
     label = tag
@@ -146,9 +146,9 @@ import <a alt="biblioteca de operações matemáticas">numpy as np</a>
 
 <a alt="intervalo [0, 5] com espaçamento 0.1">x = np.arange(0, 5, 0.1)</a>
 
-<a alt="função linear, linha tracejada azul">plt.plot(x, x, 'b--', label = 'y = x')</a>
-<a alt="função linear, linha contínua verde">plt.plot(x, 2*x+1, 'g-', label = 'y = 2x + 1')</a>
-<a alt="função quadrática, linha traço-ponto vermelha">plt.plot(x, x**2+2*x+3, 'r-.', label = 'y = x^2 + 2x + 3')</a>
+<a alt="função linear">plt.plot</a>(x, x, <a alt="linha tracejada azul">'b--',</a> label = 'y = x')</a>
+<a alt="função linear, linha contínua verde">plt.plot</a>(x, 2*x+1, <a alt="linha contínua verde">'g-',</a> label = 'y = 2x + 1')</a>
+<a alt="função quadrática">plt.plot</a>(x, x**2+2*x+3, <a alt="linha traço-ponto vermelha">'r-.',</a> label = 'y = x^2 + 2x + 3')</a>
 
 <a alt="rótulo do eixo x">plt.xlabel('x')</a>
 <a alt="rótulo do eixo y">plt.ylabel('y')</a>
@@ -173,10 +173,10 @@ import numpy as np
 
 plt.figure()
 <a alt="1 linha e 2 colunas de gráficos: gráfico 121">plt.subplot(121)</a>
-<a alt="linha tracejada azul no intervalo x1">plt.plot(x1, f(x1), 'b--', x2, f(x2), 'g-.')</a>
+plt.plot(x1, f(x1), <a alt="linha tracejada azul no intervalo x1">'b--',</a> x2, f(x2), <a alt="traço e ponto verde no intervalo x2">'g-.')</a>
 
 <a alt="1 linha e 2 colunas de gráficos: gráfico 122">plt.subplot(122)</a>
-<a alt="linha pontilhada laranja no intervalo x2">plt.plot(x2, np.cos(2*np.pi*x2), color = 'orange', linestyle = ':')</a>
+plt.plot(x2, np.cos(2*np.pi*x2), <a alt="linha pontilhada laranja no intervalo x2">color = 'orange', linestyle = ':')</a>
 plt.show()
 </code></pre></figcaption>
   </details></div>
@@ -191,9 +191,9 @@ import numpy as np
 ax = plt.figure().add_subplot(projection = '3d')
 
 int = 10
-<a alt="intervalo de x com 10 pontos">x = np.linspace(-5, 5, int)</a>
-<a alt="intervalo de y com 10 pontos">y = np.linspace(-5, 5, int)</a>
-<a alt="intervalo de z com 10 pontos">z = np.linspace(-10, 10, int)</a>
+<a alt="intervalo de x com 10 pontos">x =</a> np.linspace(-5, 5, int)
+<a alt="intervalo de y com 10 pontos">y =</a> np.linspace(-5, 5, int)
+<a alt="intervalo de z com 10 pontos">z =</a> np.linspace(-10, 10, int)
 
 <a alt="gráfico da função quadrática com marcadores circulares vermelhos">ax.plot(x, y, z**2+5, 'ro-')</a>
 <a alt="gráfico da função linear com linha contínua laranja">ax.plot(x, y, 0, 'y--')</a>
@@ -211,9 +211,9 @@ import numpy as np
 ax = plt.figure().add_subplot(projection = '3d')
 
 d = 5
-<a alt="grid para a variável z">z = np.linspace(-10, 10, 100)</a>
-<a alt="equação com parâmetro d para x">x = d * np.sin(z)</a>
-<a alt="equação com parâmetro d para y">y = d * np.cos(z)</a>
+<a alt="grid para a variável z">z =</a> np.linspace(-10, 10, 100)</a>
+<a alt="equação com parâmetro d para x">x =</a> d * np.sin(z)
+<a alt="equação com parâmetro d para y">y =</a> d * np.cos(z)
 
 <a alt="gráfico da hélice cilíndrica com linha contínua verde">ax.plot(x, y, z, 'g-', label = 'hélice cilíndrica')</a>
 ax.legend()
