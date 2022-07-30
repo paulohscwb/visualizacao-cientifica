@@ -437,6 +437,40 @@ g.add_legend()
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-35b.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-36.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Conjunto de dados dos pinguins com Seaborn (combinações de gráficos):
+<pre><code>import pandas as pd
+import seaborn as sns
+
+pinguins = pd.read_csv('C:/dados/penguin2.csv')
+
+sns.set_style("whitegrid")
+pinguins.drop(['Id','Ano'], inplace = True, axis = 1)
+<a alt="combinação de gráficos">g = sns.PairGrid</a>(data = pinguins, hue = 'Espécie', <a alt="paleta de cores mako">palette =</a> 'mako')
+<a alt="histogramas na diagonal">g.map_diag(sns.histplot)</a>
+<a alt="dispersão na diagonal superior">g.map_upper(sns.scatterplot, size = pinguins['Sexo'])</a>
+<a alt="densidades de kernel na diagonal inferior">g.map_lower(sns.kdeplot)</a>
+g.add_legend(title = '', adjust_subtitles = True)
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-36a.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Conjunto de dados Iris com Plotly (dispersão 3D):
+<pre><code>import pandas as pd
+<a alt="biblioteca plotly">import plotly.io as pio</a>
+import plotly.express as px
+
+iris = pd.read_csv('C:/dados/iris.csv')
+
+pio.renderers
+<a alt="a renderização é feita em um navegador de internet">pio.renderers.default = 'browser'</a>
+
+fig = <a alt="gráfico de dispersão 3D">px.scatter_3d</a>(iris, x = 'Comprimento da Sépala', y = 'Comprimento da Pétala', 
+    z = 'Largura da Sépala', <a alt="a cor é usada para separar as espécies">color =</a> 'Espécie')
+
+fig.show()
+</code></pre></figcaption>
+  </details></div>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-37.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
