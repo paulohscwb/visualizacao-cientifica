@@ -504,6 +504,30 @@ plt.show()
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-40.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-41.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Dados vetoriais:
+<pre><code>import matplotlib.pyplot as plt
+
+X = [1, 2, 3]
+Y = [2, 1, 2]
+<a alt="deslocamento u relativo à coordenada x">U =</a> [1, -1, 0.5]
+<a alt="deslocamento v relativo à coordenada y">V =</a> [1, -1, -2]
+cor = ['blue','red','orange']
+
+fig, ax = plt.subplots()
+Q = <a alt="gráfico vetorial: quiver">ax.quiver<a/>(X, Y, U, V, color = cor, units = 'xy', <a alt="espessura da linha e da seta">width =</a> 0.02, <a alt="escala do tamanho da seta">scale =</a> 1)
+
+<a alt="pontos iniciais das setas">ax.plot(X, Y, 'og')</a>
+ax.set_aspect('equal', 'box')
+
+<a alt="limites dos eixos">plt.xlim([0, 4])</a>
+plt.ylim([-0.5, 3.5])
+plt.grid()
+plt.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-41a.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-41b.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-42.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
