@@ -147,7 +147,7 @@ import <a alt="biblioteca de operações matemáticas">numpy as np</a>
 <a alt="intervalo [0, 5] com espaçamento 0.1">x = np.arange(0, 5, 0.1)</a>
 
 <a alt="função linear">plt.plot</a>(x, x, <a alt="linha tracejada azul">'b--',</a> label = 'y = x')</a>
-<a alt="função linear, linha contínua verde">plt.plot</a>(x, 2*x+1, <a alt="linha contínua verde">'g-',</a> label = 'y = 2x + 1')</a>
+<a alt="função linear">plt.plot</a>(x, 2*x+1, <a alt="linha contínua verde">'g-',</a> label = 'y = 2x + 1')</a>
 <a alt="função quadrática">plt.plot</a>(x, x**2+2*x+3, <a alt="linha traço-ponto vermelha">'r-.',</a> label = 'y = x^2 + 2x + 3')</a>
 
 <a alt="rótulo do eixo x">plt.xlabel('x')</a>
@@ -168,8 +168,8 @@ import numpy as np
 <a alt="definição da função f">def f(x):</a>
     return np.exp(-x) * np.cos(2*np.pi*x)
 
-<a alt="intervalo do primeiro gráfico">x1 = np.arange(5, 12, 0.05)</a>
-<a alt="intervalo do segundo gráfico">x2 = np.arange(-2, 5, 0.05)</a>
+<a alt="intervalo do primeiro gráfico">x1 =</a> np.arange(5, 12, 0.05)
+<a alt="intervalo do segundo gráfico">x2 =</a> np.arange(-2, 5, 0.05)
 
 plt.figure()
 <a alt="1 linha e 2 colunas de gráficos: gráfico 121">plt.subplot(121)</a>
@@ -269,22 +269,22 @@ from matplotlib import pyplot as plt
 iris = <a alt="leitura do arquivo CSV">pd.read_csv('C:/dados/iris.csv')</a>
 
 <a alt="variável usada para contar o número de registros">incl = np.array(iris.loc[:,'Largura da Sépala'])</a>
-<a alt="variável x">x = np.array(iris.loc[:,'Comprimento da Sépala'])</a>
-<a alt="variável y">y = np.array(iris.loc[:,'Comprimento da Pétala'])</a>
-<a alt="atributo usado para separação dos dados">z = np.array(iris.loc[:,'Espécie'])</a>
+<a alt="variável x">x =</a> np.array(iris.loc[:,'Comprimento da Sépala'])
+<a alt="variável y">y =</a> np.array(iris.loc[:,'Comprimento da Pétala'])
+<a alt="atributo usado para separação dos dados">z =</a> np.array(iris.loc[:,'Espécie'])
 
-<a alt="criação da grade com a quantidade de registros">i = np.arange(0, len(incl), 1)</a>
-<a alt="ajuste dos dados usando os limites max e min">j = (incl - min(incl))/(max(incl) - min(incl))</a>
-<a alt="amplitude máxima de 45&deg;">w = -45*j</a>
+<a alt="criação da grade com a quantidade de registros">i =</a> np.arange(0, len(incl), 1)
+<a alt="ajuste dos dados usando os limites max e min">j =</a> (incl - min(incl))/(max(incl) - min(incl))
+<a alt="amplitude máxima de 45&deg;">w =</a> -45*j
 
-<a alt="rótulos dos dados com as espécies">label = ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']</a>
-<a alt="vetor com a cor de cada espécie">cor = ['orange', 'green', 'red']</a>
+<a alt="rótulos dos dados com as espécies">label =</a> ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']
+<a alt="vetor com a cor de cada espécie">cor =</a> ['orange', 'green', 'red']
 j = 0
 
 <a alt="laço usado para separar as espécies">for k in i:</a>
-    <a alt="marcador de cada registro">marker = (2, 1, w[k])</a>
+    <a alt="marcador de cada registro">marker =</a> (2, 1, w[k])
     if <a alt="com os dados ordenados, o marcador muda quando z[k] &ne; z[k-1]">z[k] == z[k-1]:</a>
-        plt.plot(x[k], y[k], <a alt="marcadores">marker =</a> marker, <a alt="tamanho dos marcadores">markersize =</a> 10, <a alt="cores dos marcadores">color =</a> cor[j - 1], <a alt="taxa de opacidade">alpha =</a> 0.6)
+        plt.plot(x[k], y[k], <a alt="marcadores">marker =</a> marker, <a alt="tamanho dos marcadores">markersize =</a> 10, <a alt="cores dos marcadores">color =</a> cor[j - 1], <a alt="opacidade">alpha =</a> 0.6)
     else:
         j +=1
         plt.plot(x[k], y[k], marker = marker, markersize = 10, color = cor[j - 1], alpha = 0.6, 
@@ -315,13 +315,13 @@ z = np.array(iris.loc[:,'Espécie'])
 i = np.arange(0, len(x), 1)
 
 label = ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']
-<a alt="textura de cada espécie">tex = ['\\', '.', '+']</a>
-<a alt="marcadores de cada espécie">marker = ['^', 'X', 'o']</a>
+<a alt="textura de cada espécie">tex =</a> ['\\', '.', '+']
+<a alt="marcadores de cada espécie">marker =</a> ['^', 'X', 'o']
 j = 0
 
 <a alt="laço usado para separar as espécies">for k in i:</a>
     if <a alt="com os dados ordenados, o marcador muda quando z[k] &ne; z[k-1]">z[k] == z[k-1]:</a>
-        plt.scatter(x[k], y[k], <a alt="marcadores">marker = marker[j - 1]</a>, <a alt="tamanho dos marcadores">s =</a> 200, <a alt="cor dos marcadores">facecolor =</a> 'white', 
+        plt.scatter(x[k], y[k], <a alt="marcadores">marker =</a> marker[j - 1], <a alt="tamanho dos marcadores">s =</a> 200, <a alt="cor dos marcadores">facecolor =</a> 'white', 
         <a alt="textura">hatch =</a> 5*tex[j-1], alpha = 0.5)
     else:
         j += 1
