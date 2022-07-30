@@ -505,7 +505,7 @@ plt.show()
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-41.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Dados vetoriais:
+  <figcaption>Dados vetoriais 2D:
 <pre><code>import matplotlib.pyplot as plt
 
 X = [1, 2, 3]
@@ -527,9 +527,9 @@ plt.show()
 </code></pre></figcaption>
   </details></div>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-41a.png"/>
-  <figcaption>&#x1f4ca; <a href="modulo3/dados_teste.csv" target="_blank">Arquivo CSV</a></figcaption>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Dados vetoriais:
+  <p>&#x1f4ca; <a href="modulo3/dados_teste.csv" target="_blank">Arquivo CSV</a></p>
+  <figcaption>Dados vetoriais 2D:
 <pre><code>import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -554,6 +554,46 @@ plt.show()
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-41b.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-42.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Dados vetoriais 2D:
+<pre><code>import matplotlib.pyplot as plt
+import numpy as np
+
+<a alt="extremidades na grade">X, Y =</a> np.meshgrid(np.arange(-5,5,0.5),np.arange(-5,5,0.5))
+
+<a alt="relação do deslocamento de x com x e y">U =</a> -Y/np.hypot(X, Y)
+<a alt="relação do deslocamento de y com x e y">V =</a> X/np.hypot(X, Y)
+
+M = np.hypot(U**3, V**3)
+fig, ax = plt.subplots()
+Q = ax.quiver(X, Y, U, V, M, units = 'xy', width = 0.05, scale = 1.5)
+
+ax.set_aspect('equal', 'box')
+
+plt.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-42a.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Dados vetoriais 3D:
+<pre><code>import matplotlib.pyplot as plt
+
+ax = plt.figure().add_subplot(projection = '3d')
+
+x = [1, 2, 1]
+y = [1, 2, 3]
+<a alt="variável z">z =</a> [2, 1, 1]
+u = [1, 2, 1]
+v = [1, 1, -1]
+<a alt="deslocamento da variável z">w =</a> [2, 3, -2]
+
+Q = ax.quiver(x, y, z, u, v, w, length = 0.4, <a alt="vetores normalizados">normalize =</a> True, color = 'green', <a alt="espessura">lw =</a> 0.8)
+
+ax.plot(x, y, z, 'ob')
+plt.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-42b.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-43.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
