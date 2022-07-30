@@ -477,6 +477,29 @@ fig.show()
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-38.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-39.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Duas hélices (movimento):
+<pre><code>import matplotlib.pyplot as plt
+import numpy as np
+
+ax = plt.figure().add_subplot(projection = '3d')
+
+d = 1
+e = 10
+op = 0.9
+
+z = np.arange(0, 200, 1)
+x = d * np.sin(z/e)
+y = d * np.cos(z/e)
+
+<a alt="laço para mudar opacidade dos pontos">for k in z:</a>
+    op*=0.99
+    ax.scatter(x[k], z[k], y[k], zdir = 'z', color = 'steelblue', alpha = op)
+    ax.scatter(y[k] - d, d - z[k], x[k], zdir = 'z', color = 'lightcoral', alpha = op)
+
+plt.show()
+</code></pre></figcaption>
+  </details></div>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-40.png"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
