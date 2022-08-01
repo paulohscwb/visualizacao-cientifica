@@ -1197,8 +1197,39 @@ sns.swarmplot(x = 'Comprimento da nadadeira', y = 'Espécie', hue = 'Sexo', data
   </details></div>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-78.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Gráfico de enxame (swarm) com violino:
+<pre><code>import pandas as pd
+import seaborn as sns
+
+pinguin = pd.read_csv('C:/dados/penguin2.csv')
+<a alt="função para criar o gráfico violino">sns.violinplot</a>(x = 'Comprimento da nadadeira', y = 'Espécie', data = pinguin, 
+    palette = 'Oranges')
+sns.swarmplot(x = 'Comprimento da nadadeira', y = 'Espécie', hue = 'Sexo', data = pinguin,  
+    palette = 'Blues')
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-78a.png"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-79.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Reconhecimento de imagens:
+<pre><code><a alt="biblioteca para carregar imagens">from PIL import Image</a>
+import numpy as np
+import matplotlib.pyplot as plt
+
+<a alt="função para converter os pixels da imagem em RGB">im =</a> Image.open('C:/dados/imagem.png').convert('RGB')
+          
+<a alt="função para transformar a imagem em um array">imf =</a> np.asarray(im)
+<a alt="função para desenhar a imagem">imf.tofile</a>('C:/dados/testeImagem.csv', sep = ',')
+
+print(im.size)
+plt.imshow(imf)
+print(imf)
+</code></pre></figcaption>
+  <p>&#x1f4ca; <a href="modulo4/imagem.png" target="_blank">Imagem de 16x16 pixels</a></p>
+  </details></div>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-79a.png"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-80.png"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
