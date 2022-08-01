@@ -803,7 +803,7 @@ pio.renderers.default = 'browser'
 
 df = pd.read_csv('C:/dados/penguin2.csv')
 
-fig = go.Figure(data = <a alt="função do gráfico de coordenadas paralelas">go.Parcoords</a>(line = dict(color = <a alt="valor que identifica cada cor de usada para classificação">df['Cor_id']</a>,
+fig = go.Figure(data = <a alt="função do gráfico de coordenadas paralelas">go.Parcoords</a>(line = dict(color = <a alt="valores das cores para classificação">df['Cor_id']</a>,
     <a alt="escala de cores da classificação">colorscale =</a> [[0,'purple'],[0.5,'lightseagreen'],[1,'gold']]),
     dimensions = list([dict(label = 'Compr. do bico', values = df['Comprimento do bico']),
     dict(label = 'Profundidade do bico', values = df['Profundidade do bico']),
@@ -819,10 +819,82 @@ fig.show()
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-64a.png"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-65.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Gráfico com seleção interativa:
+<pre><code><a alt="biblioteca bokeh de gráficos interativos">from bokeh.layouts import gridplot</a>
+from bokeh.plotting import figure, show
+from bokeh.models import ColumnDataSource
+from bokeh.transform import factor_cmap, factor_mark
+import pandas as pd
+
+df = pd.read_csv('C:/dados/penguin2.csv')
+especies = ['Adelie', 'Gentoo', 'Chinstrap']
+<a alt="marcador de cada espécie">markers =</a> ['hex', 'circle_x', 'triangle']
+
+<a alt="ferramentas de interação">tools =</a> 'box_select,lasso_select,box_zoom,pan'
+
+<a alt="separação de atributos">source =</a> ColumnDataSource(data = dict(x = df.loc[:,'Comprimento do bico'], 
+	y = df.loc[:,'Profundidade do bico'], z = df.loc[:,'Comprimento da nadadeira'],
+	w = df.loc[:,'Massa corporal'], esp = df.loc[:,'Espécie']))
+
+p1 = figure(tools = tools, title = None)
+p1.xaxis.axis_label = 'Comprimento do bico'
+p1.yaxis.axis_label = 'Profundidade do bico'
+<a alt="primeiro gráfico interativo de dispersão">p1.scatter</a>(x = 'x', y = 'y', source = source, legend_field = 'esp', fill_alpha = 0.4, size =12,
+    marker = factor_mark('esp', markers, especies),
+    color = factor_cmap('esp', 'Category10_3', especies))
+p1.legend.location = 'bottom_right'
+
+p2 = figure(tools = tools, title = None)
+p2.xaxis.axis_label = 'Comprimento da nadadeira'
+p2.yaxis.axis_label = 'Massa corporal'
+<a alt="segundo gráfico interativo de dispersão">p2.scatter</a>(x = 'z', y = 'w', source = source, legend_field = 'esp', fill_alpha = 0.4, size =12,
+    marker = factor_mark('esp', markers, especies),
+    color = factor_cmap('esp', 'Category10_3', especies))
+p2.legend.location = 'bottom_right'
+
+p = gridplot([[p1, p2]])
+show(p)
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-65a.png"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-66.png"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-67.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Grafo orientado:
+<pre><code><a alt="biblioteca networkx de grafos orientados">import networkx as nx</a>
+import matplotlib.pyplot as plt
+
+<a alt="definição dos arcos entre os nós">arcos =</a> [['Madrid','Paris'], ['Madrid','Bern'], ['Bern','Madrid'], ['Bern','Amsterdan'], ['Bern','Berlin'], ['Bern','Rome'], ['Amsterdan','Berlin'], ['Amsterdan','Copenhagen'], ['Berlin','Copenhagen'], ['Berlin','Budapest'],['Berlin','Warsaw'], ['Berlin','Rome'], ['Budapest','Warsaw'], ['Budapest','Rome'], ['Budapest','Athens'], ['Budapest','Bucharest'], ['Bucharest','Athens'], ['Bucharest','Ankara'], ['Bucharest','Kiev'], ['Ankara','Moscow'], ['Kiev','Moscow'], ['Warsaw','Moscow'], ['Moscow','Kiev'], ['Warsaw','Kiev'], ['Paris','Amsterdan'], ['Paris','Bern']]
+g = <a alt="grafo orientado (direcionado)">nx.DiGraph()</a>
+g.add_edges_from(arcos)
+plt.figure()
+
+<a alt="coordenadas de cada nó">pos =</a> {'Madrid': [36, 0], 'Paris': [114, 151], 'Bern': [184, 116], 'Berlin': [261, 228],
+'Amsterdan': [151, 222], 'Rome': [244, 21], 'Copenhagen': [247, 294], 
+'Budapest': [331, 121], 'Warsaw': [356, 221], 'Athens': [390, -44], 
+'Bucharest': [422, 67], 'Ankara': [509, -13], 'Kiev': [480, 177], 'Moscow': [570, 300]}
+
+<a alt="sequência das cores dos nós">cor =</a> ['orange', 'orange', 'green', 'orange', 'magenta', 'orange', 'orange', 'red', 'orange', 'orange', 'orange', 'red', 'orange', 'orange']
+
+<a alt="rótulos dos valores dos arcos">rotulos =</a> {('Madrid','Paris'): '12', ('Madrid','Bern'): '15', ('Bern','Amsterdan'): '9', 
+    ('Bern','Berlin'): '10', ('Bern','Rome'): '10', ('Paris','Bern'): '6', ('Amsterdan','Berlin'): '7', 
+    ('Paris','Amsterdan'): '6', ('Amsterdan','Copenhagen'): '9', ('Berlin','Copenhagen'): '7',
+    ('Berlin','Budapest'): '9', ('Berlin','Warsaw'): '6', ('Berlin','Rome'): '15', ('Budapest','Warsaw'): '9',
+    ('Budapest','Rome'): '12', ('Budapest','Bucharest'): '10', ('Budapest','Athens'): '15',
+    ('Bucharest','Athens'): '14', ('Bucharest','Ankara'): '13', ('Ankara','Moscow'): '39',
+    ('Bucharest','Kiev'): '12', ('Warsaw','Kiev'): '10', ('Warsaw','Moscow'): '14', ('Moscow','Kiev'): '10'}
+
+<a alt="comando para inserir os nós do grafo">nx.draw</a>(g, pos, with_labels = True, node_color = cor, edge_color = 'grey', alpha = 0.5, 
+    linewidths = 1, node_size = 1250, labels = {node: node for node in g.nodes()})
+<a alt="comando para inserir os rótulos dos arcos">nx.draw_networkx_edge_labels</a>(g, pos, edge_labels = rotulos, font_color = 'green')
+
+plt.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-67a.png"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-68.png"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
