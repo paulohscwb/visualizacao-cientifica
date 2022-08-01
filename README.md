@@ -767,8 +767,56 @@ fig.show()
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-62.png"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-63.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Gráfico radar (polar):
+<pre><code>import plotly.io as pio
+pio.renderers
+pio.renderers.default = 'browser'
+import plotly.graph_objects as go
+
+<a alt="rótulos das categorias de classificação">rotulos =</a> ['Composition','Vocal','Rhythm', 'Solos', 'Humour']
+
+fig = go.Figure()
+
+fig.add_trace(<a alt="função do gráfico radar (polar)">go.Scatterpolar</a>(r = [10, 8, 6, 5, 9], <a alt="valores de cada categoria do primeiro dado">theta =</a> rotulos, fill = 'toself', 
+name = 'John', opacity = 0.3))
+fig.add_trace(go.Scatterpolar(r = [10, 8, 6, 7, 6], theta = rotulos, fill = 'toself', 
+name = 'Paul', opacity = 0.3))
+fig.add_trace(go.Scatterpolar(r = [8, 7, 6, 10, 5], theta = rotulos, fill = 'toself', 
+name = 'George', opacity = 0.3))
+fig.add_trace(go.Scatterpolar(r = [2, 2, 10, 5, 5], theta = rotulos, fill = 'toself', 
+name = 'Ringo', opacity = 0.3))
+
+fig.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-63a.png"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-64.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Gráfico com coordenadas paralelas:
+<pre><code>import pandas as pd
+import plotly.io as pio
+import plotly.graph_objects as go
+pio.renderers
+pio.renderers.default = 'browser'
+
+df = pd.read_csv('C:/dados/penguin2.csv')
+
+fig = go.Figure(data = <a alt="função do gráfico de coordenadas paralelas">go.Parcoords</a>(line = dict(color = <a alt="valor que identifica cada cor de usada para classificação">df['Cor_id']</a>,
+    <a alt="escala de cores da classificação">colorscale =</a> [[0,'purple'],[0.5,'lightseagreen'],[1,'gold']]),
+    dimensions = list([dict(label = 'Compr. do bico', values = df['Comprimento do bico']),
+    dict(label = 'Profundidade do bico', values = df['Profundidade do bico']),
+    dict(label = 'Compr. da nadadeira', values = df['Comprimento da nadadeira']),
+    dict(label = 'Massa corporal', values = df['Massa corporal']),
+    dict(label = 'Espécies', values = df['Cor_id'], tickvals = [1,2,3],
+    ticktext = ['Adelie', 'Gentoo', 'Chinstrap'])])))
+fig.update_layout(font = dict(size = 24))
+
+fig.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-64a.png"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-65.png"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
