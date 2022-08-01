@@ -965,8 +965,55 @@ plt.show()
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-70.png"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-71.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Gráfico de setores:
+<pre><code>import plotly.io as pio
+import plotly.express as px
+pio.renderers
+pio.renderers.default = 'browser'
+
+<a alt="rótulos dos setores">setores =</a> ['Government', 'Real Estate', 'Technology, Media e Startups', 'Banking & Fiance', 
+    'Economic Development', 'Health Care', 'Sports Business', 'Arts, Travel, Tourism & Ports',
+    'Restaurants', 'Law', 'Transit', 'Education & Nonprofits', 'Retail & Entertainment']
+
+<a alt="valores dos setores">valores =</a> [19, 8, 8, 8, 14, 9, 7, 6, 5, 5, 3, 5, 3]
+
+fig = <a alt="função do gráfico de setores">px.pie</a>(values = valores, names = setores, opacity = 0.9)
+
+fig.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-71a.png"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-72.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Gráfico Treeview:
+<pre><code>import plotly.express as px
+import pandas as pd
+import plotly.io as pio
+pio.renderers
+pio.renderers.default = 'browser'
+
+setores = ['Government', 'Real Estate', 'Technology, Media e Startups', 'Banking & Fiance', 
+    'Economic Development', 'Health Care', 'Sports Business', 'Arts, Travel, Tourism & Ports',
+    'Restaurants', 'Law', 'Transit', 'Education & Nonprofits', 'Retail & Entertainment']
+
+valores = [19, 8, 8, 8, 14, 9, 7, 6, 5, 5, 3, 5, 3]
+
+df = pd.DataFrame(dict(setores = setores, valores = valores))
+
+df['Power 100 by Industry'] = 'Power 100 by Industry'
+
+fig = <a alt="função do gráfico treemap">px.treemap</a>(df, path = ['Power 100 by Industry', 'setores'], values = 'valores', 
+    color_continuous_scale = 'spectral', color = 'valores')
+
+fig.update_traces(root_color = 'lightgrey', opacity = 0.9)
+fig.update_layout(margin = dict(t = 25, l = 25, r = 25, b = 25))
+
+fig.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-72a.png"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-73.png"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
