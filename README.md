@@ -879,9 +879,9 @@ g.add_edges_from(arcos)
 plt.figure()
 
 <a alt="coordenadas de cada nó">pos =</a> {'Madrid': [36, 0], 'Paris': [114, 151], 'Bern': [184, 116], 'Berlin': [261, 228],
-'Amsterdan': [151, 222], 'Rome': [244, 21], 'Copenhagen': [247, 294], 
-'Budapest': [331, 121], 'Warsaw': [356, 221], 'Athens': [390, -44], 
-'Bucharest': [422, 67], 'Ankara': [509, -13], 'Kiev': [480, 177], 'Moscow': [570, 300]}
+    'Amsterdan': [151, 222], 'Rome': [244, 21], 'Copenhagen': [247, 294], 'Budapest': [331, 121],
+    'Warsaw': [356, 221], 'Athens': [390, -44], 'Bucharest': [422, 67], 'Ankara': [509, -13], 
+    'Kiev': [480, 177], 'Moscow': [570, 300]}
 
 <a alt="sequência das cores dos nós">cor =</a> ['orange', 'orange', 'green', 'orange', 'magenta', 'orange', 'orange', 'red', 
     'orange', 'orange', 'orange', 'red', 'orange', 'orange']
@@ -889,10 +889,11 @@ plt.figure()
 <a alt="rótulos dos valores dos arcos">rotulos =</a> {('Madrid','Paris'):'12', ('Madrid','Bern'):'15', ('Bern','Amsterdan'):'9', 
     ('Bern','Berlin'):'10', ('Bern','Rome'):'10', ('Paris','Bern'):'6', ('Amsterdan','Berlin'):'7', 
     ('Paris','Amsterdan'):'6', ('Amsterdan','Copenhagen'):'9', ('Berlin','Copenhagen'):'7',
-    ('Berlin','Budapest'):'9', ('Berlin','Warsaw'):'6', ('Berlin','Rome'):'15', ('Budapest','Warsaw'):'9',
-    ('Budapest','Rome'):'12', ('Budapest','Bucharest'):'10', ('Budapest','Athens'):'15',
-    ('Bucharest','Athens'):'14', ('Bucharest','Ankara'):'13', ('Ankara','Moscow'):'39',
-    ('Bucharest','Kiev'):'12', ('Warsaw','Kiev'):'10', ('Warsaw','Moscow'):'14', ('Moscow','Kiev'):'10'}
+    ('Berlin','Budapest'):'9', ('Berlin','Warsaw'):'6', ('Berlin','Rome'):'15', 
+    ('Budapest','Warsaw'):'9', ('Budapest','Rome'):'12',  ('Budapest','Bucharest'):'10',
+    ('Budapest','Athens'):'15', ('Bucharest','Athens'):'14',  ('Bucharest','Ankara'):'13',
+    ('Ankara','Moscow'):'39', ('Bucharest','Kiev'):'12', ('Warsaw','Kiev'):'10', 
+    ('Warsaw','Moscow'):'14', ('Moscow','Kiev'):'10'}
 
 <a alt="comando para inserir os nós do grafo">nx.draw</a>(g, pos, with_labels = True, node_color = cor, edge_color = 'grey', alpha = 0.5, 
     linewidths = 1, node_size = 1250, labels = {node: node for node in g.nodes()})
