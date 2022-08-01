@@ -933,6 +933,34 @@ plt.show()
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-68a.png"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-69.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Grafo orientado para o problema do Caixeiro Viajante:
+<pre><code>import networkx as nx
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
+plt.figure()
+
+<a alt="arquivo com as posições dos nós">position =</a> np.array(pd.read_csv('C:/dados/pcb442.csv'))
+<a alt="arquivo com a solução ótima">df =</a> pd.read_csv('C:/dados/pcb442_opt.csv')
+
+i = np.arange(0, len(df))
+g = nx.from_pandas_edgelist(df, source = 'v1', target = 'v2', create_using = nx.DiGraph)
+pos = {}
+
+for k in i:
+    pos[k] = [position[k][1], position[k][2]]
+
+nx.draw(g, pos = pos, node_color = 'royalblue', edge_color = 'green', alpha = 0.6, 
+    linewidths = 1, node_size = 40)
+
+plt.show()
+</code></pre></figcaption>
+  <p>&#x1f4ca; <a href="modulo4/pcb442.csv" target="_blank">Arquivo com os dados dos nós</a></p>
+  <p>&#x1f4ca; <a href="modulo4/pcb442_opt.csv" target="_blank">Arquivo com a solução ótima</a></p>
+  </details></div>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-69a.png"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-70.png"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
