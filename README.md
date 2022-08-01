@@ -840,7 +840,7 @@ especies = ['Adelie', 'Gentoo', 'Chinstrap']
 p1 = figure(tools = tools, title = None)
 p1.xaxis.axis_label = 'Comprimento do bico'
 p1.yaxis.axis_label = 'Profundidade do bico'
-<a alt="primeiro gráfico interativo de dispersão">p1.scatter</a>(x = 'x', y = 'y', source = source, legend_field = 'esp', fill_alpha = 0.4, size =12,
+<a alt="primeiro gráfico interativo de dispersão">p1.scatter</a>(x = 'x', y = 'y', source = source, legend_field = 'esp', fill_alpha = 0.4, size = 12,
     marker = factor_mark('esp', markers, especies),
     color = factor_cmap('esp', 'Category10_3', especies))
 p1.legend.location = 'bottom_right'
@@ -848,7 +848,7 @@ p1.legend.location = 'bottom_right'
 p2 = figure(tools = tools, title = None)
 p2.xaxis.axis_label = 'Comprimento da nadadeira'
 p2.yaxis.axis_label = 'Massa corporal'
-<a alt="segundo gráfico interativo de dispersão">p2.scatter</a>(x = 'z', y = 'w', source = source, legend_field = 'esp', fill_alpha = 0.4, size =12,
+<a alt="segundo gráfico interativo de dispersão">p2.scatter</a>(x = 'z', y = 'w', source = source, legend_field = 'esp', fill_alpha = 0.4, size = 12,
     marker = factor_mark('esp', markers, especies),
     color = factor_cmap('esp', 'Category10_3', especies))
 p2.legend.location = 'bottom_right'
@@ -867,7 +867,13 @@ show(p)
 <pre><code><a alt="biblioteca networkx de grafos orientados">import networkx as nx</a>
 import matplotlib.pyplot as plt
 
-<a alt="definição dos arcos entre os nós">arcos =</a> [['Madrid','Paris'], ['Madrid','Bern'], ['Bern','Madrid'], ['Bern','Amsterdan'], ['Bern','Berlin'], ['Bern','Rome'], ['Amsterdan','Berlin'], ['Amsterdan','Copenhagen'], ['Berlin','Copenhagen'], ['Berlin','Budapest'],['Berlin','Warsaw'], ['Berlin','Rome'], ['Budapest','Warsaw'], ['Budapest','Rome'], ['Budapest','Athens'], ['Budapest','Bucharest'], ['Bucharest','Athens'], ['Bucharest','Ankara'], ['Bucharest','Kiev'], ['Ankara','Moscow'], ['Kiev','Moscow'], ['Warsaw','Moscow'], ['Moscow','Kiev'], ['Warsaw','Kiev'], ['Paris','Amsterdan'], ['Paris','Bern']]
+<a alt="definição dos arcos entre os nós">arcos =</a> [['Madrid','Paris'], ['Madrid','Bern'], ['Bern','Madrid'], ['Bern','Amsterdan'], 
+    ['Bern','Berlin'], ['Bern','Rome'], ['Amsterdan','Berlin'], ['Amsterdan','Copenhagen'], 
+    ['Berlin','Copenhagen'], ['Berlin','Budapest'],['Berlin','Warsaw'], ['Berlin','Rome'], 
+    ['Budapest','Warsaw'], ['Budapest','Rome'], ['Budapest','Athens'], ['Budapest','Bucharest'], 
+    ['Bucharest','Athens'], ['Bucharest','Ankara'], ['Bucharest','Kiev'], ['Ankara','Moscow'], 
+    ['Kiev','Moscow'], ['Warsaw','Moscow'], ['Moscow','Kiev'], ['Warsaw','Kiev'], 
+    ['Paris','Amsterdan'], ['Paris','Bern']]
 g = <a alt="grafo orientado (direcionado)">nx.DiGraph()</a>
 g.add_edges_from(arcos)
 plt.figure()
@@ -877,15 +883,16 @@ plt.figure()
 'Budapest': [331, 121], 'Warsaw': [356, 221], 'Athens': [390, -44], 
 'Bucharest': [422, 67], 'Ankara': [509, -13], 'Kiev': [480, 177], 'Moscow': [570, 300]}
 
-<a alt="sequência das cores dos nós">cor =</a> ['orange', 'orange', 'green', 'orange', 'magenta', 'orange', 'orange', 'red', 'orange', 'orange', 'orange', 'red', 'orange', 'orange']
+<a alt="sequência das cores dos nós">cor =</a> ['orange', 'orange', 'green', 'orange', 'magenta', 'orange', 'orange', 'red', 
+    'orange', 'orange', 'orange', 'red', 'orange', 'orange']
 
-<a alt="rótulos dos valores dos arcos">rotulos =</a> {('Madrid','Paris'): '12', ('Madrid','Bern'): '15', ('Bern','Amsterdan'): '9', 
-    ('Bern','Berlin'): '10', ('Bern','Rome'): '10', ('Paris','Bern'): '6', ('Amsterdan','Berlin'): '7', 
-    ('Paris','Amsterdan'): '6', ('Amsterdan','Copenhagen'): '9', ('Berlin','Copenhagen'): '7',
-    ('Berlin','Budapest'): '9', ('Berlin','Warsaw'): '6', ('Berlin','Rome'): '15', ('Budapest','Warsaw'): '9',
-    ('Budapest','Rome'): '12', ('Budapest','Bucharest'): '10', ('Budapest','Athens'): '15',
-    ('Bucharest','Athens'): '14', ('Bucharest','Ankara'): '13', ('Ankara','Moscow'): '39',
-    ('Bucharest','Kiev'): '12', ('Warsaw','Kiev'): '10', ('Warsaw','Moscow'): '14', ('Moscow','Kiev'): '10'}
+<a alt="rótulos dos valores dos arcos">rotulos =</a> {('Madrid','Paris'):'12', ('Madrid','Bern'):'15', ('Bern','Amsterdan'):'9', 
+    ('Bern','Berlin'):'10', ('Bern','Rome'):'10', ('Paris','Bern'):'6', ('Amsterdan','Berlin'):'7', 
+    ('Paris','Amsterdan'):'6', ('Amsterdan','Copenhagen'):'9', ('Berlin','Copenhagen'):'7',
+    ('Berlin','Budapest'):'9', ('Berlin','Warsaw'):'6', ('Berlin','Rome'):'15', ('Budapest','Warsaw'):'9',
+    ('Budapest','Rome'):'12', ('Budapest','Bucharest'):'10', ('Budapest','Athens'):'15',
+    ('Bucharest','Athens'):'14', ('Bucharest','Ankara'):'13', ('Ankara','Moscow'):'39',
+    ('Bucharest','Kiev'):'12', ('Warsaw','Kiev'):'10', ('Warsaw','Moscow'):'14', ('Moscow','Kiev'):'10'}
 
 <a alt="comando para inserir os nós do grafo">nx.draw</a>(g, pos, with_labels = True, node_color = cor, edge_color = 'grey', alpha = 0.5, 
     linewidths = 1, node_size = 1250, labels = {node: node for node in g.nodes()})
