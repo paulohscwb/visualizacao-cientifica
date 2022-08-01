@@ -1049,6 +1049,111 @@ fig.show()
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-73a.png"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-74.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Gráfico Treeview:
+<pre><code>import plotly.express as px
+import plotly.io as pio
+import pandas as pd
+import numpy as np
+pio.renderers
+pio.renderers.default = 'browser'
+
+df = pd.read_csv('C:/dados/treemap1.csv')
+
+fig = px.treemap(df, path = [px.Constant('IEEE Spectrum'), 'Country', 'Company'], 
+    values = 'Sales 2005', <a alt="separação em categorias">color =</a> 'Sales 2005', hover_data = ['Sales 2006'],
+    <a alt="mapa de cores">color_continuous_scale =</a> 'rainbow', 
+    color_continuous_midpoint = np.average(df['Sales 2006'], weights = df['Rank 2006']))
+
+fig.update_layout(margin = dict(t = 25, l = 25, r = 25, b = 25))
+
+fig.show()
+</code></pre></figcaption>
+  <p>&#x1f4ca; <a href="modulo4/treemap1.csv" target="_blank">Arquivo de dados para o Treemap</a></p>
+  </details></div>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-74a.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Gráfico Sunburst (aneis aninhados):
+<pre><code>import plotly.express as px
+import pandas as pd
+import plotly.io as pio
+pio.renderers
+pio.renderers.default = 'browser'
+
+setores = ['Government', 'Real Estate', 'Technology, Media e Startups', 'Banking & Fiance', 
+    'Economic Development', 'Health Care', 'Sports Business', 'Arts, Travel, Tourism & Ports',
+    'Restaurants', 'Law', 'Transit', 'Education & Nonprofits', 'Retail & Entertainment']
+
+valores = [19, 8, 8, 8, 14, 9, 7, 6, 5, 5, 3, 5, 3]
+
+categorias = ['State', 'State', 'Technology', 'State', 'Technology', 'State', 'Entertainment', 
+    'Entertainment', 'Entertainment', 'State', 'State', 'State', 'Entertainment']
+
+df = pd.DataFrame(dict(setores = setores, valores = valores, categorias = categorias))
+
+df['Power 100 by Industry'] = 'Power 100 by Industry'
+
+fig = <a alt="função para criar o gráfico Sunburst">px.sunburst</a>(df, path = ['Power 100 by Industry', 'setores'], values = 'valores', 
+    color_continuous_scale = 'spectral', color = 'valores')
+
+fig.update_traces(root_color = 'lightgrey', opacity = 0.9)
+fig.update_layout(margin = dict(t = 25, l = 25, r = 25, b = 25))
+
+fig.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-74b.png"/>
+  <figcaption>Gráfico Sunburst (aneis aninhados):
+<pre><code>import plotly.express as px
+import pandas as pd
+import plotly.io as pio
+pio.renderers
+pio.renderers.default = 'browser'
+
+setores = ['Government', 'Real Estate', 'Technology, Media e Startups', 'Banking & Fiance', 
+    'Economic Development', 'Health Care', 'Sports Business', 'Arts, Travel, Tourism & Ports',
+    'Restaurants', 'Law', 'Transit', 'Education & Nonprofits', 'Retail & Entertainment']
+
+valores = [19, 8, 8, 8, 14, 9, 7, 6, 5, 5, 3, 5, 3]
+
+categorias = ['State', 'State', 'Technology', 'State', 'Technology', 'State', 'Entertainment', 
+    'Entertainment', 'Entertainment', 'State', 'State', 'State', 'Entertainment']
+
+df = pd.DataFrame(dict(setores = setores, valores = valores, categorias = categorias))
+
+df['Power 100 by Industry'] = 'Power 100 by Industry'
+
+fig = px.sunburst(df, <a alt="separação por categorias">path =</a> ['Power 100 by Industry', 'categorias', 'setores'], 
+	values = 'valores', color_continuous_scale = 'spectral', color = 'valores')
+
+fig.update_traces(root_color = 'lightgrey', opacity = 0.9)
+fig.update_layout(margin = dict(t = 25, l = 25, r = 25, b = 25))
+
+fig.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-74c.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Gráfico Sunburst (aneis aninhados):
+<pre><code>import plotly.express as px
+import plotly.io as pio
+import pandas as pd
+import numpy as np
+pio.renderers
+pio.renderers.default = 'browser'
+
+df = pd.read_csv('C:/dados/treemap1.csv')
+
+fig = <a alt="função para criar o gráfico Sunburst">px.sunburst</a>(df, path = [px.Constant('IEEE Spectrum'), 'Country', 'Company'], 
+    values = 'Sales 2005', color = 'Sales 2005', hover_data = ['Sales 2006'],
+    color_continuous_scale = 'rainbow', 
+    color_continuous_midpoint = np.average(df['Sales 2006'], weights = df['Rank 2006']))
+
+fig.update_layout(margin = dict(t = 25, l = 25, r = 25, b = 25))
+
+fig.show()
+</code></pre></figcaption>
+  </details></div>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-75.png"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
