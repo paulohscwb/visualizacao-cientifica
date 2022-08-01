@@ -1016,6 +1016,37 @@ fig.show()
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-72a.png"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-73.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Gráfico Treeview:
+<pre><code>import plotly.express as px
+import pandas as pd
+import plotly.io as pio
+pio.renderers
+pio.renderers.default = 'browser'
+
+setores = ['Government', 'Real Estate', 'Technology, Media e Startups', 'Banking & Fiance', 
+    'Economic Development', 'Health Care', 'Sports Business', 'Arts, Travel, Tourism & Ports',
+    'Restaurants', 'Law', 'Transit', 'Education & Nonprofits', 'Retail & Entertainment']
+
+valores = [19, 8, 8, 8, 14, 9, 7, 6, 5, 5, 3, 5, 3]
+
+<a alt="separação em categorias">categorias =</a> ['State', 'State', 'Technology', 'State', 'Technology', 'State', 'Entertainment', 
+    'Entertainment', 'Entertainment', 'State', 'State', 'State', 'Entertainment']
+
+df = pd.DataFrame(dict(setores = setores, valores = valores, categorias = categorias))
+
+df['Power 100 by Industry'] = 'Power 100 by Industry'
+
+fig = px.treemap(df, path = ['Power 100 by Industry', 'categorias', 'setores'], 
+	values = 'valores', color_continuous_scale = 'spectral', color = 'valores')
+
+fig.update_traces(root_color = 'lightgrey', opacity = 0.9)
+fig.update_layout(margin = dict(t = 25, l = 25, r = 25, b = 25))
+
+fig.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-73a.png"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-74.png"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
