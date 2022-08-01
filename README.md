@@ -905,6 +905,32 @@ plt.show()
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-67a.png"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-68.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Grafo orientado para circuito Hamiltoniano:
+<pre><code>import networkx as nx
+import matplotlib.pyplot as plt
+import pandas as pd
+
+plt.figure()
+
+<a alt="arquivo com os dados dos nós">df =</a> pd.read_csv('C:/dados/alb1000.csv')
+<a alt="arquivo com a solução ótima">df_s =</a> pd.read_csv('C:/dados/alb1000_opt.csv')
+
+g = nx.from_pandas_edgelist(df, source = 'v1', target = 'v2')
+<a alt="posições dos nós com layout tipo kamada kawai">pos =</a> nx.kamada_kawai_layout(g)
+nx.draw(g, pos = pos, node_color = 'grey', edge_color = 'grey', alpha = 0.1, linewidths = 0.2, 
+    node_size = 40)
+
+g1 = nx.from_pandas_edgelist(df_s, source = 'v1', target = 'v2', create_using = nx.DiGraph)
+nx.draw(g1, pos = pos, node_color = 'green', edge_color = 'royalblue', alpha = 0.5,
+    linewidths = 2, node_size = 40)
+
+plt.show()
+</code></pre></figcaption>
+  <p>&#x1f4ca; <a href="modulo4/alb1000.csv" target="_blank">Arquivo com os dados dos nós</a></p>
+  <p>&#x1f4ca; <a href="modulo4/alb1000_opt.csv" target="_blank">Arquivo com a solução ótima</a></p>
+  </details></div>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-68a.png"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-69.png"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
