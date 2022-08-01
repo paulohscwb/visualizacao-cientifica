@@ -1161,6 +1161,40 @@ fig.show()
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-76.png"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-77.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Gráfico RadViz:
+<pre><code>import pandas as pd
+from matplotlib import pyplot as plt
+
+pinguin = pd.read_csv('C:/dados/penguin2.csv', header = 0, <a alt="colunas que contém os dados que serão usados">usecols =</a> [1,3,4,5,6,8])
+
+ax = plt.grid(color = '#d5f8e3', linewidth = 0.5)
+fig = <a alt="função para criar o gráfico RadViz">pd.plotting.radviz</a>(pinguin, <a alt="critério de separação dos dados">'Espécie'</a>, colormap = 'rainbow', alpha = 0.6, ax = ax)
+
+fig.show
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-77a.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Gráfico de enxame (swarm):
+<pre><code>import pandas as pd
+import seaborn as sns
+
+pinguin = pd.read_csv('C:/dados/penguin2.csv')
+<a alt="função para criar o gráfico swarm">sns.swarmplot</a>(x = 'Comprimento da nadadeira', y = 'Espécie', <a alt="critério de separação">hue = 'Sexo'</a>, data = pinguin)
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-77b.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Gráfico de enxame (swarm) com diagrama em caixas (boxplot):
+<pre><code>import pandas as pd
+import seaborn as sns
+
+pinguin = pd.read_csv('C:/dados/penguin2.csv')
+<a alt="função para criar o gráfico boxplot">sns.boxplot</a>(x = 'Comprimento da nadadeira', y = 'Espécie', data = pinguin)
+sns.swarmplot(x = 'Comprimento da nadadeira', y = 'Espécie', hue = 'Sexo', data = pinguin)
+</code></pre></figcaption>
+  </details></div>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-78.png"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
