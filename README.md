@@ -1103,6 +1103,7 @@ fig.show()
 </code></pre></figcaption>
   </details></div>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-74b.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption>Gráfico Sunburst (aneis aninhados):
 <pre><code>import plotly.express as px
 import pandas as pd
