@@ -2083,10 +2083,74 @@ p.show()
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-98a.png"/>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-99.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Criação de uma cena com Pyvista:
+<pre><code>import pyvista
+import pyvista as pv
+
+filename = 'C:/dados/chopper.ply'
+reader = pyvista.get_reader(filename)
+mesh = reader.read()
+
+p = pv.Plotter(lighting = 'none', window_size = [1000, 1000])
+p.show_grid()
+p.show_axes()
+
+light = pv.Light(position = (-10, 1, 1), light_type = 'scene light')
+p.add_light(light)
+light = pv.Light(position = (10, 1, 1), light_type = 'scene light')
+p.add_light(light)
+
+p.set_background('royalblue', top = 'aliceblue')
+<a alt="mapa de cor Greens">p.add_mesh</a>(mesh, cmap = 'Greens', scalars = mesh.points[:, 2], show_scalar_bar = False, show_edges = True, 
+    edge_color = 'grey', ambient = 0.3, diffuse = 0.5, specular = 0.5, specular_power = 15)
+
+p.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-99a.png"/>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-100.png"/>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-101.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Criação de uma cena com Pyvista:
+<pre><code>import pyvista
+import pyvista as pv
+import numpy as np
+
+filename = 'C:/dados/chopper.ply'
+reader = pyvista.get_reader(filename)
+mesh = reader.read()
+
+p = pv.Plotter(lighting = None, window_size = [1000, 1000])
+p.show_axes()
+
+<a alt="limites das coordenadas">maxx =</a> np.max(mesh.points[:, 0])
+maxy = np.max(mesh.points[:, 1])
+minx = np.min(mesh.points[:, 0])
+miny = np.min(mesh.points[:, 1])
+minz = np.min(mesh.points[:, 2])
+maxz = np.max(mesh.points[:, 2])
+
+<a alt="posição da luz no centro relativo a x e y, com altura maxz + 150">light =</a> pv.Light(position = [(maxx + minx)/2, (maxy + miny)/2, maxz + 150], 
+    focal_point = [(maxx + minx)/2, (maxy + miny)/2, 0], show_actor = True, 
+    positional = True, cone_angle = 45, exponent = 50, intensity = 30)
+p.add_light(light)
+
+p.set_background('royalblue', top = 'aliceblue')
+p.add_mesh(mesh, color = 'Green', show_edges = False, ambient = 0.3, diffuse = 0.5, 
+    specular = 1, specular_power = 15, opacity = 1, <a alt="metalicidade">metallic =</a> 0.3, <a alt="rugosidade">roughness =</a> 0.6, <a alt="reflexo">pbr =</a> True)
+
+<a alt="plano usado para projeção da sombra">grid =</a> pv.Plane(i_size = 5*(maxx - minx), j_size = 2*(maxy + miny), 
+    center = [(maxx + minx)/2, (maxy + miny)/2, minz - 10])
+p.add_mesh(grid, color = 'white')
+<a alt="sombras">p.enable_shadows()</a>
+
+p.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-101a.png"/>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-102.png"/>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
