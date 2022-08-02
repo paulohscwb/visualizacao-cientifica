@@ -1474,6 +1474,7 @@ x = v[:, 0]
 y = v[:, 1]
 z = v[:, 2]
 <a alt="rótulos dos vértices">rotulos =</a> ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
+
 <a alt="laço para inserir os respectivos rótulos dos vértices">for x, y, z, tag in zip(x, y, z, rotulos):</a>
     label = tag
     ax.text3D(x, y, z, label, zdir = [1,1,1], color = 'k')
@@ -1486,6 +1487,48 @@ plt.show()
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-86b.png"/>
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-87.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Construção de uma superfície com triangulação:
+<pre><code>import matplotlib.pyplot as plt
+import numpy as np
+
+n_raio = 10
+n_angulos = 48
+raio = np.linspace(0.125, 1.0, n_raio)
+angulo = np.linspace(0, 2*np.pi, n_angulos, endpoint = False)[..., np.newaxis]
+
+x = np.append(0, (raio*np.cos(angulo)).flatten())
+y = np.append(0, (raio*np.sin(angulo)).flatten())
+z = np.sin(-x*y)
+
+ax = plt.figure().add_subplot(projection = '3d')
+<a alt="triangulação da superfície">ax.plot_trisurf</a>(x, y, z, linewidth = 0.2, cmap = 'RdBu')
+
+ax.set_box_aspect([1,1,1])
+
+plt.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-87a.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Construção de uma superfície com coordenadas de um arquivo:
+<pre><code>import numpy as np
+import matplotlib.pyplot as plt
+
+vertices = <a alt="coordenadas dos pontos da superfície">np.array(np.loadtxt</a>('C:/dados/volcano.txt', int))
+x = vertices[:,0]
+y = vertices[:,1]
+z = vertices[:,2]
+
+fig = plt.figure()
+ax = fig.add_subplot(projection = '3d')
+
+ax.plot_trisurf(x, y, z, cmap = 'jet_r', edgecolor = 'grey', linewidth = 0.15, alpha = 0.7)
+
+plt.show()
+</code></pre></figcaption>
+  <p>&#x1f4ca; <a href="modulo5/volcano.txt" target="_blank">Arquivo com as coordenadas da superfície</a></p>
+  </details></div>
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-88.png"/>
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
