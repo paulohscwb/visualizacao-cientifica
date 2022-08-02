@@ -2202,14 +2202,14 @@ light = pv.Light(position = (10, 1, 1), light_type = 'scene light', intensity = 
 p.add_light(light)
 
 p.set_background('royalblue', top = 'white')
-p.add_mesh(mesh, cmap = 'coolwarm_r', <a alt="coordenadas usadas para o mapa de cores">scalars =</a> mesh.points[:, 1], show_scalar_bar = False,
+p.add_mesh(mesh, cmap = 'coolwarm_r', <a alt="coordenadas usadas para o mapa de cores">scalars =</a> mesh.points[:, 2], show_scalar_bar = False,
     ambient = 0.3, diffuse = 0.5, specular = 0.5, specular_power = 15, pbr = True, 
     metallic = 0.5, roughness = 0.2)
 
 p.show()
 </code></pre></figcaption>
-  <p>&#x1f4ca; <a href="modulo6/everest.obj" target="_blank">Arquivo OBJ do Monte Everest</a></p>
-  <p>&#x1f4ca; <a href="modulo6/palcoyo.obj" target="_blank">Arquivo OBJ de montanhas de Palcoyo</a></p>
+  <p>&#x1f4ca; <a href="modulo6/everest.obj" target="_blank">Arquivo OBJ - Monte Everest</a></p>
+  <p>&#x1f4ca; <a href="modulo6/palcoyo.obj" target="_blank">Arquivo OBJ - montanhas de Palcoyo</a></p>
   </details></div>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-104.png"/>
