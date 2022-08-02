@@ -2163,7 +2163,8 @@ p.show()
 <a alt="poliedros de Platão">kinds =</a> ['tetrahedron', 'cube', 'octahedron', 'dodecahedron', 'icosahedron']
 <a alt="posições dos centros dos sólidos">centers =</a> [(-1, 0, 0), (-1, 1, 0), (-1, 2, 0), (0, 1.5, 0), (0, 0.5, 0)]
 
-<a alt="comando para inserir os poliedros">solids =</a> [pv.PlatonicSolid(kind, radius = 0.4, center = center) for kind, center in zip(kinds, centers)]
+<a alt="comando para inserir os poliedros">solids =</a> [pv.PlatonicSolid(kind, radius = 0.4, center = center) for kind, 
+    center in zip(kinds, centers)]
 <a alt="cores dos sólidos">colors =</a> ['aqua', 'red', 'orange', 'yellow', 'white']
 
 p = pv.Plotter(lighting = 'none', window_size = [1000, 1000])
@@ -2201,13 +2202,13 @@ light = pv.Light(position = (10, 1, 1), light_type = 'scene light', intensity = 
 p.add_light(light)
 
 p.set_background('royalblue', top = 'white')
-p.add_mesh(mesh, cmap = 'coolwarm_r', scalars = mesh.points[:, 1], show_scalar_bar = False,
+p.add_mesh(mesh, cmap = 'coolwarm_r', <a alt="coordenadas usadas para o mapa de cores">scalars =</a> mesh.points[:, 1], show_scalar_bar = False,
     ambient = 0.3, diffuse = 0.5, specular = 0.5, specular_power = 15, pbr = True, 
     metallic = 0.5, roughness = 0.2)
 
 p.show()
 </code></pre></figcaption>
-  <p>&#x1f4ca; <a href="modulo6/everest.obj" target="_blank">Arquivo simplificado OBJ do Monte Everest</a></p>
+  <p>&#x1f4ca; <a href="modulo6/everest.obj" target="_blank">Arquivo OBJ do Monte Everest</a></p>
   </details></div>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-104.png"/>
