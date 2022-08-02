@@ -1941,7 +1941,7 @@ if __name__ == '__main__':
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-97.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Variação de iluminação specular com VTK:
+  <figcaption>Iluminação de 2 fontes de luz com VTK:
 <pre><code>import vtkmodules.vtkRenderingOpenGL2
 import vtkmodules.vtkInteractionStyle
 from vtkmodules.vtkCommonColor import vtkNamedColors
@@ -2055,6 +2055,32 @@ if __name__ == '__main__':
   </details></div>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-98.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Criação de uma cena com Pyvista:
+<pre><code><a alt="biblioteca Pyvista">import pyvista</a>
+import pyvista as pv
+
+filename = 'C:/dados/chopper.ply'
+reader = pyvista.get_reader(filename)
+mesh = reader.read()
+
+p = <a alt="comando para renderizar o objeto 3D">pv.Plotter</a>(lighting = 'none', window_size = [1000, 1000])
+p.show_grid()
+p.show_axes()
+
+<a alt="comandos de iluminação">light =</a> pv.Light(position = (-10, 1, 1), light_type = 'scene light')
+p.add_light(light)
+light = pv.Light(position = (10, 1, 1), light_type = 'scene light')
+p.add_light(light)
+
+p.set_background('royalblue', top = 'aliceblue')
+<a alt="inserção do ator na cena: objeto 3D">p.add_mesh</a>(mesh, color = 'Red', show_edges = True, edge_color = 'grey', ambient = 0.3, 
+    diffuse = 0.5, specular = 0.5, specular_power = 15)
+
+p.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-98a.png"/>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-99.png"/>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
