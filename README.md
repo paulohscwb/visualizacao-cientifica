@@ -1604,7 +1604,7 @@ plt.show()
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-91.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Triangulação de um objeto 3D de extensão PLY:
+  <figcaption>Triangulação de um objeto 3D:
 <pre><code>import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d.art3d import Poly3DCollection
@@ -1640,8 +1640,104 @@ plt.show()
   <p>Material da página 92 até a página 105.</p>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-91.png"/>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-92.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Triangulação de um objeto 3D de extensão PLY:
+<pre><code><a alt="Conexões com as bibliotecas que serão usadas para renderizar os atores">import vtkmodules.vtkRenderingOpenGL2</a>
+from vtkmodules.vtkCommonColor import vtkNamedColors
+from vtkmodules.vtkFiltersSources import vtkCylinderSource
+from vtkmodules.vtkRenderingAnnotation import vtkAxesActor
+from vtkmodules.vtkRenderingCore import (
+    vtkActor,
+    vtkPolyDataMapper,
+    vtkRenderWindow,
+    vtkRenderWindowInteractor,
+    vtkRenderer
+)
+
+def main():
+    <a alt="Dados de entrada: cor do fundo e cilindro">colors =</a> vtkNamedColors()
+    colors.SetColor("BkgColor", [0.95, 0.95, 1, 0])
+    cylinder = vtkCylinderSource()
+    cylinder.SetResolution(30)
+
+    <a alt="Mapeamento da geometria do cilindro">cylinderMapper = </a>vtkPolyDataMapper()
+    cylinderMapper.SetInputConnection(cylinder.GetOutputPort())
+
+    <a alt="Criação do ator">cylinderActor =</a> vtkActor()
+    <a alt="Adiciona as propriedades primitivas do cilindro">cylinderActor.SetMapper(cylinderMapper)</a>
+    cylinderActor.GetProperty().SetColor(colors.GetColor3d("Yellow"))
+    <a alt="Propriedades do cilindro (ator)">cylinder.SetRadius(0.5)</a>
+    cylinder.SetHeight(1.5)
+    cylinderActor.SetPosition(2,-1,1.5)
+    cylinderActor.RotateZ(-30.0)
+    cylinderActor.RotateX(-30.0)
+    
+    <a alt="Renderização (janela e interação com o usuário)">ren = </a>vtkRenderer()
+    renWin = vtkRenderWindow()
+    renWin.AddRenderer(ren)
+    iren = vtkRenderWindowInteractor()
+    iren.SetRenderWindow(renWin)
+
+    <a alt="Adição do cilindro e de mais um ator: eixos">ren.AddActor(cylinderActor)</a>
+    axes = vtkAxesActor()
+    ren.AddActor(axes)
+    ren.SetBackground(colors.GetColor3d("BkgColor"))
+    renWin.SetSize(500, 500)
+
+    <a alt="Iniciar a câmera: zoom e renderização da cena">iren.Initialize()</a>
+    ren.ResetCamera()
+    ren.GetActiveCamera().Zoom(1.2)
+    renWin.Render()
+    iren.Start()
+if __name__ == '__main__':
+    main()
+</code></pre></figcaption>
+  </details></div>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-93.png"/>
+  <details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Etapas da renderização de uma cena com VTK</summary>
+	<p>Vamos acompanhar o esquema com as etapas da criação de uma cena usando a biblioteca VTK - Visualization Toolkit.</p>
+	  <ul class="slider">
+		  <li>
+			   <input type="radio" id="219" name="sl">
+			   <label for="219"></label>
+			   <img src="modulo6/1.png"/>
+			   <figcaption>Depois de criarmos as ligações com as bibliotecas do VTK, podemos definir quais serão os atores da cena (polígonos, objetos 3D, poliedros e eixos).</figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="220" name="sl">
+			   <label for="220"></label>
+			   <img src="modulo6/2.png"/>
+			   <figcaption>Com os atores da cena definidos, utilizamos as propriedades para cada ator (cores, texturas, tamanhos e posições).</figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="221" name="sl">
+			   <label for="221"></label>
+			   <img src="modulo6/3.png"/>
+			   <figcaption>A renderização da cena pode ser definida com a inicialização da câmera.</figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="222" name="sl">
+			   <label for="222"></label>
+			   <img src="modulo6/4.png"/>
+			   <figcaption>Na etapa seguinte, definimos a iluminação da cena (posição, tipo de iluminação e cor).</figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="223" name="sl">
+			   <label for="223"></label>
+			   <img src="modulo6/5.png"/>
+			   <figcaption>A janela de visualização deve ser definida, onde serão mostrados os elementos definidos na cena.</figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="224" name="sl">
+			   <label for="224"></label>
+			   <img src="modulo6/6.png"/>
+			   <figcaption>Para finalizar, podemos definir quais serão os tipos de interação usados pelo usuário com os atores da cena.</figcaption>
+		   </li>
+		</ul>
+		<img src="modulo6/1.png" class="fundo"/>
+  </details>
+  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-93a.png"/>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-94.png"/>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
