@@ -2102,8 +2102,9 @@ light = pv.Light(position = (10, 1, 1), light_type = 'scene light')
 p.add_light(light)
 
 p.set_background('royalblue', top = 'aliceblue')
-<a alt="mapa de cor Greens">p.add_mesh</a>(mesh, cmap = 'Greens', scalars = mesh.points[:, 2], show_scalar_bar = False, show_edges = True, 
-    edge_color = 'grey', ambient = 0.3, diffuse = 0.5, specular = 0.5, specular_power = 15)
+<a alt="mapa de cor Greens">p.add_mesh</a>(mesh, cmap = 'Greens', scalars = mesh.points[:, 2], show_scalar_bar = False, 
+    show_edges = True, edge_color = 'grey', ambient = 0.3, diffuse = 0.5, specular = 0.5, 
+    specular_power = 15)
 
 p.show()
 </code></pre></figcaption>
@@ -2114,7 +2115,7 @@ p.show()
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-101.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Criação de uma cena com Pyvista:
+  <figcaption>Criação de sombras em objetos de uma cena com Pyvista:
 <pre><code>import pyvista
 import pyvista as pv
 import numpy as np
@@ -2155,6 +2156,59 @@ p.show()
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-102.png"/>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-103.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Criação de poliedros em uma cena do Pyvista:
+<pre><code>import pyvista as pv
+
+<a alt="poliedros de Platão">kinds =</a> ['tetrahedron', 'cube', 'octahedron', 'dodecahedron', 'icosahedron']
+<a alt="posições dos centros dos sólidos">centers =</a> [(-1, 0, 0), (-1, 1, 0), (-1, 2, 0), (0, 1.5, 0), (0, 0.5, 0)]
+
+<a alt="comando para inserir os poliedros">solids =</a> [pv.PlatonicSolid(kind, radius = 0.4, center = center) for kind, center in zip(kinds, centers)]
+<a alt="cores dos sólidos">colors =</a> ['aqua', 'red', 'orange', 'yellow', 'white']
+
+p = pv.Plotter(lighting = 'none', window_size = [1000, 1000])
+p.set_background('royalblue', top = 'aliceblue')
+
+<a alt="iluminação da cena">for ind, solid in enumerate(solids):</a>
+    p.add_mesh(solid, colors[ind], ambient = 0.3, smooth_shading = True, show_edges = True,
+    diffuse = 0.8, specular = 0.5, specular_power = 2)
+
+<a alt="plano usado para projeção da sombra">p.add_floor</a>('-z', lighting = True, color = 'white', pad = 0.4)
+p.show_axes()
+
+<a alt="posição da luz">p.add_light</a>(pv.Light(position = (1, -1, 5), focal_point = (0, 0, 0), color = 'white', 
+    intensity = 0.8))
+p.enable_shadows()
+
+p.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-103a.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Inserção de uma superfície em uma cena do Pyvista:
+<pre><code>import pyvista
+import pyvista as pv
+
+filename = 'C:/dados/everest.obj'
+reader = <a alt="leitura do arquivo OBJ">pyvista.get_reader(filename)</a>
+mesh = reader.read()
+
+p = pv.Plotter(lighting = 'none', window_size = [1000, 1000])
+p.show_grid()
+p.show_axes()
+
+light = pv.Light(position = (10, 1, 1), light_type = 'scene light', intensity = 32)
+p.add_light(light)
+
+p.set_background('royalblue', top = 'white')
+p.add_mesh(mesh, cmap = 'coolwarm_r', scalars = mesh.points[:, 1], show_scalar_bar = False,
+    ambient = 0.3, diffuse = 0.5, specular = 0.5, specular_power = 15, pbr = True, 
+    metallic = 0.5, roughness = 0.2)
+
+p.show()
+</code></pre></figcaption>
+  <p>&#x1f4ca; <a href="modulo6/everest.obj" target="_blank">Arquivo simplificado OBJ do Monte Everest</a></p>
+  </details></div>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-104.png"/>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
