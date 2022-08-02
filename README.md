@@ -1641,7 +1641,7 @@ plt.show()
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-91.png"/>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-92.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Triangulação de um objeto 3D de extensão PLY:
+  <figcaption>Cena com eixos e um cilindro programados com VTK:
 <pre><code><a alt="Conexões com as bibliotecas que serão usadas para renderizar os atores">import vtkmodules.vtkRenderingOpenGL2</a>
 import vtkmodules.vtkInteractionStyle
 from vtkmodules.vtkCommonColor import vtkNamedColors
@@ -1744,7 +1744,7 @@ if __name__ == '__main__':
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-95.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Triangulação de um objeto 3D de extensão PLY:
+  <figcaption>Variação de iluminação ambiente com VTK:
 <pre><code>import vtkmodules.vtkInteractionStyle
 from vtkmodules.vtkCommonColor import vtkNamedColors
 from vtkmodules.vtkFiltersSources import vtkSphereSource
@@ -1799,7 +1799,7 @@ def main():
         cylinders[i].GetProperty().SetDiffuse(diffuse)
         cylinders[i].GetProperty().SetSpecular(specular)
         cylinders[i].AddPosition(position1)
-        ambient += 0.125
+        <a alt="Incremento no valor da incidência da luz">ambient +=</a> 0.125
         position[0] += 1.25
         position1[0] += 1.25
         if i == 3:
@@ -1838,8 +1838,221 @@ if __name__ == '__main__':
   </details></div>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-96.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Variação de iluminação specular com VTK:
+<pre><code>import vtkmodules.vtkRenderingOpenGL2
+import vtkmodules.vtkInteractionStyle
+from vtkmodules.vtkCommonColor import vtkNamedColors
+from vtkmodules.vtkFiltersSources import vtkSphereSource
+from vtkmodules.vtkFiltersSources import vtkCylinderSource
+from vtkmodules.vtkRenderingAnnotation import vtkAxesActor
+from vtkmodules.vtkRenderingCore import (
+    vtkActor,
+    vtkLight,
+    vtkPolyDataMapper,
+    vtkRenderWindow,
+    vtkRenderWindowInteractor,
+    vtkRenderer
+)
+
+def main():
+    colors = vtkNamedColors()
+    colors.SetColor('bkg', [0.65, 0.75, 0.99, 0])
+    sphere = vtkSphereSource()
+    sphere.SetThetaResolution(100)
+    sphere.SetPhiResolution(50)
+    sphere.SetRadius(0.3)
+    cylinder = vtkCylinderSource()
+    cylinder.SetResolution(30)
+    cylinder.SetRadius(0.3)
+    cylinder.SetHeight(0.7)
+
+    sphereMapper = vtkPolyDataMapper()
+    cylinderMapper = vtkPolyDataMapper()
+    sphereMapper.SetInputConnection(sphere.GetOutputPort())
+    cylinderMapper.SetInputConnection(cylinder.GetOutputPort())
+
+    quantidade = 8
+    spheres = list()
+    cylinders = list()
+    ambient = 0.8
+    diffuse = 0.0
+    <a alt="Neste exemplo, vamos variar apenas a luz specular">specular =</a> 0.125
+    <a alt="Expoente da luz specular">specularPower =</a> 1
+    position = [1.5, 0, 0]
+    position1 = [2, 0, -0.5]
+    for i in range(0, quantidade):
+        spheres.append(vtkActor())
+        spheres[i].SetMapper(sphereMapper)
+        spheres[i].GetProperty().SetColor(colors.GetColor3d('Red'))
+        spheres[i].GetProperty().SetAmbient(ambient)
+        spheres[i].GetProperty().SetDiffuse(diffuse)
+        spheres[i].GetProperty().SetSpecular(specular)
+        spheres[i].GetProperty().SetSpecularPower(specularPower)
+        spheres[i].GetProperty().SetSpecularColor(colors.GetColor3d('White'))
+        spheres[i].AddPosition(position)
+        cylinders.append(vtkActor())
+        cylinders[i].SetMapper(cylinderMapper)
+        cylinders[i].GetProperty().SetColor(colors.GetColor3d('Blue'))
+        cylinders[i].GetProperty().SetAmbient(ambient)
+        cylinders[i].GetProperty().SetDiffuse(diffuse)
+        cylinders[i].GetProperty().SetSpecular(specular)
+        cylinders[i].GetProperty().SetSpecularPower(specularPower)
+        cylinders[i].GetProperty().SetSpecularColor(colors.GetColor3d('White'))
+        cylinders[i].AddPosition(position1)
+        <a alt="Incremento no valor da incidência da luz">specular +=</a> 0.125
+        specularPower += 0.5
+        position[0] += 1.25
+        position1[0] += 1.25
+        if i == 3:
+            position[0] = 1.5
+            position[1] = -1
+            position1[0] = 2
+            position1[1] = -1
+
+    ren = vtkRenderer()
+    axes = vtkAxesActor()
+    ren.AddActor(axes)
+    renWin = vtkRenderWindow()
+    renWin.AddRenderer(ren)
+    iren = vtkRenderWindowInteractor()
+    iren.SetRenderWindow(renWin)
+
+    for i in range(0, quantidade):
+        ren.AddActor(spheres[i])
+        ren.AddActor(cylinders[i])
+
+    ren.SetBackground(colors.GetColor3d('bkg'))
+    renWin.SetSize(940, 480)
+    renWin.SetWindowName('AmbientSpheres')
+
+    light = vtkLight()
+    light.SetFocalPoint(1.8, 0.6, 0)
+    light.SetPosition(0.8, 1.6, 1)
+    ren.AddLight(light)
+
+    iren.Initialize()
+    renWin.Render()
+    iren.Start()
+if __name__ == '__main__':
+    main()
+</code></pre></figcaption>
+  </details></div>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-97.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Variação de iluminação specular com VTK:
+<pre><code>import vtkmodules.vtkRenderingOpenGL2
+import vtkmodules.vtkInteractionStyle
+from vtkmodules.vtkCommonColor import vtkNamedColors
+from vtkmodules.vtkFiltersSources import vtkSphereSource
+<a alt="biblioteca de texto 3D">from vtkmodules.vtkRenderingFreeType import vtkVectorText</a>
+from vtkmodules.vtkFiltersSources import vtkCylinderSource
+from vtkmodules.vtkRenderingAnnotation import vtkAxesActor
+from vtkmodules.vtkRenderingCore import (
+    vtkActor,
+    vtkLight,
+    vtkPolyDataMapper,
+    vtkRenderWindow,
+    <a alt="biblioteca de texto 3D">vtkFollower,</a>
+    vtkRenderWindowInteractor,
+    vtkRenderer
+)
+
+def main():
+    colors = vtkNamedColors()
+    colors.SetColor('bkg', [0.65, 0.75, 0.99, 0])
+    sphere = vtkSphereSource()
+    sphere.SetThetaResolution(100)
+    sphere.SetPhiResolution(50)
+    sphere.SetRadius(0.3)
+    cylinder = vtkCylinderSource()
+    cylinder.SetResolution(30)
+    cylinder.SetRadius(0.3)
+    cylinder.SetHeight(0.7)
+
+    sphereMapper = vtkPolyDataMapper()
+    cylinderMapper = vtkPolyDataMapper()
+    sphereMapper.SetInputConnection(sphere.GetOutputPort())
+    cylinderMapper.SetInputConnection(cylinder.GetOutputPort())
+
+    spheres = list()
+    cylinders = list()
+    ambient = 0.8
+    diffuse = 0.0
+    specular = 0.75
+    specularPower = 4
+    position = [1.5, 0, 0]
+    position1 = [2, 0, -0.5]
+    spheres.append(vtkActor())
+    spheres[0].SetMapper(sphereMapper)
+    spheres[0].GetProperty().SetColor(colors.GetColor3d('Red'))
+    spheres[0].GetProperty().SetAmbient(ambient)
+    spheres[0].GetProperty().SetDiffuse(diffuse)
+    spheres[0].GetProperty().SetSpecular(specular)
+    spheres[0].GetProperty().SetSpecularPower(specularPower)
+    spheres[0].GetProperty().SetSpecularColor(colors.GetColor3d('White'))
+    spheres[0].AddPosition(position)
+    cylinders.append(vtkActor())
+    cylinders[0].SetMapper(cylinderMapper)
+    cylinders[0].GetProperty().SetColor(colors.GetColor3d('Blue'))
+    cylinders[0].GetProperty().SetAmbient(ambient)
+    cylinders[0].GetProperty().SetDiffuse(diffuse)
+    cylinders[0].GetProperty().SetSpecular(specular)
+    cylinders[0].GetProperty().SetSpecularPower(specularPower)
+    cylinders[0].GetProperty().SetSpecularColor(colors.GetColor3d('White'))
+    cylinders[0].AddPosition(position1)
+    <a alt="texto da fonte de luz 1">atext =</a> vtkVectorText()
+    atext.SetText('Fonte 1')
+    textMapper = vtkPolyDataMapper()
+    textMapper.SetInputConnection(atext.GetOutputPort())
+    textActor = vtkFollower()
+    textActor.SetMapper(textMapper)
+    textActor.SetScale(0.2, 0.2, 0.2)
+    textActor.AddPosition(-3, 2, 0)
+    <a alt="texto da fonte de luz 2">atext1 =</a> vtkVectorText()
+    atext1.SetText('Fonte 2')
+    textMapper = vtkPolyDataMapper()
+    textMapper.SetInputConnection(atext.GetOutputPort())
+    textActor1 = vtkFollower()
+    textActor1.SetMapper(textMapper)
+    textActor1.SetScale(0.2, 0.2, 0.2)
+    textActor1.AddPosition(3, 2, 0)
+
+    ren = vtkRenderer()
+    axes = vtkAxesActor()
+    ren.AddActor(axes)
+    renWin = vtkRenderWindow()
+    renWin.AddRenderer(ren)
+    iren = vtkRenderWindowInteractor()
+    iren.SetRenderWindow(renWin)
+    ren.AddActor(axes)
+    ren.AddActor(textActor)
+    ren.AddActor(textActor1)
+    ren.AddActor(spheres[0])
+    ren.AddActor(cylinders[0])
+
+    ren.SetBackground(colors.GetColor3d('bkg'))
+    renWin.SetSize(940, 480)
+    renWin.SetWindowName('AmbientSpheres')
+
+    <a alt="posição da fonte de luz 1">light =</a> vtkLight()
+    light.SetFocalPoint(1.8, 0.6, 0)
+    light.SetPosition(-3, 2, 0)
+    ren.AddLight(light)
+        
+    <a alt="posição da fonte de luz 2">light1 =</a> vtkLight()
+    light1.SetFocalPoint(1.8, 0.6, 0)
+    light1.SetPosition(3, 2, 0)
+    ren.AddLight(light1)
+
+    iren.Initialize()
+    renWin.Render()
+    iren.Start()
+if __name__ == '__main__':
+    main()
+</code></pre></figcaption>
+  </details></div>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-98.png"/>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
