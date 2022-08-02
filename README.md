@@ -1478,6 +1478,8 @@ z = v[:, 2]
     label = tag
     ax.text3D(x, y, z, label, zdir = [1,1,1], color = 'k')
 
+<a alt="mesma escala usada nos três eixos">ax.set_box_aspect([1,1,1])</a>
+
 plt.show()
 </code></pre></figcaption>
   </details></div>
