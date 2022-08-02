@@ -1278,7 +1278,7 @@ plt.show()
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-82.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Construção da superfície lateral de um cilindro:
+  <figcaption>Construção da superfície lateral de um cilindro circular reto:
 <pre><code>import matplotlib.pyplot as plt
 import numpy as np
 
@@ -1302,7 +1302,7 @@ plt.show()
   </details></div>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-82a.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Construção do cilindro:
+  <figcaption>Construção de um cilindro circular reto:
 <pre><code>import matplotlib.pyplot as plt
 import numpy as np
 
@@ -1337,6 +1337,67 @@ plt.show()
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-82b.png"/>
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-83.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Construção de um cone circular reto:
+<pre><code>import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib.patches import Circle
+import mpl_toolkits.mplot3d.art3d as art3d
+
+fig = plt.figure()
+ax = fig.add_subplot(projection = '3d')
+
+raio = 3
+altura = 7
+x = np.linspace(-raio, raio, 155)
+z = np.linspace(0, altura, 155)
+<a alt="grade de x e z limitada ao raio e a altura do cone">x1, z1 = </a>np.meshgrid(x, z)
+<a alt="relação entre as coordenadas para definir a superfície do cone">y1 =</a> np.sqrt(z1**2*(raio/altura)**2 - x1**2)
+
+rstride = 10
+cstride = 10
+ax.plot_surface(x1, y1, -z1, alpha = 0.7, color = 'grey', rstride = rstride, cstride = cstride)
+ax.plot_surface(x1, -y1, -z1, alpha = 0.7, color = 'grey', rstride = rstride, cstride= cstride)
+
+<a alt="base do cone">p = Circle</a>((0, 0), raio, color = 'aqua', alpha = 0.5)
+ax.add_patch(p)
+art3d.pathpatch_2d_to_3d(p, z = -altura, zdir = 'z')
+
+plt.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-83a.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Construção de um cone circular reto (coordenadas polares):
+<pre><code>import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib.patches import Circle
+import mpl_toolkits.mplot3d.art3d as art3d
+
+fig = plt.figure()
+ax = fig.add_subplot(projection = '3d')
+
+raio = 4
+altura = 7
+altura1 = np.linspace(0, altura, 150)
+raio1 = np.linspace(0, raio, 150)
+theta = np.linspace(0, 2*np.pi, 150)
+
+R, T = np.meshgrid(raio1, theta)
+A, T = np.meshgrid(altura1, theta)
+<a alt="coordenas polares paramétricas">X, Y, Z =</a> R*np.cos(T), R*np.sin(T), A
+
+p = Circle((0, 0), raio, color = 'aqua', alpha = 0.2)
+ax.add_patch(p)
+art3d.pathpatch_2d_to_3d(p, z = -altura, zdir = 'z')
+
+rstride = 10
+cstride = 10
+ax.plot_surface(X, Y, -Z, alpha = 0.7, color = 'grey', rstride = rstride, cstride = cstride)
+
+plt.show()
+</code></pre></figcaption>
+  </details></div>
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-84.png"/>
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
