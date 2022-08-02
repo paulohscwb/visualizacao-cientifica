@@ -1533,8 +1533,97 @@ plt.show()
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-88.png"/>
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-89.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Triangulação de um objeto 3D de extensão PLY:
+<pre><code><a alt="biblioteca para leitura de arquivo PLY">from plyfile import PlyData</a>
+import numpy as np
+import matplotlib.pyplot as plt
+
+plydata = <a alt="leitura do arquivo PLY">PlyData.read</a>('C:/dados/galleon.ply')
+with open('C:/dados/galleon.ply', 'rb') as f:
+    plydata = PlyData.read(f)
+
+plydata.elements[0].name
+plydata.elements[0].data[0]
+nr_vertices = plydata.elements[0].count
+nr_faces = plydata.elements[1].count
+
+<a alt="extração das informações dos vértices do objeto">vertices =</a> np.array([plydata['vertex'][k] for k in range(nr_vertices)])
+x, y, z = zip(*vertices)
+
+<a alt="extração das informações das faces do objeto">faces =</a> [plydata['face'][k][0] for k in range(nr_faces)]
+ax = plt.figure().add_subplot(projection = '3d')
+
+ax.plot_trisurf(x, y, z, triangles = faces, cmap = 'RdBu_r', edgecolor = 'green', 
+    linewidth = 0.1, alpha = 0.5)
+
+<a alt="escala igual para os eixos">def set_axes_equal(ax: plt.Axes):</a>
+    limits = np.array([ax.get_xlim3d(), ax.get_ylim3d(), ax.get_zlim3d()])
+    origin = np.mean(limits, axis=1)
+    radius = 0.5 * np.max(np.abs(limits[:, 1] - limits[:, 0]))
+    _set_axes_radius(ax, origin, radius)
+    
+def _set_axes_radius(ax, origin, radius):
+    x, y, z = origin
+    ax.set_xlim3d([x - radius, x + radius])
+    ax.set_ylim3d([y - radius, y + radius])
+    ax.set_zlim3d([z - radius, z + radius])
+    
+set_axes_equal(ax)
+
+plt.show()
+</code></pre></figcaption>
+  <p>&#x1f4ca; <a href="modulo5/galleon.ply" target="_blank">Arquivo galleon PLY</a></p>
+  </details></div>
+  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-89a.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Triangulação de um objeto 3D de extensão PLY:
+<pre><code>from plyfile import PlyData
+import numpy as np
+import matplotlib.pyplot as plt
+
+plydata = PlyData.read('C:/dados/chopper.ply')
+with open('C:/dados/chopper.ply', 'rb') as f:
+    plydata = PlyData.read(f)
+
+plydata.elements[0].name
+plydata.elements[0].data[0]
+nr_vertices = plydata.elements[0].count
+nr_faces = plydata.elements[1].count
+
+vertices = np.array([plydata['vertex'][k] for k in range(nr_vertices)])
+x, y, z = zip(*vertices)
+
+faces = [plydata['face'][k][0] for k in range(nr_faces)]
+ax = plt.figure().add_subplot(projection = '3d')
+
+ax.plot_trisurf(x, y, z, triangles = faces, cmap = 'RdBu_r', edgecolor = 'green', 
+linewidth = 0.1, alpha = 0.5)
+
+def set_axes_equal(ax: plt.Axes):
+    limits = np.array([ax.get_xlim3d(), ax.get_ylim3d(), ax.get_zlim3d()])
+    origin = np.mean(limits, axis=1)
+    radius = 0.5 * np.max(np.abs(limits[:, 1] - limits[:, 0]))
+    _set_axes_radius(ax, origin, radius)
+    
+def _set_axes_radius(ax, origin, radius):
+    x, y, z = origin
+    ax.set_xlim3d([x - radius, x + radius])
+    ax.set_ylim3d([y - radius, y + radius])
+    ax.set_zlim3d([z - radius, z + radius])
+    
+set_axes_equal(ax)
+<a alt="eixos e planos de projeções ocultos">plt.axis('off')</a>
+
+plt.show()
+</code></pre></figcaption>
+  <p>&#x1f4ca; <a href="modulo5/chopper.ply" target="_blank">Arquivo chopper PLY</a></p>
+  </details></div>
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-90.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f517; Link</summary>
+  <p><a href="https://people.sc.fsu.edu/~jburkardt/data/ply/ply.html" target="_blank">https://people.sc.fsu.edu/~jburkardt/data/ply/ply.html</a></p></details></div>
+  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-90a.png"/>
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-91.png"/>
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
