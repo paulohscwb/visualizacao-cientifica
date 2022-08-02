@@ -1385,7 +1385,7 @@ theta = np.linspace(0, 2*np.pi, 150)
 
 R, T = np.meshgrid(raio1, theta)
 A, T = np.meshgrid(altura1, theta)
-<a alt="coordenas polares paramétricas">X, Y, Z =</a> R*np.cos(T), R*np.sin(T), A
+<a alt="coordenadas polares paramétricas">X, Y, Z =</a> R*np.cos(T), R*np.sin(T), A
 
 p = Circle((0, 0), raio, color = 'aqua', alpha = 0.2)
 ax.add_patch(p)
@@ -1402,6 +1402,26 @@ plt.show()
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-84.png"/>
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-85.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Construção de uma superfície:
+<pre><code>import matplotlib.pyplot as plt
+import numpy as np
+
+fig = plt.figure()
+ax = fig.add_subplot(projection = '3d')
+
+r = 3
+x = np.linspace(-r, r, 155)
+y = np.linspace(-r, r, 155)
+x1, y1 = np.meshgrid(x, y)
+<a alt="função de x e y">z1 =</a> x1*np.exp(-x1**2 - y1**4)
+
+ax.plot_surface(x1, y1, z1, alpha = 0.7, <a alt="mapa de cores cool invertido">cmap =</a> 'cool_r')
+
+plt.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-85a.png"/>
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-86.png"/>
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
