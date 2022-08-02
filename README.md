@@ -1424,6 +1424,64 @@ plt.show()
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-85a.png"/>
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-86.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Construção de um poliedro:
+<pre><code>from matplotlib import pyplot as plt
+<a alt="biblioteca para construção de poliedros">from mpl_toolkits.mplot3d.art3d import Poly3DCollection</a>
+import numpy as np
+
+fig = plt.figure()
+ax = fig.add_subplot(projection = '3d')
+
+<a alt="coordenadas dos vértices">v =</a> np.array([[1, 1, 0], [5, 1, 0], [5, 5, 0], [1, 5, 0], [1, 1, 4], [5, 1, 4], [5, 5, 4], 
+    [1, 5, 4]])
+
+<a alt="definição do conjunto de vértices de cada face">faces =</a> [[v[0],v[1],v[2],v[3]], [v[0],v[1],v[5],v[4]], [v[0],v[3],v[7],v[4]],
+    [v[3],v[2],v[6],v[7]], [v[1],v[2],v[6],v[5]], [v[4],v[5],v[6],v[7]]]
+
+<a alt="gráfico de dispersão dos vértices">ax.scatter3D</a>(v[:, 0], v[:, 1], v[:, 2])
+
+<a alt="construção do poliedro com o conjunto definido de faces">ax.add_collection3d</a>(Poly3DCollection(faces, facecolors = 'orange', edgecolors = 'blue', 
+    alpha = 0.25))
+
+plt.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-86a.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Construção de um poliedro com rótulos dos vértices:
+<pre><code>from matplotlib import pyplot as plt
+from mpl_toolkits.mplot3d.art3d import Poly3DCollection
+import numpy as np
+
+fig = plt.figure()
+ax = fig.add_subplot(projection = '3d')
+
+v = np.array([[1, 1, 0], [5, 1, 0], [5, 5, 0], [1, 5, 0], [1, 1, 4], [5, 1, 4], [5, 5, 4], 
+[1, 5, 4]])
+
+faces = [[v[0],v[1],v[2],v[3]], [v[0],v[1],v[5],v[4]], [v[0],v[3],v[7],v[4]],
+         [v[3],v[2],v[6],v[7]], [v[1],v[2],v[6],v[5]], [v[4],v[5],v[6],v[7]]]
+
+ax.scatter3D(v[:, 0], v[:, 1], v[:, 2])
+
+<a alt="conjunto de cores das faces">cores =</a> ['blue', 'green', 'yellow', 'red', 'cyan', 'black']
+
+ax.add_collection3d(Poly3DCollection(faces, <a alt="cores das faces">facecolors =</a> cores, edgecolors = 'blue', 
+    alpha = 0.25))
+
+x = v[:, 0]
+y = v[:, 1]
+z = v[:, 2]
+<a alt="rótulos dos vértices">rotulos =</a> ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
+<a alt="laço para inserir os respectivos rótulos dos vértices">for x, y, z, tag in zip(x, y, z, rotulos):</a>
+    label = tag
+    ax.text3D(x, y, z, label, zdir = [1,1,1], color = 'k')
+
+plt.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-86b.png"/>
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-87.png"/>
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
