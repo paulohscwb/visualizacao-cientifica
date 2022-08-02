@@ -2209,6 +2209,7 @@ p.add_mesh(mesh, cmap = 'coolwarm_r', <a alt="coordenadas usadas para o mapa de 
 p.show()
 </code></pre></figcaption>
   <p>&#x1f4ca; <a href="modulo6/everest.obj" target="_blank">Arquivo OBJ do Monte Everest</a></p>
+  <p>&#x1f4ca; <a href="modulo6/palcoyo.obj" target="_blank">Arquivo OBJ de montanhas de Palcoyo</a></p>
   </details></div>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-104.png"/>
