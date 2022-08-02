@@ -1479,7 +1479,7 @@ z = v[:, 2]
     label = tag
     ax.text3D(x, y, z, label, zdir = [1,1,1], color = 'k')
 
-<a alt="mesma escala usada nos três eixos">ax.set_box_aspect([1,1,1])</a>
+<a alt="mesma escala usada nos três eixos">ax.set_box_aspect((np.ptp(v[:, 0]), np.ptp(v[:, 1]), np.ptp(v[:, 2])))</a>
 
 plt.show()
 </code></pre></figcaption>
@@ -1504,7 +1504,7 @@ z = np.sin(-x*y)
 ax = plt.figure().add_subplot(projection = '3d')
 <a alt="triangulação da superfície">ax.plot_trisurf</a>(x, y, z, linewidth = 0.2, cmap = 'RdBu')
 
-ax.set_box_aspect([1,1,1])
+ax.set_box_aspect((np.ptp(x), np.ptp(y), np.ptp(z)))
 
 plt.show()
 </code></pre></figcaption>
@@ -1557,19 +1557,7 @@ ax = plt.figure().add_subplot(projection = '3d')
 ax.plot_trisurf(x, y, z, triangles = faces, cmap = 'RdBu_r', edgecolor = 'green', 
     linewidth = 0.1, alpha = 0.5)
 
-<a alt="escala igual para os eixos">def set_axes_equal(ax: plt.Axes):</a>
-    limits = np.array([ax.get_xlim3d(), ax.get_ylim3d(), ax.get_zlim3d()])
-    origin = np.mean(limits, axis=1)
-    radius = 0.5 * np.max(np.abs(limits[:, 1] - limits[:, 0]))
-    _set_axes_radius(ax, origin, radius)
-    
-def _set_axes_radius(ax, origin, radius):
-    x, y, z = origin
-    ax.set_xlim3d([x - radius, x + radius])
-    ax.set_ylim3d([y - radius, y + radius])
-    ax.set_zlim3d([z - radius, z + radius])
-    
-set_axes_equal(ax)
+<a alt="escala igual para os eixos">ax.set_box_aspect</a>((np.ptp(x), np.ptp(y), np.ptp(z)))
 
 plt.show()
 </code></pre></figcaption>
@@ -1600,19 +1588,8 @@ ax = plt.figure().add_subplot(projection = '3d')
 ax.plot_trisurf(x, y, z, triangles = faces, cmap = 'RdBu_r', edgecolor = 'green', 
 linewidth = 0.1, alpha = 0.5)
 
-def set_axes_equal(ax: plt.Axes):
-    limits = np.array([ax.get_xlim3d(), ax.get_ylim3d(), ax.get_zlim3d()])
-    origin = np.mean(limits, axis=1)
-    radius = 0.5 * np.max(np.abs(limits[:, 1] - limits[:, 0]))
-    _set_axes_radius(ax, origin, radius)
-    
-def _set_axes_radius(ax, origin, radius):
-    x, y, z = origin
-    ax.set_xlim3d([x - radius, x + radius])
-    ax.set_ylim3d([y - radius, y + radius])
-    ax.set_zlim3d([z - radius, z + radius])
-    
-set_axes_equal(ax)
+ax.set_box_aspect((np.ptp(x), np.ptp(y), np.ptp(z)))
+
 <a alt="eixos e planos de projeções ocultos">plt.axis('off')</a>
 
 plt.show()
@@ -1647,19 +1624,7 @@ ax.set_xlim3d(np.min(vertices[:,0]), np.max(vertices[:,0]))
 ax.set_ylim3d(np.min(vertices[:,1]), np.max(vertices[:,1]))
 ax.set_zlim3d(np.min(vertices[:,2]), np.max(vertices[:,2]))
 
-def set_axes_equal(ax: plt.Axes):
-    limits = np.array([ax.get_xlim3d(), ax.get_ylim3d(), ax.get_zlim3d()])
-    origin = np.mean(limits, axis=1)
-    radius = 0.5 * np.max(np.abs(limits[:, 1] - limits[:, 0]))
-    _set_axes_radius(ax, origin, radius)
-    
-def _set_axes_radius(ax, origin, radius):
-    x, y, z = origin
-    ax.set_xlim3d([x - radius, x + radius])
-    ax.set_ylim3d([y - radius, y + radius])
-    ax.set_zlim3d([z - radius, z + radius])
-    
-set_axes_equal(ax)
+ax.set_box_aspect((np.ptp(vertices[:,0]), np.ptp(vertices[:,1]), np.ptp(vertices[:,2])))
 
 plt.show()
 </code></pre></figcaption>
