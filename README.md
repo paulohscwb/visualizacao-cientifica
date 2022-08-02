@@ -1626,6 +1626,47 @@ plt.show()
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-90a.png"/>
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-91.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Triangulação de um objeto 3D de extensão PLY:
+<pre><code>import numpy as np
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d.art3d import Poly3DCollection
+
+<a alt="arquivo dos vértices">vertices =</a> np.loadtxt('C:/dados/vertices_hind.txt')
+<a alt="arquivo das faces">faces =</a> np.loadtxt('C:/dados/faces_hind.txt', int)
+
+facesc = np.array(vertices[faces])
+
+fig = plt.figure()
+ax = fig.add_subplot(projection = '3d')
+
+ax.add_collection3d(Poly3DCollection(facesc, facecolors = 'green', edgecolors = 'grey', 
+    alpha = 0.25, linewidth = 0.1))
+
+ax.set_xlim3d(np.min(vertices[:,0]), np.max(vertices[:,0]))
+ax.set_ylim3d(np.min(vertices[:,1]), np.max(vertices[:,1]))
+ax.set_zlim3d(np.min(vertices[:,2]), np.max(vertices[:,2]))
+
+def set_axes_equal(ax: plt.Axes):
+    limits = np.array([ax.get_xlim3d(), ax.get_ylim3d(), ax.get_zlim3d()])
+    origin = np.mean(limits, axis=1)
+    radius = 0.5 * np.max(np.abs(limits[:, 1] - limits[:, 0]))
+    _set_axes_radius(ax, origin, radius)
+    
+def _set_axes_radius(ax, origin, radius):
+    x, y, z = origin
+    ax.set_xlim3d([x - radius, x + radius])
+    ax.set_ylim3d([y - radius, y + radius])
+    ax.set_zlim3d([z - radius, z + radius])
+    
+set_axes_equal(ax)
+
+plt.show()
+</code></pre></figcaption>
+  <p>&#x1f4ca; <a href="modulo5/vertices_hind.txt" target="_blank">Arquivo dos vértices</a></p>
+  <p>&#x1f4ca; <a href="modulo5/faces_hind.txt" target="_blank">Arquivo das faces</a></p>
+  </details></div>
+  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-91a.png"/>
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
 </details>
 
