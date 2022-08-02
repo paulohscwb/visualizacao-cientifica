@@ -1277,6 +1277,64 @@ plt.show()
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-81b.png"/>
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-82.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Construção da superfície lateral de um cilindro:
+<pre><code>import matplotlib.pyplot as plt
+import numpy as np
+
+fig = plt.figure()
+ax = fig.add_subplot(projection = '3d')
+
+raio = 3
+altura = 7
+x = np.linspace(-raio, raio, 100)
+z = np.linspace(0, altura, 100)
+<a alt="grade de x e z com limites do raio e da altura">x1, z1 =</a> np.meshgrid(x, z)
+<a alt="relação que define os círculos das bases do cilindro">y1 =</a> np.sqrt(raio**2-x1**2)
+
+rstride = 10
+cstride = 10
+<a alt="função para desenhar a superfície lateral">ax.plot_surface</a>(x1, y1, z1, alpha = 0.7, color = 'green', rstride = rstride, cstride = cstride)
+ax.plot_surface(x1, -y1, z1, alpha = 0.7, color = 'green', rstride = rstride, cstride= cstride)
+
+plt.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-82a.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Construção do cilindro:
+<pre><code>import matplotlib.pyplot as plt
+import numpy as np
+
+fig = plt.figure()
+ax = fig.add_subplot(projection = '3d')
+
+raio = 3
+altura = 7
+x = np.linspace(-raio, raio, 100)
+z = np.linspace(0, altura, 100)
+x1, z1 = np.meshgrid(x, z)
+y1 = np.sqrt(raio**2-x1**2)
+
+rstride = 10
+cstride = 10
+ax.plot_surface(x1, y1, z1, alpha = 0.7, color = 'green', rstride = rstride, cstride = cstride)
+ax.plot_surface(x1, -y1, z1, alpha = 0.7, color = 'green', rstride = rstride, cstride= cstride)
+
+<a alt="bibliotecas para desenhar o círculo em 3D">from matplotlib.patches import Circle
+import mpl_toolkits.mplot3d.art3d as art3d</a>
+
+p = <a alt="função para desenhar o círculo">Circle</a>(<a alt="coordenadas do centro">(0, 0)</a>, raio, color = 'red', alpha = 0.5)
+ax.add_patch(p)
+art3d.pathpatch_2d_to_3d(p, z = 0, zdir = 'z')
+p = Circle((0, 0), raio, color = 'red', alpha = 0.5)
+ax.add_patch(p)
+art3d.pathpatch_2d_to_3d(p, z = altura, zdir = 'z')
+
+plt.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-82b.png"/>
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-83.png"/>
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
