@@ -1643,6 +1643,7 @@ plt.show()
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption>Triangulação de um objeto 3D de extensão PLY:
 <pre><code><a alt="Conexões com as bibliotecas que serão usadas para renderizar os atores">import vtkmodules.vtkRenderingOpenGL2</a>
+import vtkmodules.vtkInteractionStyle
 from vtkmodules.vtkCommonColor import vtkNamedColors
 from vtkmodules.vtkFiltersSources import vtkCylinderSource
 from vtkmodules.vtkRenderingAnnotation import vtkAxesActor
@@ -1695,7 +1696,7 @@ if __name__ == '__main__':
   </details></div>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-93.png"/>
-  <details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Etapas da renderização de uma cena com VTK</summary>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Etapas da renderização de uma cena com VTK</summary>
 	<p>Vamos acompanhar o esquema com as etapas da criação de uma cena usando a biblioteca VTK - Visualization Toolkit.</p>
 	  <ul class="slider">
 		  <li>
@@ -1726,22 +1727,115 @@ if __name__ == '__main__':
 			   <input type="radio" id="223" name="sl">
 			   <label for="223"></label>
 			   <img src="modulo6/5.png"/>
-			   <figcaption>A janela de visualização deve ser definida, onde serão mostrados os elementos definidos na cena.</figcaption>
+			   <figcaption>A janela de visualização deve ser definida, onde serão mostrados os elementos programados da cena.</figcaption>
 		   </li>
 		   <li>
 			   <input type="radio" id="224" name="sl">
 			   <label for="224"></label>
 			   <img src="modulo6/6.png"/>
-			   <figcaption>Para finalizar, podemos definir quais serão os tipos de interação usados pelo usuário com os atores da cena.</figcaption>
+			   <figcaption>Para finalizar, podemos indicar quais serão os tipos de interação usados pelo usuário com os atores da cena.</figcaption>
 		   </li>
 		</ul>
 		<img src="modulo6/1.png" class="fundo"/>
-  </details>
+  </details></div>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-93a.png"/>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-94.png"/>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-95.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Triangulação de um objeto 3D de extensão PLY:
+<pre><code>import vtkmodules.vtkInteractionStyle
+from vtkmodules.vtkCommonColor import vtkNamedColors
+from vtkmodules.vtkFiltersSources import vtkSphereSource
+from vtkmodules.vtkFiltersSources import vtkCylinderSource
+from vtkmodules.vtkRenderingAnnotation import vtkAxesActor
+from vtkmodules.vtkRenderingCore import (
+    vtkActor,
+    vtkLight,
+    vtkPolyDataMapper,
+    vtkRenderWindow,
+    vtkRenderWindowInteractor,
+    vtkRenderer
+)
+
+def main():
+    <a alt="Dados de entrada: cor do fundo, cilindros e esferas">colors = </a>vtkNamedColors()
+    colors.SetColor('bkg', [0.65, 0.75, 0.99, 0])
+    sphere = vtkSphereSource()
+    sphere.SetThetaResolution(100)
+    sphere.SetPhiResolution(50)
+    sphere.SetRadius(0.3)
+    cylinder = vtkCylinderSource()
+    cylinder.SetResolution(30)
+    cylinder.SetRadius(0.3)
+    cylinder.SetHeight(0.7)
+
+    <a alt="Mapeamentos">sphereMapper =</a> vtkPolyDataMapper()
+    cylinderMapper = vtkPolyDataMapper()
+    sphereMapper.SetInputConnection(sphere.GetOutputPort())
+    cylinderMapper.SetInputConnection(cylinder.GetOutputPort())
+
+    quantidade = 8
+    spheres = list()
+    cylinders = list()
+    <a alt="Neste exemplo, vamos visualizar apenas a luz ambiente">ambient =</a> 0.125
+    diffuse = 0.0
+    specular = 0.0
+    position = [1.5, 0, 0]
+    position1 = [2, 0, -0.5]
+    <a alt="Loop para criar os Atores e definir iluminação de cada par">for i in range(0, quantidade):</a>
+        spheres.append(vtkActor())
+        spheres[i].SetMapper(sphereMapper)
+        spheres[i].GetProperty().SetColor(colors.GetColor3d('Red'))
+        spheres[i].GetProperty().SetAmbient(ambient)
+        spheres[i].GetProperty().SetDiffuse(diffuse)
+        spheres[i].GetProperty().SetSpecular(specular)
+        spheres[i].AddPosition(position)
+        cylinders.append(vtkActor())
+        cylinders[i].SetMapper(cylinderMapper)
+        cylinders[i].GetProperty().SetColor(colors.GetColor3d('Blue'))
+        cylinders[i].GetProperty().SetAmbient(ambient)
+        cylinders[i].GetProperty().SetDiffuse(diffuse)
+        cylinders[i].GetProperty().SetSpecular(specular)
+        cylinders[i].AddPosition(position1)
+        ambient += 0.125
+        position[0] += 1.25
+        position1[0] += 1.25
+        if i == 3:
+            position[0] = 1.5
+            position[1] = -1
+            position1[0] = 2
+            position1[1] = -1
+
+    <a alt="Renderização">ren =</a> vtkRenderer()
+    axes = vtkAxesActor()
+    ren.AddActor(axes)
+    renWin = vtkRenderWindow()
+    renWin.AddRenderer(ren)
+    iren = vtkRenderWindowInteractor()
+    iren.SetRenderWindow(renWin)
+
+    for i in range(0, quantidade):
+        ren.AddActor(spheres[i])
+        ren.AddActor(cylinders[i])
+
+    ren.SetBackground(colors.GetColor3d('bkg'))
+    renWin.SetSize(940, 480)
+    renWin.SetWindowName('AmbientSpheres')
+
+    light = vtkLight()
+    light.SetFocalPoint(1.8, 0.6, 0)
+    <a alt="Posição da fonte de luz">light.SetPosition(0.8, 1.6, 1)</a>
+    ren.AddLight(light)
+
+    iren.Initialize()
+    renWin.Render()
+    iren.Start()
+if __name__ == '__main__':
+    main()
+</code></pre></figcaption>
+  </details></div>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-96.png"/>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
