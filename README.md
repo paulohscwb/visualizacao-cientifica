@@ -1240,6 +1240,41 @@ print(imf)
   <p>Material da página 81 até a página 92.</p>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-80.png"/>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-81.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Construção de um retângulo:
+<pre><code>import matplotlib.pyplot as plt
+<a alt="bibliotecas de polígonos e curvas">from matplotlib.path import Path
+import matplotlib.patches as patches</a>
+
+<a alt="sequência de vértices">verts =</a> [(0, 0), (0, 1), (2, 1), (2, 0), (0, 0),]
+<a alt="construção do caminho de vértices">path =</a> Path(verts)
+
+fig, ax = plt.subplots()
+patch = <a alt="função para desenhar o caminho path">patches.PathPatch</a>(path, facecolor = 'aqua', linestyle = '--', linewidth = 2, 
+    edgecolor = 'red')
+ax.add_patch(patch)
+
+ax.set_xlim(-1, 2.5)
+ax.set_ylim(-1, 1.5)
+<a alt="ajuste da escala dos eixos">plt.gca()</a>.set_aspect('equal', adjustable = 'box')
+
+plt.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-81a.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption>Construção de uma elipse:
+<pre><code>import matplotlib.pyplot as plt
+<a alt="biblioteca de elipses">from matplotlib.patches import Ellipse</a>
+
+fig, ax = plt.subplots()
+patch = <a alt="função para desenhar a elipse">Ellipse</a>((0.5, 0.5), <a alt="diâmetro maior">0.7</a>, <a alt="diâmetro menor">0.3</a>, color = 'orange')
+ax.add_patch(patch)
+
+plt.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-81b.png"/>
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-82.png"/>
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
