@@ -1242,7 +1242,7 @@ print(imf)
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-81.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod49', 'cd49')" onmouseout="outFunc('cd49')"><span class="tooltiptext" id="cd49">Copiar o código</span></button></div>Construção de um retângulo:
-<pre><code id="cdo49">import matplotlib.pyplot as plt
+<pre><code id="cod49">import matplotlib.pyplot as plt
 <a alt="bibliotecas de polígonos e curvas">from matplotlib.path import Path
 import matplotlib.patches as patches</a>
 
@@ -1278,7 +1278,6 @@ plt.show()
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-82.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod51', 'cd51')" onmouseout="outFunc('cd51')"><span class="tooltiptext" id="cd51">Copiar o código</span></button></div>Construção da superfície lateral de um cilindro circular reto:
 <pre><code id="cod51">import matplotlib.pyplot as plt
 import numpy as np
