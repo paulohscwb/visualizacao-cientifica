@@ -2399,8 +2399,65 @@ p.show()
   <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-111.png"/>
   <p class="topop"><a href="#modulo7" class="topo">voltar ao topo</a></p>
   <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-112.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod78', 'cd78')" onmouseout="outFunc('cd78')"><span class="tooltiptext" id="cd78">Copiar o código</span></button></div>CubeMap em uma cena do Pyvista:
+<pre><code id="cod78">import pyvista
+import pyvista as pv
+
+filename = 'C:/dados/galleon.ply'
+reader = pyvista.get_reader(filename)
+mesh = reader.read()
+<a alt="ajuste angular para encaixe do cubemap">mesh.rotate_x(-90.0)</a>
+
+p = pv.Plotter()
+p.show_axes()
+light = pv.Light(position = (-10, 1, 1), light_type = 'scene light')
+p.add_light(light)
+
+cubemap = pyvista.cubemap('C:/dados/cubemap')
+<a alt="função de conversão para o fundo da cena">p.add_actor(cubemap.to_skybox())</a>
+<a alt="inserção do fundo da cena">p.set_environment_texture(cubemap)</a>
+
+p.add_mesh(mesh, cmap = 'GnBu_r', scalars = mesh.points[:, 1], show_scalar_bar = False, 
+    diffuse = 0.9, <a alt="propriedades de materiais com reflexos">pbr = True, metallic = 0.8, roughness = 0.1</a>)
+
+p.add_axes()
+<a alt="ajuste do ângulo roll da câmera">p.camera.roll =</a> 0
+
+p.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-112a.png"/>
   <p class="topop"><a href="#modulo7" class="topo">voltar ao topo</a></p>
   <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-113.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod79', 'cd79')" onmouseout="outFunc('cd79')"><span class="tooltiptext" id="cd79">Copiar o código</span></button></div>CubeMap em uma cena do Pyvista:
+<pre><code id="cod79">import pyvista
+import pyvista as pv
+
+<a alt="dados do helicóptero">filename =</a> 'C:/dados/chopper.ply'
+reader = pyvista.get_reader(filename)
+mesh = reader.read()
+mesh.rotate_x(-90.0)
+
+p = pv.Plotter()
+p.show_axes()
+light = pv.Light(position = (-10, 1, 1), light_type = 'scene light')
+p.add_light(light)
+
+cubemap = pyvista.cubemap('C:/dados/cubemap1')
+p.add_actor(cubemap.to_skybox())
+p.set_environment_texture(cubemap)
+
+p.add_mesh(mesh, cmap = 'Reds_r', scalars = mesh.points[:, 1], show_scalar_bar = False, 
+    diffuse = 0.9, pbr = True, metallic = 0.8, roughness = 0.1)
+
+p.add_axes()
+p.camera.roll=0
+p.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-113a.png"/>
   <p class="topop"><a href="#modulo7" class="topo">voltar ao topo</a></p>
 </details>
 
