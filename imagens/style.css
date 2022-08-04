@@ -88,8 +88,8 @@ button::after {
   padding: 3px;
   position: absolute;
   z-index: 1;
-  top: -5px;
-  left: 110%;
+  top: 10%;
+  left: 115%;
   opacity: 0;
 }
 
