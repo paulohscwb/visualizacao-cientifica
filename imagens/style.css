@@ -58,7 +58,7 @@ a[alt]:hover::after {
   box-shadow:0 0 1px #ff4500, 0 0 1px #ff4500 inset;
 }
 
-button {border: 1px solid white; background-color: rgba(21,153,87,0.1); border-radius: 5px; padding: 1px; box-shadow: 0 0 2px #848484; transition:0.5s;}
+button {border: 1px solid rgba(21,153,87,0.1); background-color: rgba(21,153,87,0.1); border-radius: 5px; padding: 1px; box-shadow: 0 0 2px #848484; transition:0.5s;}
 button:hover {border: 1px solid rgb(21,153,87); background-color: rgba(21,153,87,0.2); transition:0.5s;}
 
 button::after {
