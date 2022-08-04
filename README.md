@@ -2363,6 +2363,34 @@ p.show()
   </details></div>
   <p class="topop"><a href="#modulo7" class="topo">voltar ao topo</a></p>
   <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-108.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod77', 'cd77')" onmouseout="outFunc('cd77')"><span class="tooltiptext" id="cd77">Copiar o código</span></button></div>Ângulos elevation, azimuth e roll da câmera do Pyvista:
+<pre><code id="cod77">import pyvista
+import pyvista as pv
+
+filename = 'C:/dados/galleon.ply'
+reader = pyvista.get_reader(filename)
+mesh = reader.read()
+p = pv.Plotter(lighting = 'none', window_size = [1000, 1000])
+p.show_axes()
+
+light = pv.Light(position = (10, 1, 1), light_type = 'scene light', intensity = 1.5)
+p.add_light(light)
+light = pv.Light(position = (-10, 1, 1), light_type = 'scene light', intensity = 1.5)
+p.add_light(light)
+
+p.set_background('white', top = 'white')
+
+p.add_mesh(mesh, cmap = 'GnBu_r', scalars = mesh.points[:, 2], show_scalar_bar = False,
+      	ambient = 0.3, diffuse = 0.5, specular = 0.5, specular_power = 15)
+
+<a alt="ajuste do ângulo elevation da câmera">p.camera.elevation =</a> 15
+<a alt="ajuste do ângulo azimuth da câmera">p.camera.azimuth =</a> -30
+<a alt="ajuste do ângulo roll da câmera">p.camera.roll =</a> -150
+
+p.show()
+</code></pre></figcaption>
+  </details></div>
   <p class="topop"><a href="#modulo7" class="topo">voltar ao topo</a></p>
   <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-109.png"/>
   <p class="topop"><a href="#modulo7" class="topo">voltar ao topo</a></p>
