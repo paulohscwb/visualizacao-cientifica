@@ -44,8 +44,8 @@
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-13.png"/>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-14.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Código em C++ com Matplotlib:
-<pre><code>#include <a alt="vetores de coordenadas">&lt;vector&gt;</a> 
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod1', 'cd1')" onmouseout="outFunc('cd1')"><span class="tooltiptext" id="cd1">Copiar o código</span></button></div>Código em C++ com Matplotlib:
+<pre><code id="cod1">#include <a alt="vetores de coordenadas">&lt;vector&gt;</a> 
 &#x23;include <a alt="biblioteca matplotlib">"matplotlibcpp.h"</a> 
 Namespaceplt <a alt="gráfico que será construído">plt=matplotlibcpp;</a> 
 
@@ -62,8 +62,8 @@ return0;
   </details></div>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-14a.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Código em Python com Matplotlib:
-<pre><code>import <a alt="gráfico plt da biblioteca matplotlib ">matplotlib.pyplot as plt</a> 
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod2', 'cd2')" onmouseout="outFunc('cd2')"><span class="tooltiptext" id="cd2">Copiar o código</span></button></div>Código em Python com Matplotlib:
+<pre><code id="cod2">import <a alt="gráfico plt da biblioteca matplotlib ">matplotlib.pyplot as plt</a> 
 
 <a alt="coordenadas x">x =</a> [0, 1, 2, 3, 4, 5]
 <a alt="coordenadas y">y =</a> [1, 4, 9, 16, 32, 64]
@@ -77,8 +77,8 @@ return0;
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-15.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Gráfico de dispersão 3D:
-<pre><code>import <a alt="gráfico plt da biblioteca matplotlib ">matplotlib.pyplot as plt</a> 
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod3', 'cd3')" onmouseout="outFunc('cd3')"><span class="tooltiptext" id="cd3">Copiar o código</span></button></div>Gráfico de dispersão 3D:
+<pre><code id="cod3">import <a alt="gráfico plt da biblioteca matplotlib ">matplotlib.pyplot as plt</a> 
 
 <a alt="coordenadas x">x =</a> [0, 1, 2, 3, 4, 5]
 <a alt="coordenadas y">y =</a> [1, 4, 9, 16, 32, 64]
@@ -100,8 +100,8 @@ plt.show()
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-18.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Gráfico de dispersão 2D com rótulos:
-<pre><code>import matplotlib.pyplot as plt 
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod4', 'cd4')" onmouseout="outFunc('cd4')"><span class="tooltiptext" id="cd4">Copiar o código</span></button></div>Gráfico de dispersão 2D com rótulos:
+<pre><code id="cod4">import matplotlib.pyplot as plt 
 
 x = [0, 1, 2, 3, 4, 5, 6]
 y = [1, 4, 9, 16, 32, 64, 128]
@@ -119,8 +119,8 @@ plt.show()
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-19.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Gráfico de dispersão 3D com rótulos:
-<pre><code>import matplotlib.pyplot as plt
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod5', 'cd5')" onmouseout="outFunc('cd5')"><span class="tooltiptext" id="cd5">Copiar o código</span></button></div>Gráfico de dispersão 3D com rótulos:
+<pre><code id="cod5">import matplotlib.pyplot as plt
 
 ax = plt.figure().add_subplot(projection = '3d')
 
@@ -140,8 +140,8 @@ plt.show()
   </details></div>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-19a.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Gráfico de curvas 2D com legendas:
-<pre><code>import matplotlib.pyplot as plt
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod6', 'cd6')" onmouseout="outFunc('cd6')"><span class="tooltiptext" id="cd6">Copiar o código</span></button></div>Gráfico de curvas 2D com legendas:
+<pre><code id="cod6">import matplotlib.pyplot as plt
 import <a alt="biblioteca de operações matemáticas">numpy as np</a>
 
 <a alt="intervalo [0, 5] com espaçamento 0.1">x = np.arange(0, 5, 0.1)</a>
@@ -2354,3 +2354,18 @@ p.show()
 	<li>Ward, M., Grinstein, G.G., Keim, D. Interactive data visualization foundations, techniques, and applications. Massachusetts: A K Peters, 2010.</li>
 	<li>Williams, J. G., Sochats, K. M., Morse, E. Visualization. Annual Review of Information Science and Technology (ARIST), v. 30, p. 161–207, 1995.</li>
 <ol>
+<script>
+    function copyEvent(id, id1)
+    {
+        var str = document.getElementById(id);
+        window.getSelection().selectAllChildren(str);
+        document.execCommand("Copy")
+		window.getSelection().collapseToStart();
+		var tooltip = document.getElementById(id1);
+		tooltip.innerHTML = "Código copiado!";
+    }
+	function outFunc(id) {
+		var tooltip = document.getElementById(id);
+		tooltip.innerHTML = "Copiar o código";
+	}
+</script>
