@@ -80,7 +80,7 @@ button::after {
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 140px;
+  width: 120px;
   background-color: rgb(21,153,87);
   color: #fff;
   text-align: center;
@@ -88,21 +88,20 @@ button::after {
   padding: 3px;
   position: absolute;
   z-index: 1;
-  top: 135%;
-  left: 50%;
-  margin-left: -70px;
+  top: -5px;
+  left: 110%;
   opacity: 0;
 }
 
 .tooltip .tooltiptext::after {
   content: "";
   position: absolute;
-  bottom: 100%;
-  left: 50%;
+  top: 35%;
+  left: -4%;
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: transparent transparent rgb(21,153,87) transparent;
+  border-color: transparent rgb(21,153,87) transparent transparent;
   transition: opacity 0.3s;
 }
 
