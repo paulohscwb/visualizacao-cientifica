@@ -161,8 +161,8 @@ plt.legend()
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-20.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Gráficos de curvas 2D:
-<pre><code>import matplotlib.pyplot as plt
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod7', 'cd7')" onmouseout="outFunc('cd7')"><span class="tooltiptext" id="cd7">Copiar o código</span></button></div>Gráficos de curvas 2D:
+<pre><code id="cod7">import matplotlib.pyplot as plt
 import numpy as np
 
 <a alt="definição da função f">def f(x):</a>
@@ -184,8 +184,8 @@ plt.show()
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-21.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Gráficos de curvas 3D:
-<pre><code>import matplotlib.pyplot as plt
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod8', 'cd8')" onmouseout="outFunc('cd8')"><span class="tooltiptext" id="cd8">Copiar o código</span></button></div>Gráficos de curvas 3D:
+<pre><code id="cod8">import matplotlib.pyplot as plt
 import numpy as np
 
 ax = plt.figure().add_subplot(projection = '3d')
@@ -204,8 +204,8 @@ plt.show()
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-22.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Gráfico da hélice cilíndrica:
-<pre><code>import matplotlib.pyplot as plt
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod9', 'cd9')" onmouseout="outFunc('cd9')"><span class="tooltiptext" id="cd9">Copiar o código</span></button></div>Gráfico da hélice cilíndrica:
+<pre><code id="cod9">import matplotlib.pyplot as plt
 import numpy as np
 
 ax = plt.figure().add_subplot(projection = '3d')
@@ -225,8 +225,8 @@ plt.show()
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-23.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Gráfico da hélice cilíndrica com segmentos projetantes:
-<pre><code>import matplotlib.pyplot as plt
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod10', 'cd10')" onmouseout="outFunc('cd10')"><span class="tooltiptext" id="cd10">Copiar o código</span></button></div>Gráfico da hélice cilíndrica com segmentos projetantes:
+<pre><code id="cod10">import matplotlib.pyplot as plt
 import numpy as np
 
 ax = plt.figure().add_subplot(projection = '3d')
@@ -261,8 +261,8 @@ plt.show()
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-26.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Conjunto de dados Iris com matplotlib (cor e movimento):
-<pre><code><a alt="biblioteca para leitura dos dados em formato CSV">import pandas as pd</a>
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod11', 'cd11')" onmouseout="outFunc('cd11')"><span class="tooltiptext" id="cd11">Copiar o código</span></button></div>Conjunto de dados Iris com matplotlib (cor e movimento):
+<pre><code id="cod11"><a alt="biblioteca para leitura dos dados em formato CSV">import pandas as pd</a>
 import numpy as np
 from matplotlib import pyplot as plt
 
@@ -301,8 +301,8 @@ plt.show()
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-27.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Conjunto de dados Iris com matplotlib (textura):
-<pre><code>import pandas as pd
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod12', 'cd12')" onmouseout="outFunc('cd12')"><span class="tooltiptext" id="cd12">Copiar o código</span></button></div>Conjunto de dados Iris com matplotlib (textura):
+<pre><code id="cod12">import pandas as pd
 import numpy as np
 from matplotlib import pyplot as plt
 
@@ -338,8 +338,8 @@ plt.show()
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-28.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Conjunto de dados Iris com Seaborn (cores):
-<pre><code>import pandas as pd
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod13', 'cd13')" onmouseout="outFunc('cd13')"><span class="tooltiptext" id="cd13">Copiar o código</span></button></div>Conjunto de dados Iris com Seaborn (cores):
+<pre><code id="cod13">import pandas as pd
 <a alt="biblioteca Seaborn">import seaborn as sns</a>
 
 iris = pd.read_csv('C:/dados/iris.csv')
@@ -359,8 +359,8 @@ sns.relplot(data = iris, x = 'Comprimento da Sépala', y = 'Comprimento da Péta
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-32.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Conjunto de dados Iris com Seaborn (cores e tamanhos):
-<pre><code>import pandas as pd
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod14', 'cd14')" onmouseout="outFunc('cd14')"><span class="tooltiptext" id="cd14">Copiar o código</span></button></div>Conjunto de dados Iris com Seaborn (cores e tamanhos):
+<pre><code id="cod14">import pandas as pd
 import seaborn as sns
 
 iris = pd.read_csv('C:/dados/iris.csv')
@@ -374,8 +374,8 @@ sns.relplot(data = iris, x = 'Comprimento da Sépala', y = 'Comprimento da Péta
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-33.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Conjunto de dados Iris com Seaborn (dispersão e frequência):
-<pre><code>import pandas as pd
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod15', 'cd15')" onmouseout="outFunc('cd15')"><span class="tooltiptext" id="cd15">Copiar o código</span></button></div>Conjunto de dados Iris com Seaborn (dispersão e frequência):
+<pre><code id="cod15">import pandas as pd
 import seaborn as sns
 
 iris = pd.read_csv('C:/dados/iris.csv')
@@ -390,8 +390,8 @@ iris = pd.read_csv('C:/dados/iris.csv')
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-34.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Conjunto de dados dos pinguins com Seaborn (regressão linear):
-<pre><code>import pandas as pd
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod16', 'cd16')" onmouseout="outFunc('cd16')"><span class="tooltiptext" id="cd16">Copiar o código</span></button></div>Conjunto de dados dos pinguins com Seaborn (regressão linear):
+<pre><code id="cod16">import pandas as pd
 import seaborn as sns
 
 pinguins = pd.read_csv('C:/dados/penguin2.csv')
@@ -406,8 +406,8 @@ sns.set_style("whitegrid")
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-35.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Conjunto de dados dos pinguins com Seaborn (combinações de gráficos):
-<pre><code>import pandas as pd
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod17', 'cd17')" onmouseout="outFunc('cd17')"><span class="tooltiptext" id="cd17">Copiar o código</span></button></div>Conjunto de dados dos pinguins com Seaborn (combinações de gráficos):
+<pre><code id="cod17">import pandas as pd
 import seaborn as sns
 
 pinguins = pd.read_csv('C:/dados/penguin2.csv')
@@ -420,8 +420,8 @@ sns.set_style("whitegrid")
   </details></div>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-35a.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Conjunto de dados dos pinguins com Seaborn (combinações de gráficos):
-<pre><code>import pandas as pd
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod18', 'cd18')" onmouseout="outFunc('cd18')"><span class="tooltiptext" id="cd18">Copiar o código</span></button></div>Conjunto de dados dos pinguins com Seaborn (combinações de gráficos):
+<pre><code id="cod18">import pandas as pd
 import seaborn as sns
 
 pinguins = pd.read_csv('C:/dados/penguin2.csv')
@@ -438,8 +438,8 @@ g.add_legend()
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-36.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Conjunto de dados dos pinguins com Seaborn (combinações de gráficos):
-<pre><code>import pandas as pd
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod19', 'cd19')" onmouseout="outFunc('cd19')"><span class="tooltiptext" id="cd19">Copiar o código</span></button></div>Conjunto de dados dos pinguins com Seaborn (combinações de gráficos):
+<pre><code id="cod19">import pandas as pd
 import seaborn as sns
 
 pinguins = pd.read_csv('C:/dados/penguin2.csv')
@@ -455,8 +455,8 @@ g.add_legend(title = '', adjust_subtitles = True)
   </details></div>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-36a.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Conjunto de dados Iris com Plotly (dispersão 3D):
-<pre><code>import pandas as pd
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod20', 'cd20')" onmouseout="outFunc('cd20')"><span class="tooltiptext" id="cd20">Copiar o código</span></button></div>Conjunto de dados Iris com Plotly (dispersão 3D):
+<pre><code id="cod20">import pandas as pd
 <a alt="biblioteca plotly">import plotly.io as pio</a>
 import plotly.express as px
 
@@ -478,8 +478,8 @@ fig.show()
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-39.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Duas hélices (movimento):
-<pre><code>import matplotlib.pyplot as plt
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod21', 'cd21')" onmouseout="outFunc('cd21')"><span class="tooltiptext" id="cd21">Copiar o código</span></button></div>Duas hélices (movimento):
+<pre><code id="cod21">import matplotlib.pyplot as plt
 import numpy as np
 
 ax = plt.figure().add_subplot(projection = '3d')
@@ -505,8 +505,8 @@ plt.show()
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-41.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Dados vetoriais 2D:
-<pre><code>import matplotlib.pyplot as plt
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod22', 'cd22')" onmouseout="outFunc('cd22')"><span class="tooltiptext" id="cd22">Copiar o código</span></button></div>Dados vetoriais 2D:
+<pre><code id="cod22">import matplotlib.pyplot as plt
 
 X = [1, 2, 3]
 Y = [2, 1, 2]
@@ -528,8 +528,8 @@ plt.show()
   </details></div>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-41a.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Dados vetoriais 2D:
-<pre><code>import matplotlib.pyplot as plt
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod23', 'cd23')" onmouseout="outFunc('cd23')"><span class="tooltiptext" id="cd23">Copiar o código</span></button></div>Dados vetoriais 2D:
+<pre><code id="cod23">import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
@@ -555,8 +555,8 @@ plt.show()
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-42.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Dados vetoriais 2D:
-<pre><code>import matplotlib.pyplot as plt
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod24', 'cd24')" onmouseout="outFunc('cd24')"><span class="tooltiptext" id="cd24">Copiar o código</span></button></div>Dados vetoriais 2D:
+<pre><code id="cod24">import matplotlib.pyplot as plt
 import numpy as np
 
 <a alt="extremidades na grade">X, Y =</a> np.meshgrid(np.arange(-5,5,0.5),np.arange(-5,5,0.5))
@@ -575,8 +575,8 @@ plt.show()
   </details></div>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-42a.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Dados vetoriais 3D:
-<pre><code>import matplotlib.pyplot as plt
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod25', 'cd25')" onmouseout="outFunc('cd25')"><span class="tooltiptext" id="cd25">Copiar o código</span></button></div>Dados vetoriais 3D:
+<pre><code id="cod25">import matplotlib.pyplot as plt
 
 ax = plt.figure().add_subplot(projection = '3d')
 
@@ -597,8 +597,8 @@ plt.show()
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-43.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Dados vetoriais 3D:
-<pre><code>import matplotlib.pyplot as plt
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod26', 'cd26')" onmouseout="outFunc('cd26')"><span class="tooltiptext" id="cd26">Copiar o código</span></button></div>Dados vetoriais 3D:
+<pre><code id="cod26">import matplotlib.pyplot as plt
 import numpy as np
 
 ax = plt.figure().add_subplot(projection = '3d')
@@ -621,8 +621,8 @@ plt.show()
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-44.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Dados vetoriais 3D:
-<pre><code>import matplotlib.pyplot as plt
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod27', 'cd27')" onmouseout="outFunc('cd27')"><span class="tooltiptext" id="cd27">Copiar o código</span></button></div>Dados vetoriais 3D:
+<pre><code id="cod27">import matplotlib.pyplot as plt
 import numpy as np
 <a alt="biblioteca para leitura do arquivo mat">from scipy.io import loadmat</a>
 
@@ -654,8 +654,8 @@ plt.show()
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-45.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Dados vetoriais 3D:
-<pre><code>import numpy as np
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod28', 'cd28')" onmouseout="outFunc('cd28')"><span class="tooltiptext" id="cd28">Copiar o código</span></button></div>Dados vetoriais 3D:
+<pre><code id="cod28">import numpy as np
 import matplotlib.pyplot as plt
 <a alt="biblioteca para leitura do arquivo nc">import netCDF4 as nc</a>
 
@@ -689,8 +689,8 @@ plt.show()
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-47.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Linhas de fluxo 2D:
-<pre><code>import plotly.figure_factory as ff
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod29', 'cd29')" onmouseout="outFunc('cd29')"><span class="tooltiptext" id="cd29">Copiar o código</span></button></div>Linhas de fluxo 2D:
+<pre><code id="cod29">import plotly.figure_factory as ff
 import numpy as np
 import plotly.io as pio
 
@@ -710,8 +710,8 @@ fig.show()
   </details></div>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-47a.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Linhas de fluxo 3D:
-<pre><code>import plotly.graph_objects as go
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod30', 'cd30')" onmouseout="outFunc('cd30')"><span class="tooltiptext" id="cd30">Copiar o código</span></button></div>Linhas de fluxo 3D:
+<pre><code id="cod30">import plotly.graph_objects as go
 import pandas as pd
 import plotly.io as pio
 
@@ -768,8 +768,8 @@ fig.show()
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-63.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Gráfico radar (polar):
-<pre><code>import plotly.io as pio
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod31', 'cd31')" onmouseout="outFunc('cd31')"><span class="tooltiptext" id="cd31">Copiar o código</span></button></div>Gráfico radar (polar):
+<pre><code id="cod31">import plotly.io as pio
 pio.renderers
 pio.renderers.default = 'browser'
 import plotly.graph_objects as go
@@ -794,8 +794,8 @@ fig.show()
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-64.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Gráfico com coordenadas paralelas:
-<pre><code>import pandas as pd
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod32', 'cd32')" onmouseout="outFunc('cd32')"><span class="tooltiptext" id="cd32">Copiar o código</span></button></div>Gráfico com coordenadas paralelas:
+<pre><code id="cod32">import pandas as pd
 import plotly.io as pio
 import plotly.graph_objects as go
 pio.renderers
@@ -820,8 +820,8 @@ fig.show()
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-65.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Gráfico com seleção interativa:
-<pre><code><a alt="biblioteca bokeh de gráficos interativos">from bokeh.layouts import gridplot</a>
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod33', 'cd33')" onmouseout="outFunc('cd33')"><span class="tooltiptext" id="cd33">Copiar o código</span></button></div>Gráfico com seleção interativa:
+<pre><code id="cod33"><a alt="biblioteca bokeh de gráficos interativos">from bokeh.layouts import gridplot</a>
 from bokeh.plotting import figure, show
 from bokeh.models import ColumnDataSource
 from bokeh.transform import factor_cmap, factor_mark
@@ -863,8 +863,8 @@ show(p)
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-67.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Grafo orientado:
-<pre><code><a alt="biblioteca networkx de grafos orientados">import networkx as nx</a>
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod34', 'cd34')" onmouseout="outFunc('cd34')"><span class="tooltiptext" id="cd34">Copiar o código</span></button></div>Grafo orientado:
+<pre><code id="cod34"><a alt="biblioteca networkx de grafos orientados">import networkx as nx</a>
 import matplotlib.pyplot as plt
 
 <a alt="definição dos arcos entre os nós">arcos =</a> [['Madrid','Paris'], ['Madrid','Bern'], ['Bern','Madrid'], ['Bern','Amsterdan'], 
@@ -906,8 +906,8 @@ plt.show()
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-68.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Grafo orientado para circuito Hamiltoniano:
-<pre><code>import networkx as nx
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod35', 'cd35')" onmouseout="outFunc('cd35')"><span class="tooltiptext" id="cd35">Copiar o código</span></button></div>Grafo orientado para circuito Hamiltoniano:
+<pre><code id="cod35">import networkx as nx
 import matplotlib.pyplot as plt
 import pandas as pd
 
@@ -934,8 +934,8 @@ plt.show()
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-69.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Grafo orientado para o problema do Caixeiro Viajante:
-<pre><code>import networkx as nx
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod36', 'cd36')" onmouseout="outFunc('cd36')"><span class="tooltiptext" id="cd36">Copiar o código</span></button></div>Grafo orientado para o problema do Caixeiro Viajante:
+<pre><code id="cod36">import networkx as nx
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -966,8 +966,8 @@ plt.show()
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-71.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Gráfico de setores:
-<pre><code>import plotly.io as pio
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod37', 'cd37')" onmouseout="outFunc('cd37')"><span class="tooltiptext" id="cd37">Copiar o código</span></button></div>Gráfico de setores:
+<pre><code id="cod37">import plotly.io as pio
 import plotly.express as px
 pio.renderers
 pio.renderers.default = 'browser'
@@ -987,8 +987,8 @@ fig.show()
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-72.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Gráfico Treeview:
-<pre><code>import plotly.express as px
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod38', 'cd38')" onmouseout="outFunc('cd38')"><span class="tooltiptext" id="cd38">Copiar o código</span></button></div>Gráfico Treeview:
+<pre><code id="cod38">import plotly.express as px
 import pandas as pd
 import plotly.io as pio
 pio.renderers
@@ -1017,8 +1017,8 @@ fig.show()
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-73.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Gráfico Treeview:
-<pre><code>import plotly.express as px
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod39', 'cd39')" onmouseout="outFunc('cd39')"><span class="tooltiptext" id="cd39">Copiar o código</span></button></div>Gráfico Treeview:
+<pre><code id="cod39">import plotly.express as px
 import pandas as pd
 import plotly.io as pio
 pio.renderers
@@ -1050,8 +1050,8 @@ fig.show()
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-74.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Gráfico Treeview:
-<pre><code>import plotly.express as px
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod40', 'cd40')" onmouseout="outFunc('cd40')"><span class="tooltiptext" id="cd40">Copiar o código</span></button></div>Gráfico Treeview:
+<pre><code id="cod40">import plotly.express as px
 import plotly.io as pio
 import pandas as pd
 import numpy as np
@@ -1073,8 +1073,8 @@ fig.show()
   </details></div>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-74a.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Gráfico Sunburst (aneis aninhados):
-<pre><code>import plotly.express as px
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod41', 'cd41')" onmouseout="outFunc('cd41')"><span class="tooltiptext" id="cd41">Copiar o código</span></button></div>Gráfico Sunburst (aneis aninhados):
+<pre><code id="cod41">import plotly.express as px
 import pandas as pd
 import plotly.io as pio
 pio.renderers
@@ -1104,8 +1104,8 @@ fig.show()
   </details></div>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-74b.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Gráfico Sunburst (aneis aninhados):
-<pre><code>import plotly.express as px
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod42', 'cd42')" onmouseout="outFunc('cd42')"><span class="tooltiptext" id="cd42">Copiar o código</span></button></div>Gráfico Sunburst (aneis aninhados):
+<pre><code id="cod42">import plotly.express as px
 import pandas as pd
 import plotly.io as pio
 pio.renderers
@@ -1135,8 +1135,8 @@ fig.show()
   </details></div>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-74c.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Gráfico Sunburst (aneis aninhados):
-<pre><code>import plotly.express as px
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod43', 'cd43')" onmouseout="outFunc('cd43')"><span class="tooltiptext" id="cd43">Copiar o código</span></button></div>Gráfico Sunburst (aneis aninhados):
+<pre><code id="cod43">import plotly.express as px
 import plotly.io as pio
 import pandas as pd
 import numpy as np
@@ -1162,8 +1162,8 @@ fig.show()
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-77.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Gráfico RadViz:
-<pre><code>import pandas as pd
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod44', 'cd44')" onmouseout="outFunc('cd44')"><span class="tooltiptext" id="cd44">Copiar o código</span></button></div>Gráfico RadViz:
+<pre><code id="cod44">import pandas as pd
 from matplotlib import pyplot as plt
 
 pinguin = pd.read_csv('C:/dados/penguin2.csv', header = 0, <a alt="colunas que contém os dados que serão usados">usecols =</a> [1,3,4,5,6,8])
@@ -1176,8 +1176,8 @@ fig.show
   </details></div>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-77a.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Gráfico de enxame (swarm):
-<pre><code>import pandas as pd
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod45', 'cd45')" onmouseout="outFunc('cd45')"><span class="tooltiptext" id="cd45">Copiar o código</span></button></div>Gráfico de enxame (swarm):
+<pre><code id="cod45">import pandas as pd
 import seaborn as sns
 
 pinguin = pd.read_csv('C:/dados/penguin2.csv')
@@ -1186,8 +1186,8 @@ pinguin = pd.read_csv('C:/dados/penguin2.csv')
   </details></div>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-77b.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Gráfico de enxame (swarm) com diagrama em caixas (boxplot):
-<pre><code>import pandas as pd
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod46', 'cd46')" onmouseout="outFunc('cd46')"><span class="tooltiptext" id="cd46">Copiar o código</span></button></div>Gráfico de enxame (swarm) com diagrama em caixas (boxplot):
+<pre><code id="cod46">import pandas as pd
 import seaborn as sns
 
 pinguin = pd.read_csv('C:/dados/penguin2.csv')
@@ -1198,8 +1198,8 @@ sns.swarmplot(x = 'Comprimento da nadadeira', y = 'Espécie', hue = 'Sexo', data
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-78.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Gráfico de enxame (swarm) com violino:
-<pre><code>import pandas as pd
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod47', 'cd47')" onmouseout="outFunc('cd47')"><span class="tooltiptext" id="cd47">Copiar o código</span></button></div>Gráfico de enxame (swarm) com violino:
+<pre><code id="cod47">import pandas as pd
 import seaborn as sns
 
 pinguin = pd.read_csv('C:/dados/penguin2.csv')
@@ -1213,8 +1213,8 @@ sns.swarmplot(x = 'Comprimento da nadadeira', y = 'Espécie', hue = 'Sexo', data
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-79.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Reconhecimento de imagens:
-<pre><code><a alt="biblioteca para carregar imagens">from PIL import Image</a>
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod48', 'cd48')" onmouseout="outFunc('cd48')"><span class="tooltiptext" id="cd48">Copiar o código</span></button></div>Reconhecimento de imagens:
+<pre><code id="cod48"><a alt="biblioteca para carregar imagens">from PIL import Image</a>
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -1241,8 +1241,8 @@ print(imf)
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-80.png"/>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-81.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Construção de um retângulo:
-<pre><code>import matplotlib.pyplot as plt
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod49', 'cd49')" onmouseout="outFunc('cd49')"><span class="tooltiptext" id="cd49">Copiar o código</span></button></div>Construção de um retângulo:
+<pre><code id="cdo49">import matplotlib.pyplot as plt
 <a alt="bibliotecas de polígonos e curvas">from matplotlib.path import Path
 import matplotlib.patches as patches</a>
 
@@ -1263,8 +1263,8 @@ plt.show()
   </details></div>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-81a.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Construção de uma elipse:
-<pre><code>import matplotlib.pyplot as plt
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod50', 'cd50')" onmouseout="outFunc('cd50')"><span class="tooltiptext" id="cd50">Copiar o código</span></button></div>Construção de uma elipse:
+<pre><code id="cod50">import matplotlib.pyplot as plt
 <a alt="biblioteca de elipses">from matplotlib.patches import Ellipse</a>
 
 fig, ax = plt.subplots()
@@ -1278,8 +1278,9 @@ plt.show()
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-82.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Construção da superfície lateral de um cilindro circular reto:
-<pre><code>import matplotlib.pyplot as plt
+  <figcaption><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod51', 'cd51')" onmouseout="outFunc('cd51')"><span class="tooltiptext" id="cd51">Copiar o código</span></button></div>Construção da superfície lateral de um cilindro circular reto:
+<pre><code id="cod51">import matplotlib.pyplot as plt
 import numpy as np
 
 fig = plt.figure()
@@ -1302,8 +1303,9 @@ plt.show()
   </details></div>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-82a.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Construção de um cilindro circular reto:
-<pre><code>import matplotlib.pyplot as plt
+  <figcaption><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod52', 'cd52')" onmouseout="outFunc('cd52')"><span class="tooltiptext" id="cd52">Copiar o código</span></button></div>Construção de um cilindro circular reto:
+<pre><code id="cod52">import matplotlib.pyplot as plt
 import numpy as np
 
 fig = plt.figure()
@@ -1338,8 +1340,9 @@ plt.show()
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-83.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Construção de um cone circular reto:
-<pre><code>import matplotlib.pyplot as plt
+  <figcaption><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod53', 'cd53')" onmouseout="outFunc('cd53')"><span class="tooltiptext" id="cd53">Copiar o código</span></button></div>Construção de um cone circular reto:
+<pre><code id="cod53">import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.patches import Circle
 import mpl_toolkits.mplot3d.art3d as art3d
@@ -1368,8 +1371,9 @@ plt.show()
   </details></div>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-83a.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Construção de um cone circular reto (coordenadas polares):
-<pre><code>import matplotlib.pyplot as plt
+  <figcaption><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod54', 'cd54')" onmouseout="outFunc('cd54')"><span class="tooltiptext" id="cd54">Copiar o código</span></button></div>Construção de um cone circular reto (coordenadas polares):
+<pre><code id="cod54">import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.patches import Circle
 import mpl_toolkits.mplot3d.art3d as art3d
@@ -1403,8 +1407,9 @@ plt.show()
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-85.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Construção de uma superfície:
-<pre><code>import matplotlib.pyplot as plt
+  <figcaption><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod55', 'cd55')" onmouseout="outFunc('cd55')"><span class="tooltiptext" id="cd55">Copiar o código</span></button></div>Construção de uma superfície:
+<pre><code id="cod55">import matplotlib.pyplot as plt
 import numpy as np
 
 fig = plt.figure()
@@ -1425,8 +1430,9 @@ plt.show()
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-86.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Construção de um poliedro:
-<pre><code>from matplotlib import pyplot as plt
+  <figcaption><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod56', 'cd56')" onmouseout="outFunc('cd56')"><span class="tooltiptext" id="cd56">Copiar o código</span></button></div>Construção de um poliedro:
+<pre><code id="cod56">from matplotlib import pyplot as plt
 <a alt="biblioteca para construção de poliedros">from mpl_toolkits.mplot3d.art3d import Poly3DCollection</a>
 import numpy as np
 
@@ -1449,8 +1455,9 @@ plt.show()
   </details></div>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-86a.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Construção de um poliedro com rótulos dos vértices:
-<pre><code>from matplotlib import pyplot as plt
+  <figcaption><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod57', 'cd57')" onmouseout="outFunc('cd57')"><span class="tooltiptext" id="cd57">Copiar o código</span></button></div>Construção de um poliedro com rótulos dos vértices:
+<pre><code id="cod57">from matplotlib import pyplot as plt
 from mpl_toolkits.mplot3d.art3d import Poly3DCollection
 import numpy as np
 
@@ -1488,8 +1495,9 @@ plt.show()
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-87.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Construção de uma superfície com triangulação:
-<pre><code>import matplotlib.pyplot as plt
+  <figcaption><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod58', 'cd58')" onmouseout="outFunc('cd58')"><span class="tooltiptext" id="cd58">Copiar o código</span></button></div>Construção de uma superfície com triangulação:
+<pre><code id="cod58">import matplotlib.pyplot as plt
 import numpy as np
 
 n_raio = 10
@@ -1511,8 +1519,9 @@ plt.show()
   </details></div>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-87a.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Construção de uma superfície com coordenadas de um arquivo:
-<pre><code>import numpy as np
+  <figcaption><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod59', 'cd59')" onmouseout="outFunc('cd59')"><span class="tooltiptext" id="cd59">Copiar o código</span></button></div>Construção de uma superfície com coordenadas de um arquivo:
+<pre><code id="cod59">import numpy as np
 import matplotlib.pyplot as plt
 
 vertices = <a alt="coordenadas dos pontos da superfície">np.array(np.loadtxt</a>('C:/dados/volcano.txt', int))
@@ -1534,8 +1543,9 @@ plt.show()
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-89.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Triangulação de um objeto 3D de extensão PLY:
-<pre><code><a alt="biblioteca para leitura de arquivo PLY">from plyfile import PlyData</a>
+  <figcaption><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod60', 'cd60')" onmouseout="outFunc('cd60')"><span class="tooltiptext" id="cd60">Copiar o código</span></button></div>Triangulação de um objeto 3D de extensão PLY:
+<pre><code id="cod60"><a alt="biblioteca para leitura de arquivo PLY">from plyfile import PlyData</a>
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -1565,8 +1575,8 @@ plt.show()
   </details></div>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-89a.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Triangulação de um objeto 3D de extensão PLY:
-<pre><code>from plyfile import PlyData
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod61', 'cd61')" onmouseout="outFunc('cd61')"><span class="tooltiptext" id="cd61">Copiar o código</span></button></div>Triangulação de um objeto 3D de extensão PLY:
+<pre><code id="cod61">from plyfile import PlyData
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -1604,8 +1614,8 @@ plt.show()
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-91.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Triangulação de um objeto 3D:
-<pre><code>import numpy as np
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod62', 'cd62')" onmouseout="outFunc('cd62')"><span class="tooltiptext" id="cd62">Copiar o código</span></button></div>Triangulação de um objeto 3D:
+<pre><code id="cod62">import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d.art3d import Poly3DCollection
 
@@ -1641,8 +1651,8 @@ plt.show()
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-91.png"/>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-92.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Cena com eixos e um cilindro programados com VTK:
-<pre><code><a alt="Conexões com as bibliotecas que serão usadas para renderizar os atores">import vtkmodules.vtkRenderingOpenGL2</a>
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod63', 'cd63')" onmouseout="outFunc('cd63')"><span class="tooltiptext" id="cd63">Copiar o código</span></button></div>Cena com eixos e um cilindro programados com VTK:
+<pre><code id="cod63"><a alt="Conexões com as bibliotecas que serão usadas para renderizar os atores">import vtkmodules.vtkRenderingOpenGL2</a>
 import vtkmodules.vtkInteractionStyle
 from vtkmodules.vtkCommonColor import vtkNamedColors
 from vtkmodules.vtkFiltersSources import vtkCylinderSource
@@ -1744,8 +1754,8 @@ if __name__ == '__main__':
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-95.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Variação de iluminação ambiente com VTK:
-<pre><code>import vtkmodules.vtkInteractionStyle
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod64', 'cd64')" onmouseout="outFunc('cd64')"><span class="tooltiptext" id="cd64">Copiar o código</span></button></div>Variação de iluminação ambiente com VTK:
+<pre><code id="cod64">import vtkmodules.vtkInteractionStyle
 from vtkmodules.vtkCommonColor import vtkNamedColors
 from vtkmodules.vtkFiltersSources import vtkSphereSource
 from vtkmodules.vtkFiltersSources import vtkCylinderSource
@@ -1839,8 +1849,8 @@ if __name__ == '__main__':
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-96.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Variação de iluminação specular com VTK:
-<pre><code>import vtkmodules.vtkRenderingOpenGL2
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod65', 'cd65')" onmouseout="outFunc('cd65')"><span class="tooltiptext" id="cd65">Copiar o código</span></button></div>Variação de iluminação specular com VTK:
+<pre><code id="cod65">import vtkmodules.vtkRenderingOpenGL2
 import vtkmodules.vtkInteractionStyle
 from vtkmodules.vtkCommonColor import vtkNamedColors
 from vtkmodules.vtkFiltersSources import vtkSphereSource
@@ -1941,8 +1951,8 @@ if __name__ == '__main__':
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-97.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Iluminação de 2 fontes de luz com VTK:
-<pre><code>import vtkmodules.vtkRenderingOpenGL2
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod66', 'cd66')" onmouseout="outFunc('cd66')"><span class="tooltiptext" id="cd66">Copiar o código</span></button></div>Iluminação de 2 fontes de luz com VTK:
+<pre><code id="cod66">import vtkmodules.vtkRenderingOpenGL2
 import vtkmodules.vtkInteractionStyle
 from vtkmodules.vtkCommonColor import vtkNamedColors
 from vtkmodules.vtkFiltersSources import vtkSphereSource
@@ -2056,8 +2066,8 @@ if __name__ == '__main__':
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-98.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Criação de uma cena com Pyvista:
-<pre><code><a alt="biblioteca Pyvista">import pyvista</a>
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod67', 'cd67')" onmouseout="outFunc('cd67')"><span class="tooltiptext" id="cd67">Copiar o código</span></button></div>Criação de uma cena com Pyvista:
+<pre><code id="cod67"><a alt="biblioteca Pyvista">import pyvista</a>
 import pyvista as pv
 
 filename = 'C:/dados/chopper.ply'
@@ -2084,8 +2094,8 @@ p.show()
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-99.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Criação de uma cena com Pyvista:
-<pre><code>import pyvista
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod68', 'cd68')" onmouseout="outFunc('cd68')"><span class="tooltiptext" id="cd68">Copiar o código</span></button></div>Criação de uma cena com Pyvista:
+<pre><code id="cod68">import pyvista
 import pyvista as pv
 
 filename = 'C:/dados/chopper.ply'
@@ -2115,8 +2125,8 @@ p.show()
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-101.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Criação de sombras em objetos de uma cena com Pyvista:
-<pre><code>import pyvista
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod69', 'cd69')" onmouseout="outFunc('cd69')"><span class="tooltiptext" id="cd69">Copiar o código</span></button></div>Criação de sombras em objetos de uma cena com Pyvista:
+<pre><code id="cod69">import pyvista
 import pyvista as pv
 import numpy as np
 
@@ -2157,8 +2167,8 @@ p.show()
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-103.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Criação de poliedros em uma cena do Pyvista:
-<pre><code>import pyvista as pv
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod70', 'cd70')" onmouseout="outFunc('cd70')"><span class="tooltiptext" id="cd70">Copiar o código</span></button></div>Criação de poliedros em uma cena do Pyvista:
+<pre><code id="cod70">import pyvista as pv
 
 <a alt="poliedros de Platão">kinds =</a> ['tetrahedron', 'cube', 'octahedron', 'dodecahedron', 'icosahedron']
 <a alt="posições dos centros dos sólidos">centers =</a> [(-1, 0, 0), (-1, 1, 0), (-1, 2, 0), (0, 1.5, 0), (0, 0.5, 0)]
@@ -2186,8 +2196,8 @@ p.show()
   </details></div>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-103a.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption>Inserção de uma superfície em uma cena do Pyvista:
-<pre><code>import pyvista
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod71', 'cd71')" onmouseout="outFunc('cd71')"><span class="tooltiptext" id="cd71">Copiar o código</span></button></div>Inserção de uma superfície em uma cena do Pyvista:
+<pre><code id="cod71">import pyvista
 import pyvista as pv
 
 filename = 'C:/dados/everest.obj'
