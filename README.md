@@ -2221,8 +2221,64 @@ p.show()
   <p>Material da página 105 até a página 114.</p>
   <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-104.png"/>
   <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-105.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod72', 'cd72')" onmouseout="outFunc('cd72')"><span class="tooltiptext" id="cd72">Copiar o código</span></button></div>Projeção ortogonal (paralela) com Pyvista:
+<pre><code id="cod72">import pyvista
+import pyvista as pv
+
+filename = 'C:/dados/galleon.ply'
+reader = pyvista.get_reader(filename)
+mesh = reader.read()
+p = pv.Plotter(lighting = 'none', window_size = [1000, 1000])
+<a alt="projeção paralela ativa na cena">p.enable_parallel_projection()</a>
+p.show_grid(color="grey")
+p.show_axes()
+
+light = pv.Light(position = (10, 1, 1), light_type = 'scene light', intensity = 1.5)
+p.add_light(light)
+light = pv.Light(position = (-10, 1, 1), light_type = 'scene light', intensity = 1.5)
+p.add_light(light)
+
+p.set_background('white', top = 'white')
+
+p.add_mesh(mesh, cmap = 'GnBu_r', scalars = mesh.points[:, 2], show_scalar_bar = False,
+    ambient = 0.3, diffuse = 0.5, specular = 0.5, specular_power = 15)
+
+p.show()
+</code></pre></figcaption>
+  </details></div>
   <p class="topop"><a href="#modulo7" class="topo">voltar ao topo</a></p>
   <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-106.png"/>
+  <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-106a.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod73', 'cd73')" onmouseout="outFunc('cd73')"><span class="tooltiptext" id="cd73">Copiar o código</span></button></div>Zoom e Clipping plane da cena com Pyvista:
+<pre><code id="cod73">import pyvista
+import pyvista as pv
+
+filename = 'C:/dados/galleon.ply'
+reader = pyvista.get_reader(filename)
+mesh = reader.read()
+p = pv.Plotter(lighting = 'none', window_size = [1000, 1000])
+p.show_axes()
+
+light = pv.Light(position = (10, 1, 1), light_type = 'scene light', intensity = 1.5)
+p.add_light(light)
+light = pv.Light(position = (-10, 1, 1), light_type = 'scene light', intensity = 1.5)
+p.add_light(light)
+
+p.set_background('white', top = 'white')
+
+p.add_mesh(mesh, cmap = 'GnBu_r', scalars = mesh.points[:, 2], show_scalar_bar = False,
+      	ambient = 0.3, diffuse = 0.5, specular = 0.5, specular_power = 15)
+
+<a alt="ajuste do zoom da câmera">p.camera.zoom(0.8)</a>
+<a alt="ajuste do clipping plane">p.camera.clipping_range =</a> (1000, 2500)
+print(p.camera.clipping_range)
+
+p.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-106b.png"/>
   <p class="topop"><a href="#modulo7" class="topo">voltar ao topo</a></p>
   <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-107.png"/>
   <p class="topop"><a href="#modulo7" class="topo">voltar ao topo</a></p>
