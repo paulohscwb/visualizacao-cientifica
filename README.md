@@ -2426,6 +2426,7 @@ p.add_axes()
 
 p.show()
 </code></pre></figcaption>
+  <p>&#x1f4ca; <a href="modulo7/cubemap.zip" target="_blank">Arquivos que formam o Cubemap do fundo da cena</a></p>
   </details></div>
   <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-112a.png"/>
   <p class="topop"><a href="#modulo7" class="topo">voltar ao topo</a></p>
@@ -2456,6 +2457,7 @@ p.add_axes()
 p.camera.roll=0
 p.show()
 </code></pre></figcaption>
+  <p>&#x1f4ca; <a href="modulo7/cubemap1.zip" target="_blank">Arquivos que formam o Cubemap do fundo da cena</a></p>
   </details></div>
   <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-113a.png"/>
   <p class="topop"><a href="#modulo7" class="topo">voltar ao topo</a></p>
