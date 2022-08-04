@@ -2222,7 +2222,7 @@ p.show()
   <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-104.png"/>
   <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-105.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod72', 'cd72')" onmouseout="outFunc('cd72')"><span class="tooltiptext" id="cd72">Copiar o código</span></button></div>Projeção ortogonal (paralela) com Pyvista:
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod72', 'cd72')" onmouseout="outFunc('cd72')"><span class="tooltiptext" id="cd72">Copiar o código</span></button></div>Projeção ortogonal (paralela) do Pyvista:
 <pre><code id="cod72">import pyvista
 import pyvista as pv
 
@@ -2251,7 +2251,7 @@ p.show()
   <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-106.png"/>
   <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-106a.png"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
-  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod73', 'cd73')" onmouseout="outFunc('cd73')"><span class="tooltiptext" id="cd73">Copiar o código</span></button></div>Zoom e Clipping plane da cena com Pyvista:
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod73', 'cd73')" onmouseout="outFunc('cd73')"><span class="tooltiptext" id="cd73">Copiar o código</span></button></div>Zoom e Clipping plane da cena do Pyvista:
 <pre><code id="cod73">import pyvista
 import pyvista as pv
 
@@ -2281,6 +2281,86 @@ p.show()
   <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-106b.png"/>
   <p class="topop"><a href="#modulo7" class="topo">voltar ao topo</a></p>
   <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-107.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod74', 'cd74')" onmouseout="outFunc('cd74')"><span class="tooltiptext" id="cd74">Copiar o código</span></button></div>Ponto focal da câmera em uma cena do Pyvista:
+<pre><code id="cod74">import pyvista
+import pyvista as pv
+
+filename = 'C:/dados/galleon.ply'
+reader = pyvista.get_reader(filename)
+mesh = reader.read()
+p = pv.Plotter(lighting = 'none', window_size = [1000, 1000])
+p.show_axes()
+
+light = pv.Light(position = (10, 1, 1), light_type = 'scene light', intensity = 1.5)
+p.add_light(light)
+light = pv.Light(position = (-10, 1, 1), light_type = 'scene light', intensity = 1.5)
+p.add_light(light)
+
+p.set_background('white', top = 'white')
+
+p.add_mesh(mesh, cmap = 'GnBu_r', scalars = mesh.points[:, 2], show_scalar_bar = False,
+      	ambient = 0.3, diffuse = 0.5, specular = 0.5, specular_power = 15)
+
+<a alt="ajuste do ponto focal da câmera">p.camera.focal_point =</a> (300, 0, -250)
+
+p.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-107a.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod75', 'cd75')" onmouseout="outFunc('cd75')"><span class="tooltiptext" id="cd75">Copiar o código</span></button></div>Ângulo de visualização da câmera do Pyvista:
+<pre><code id="cod75">import pyvista
+import pyvista as pv
+
+filename = 'C:/dados/galleon.ply'
+reader = pyvista.get_reader(filename)
+mesh = reader.read()
+p = pv.Plotter(lighting = 'none', window_size = [1000, 1000])
+p.show_axes()
+
+light = pv.Light(position = (10, 1, 1), light_type = 'scene light', intensity = 1.5)
+p.add_light(light)
+light = pv.Light(position = (-10, 1, 1), light_type = 'scene light', intensity = 1.5)
+p.add_light(light)
+
+p.set_background('white', top = 'white')
+
+p.add_mesh(mesh, cmap = 'GnBu_r', scalars = mesh.points[:, 2], show_scalar_bar = False,
+      	ambient = 0.3, diffuse = 0.5, specular = 0.5, specular_power = 15)
+
+<a alt="ajuste do ângulo de visualização da câmera">p.camera.view_angle =</a> 155.0
+
+p.show()
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-107b.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod76', 'cd76')" onmouseout="outFunc('cd76')"><span class="tooltiptext" id="cd76">Copiar o código</span></button></div>Posição da câmera em uma cena do Pyvista:
+<pre><code id="cod76">import pyvista
+import pyvista as pv
+
+filename = 'C:/dados/galleon.ply'
+reader = pyvista.get_reader(filename)
+mesh = reader.read()
+p = pv.Plotter(lighting = 'none', window_size = [1000, 1000])
+p.show_axes()
+
+light = pv.Light(position = (10, 1, 1), light_type = 'scene light', intensity = 1.5)
+p.add_light(light)
+light = pv.Light(position = (-10, 1, 1), light_type = 'scene light', intensity = 1.5)
+p.add_light(light)
+
+p.set_background('white', top = 'white')
+
+p.add_mesh(mesh, cmap = 'GnBu_r', scalars = mesh.points[:, 2], show_scalar_bar = False,
+      	ambient = 0.3, diffuse = 0.5, specular = 0.5, specular_power = 15)
+
+<a alt="ajuste da posição da câmera">p.camera.position =</a> (1800, 1800, 0)
+
+p.show()
+</code></pre></figcaption>
+  </details></div>
   <p class="topop"><a href="#modulo7" class="topo">voltar ao topo</a></p>
   <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-108.png"/>
   <p class="topop"><a href="#modulo7" class="topo">voltar ao topo</a></p>
