@@ -89,7 +89,7 @@ button::after {
   position: absolute;
   z-index: 1;
   top: 10%;
-  left: 115%;
+  left: 125%;
   opacity: 0;
 }
 
@@ -97,7 +97,7 @@ button::after {
   content: "";
   position: absolute;
   top: 35%;
-  left: -4%;
+  left: -3%;
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
