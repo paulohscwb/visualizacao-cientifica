@@ -2487,7 +2487,7 @@ p.show()
   &lt;/head&gt;
   &lt;body&gt;
     &lt;a-scene&gt;
-       <a alt="objeto box">&lt;a-box</a> color="green" <a alt="posição na cena">position=</a>"0 2 -4" <a alt="rotação em torno dos eixos y e z">rotation=</a>"0 45 45" <a alt="dimensões do objeto">scale=</a>"2 2 3"&gt;&lt;/a-box&gt;
+       <a alt="objeto: cubo">&lt;a-box</a> color="green" <a alt="posição na cena">position=</a>"0 2 -4" <a alt="rotação em torno dos eixos y e z">rotation=</a>"0 45 45" <a alt="dimensões do objeto">scale=</a>"2 2 3"&gt;&lt;/a-box&gt;
     &lt;/a-scene&gt;
   &lt;/body&gt;
 &lt;/html&gt;
@@ -2509,8 +2509,8 @@ p.show()
 		  <li>
 			   <input type="radio" id="003" name="sl">
 			   <label for="003"></label>
-			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod80', 'cd80')" onmouseout="outFunc('cd80')"><span class="tooltiptext" id="cd80">Copiar o código</span></button></div>Cena de RV com um cubo, com fundo azul:
-<pre><code id="cod80">&lt;!DOCTYPE html&gt;
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod81', 'cd81')" onmouseout="outFunc('cd81')"><span class="tooltiptext" id="cd80">Copiar o código</span></button></div>Cena de RV com um cubo, com fundo azul:
+<pre><code id="cod81">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;script src="https://aframe.io/releases/1.3.0/aframe.min.js"&gt;&lt;/script&gt;
@@ -2518,7 +2518,7 @@ p.show()
   &lt;body&gt;
     &lt;a-scene&gt;
        &lt;a-box color="green" position="0 2 -4" rotation="0 45 45" scale="2 2 3"&gt;&lt;/a-box&gt;
-	   <a alt="definição do fundo da cena">&lt;a-sky</a> color="#99ccff"&gt;&lt;/a-sky&gt;
+	   <a alt="definição da cor do fundo da cena">&lt;a-sky</a> color="#99ccff"&gt;&lt;/a-sky&gt;
     &lt;/a-scene&gt;
   &lt;/body&gt;
 &lt;/html&gt;
@@ -2540,7 +2540,7 @@ p.show()
 		  <li>
 			   <input type="radio" id="005" name="sl">
 			   <label for="005"></label>
-			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod80', 'cd80')" onmouseout="outFunc('cd80')"><span class="tooltiptext" id="cd80">Copiar o código</span></button></div>Cena de RV com um cubo, com ambientes forest e japan:
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod82', 'cd82')" onmouseout="outFunc('cd82')"><span class="tooltiptext" id="cd82">Copiar o código</span></button></div>Cena de RV com um cubo, com ambientes forest e japan:
 <pre><code id="cod80">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
