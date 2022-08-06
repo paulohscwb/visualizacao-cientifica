@@ -2496,7 +2496,7 @@ p.show()
 		   <li>
 			   <input type="radio" id="002" name="sl">
 			   <label for="002"></label>
-			   <iframe width="100%" height="500" src="modulo8/exemplo0.htm" title="Cena de RV com um cubo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			   <div class="embed-container"><iframe width="100%" height="500" src="modulo8/exemplo0.htm" title="Cena de RV com um cubo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 			   <figcaption>Cena de RV com um cubo, sem imagem de fundo.</figcaption>
 		   </li>
 		</ul>
