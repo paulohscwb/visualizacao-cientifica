@@ -2882,6 +2882,49 @@ p.show()
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-123.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-124.png"/>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Animação de uma esfera em torno de um eixo</summary>
+	<p>Veja o código HTML e a renderização da cena.</p>
+	  <ul class="slider">
+		  <li>
+			   <input type="radio" id="024" name="sl">
+			   <label for="024"></label>
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod91', 'cd91')" onmouseout="outFunc('cd91')"><span class="tooltiptext" id="cd91">Copiar o código</span></button></div>Animação de uma esfera em torno do eixo z:
+<pre><code id="cod91">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;script src="https://aframe.io/releases/1.3.0/aframe.min.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;a-scene shadow="type: pcfsoft"&gt;
+       &lt;a-entity position="-1 0.5 -4"&gt;
+          <a alt="cilindros que representam os eixos">&lt;a-cylinder </a> radius="0.02" height="3" position="0 0.5 0" color="rgb(0,255,0)"&gt;&lt;/a-cylinder&gt;
+          &lt;a-cylinder rotation="0 0 90" radius="0.02" height="3" position="0.5 0 0" color="rgb(255,0,0)"&gt;&lt;/a-cylinder&gt;
+          &lt;a-cylinder rotation="90 0 0" radius="0.02" height="3" position="0 0 0.5" color="rgb(0,0,255)"&gt;&lt;/a-cylinder&gt;
+          <a alt="textos dos rótulos dos eixos">&lt;a-text</a> position="0.05 -0.1 0" value="O" width="4" color="black"&gt;&lt;/a-text&gt;
+          &lt;a-text position="2 0 0" value="x" width="4" color="black"&gt;&lt;/a-text&gt;
+          &lt;a-text position="0 2 0" value="y" width="4" color="black"&gt;&lt;/a-text&gt;
+          &lt;a-text position="0 0 2" value="z" width="4" color="black"&gt;&lt;/a-text&gt;
+          <a alt="toro para mostrar a trajetória da animação">&lt;a-torus </a> position="0 0 1"radius="1.1" radius-tubular="0.01" segments-tubular="100" opacity="0.2"&gt;&lt;/a-torus&gt;
+ 	      <a alt="animação da esfera">&lt;a-entity animation="property: rotation; to: 0 0 360; loop: true; dir: alternate; dur: 10000;"&gt;
+	         &lt;a-sphere <a alt="posição inicial da esfera">position=</a>"0.5 1 1" radius="0.1" color="rgb(200,30,100)" &gt;&lt;/a-sphere&gt;
+	       &lt;/a-entity&gt;
+        &lt;/a-entity&gt;
+	    &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
+    &lt;/a-scene&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="025" name="sl">
+			   <label for="025"></label>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo8a.htm" title="Animação em torno de um eixo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+			   <figcaption>Animação da esfera em torno do eixo z.</figcaption>
+		   </li>
+		</ul>
+		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+  </details></div>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-124a.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-125.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
