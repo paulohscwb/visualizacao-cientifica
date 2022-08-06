@@ -2813,7 +2813,7 @@ p.show()
 		  <li>
 			   <input type="radio" id="020" name="sl">
 			   <label for="020"></label>
-			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod89', 'cd89')" onmouseout="outFunc('cd89')"><span class="tooltiptext" id="cd89">Copiar o código</span></button></div>Iluminação hemisférica:
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod89', 'cd89')" onmouseout="outFunc('cd89')"><span class="tooltiptext" id="cd89">Copiar o código</span></button></div>Iluminação ponto:
 <pre><code id="cod89">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
@@ -2834,15 +2834,50 @@ p.show()
 </code></pre></figcaption>
 		   </li>
 		   <li>
-			   <input type="radio" id="019" name="sl">
-			   <label for="019"></label>
-			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo5.htm" title="Iluminação hemisférica" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-			   <figcaption>Iluminação hemisférica.</figcaption>
+			   <input type="radio" id="021" name="sl">
+			   <label for="021"></label>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo5.htm" title="Iluminação ponto" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+			   <figcaption>Iluminação ponto.</figcaption>
 		   </li>
 		</ul>
 		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
   </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-122b.png"/>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Iluminação spot de uma cena em RV</summary>
+	<p>Veja o código HTML e a renderização da cena.</p>
+	  <ul class="slider">
+		  <li>
+			   <input type="radio" id="022" name="sl">
+			   <label for="022"></label>
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod90', 'cd90')" onmouseout="outFunc('cd90')"><span class="tooltiptext" id="cd90">Copiar o código</span></button></div>Iluminação spot:
+<pre><code id="cod89">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;script src="https://aframe.io/releases/1.3.0/aframe.min.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;a-scene shadow="type: pcfsoft"&gt;
+       &lt;a-plane color="#A9F5D0" position="0 2 -6" width="8" height="4" shadow="receive: true"&gt;&lt;/a-plane&gt;
+       &lt;a-plane color="#A9F5D0" position="0 0 -4" rotation="-90 0 0" width="8" height="4" shadow="receive: true"&gt;&lt;/a-plane&gt;
+       &lt;a-plane color="#A9F5D0" position="-4 2 -4" rotation="0 90 0" width="4" height="4" shadow="receive: true"&gt;&lt;/a-plane&gt;
+       &lt;a-box color="#F7819F" position="0 2 -4" rotation="0 45 45" scale="2 2 2" shadow="cast: true"&gt;&lt;/a-box&gt;
+       &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
+       <a alt="luz hemisférica com intensidade 0.7">&lt;a-light type="hemisphere"</a> color="#eaeaea" light="groundColor:green" intensity="0.7"&gt;&lt;/a-light&gt;
+       <a alt="luz spot com intensidade 0.75">&lt;a-light type="spot" intensity="0.75" <a alt="ângulo de abertura">angle=</a>"45" <a alt="luz fator de suavização da sombra">penumbra=</a>"0.2" light="castShadow:true" position="0 2 -0.5"&gt;&lt;/a-light&gt;
+    &lt;/a-scene&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="023" name="sl">
+			   <label for="023"></label>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo7.htm" title="Iluminação spot" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+			   <figcaption>Iluminação spot.</figcaption>
+		   </li>
+		</ul>
+		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+  </details></div>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-123.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
