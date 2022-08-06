@@ -2615,8 +2615,8 @@ p.show()
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
 		  <li>
-			   <input type="radio" id="009" name="sl">
-			   <label for="009"></label>
+			   <input type="radio" id="010" name="sl">
+			   <label for="010"></label>
 			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod84', 'cd84')" onmouseout="outFunc('cd84')"><span class="tooltiptext" id="cd84">Copiar o código</span></button></div>Cena de RV da representação da Terra e da Lua :
 <pre><code id="cod84">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -2631,7 +2631,7 @@ p.show()
           &lt;img id="textura2" src="./imagens/2k_moon.jpg"&gt;  
        &lt;/a-assets&gt;
        &lt;a-sphere src="#textura1" position="0 2 -4" scale="2 2 2"&gt;&lt;/a-sphere&gt;
-       &lt;a-sphere src="#textura2" position="0 3 -4" scale="0.5 0.5 0.5"&gt;&lt;/a-sphere&gt;
+       &lt;a-sphere src="#textura2" position="4 3 -4" scale="0.5 0.5 0.5"&gt;&lt;/a-sphere&gt;
        &lt;a-sky src="#ceu"&gt;&lt;/a-sky&gt;
     &lt;/a-scene&gt;
   &lt;/body&gt;
@@ -2639,8 +2639,8 @@ p.show()
 </code></pre></figcaption>
 		   </li>
 		   <li>
-			   <input type="radio" id="010" name="sl">
-			   <label for="010"></label>
+			   <input type="radio" id="011" name="sl">
+			   <label for="011"></label>
 			   <div class="embed-container"><iframe width="100%" height="500" src="modulo8/exemplo3.htm" title="Cena de RV com a Terra e a Lua" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 			   <figcaption>Cena de RV da representação da Terra e da Lua.</figcaption>
 		   </li>
