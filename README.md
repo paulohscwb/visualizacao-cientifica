@@ -2827,7 +2827,7 @@ p.show()
        &lt;a-box color="#F7819F" position="0 2 -4" rotation="0 45 45" scale="2 2 2" shadow="cast: true"&gt;&lt;/a-box&gt;
        &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
        <a alt="luz hemisférica com intensidade 0.7">&lt;a-light type="hemisphere"</a> color="#eaeaea" light="groundColor:green" intensity="0.7"&gt;&lt;/a-light&gt;
-       <a alt="luz point com intensidade 0.75">&lt;a-light type="point"</a> intensity="0.75" <a alt="distância de 50 metros">distance="50"</a> <a alt="fator de decaimento 7">decay="7"</a> position="0 3 0" light="castShadow: true"&gt;&lt;/a-light&gt;
+       <a alt="luz point com intensidade 0.75">&lt;a-light type="point"</a> intensity="0.75" <a alt="distância de 50 metros">distance=</a>"50" <a alt="fator de decaimento 7">decay=</a>"7" position="0 3 0" light="castShadow: true"&gt;&lt;/a-light&gt;
     &lt;/a-scene&gt;
   &lt;/body&gt;
 &lt;/html&gt;
@@ -2850,7 +2850,7 @@ p.show()
 			   <input type="radio" id="022" name="sl">
 			   <label for="022"></label>
 			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod90', 'cd90')" onmouseout="outFunc('cd90')"><span class="tooltiptext" id="cd90">Copiar o código</span></button></div>Iluminação spot:
-<pre><code id="cod89">&lt;!DOCTYPE html&gt;
+<pre><code id="cod90">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;script src="https://aframe.io/releases/1.3.0/aframe.min.js"&gt;&lt;/script&gt;
@@ -2863,7 +2863,7 @@ p.show()
        &lt;a-box color="#F7819F" position="0 2 -4" rotation="0 45 45" scale="2 2 2" shadow="cast: true"&gt;&lt;/a-box&gt;
        &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
        <a alt="luz hemisférica com intensidade 0.7">&lt;a-light type="hemisphere"</a> color="#eaeaea" light="groundColor:green" intensity="0.7"&gt;&lt;/a-light&gt;
-       <a alt="luz spot com intensidade 0.75">&lt;a-light type="spot" intensity=</a>"0.75" <a alt="ângulo de abertura">angle=</a>"45" <a alt="luz fator de suavização da sombra">penumbra=</a>"0.2" light="castShadow:true" position="0 2 -0.5"&gt;&lt;/a-light&gt;
+       <a alt="luz spot com intensidade 0.75">&lt;a-light type="spot" intensity=</a>"0.75" <a alt="ângulo de abertura">angle=</a>"45" <a alt="fator de suavização da sombra">penumbra=</a>"0.2" light="castShadow:true" position="0 2 -0.5"&gt;&lt;/a-light&gt;
     &lt;/a-scene&gt;
   &lt;/body&gt;
 &lt;/html&gt;
