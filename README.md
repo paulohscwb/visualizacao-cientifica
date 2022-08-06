@@ -3150,7 +3150,7 @@ p.show()
 			&lt;/a-cubemap&gt;
 		&lt;/a-assets&gt;
 		&lt;a-sky src="#ceu"&gt;&lt;/a-sky&gt;
-		<a alt="câmera com propriedades de órbita">&lt;a-camera orbit-controls="<a alt="alvo">target:</a> -1 1.5 1; minDistance: 0.5; maxDistance: 180; <a alt="posição inicial da câmera">initialPosition:</a> -1 1.6 3.5"&gt;&lt;/a-camera&gt;
+		<a alt="câmera com propriedades de órbita">&lt;a-camera orbit-controls</a>="<a alt="alvo">target:</a> -1 1.5 1; minDistance: 0.5; maxDistance: 180; <a alt="posição inicial da câmera">initialPosition:</a> -1 1.6 3.5"&gt;&lt;/a-camera&gt;
 		&lt;a-sphere position="1 2 0.5" radius="1" side="double" color="silver" metalness="1" roughness="0" segments-height="36" shadow="" segments-width="64" <a alt="cubemap para reflexão">material="envMap:</a> #ceu2;"&gt;&lt;/a-sphere&gt;
 		&lt;a-sphere position="-2 1.5 -0.5" color="green" radius="1" side="double" metalness="1" roughness="0" segments-height="36" shadow="" segments-width="64" <a alt="cubemap para reflexão">material=</a>"envMap: #ceu2;"&gt;&lt;/a-sphere&gt;		
 		&lt;a-cylinder src="#metal" position="-3 0.5 1.5" color="white" radius="0.5" height="1.5" side="double" metalness="1" roughness="0" shadow="" <a alt="cubemap para reflexão">material=</a>"envMap: #ceu2;"&gt;&lt;/a-cylinder&gt;		
