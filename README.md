@@ -2473,6 +2473,37 @@ p.show()
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-116.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-117.png"/>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Cena de RV com um cubo</summary>
+	<p>Vamos acompanhar o esquema com as etapas da criação de uma cena usando a biblioteca VTK - Visualization Toolkit.</p>
+	  <ul class="slider">
+		  <li>
+			   <input type="radio" id="001" name="sl">
+			   <label for="001"></label>
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod80', 'cd80')" onmouseout="outFunc('cd80')"><span class="tooltiptext" id="cd80">Copiar o código</span></button></div>Cena de RV com um cubo, sem imagem de fundo:
+<pre><code id="cod80">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    <a alt="biblioteca a-frame de RV">&lt;script src="https://aframe.io/releases/1.3.0/aframe.min.js"&gt;&lt;/script&gt;</a>
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;a-scene&gt;
+       <a alt="objeto box">&lt;a-box</a> color="green" <a alt="posição na cena">position=</a>"0 2 -4" <a alt="rotação em torno dos eixos y e z">rotation=</a>"0 45 45" <a alt="dimensões do objeto">scale=</a>"2 2 3"&gt;&lt;/a-box&gt;
+    &lt;/a-scene&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="002" name="sl">
+			   <label for="002"></label>
+			   <iframe width="100%" height="500" src="modulo8/exemplo0.htm" title="Cena de RV com um cubo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			   <figcaption>Cena de RV com um cubo, sem imagem de fundo.</figcaption>
+		   </li>
+		</ul>
+		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+  </details></div>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-117a.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-117b.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-118.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
