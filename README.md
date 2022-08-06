@@ -2592,8 +2592,8 @@ p.show()
           &lt;img id="textura1" src="./imagens/textura1.jpg"&gt;
           &lt;img id="textura2" src="./imagens/textura2.jpg"&gt;  
        &lt;/a-assets&gt;
-       <a alt="imagem textura1 no cubo">&lt;a-box src="textura1"</a> position="0 1 -4" rotation="0 45 45" scale="1 1 1.5"&gt;&lt;/a-box&gt;
-       <a alt="imagem textura2 no cilindro">&lt;a-cylinder src="textura2"</a> position="2.5 1 -4" radius="0.5" height="2"&gt;&lt;/a-cylinder&gt;
+       <a alt="imagem textura1 no cubo">&lt;a-box src="#textura1"</a> position="0 1 -4" rotation="0 45 45" scale="1 1 1.5"&gt;&lt;/a-box&gt;
+       <a alt="imagem textura2 no cilindro">&lt;a-cylinder src="#textura2"</a> position="2.5 1 -4" radius="0.5" height="2"&gt;&lt;/a-cylinder&gt;
        <a alt="imagem equiretangular no céu da cena">&lt;a-sky src="#ceu"&gt;&lt;/a-sky&gt;</a>
     &lt;/a-scene&gt;
   &lt;/body&gt;
