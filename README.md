@@ -2905,11 +2905,11 @@ p.show()
           &lt;a-text position="0 2 0" value="y" width="4" color="black"&gt;&lt;/a-text&gt;
           &lt;a-text position="0 0 2" value="z" width="4" color="black"&gt;&lt;/a-text&gt;
           <a alt="toro para mostrar a trajetória da animação">&lt;a-torus </a> position="0 0 1"radius="1.1" radius-tubular="0.01" segments-tubular="100" opacity="0.2"&gt;&lt;/a-torus&gt;
- 	      <a alt="animação da esfera">&lt;a-entity animation="property: rotation;</a> to: 0 0 360; loop: true; dir: alternate; dur: 10000;"&gt;
-	         &lt;a-sphere <a alt="posição inicial da esfera">position=</a>"0.5 1 1" radius="0.1" color="rgb(200,30,100)" &gt;&lt;/a-sphere&gt;
-	       &lt;/a-entity&gt;
+          <a alt="animação da esfera">&lt;a-entity animation="property: rotation;</a> to: 0 0 360; loop: true; dir: alternate; dur: 10000;"&gt;
+             &lt;a-sphere <a alt="posição inicial da esfera">position=</a>"0.5 1 1" radius="0.1" color="rgb(200,30,100)" &gt;&lt;/a-sphere&gt;
+          &lt;/a-entity&gt;
        &lt;/a-entity&gt;
-	   &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
+       &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
     &lt;/a-scene&gt;
   &lt;/body&gt;
 &lt;/html&gt;
@@ -2948,10 +2948,10 @@ p.show()
        &lt;/a-assets&gt;
        &lt;a-entity position="0 2 -4" rotation="0 0 30"&gt; 
              &lt;a-entity rotation="0 0 -30"&gt;
-				&lt;a-sphere src="#textura1" scale="2 2 2" <a alt="animação da Terra em torno do próprio eixo">animation="property:</a> rotation; from: 0 0 0; to: 0 360 0; loop: true; dur: 10000; easing: linear;"&gt;&lt;/a-sphere&gt;
-			 &lt;/a-entity&gt;
+                 &lt;a-sphere src="#textura1" scale="2 2 2" <a alt="animação da Terra em torno do próprio eixo">animation="property:</a> rotation; from: 0 0 0; to: 0 360 0; loop: true; dur: 10000; easing: linear;"&gt;&lt;/a-sphere&gt;
+             &lt;/a-entity&gt;
              &lt;a-entity <a alt="animação da Lua em torno do centro da Terra">animation="property:</a> rotation; from: 0 360 0; to: 0 0 0; loop: true; dur: 5000; easing: linear"&gt;
-                &lt;a-sphere <a alt="posição relativa">position="3 0 0"</a> src="#textura2" scale="0.5 0.5 0.5" &gt;&lt;/a-sphere&gt;
+                 &lt;a-sphere <a alt="posição relativa">position="3 0 0"</a> src="#textura2" scale="0.5 0.5 0.5" &gt;&lt;/a-sphere&gt;
              &lt;/a-entity&gt;
        &lt;/a-entity&gt;
        &lt;a-sky src="#ceu"&gt;&lt;/a-sky&gt;
@@ -2972,6 +2972,38 @@ p.show()
 		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
   </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-125a.png"/>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Animação com mudanças de propriedades</summary>
+	<p>Veja o código HTML e a renderização da cena.</p>
+	  <ul class="slider">
+		  <li>
+			   <input type="radio" id="028" name="sl">
+			   <label for="028"></label>
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod93', 'cd93')" onmouseout="outFunc('cd93')"><span class="tooltiptext" id="cd93">Copiar o código</span></button></div>Animação com mudanças de cores:
+<pre><code id="cod93">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;script src="https://aframe.io/releases/1.3.0/aframe.min.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;a-scene shadow="type: pcfsoft"&gt;
+       &lt;a-icosahedron color="blue" position="1 1.5 -4" radius="1.5" <a alt="mudança de cor do icosaedro em 5 segundos">animation=</a>"property: components.material.material.color; type: color; to: red; loop: true; dir: alternate; dur: 5000;"&gt;&lt;/a-icosahedron&gt;
+       &lt;a-sky color="aliceblue" <a alt="mudança de cor do fundo da cena em 7 segundos">animation=</a>"property: components.material.material.color; type: color; to: aqua; loop: true; dir: alternate; dur: 7000;"&gt;&lt;/a-sky&gt;
+       &lt;a-light type="hemisphere" color="#eaeaea" light="groundColor:green" intensity="0.7"&gt;&lt;/a-light&gt;
+       &lt;a-light type="point" intensity="0.75" distance="50" decay="2" position="0 3 0" light="castShadow: true"&gt;&lt;/a-light&gt;
+    &lt;/a-scene&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="029" name="sl">
+			   <label for="029"></label>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo9.htm" title="Animação de mudança de cor" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+			   <figcaption>Animação com mudanças de cores.</figcaption>
+		   </li>
+		</ul>
+		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+  </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-125b.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-126.png"/>
