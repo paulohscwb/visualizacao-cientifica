@@ -3211,7 +3211,7 @@ p.show()
         &lt;a-sphere position="-2 1.5 -0.5" color="green" radius="1" side="double" 
           metalness="1" roughness="0" segments-height="36" shadow="" segments-width="64" 
           <a alt="cubemap para reflexão">material=</a>"envMap: #ceu2;"&gt;&lt;/a-sphere&gt;		
-        &lt;a-cylinder src="#metal" position="-3 0.5 1.5" color="white" radius="0.5" 
+        &lt;a-cylinder src="#metal" position="-3 0.5 1.5" color="white" radius="0.5"
           height="1.5" side="double" metalness="1" roughness="0" shadow="" 
           <a alt="cubemap para reflexão">material=</a>"envMap: #ceu2;"&gt;&lt;/a-cylinder&gt;		
         &lt;a-light type="ambient" color="#eaeaea" intensity="0.3"&gt;&lt;/a-light&gt;
@@ -3262,7 +3262,7 @@ p.show()
         &lt;a-sphere position="-2 1.5 -0.5" color="green" radius="1" side="double" 
           metalness="1" roughness="0" segments-height="36" shadow="" segments-width="64" 
           <a alt="habilita a reflexão entre objetos da cena">camera-cube-env=</a>"distance: 500; resolution: 512; repeat: true; interval: 1;"&gt;&lt;/a-sphere&gt;
-        &lt;a-cylinder src="#metal" position="-3 0.5 1.5" color="white" radius="0.5" 
+        &lt;a-cylinder src="#metal" position="-3 0.5 1.5" color="white" radius="0.5"
           height="1.5" side="double" metalness="1" roughness="0" shadow="" 
           <a alt="habilita a reflexão entre objetos da cena">camera-cube-env=</a>"distance: 500; resolution: 512; repeat: true; interval: 1;"&gt;&lt;/a-cylinder&gt;
         &lt;a-light type="ambient" color="#eaeaea" intensity="0.3"&gt;&lt;/a-light&gt;
