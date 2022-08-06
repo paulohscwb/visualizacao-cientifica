@@ -2630,9 +2630,9 @@ p.show()
           &lt;img id="textura1" src="./imagens/2k_earth_daymap.jpg"&gt;
           &lt;img id="textura2" src="./imagens/2k_moon.jpg"&gt;  
        &lt;/a-assets&gt;
-       &lt;a-sphere src="#textura1" position="0 2 -4" scale="2 2 2"&gt;&lt;/a-sphere&gt;
-       &lt;a-sphere src="#textura2" position="4 3 -4" scale="0.5 0.5 0.5"&gt;&lt;/a-sphere&gt;
-       &lt;a-sky src="#ceu"&gt;&lt;/a-sky&gt;
+       <a alt="esfera que representa a Terra">&lt;a-sphere src="#textura1"</a> position="0 2 -4" scale="2 2 2"&gt;&lt;/a-sphere&gt;
+       <a alt="esfera que representa a Lua">&lt;a-sphere src="#textura2"</a> position="4 3 -4" scale="0.5 0.5 0.5"&gt;&lt;/a-sphere&gt;
+       <a alt="céu da cena com imagem equiretangular da via Láctea">&lt;a-sky src="#ceu"&gt;&lt;/a-sky&gt;</a>
     &lt;/a-scene&gt;
   &lt;/body&gt;
 &lt;/html&gt;
