@@ -2704,8 +2704,8 @@ p.show()
        &lt;a-plane color="#A9F5D0" position="-4 2 -4" rotation="0 90 0" width="4" height="4"&gt;&lt;/a-plane&gt;
        &lt;a-box color="#F7819F" position="0 2 -4" rotation="0 45 45" scale="2 2 2" &gt;&lt;/a-box&gt;
        &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
-	   <a alt="luz direcional com intensidade 1.5">&lt;a-light type="directional"</a> intensity="1.5" <a alt="posição da fonte de luz">position=</a>"3 3 3" <a alt="referência do alvo">target=</a>"#directionaltarget"&gt;
-         <a alt="posição do alvo da fonte de luz">&lt;a-entity id="directionaltarget"</a> position="-1 -1 -1"&gt;&lt;/a-entity&gt;
+       <a alt="luz direcional com intensidade 1.5">&lt;a-light type="directional"</a> intensity="1.5" <a alt="posição da fonte de luz">position=</a>"3 3 3" <a alt="referência do alvo">target=</a>"#directionaltarget"&gt;
+          <a alt="posição do alvo da fonte de luz">&lt;a-entity id="directionaltarget"</a> position="-1 -1 -1"&gt;&lt;/a-entity&gt;
        &lt;/a-light&gt;
     &lt;/a-scene&gt;
   &lt;/body&gt;
@@ -2738,12 +2738,12 @@ p.show()
   &lt;/head&gt;
   &lt;body&gt;
     &lt;a-scene&gt;
-       &lt;a-plane color="#A9F5D0" position="0 2 -6" width="8" height="4" &gt;&lt;/a-plane&gt;
-       &lt;a-plane color="#A9F5D0" position="0 0 -4" rotation="-90 0 0" width="8" height="4"&gt;&lt;/a-plane&gt;
-       &lt;a-plane color="#A9F5D0" position="-4 2 -4" rotation="0 90 0" width="4" height="4"&gt;&lt;/a-plane&gt;
-       &lt;a-box color="#F7819F" position="0 2 -4" rotation="0 45 45" scale="2 2 2" &gt;&lt;/a-box&gt;
+       &lt;a-plane color="#A9F5D0" position="0 2 -6" width="8" height="4" <a alt="objeto que recebe projeção de sombra">shadow="receive: true"</a>&gt;&lt;/a-plane&gt;
+       &lt;a-plane color="#A9F5D0" position="0 0 -4" rotation="-90 0 0" width="8" height="4" <a alt="objeto que recebe projeção de sombra">shadow="receive: true"</a>&gt;&lt;/a-plane&gt;
+       &lt;a-plane color="#A9F5D0" position="-4 2 -4" rotation="0 90 0" width="4" height="4" <a alt="objeto que recebe projeção de sombra">shadow="receive: true"</a>&gt;&lt;/a-plane&gt;
+       &lt;a-box color="#F7819F" position="0 2 -4" rotation="0 45 45" scale="2 2 2" <a alt="objeto que produz projeção de sombra">shadow="cast: true"</a>&gt;&lt;/a-box&gt;
        &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
-	   <a alt="luz direcional com intensidade 0.8">&lt;a-light type="directional" intensity="0.8"</a> position="0 5 -4" light="castShadow:true" target="#directionaltargetY"&gt;
+       <a alt="luz direcional com intensidade 0.8">&lt;a-light type="directional" intensity="0.8"</a> position="0 5 -4" light="castShadow:true" target="#directionaltargetY"&gt;
           <a alt="alvo na direção do eixo y">&lt;a-entity id="directionaltargetY"</a> position="0 -1 0"&gt;&lt;/a-entity&gt;
        &lt;/a-light&gt;
        <a alt="luz direcional com intensidade 0.8">&lt;a-light type="directional" intensity="0.8"</a> position="0 0 2" light="castShadow:true" target="#directionaltargetZ"&gt;
@@ -2769,6 +2769,80 @@ p.show()
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-121a.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-122.png"/>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Iluminação hemisférica de uma cena em RV</summary>
+	<p>Veja o código HTML e a renderização da cena.</p>
+	  <ul class="slider">
+		  <li>
+			   <input type="radio" id="018" name="sl">
+			   <label for="018"></label>
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod88', 'cd88')" onmouseout="outFunc('cd88')"><span class="tooltiptext" id="cd88">Copiar o código</span></button></div>Iluminação hemisférica:
+<pre><code id="cod88">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;script src="https://aframe.io/releases/1.3.0/aframe.min.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;a-scene <a alt="suavização das projeções de sombras">shadow="type: pcfsoft"&gt;</a>
+       &lt;a-plane color="#A9F5D0" position="0 2 -6" width="8" height="4" shadow="receive: true"&gt;&lt;/a-plane&gt;
+       &lt;a-plane color="#A9F5D0" position="0 0 -4" rotation="-90 0 0" width="8" height="4" shadow="receive: true"&gt;&lt;/a-plane&gt;
+       &lt;a-plane color="#A9F5D0" position="-4 2 -4" rotation="0 90 0" width="4" height="4" shadow="receive: true"&gt;&lt;/a-plane&gt;
+       &lt;a-box color="#F7819F" position="0 2 -4" rotation="0 45 45" scale="2 2 2" shadow="cast: true"&gt;&lt;/a-box&gt;
+       &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
+       <a alt="luz hemisférica com intensidade 0.7">&lt;a-light type="hemisphere"</a> color=<a alt="cor da luz">"#eaeaea"</a> light="<a alt="cor da luz projetada no piso">groundColor:</a> green" intensity="0.7"&gt;&lt;/a-light&gt;
+       <a alt="luz direcional com intensidade 0.5">&lt;a-light type="directional"</a> intensity="0.5" position="8 5 5" light="castShadow:true" target="#directionaltargetZ"&gt;
+           &lt;a-entity id="directionaltargetZ" position="-1.3 -1 -1"&gt;&lt;/a-entity&gt;
+       &lt;/a-light&gt;
+    &lt;/a-scene&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="019" name="sl">
+			   <label for="019"></label>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo5.htm" title="Iluminação hemisférica" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+			   <figcaption>Iluminação hemisférica.</figcaption>
+		   </li>
+		</ul>
+		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+  </details></div>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-122a.png"/>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Iluminação ponto de uma cena em RV</summary>
+	<p>Veja o código HTML e a renderização da cena.</p>
+	  <ul class="slider">
+		  <li>
+			   <input type="radio" id="020" name="sl">
+			   <label for="020"></label>
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod89', 'cd89')" onmouseout="outFunc('cd89')"><span class="tooltiptext" id="cd89">Copiar o código</span></button></div>Iluminação hemisférica:
+<pre><code id="cod89">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;script src="https://aframe.io/releases/1.3.0/aframe.min.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;a-scene shadow="type: pcfsoft"&gt;
+       &lt;a-plane color="#A9F5D0" position="0 2 -6" width="8" height="4" shadow="receive: true"&gt;&lt;/a-plane&gt;
+       &lt;a-plane color="#A9F5D0" position="0 0 -4" rotation="-90 0 0" width="8" height="4" shadow="receive: true"&gt;&lt;/a-plane&gt;
+       &lt;a-plane color="#A9F5D0" position="-4 2 -4" rotation="0 90 0" width="4" height="4" shadow="receive: true"&gt;&lt;/a-plane&gt;
+       &lt;a-box color="#F7819F" position="0 2 -4" rotation="0 45 45" scale="2 2 2" shadow="cast: true"&gt;&lt;/a-box&gt;
+       &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
+       <a alt="luz hemisférica com intensidade 0.7">&lt;a-light type="hemisphere"</a> color="#eaeaea" light="groundColor:green" intensity="0.7"&gt;&lt;/a-light&gt;
+       <a alt="luz point com intensidade 0.75">&lt;a-light type="point"</a> intensity="0.75" <a alt="distância de 50 metros">distance="50"</a> <a alt="fator de decaimento 7">decay="7"</a> position="0 3 0" light="castShadow: true"&gt;&lt;/a-light&gt;
+    &lt;/a-scene&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="019" name="sl">
+			   <label for="019"></label>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo5.htm" title="Iluminação hemisférica" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+			   <figcaption>Iluminação hemisférica.</figcaption>
+		   </li>
+		</ul>
+		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+  </details></div>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-122b.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-123.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
