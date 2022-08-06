@@ -2685,6 +2685,42 @@ p.show()
 		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
   </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-120a.png"/>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Iluminação direcional em uma cena de RV</summary>
+	<p>Veja o código HTML e a renderização da cena.</p>
+	  <ul class="slider">
+		  <li>
+			   <input type="radio" id="014" name="sl">
+			   <label for="014"></label>
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod86', 'cd86')" onmouseout="outFunc('cd86')"><span class="tooltiptext" id="cd86">Copiar o código</span></button></div>Iluminação direcional em uma cena de RV:
+<pre><code id="cod86">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;script src="https://aframe.io/releases/1.3.0/aframe.min.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;a-scene&gt;
+       &lt;a-plane color="#A9F5D0" position="0 2 -6" width="8" height="4" &gt;&lt;/a-plane&gt;
+       &lt;a-plane color="#A9F5D0" position="0 0 -4" rotation="-90 0 0" width="8" height="4"&gt;&lt;/a-plane&gt;
+       &lt;a-plane color="#A9F5D0" position="-4 2 -4" rotation="0 90 0" width="4" height="4"&gt;&lt;/a-plane&gt;
+       &lt;a-box color="#F7819F" position="0 2 -4" rotation="0 45 45" scale="2 2 2" &gt;&lt;/a-box&gt;
+       &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
+	   <a alt="luz direcional com intensidade 1.5">&lt;a-light type="directional"</a> intensity="1.5" <a alt="posição da fonte de luz">position=</a>"3 3 3" <a alt="referência do alvo">target=</a>"#directionaltarget"&gt;
+         <a alt="posição do alvo da fonte de luz">&lt;a-entity id="directionaltarget"</a> position="-1 -1 -1"&gt;&lt;/a-entity&gt;
+       &lt;/a-light&gt;
+    &lt;/a-scene&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="015" name="sl">
+			   <label for="015"></label>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo4b.htm" title="Iluminação ambiente" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+			   <figcaption>Iluminação direcional em uma cena de RV.</figcaption>
+		   </li>
+		</ul>
+		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+  </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-120b.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-121.png"/>
