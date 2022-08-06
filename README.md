@@ -3203,12 +3203,20 @@ p.show()
            &lt;/a-cubemap&gt;
         &lt;/a-assets&gt;
         &lt;a-sky src="#ceu"&gt;&lt;/a-sky&gt;
-        <a alt="câmera com propriedades de órbita">&lt;a-camera orbit-controls</a>="<a alt="alvo">target:</a> -1 1.5 1; minDistance: 0.5; maxDistance: 180; <a alt="posição inicial da câmera">initialPosition:</a> -1 1.6 3.5"&gt;&lt;/a-camera&gt;
-        &lt;a-sphere position="1 2 0.5" radius="1" side="double" color="silver" metalness="1" roughness="0" segments-height="36" shadow="" segments-width="64" <a alt="cubemap para reflexão">material="envMap:</a> #ceu2;"&gt;&lt;/a-sphere&gt;
-        &lt;a-sphere position="-2 1.5 -0.5" color="green" radius="1" side="double" metalness="1" roughness="0" segments-height="36" shadow="" segments-width="64" <a alt="cubemap para reflexão">material=</a>"envMap: #ceu2;"&gt;&lt;/a-sphere&gt;		
-        &lt;a-cylinder src="#metal" position="-3 0.5 1.5" color="white" radius="0.5" height="1.5" side="double" metalness="1" roughness="0" shadow="" <a alt="cubemap para reflexão">material=</a>"envMap: #ceu2;"&gt;&lt;/a-cylinder&gt;		
+        <a alt="câmera com propriedades de órbita">&lt;a-camera orbit-controls</a>="<a alt="alvo">target:</a> -1 1.5 1; minDistance: 0.5; maxDistance: 180; 
+          <a alt="posição inicial da câmera">initialPosition:</a> -1 1.6 3.5"&gt;&lt;/a-camera&gt;
+        &lt;a-sphere position="1 2 0.5" radius="1" side="double" color="silver" 
+          metalness="1" roughness="0" segments-height="36" shadow="" segments-width="64" 
+          <a alt="cubemap para reflexão">material="envMap:</a> #ceu2;"&gt;&lt;/a-sphere&gt;
+        &lt;a-sphere position="-2 1.5 -0.5" color="green" radius="1" side="double" 
+          metalness="1" roughness="0" segments-height="36" shadow="" segments-width="64" 
+          <a alt="cubemap para reflexão">material=</a>"envMap: #ceu2;"&gt;&lt;/a-sphere&gt;		
+        &lt;a-cylinder src="#metal" position="-3 0.5 1.5" color="white" radius="0.5" 
+          height="1.5" side="double" metalness="1" roughness="0" shadow="" 
+          <a alt="cubemap para reflexão">material=</a>"envMap: #ceu2;"&gt;&lt;/a-cylinder&gt;		
         &lt;a-light type="ambient" color="#eaeaea" intensity="0.3"&gt;&lt;/a-light&gt;
-        &lt;a-light type="spot" intensity="0.75" angle="60" penumbra="0.5" shadow="cast: true; receive: false" position="-2 2 4"&gt;&lt;/a-light&gt;
+        &lt;a-light type="spot" intensity="0.75" angle="60" penumbra="0.5" 
+          shadow="cast: true; receive: false" position="-2 2 4"&gt;&lt;/a-light&gt;
     &lt;/a-scene&gt;
   &lt;/body&gt;
 &lt;/html&gt;
@@ -3237,7 +3245,7 @@ p.show()
   &lt;head&gt;
     <a alt="versão aframe com suporte de reflexões entre objetos">&lt;script src="https://aframe.io/releases/1.0.4/aframe.min.js"&gt;&lt;/script&gt;</a>
     <a alt="biblioteca de reflexões entre objetos">&lt;script src="./java/camera-cube-env.js"&gt;&lt;/script&gt;</a>
-	&lt;script src="https://unpkg.com/aframe-orbit-controls@1.3.0/dist/aframe-orbit-controls.min.js"&gt;&lt;/script&gt;
+    &lt;script src="https://unpkg.com/aframe-orbit-controls@1.3.0/dist/aframe-orbit-controls.min.js"&gt;&lt;/script&gt;
   &lt;/head&gt;
   &lt;body&gt;
     &lt;a-scene reflection&gt;
@@ -3246,12 +3254,20 @@ p.show()
            &lt;img id="metal" src="./imagens/metal1.png"&gt;
         &lt;/a-assets&gt;
         &lt;a-sky src="#ceu"&gt;&lt;/a-sky&gt;
-        &lt;a-camera orbit-controls="target: -1 1.5 1; minDistance: 0.5; maxDistance: 180; initialPosition: -1 1.6 3.5"&gt;&lt;/a-camera&gt;
-        &lt;a-sphere position="1 2 0.5" radius="1" side="double" color="silver" metalness="1" roughness="0" segments-height="36" shadow="" segments-width="64" <a alt="habilita a reflexão entre objetos da cena">camera-cube-env=</a>"distance: 500; resolution: 512; repeat: true; interval: 1;"&gt;&lt;/a-sphere&gt;
-        &lt;a-sphere position="-2 1.5 -0.5" color="green" radius="1" side="double" metalness="1" roughness="0" segments-height="36" shadow="" segments-width="64" <a alt="habilita a reflexão entre objetos da cena">camera-cube-env=</a>"distance: 500; resolution: 512; repeat: true; interval: 1;"&gt;&lt;/a-sphere&gt;
-        &lt;a-cylinder src="#metal" position="-3 0.5 1.5" color="white" radius="0.5" height="1.5" side="double" metalness="1" roughness="0" shadow="" <a alt="habilita a reflexão entre objetos da cena">camera-cube-env=</a>"distance: 500; resolution: 512; repeat: true; interval: 1;"&gt;&lt;/a-cylinder&gt;
+        &lt;a-camera orbit-controls="target: -1 1.5 1; minDistance: 0.5; maxDistance: 180; 
+          initialPosition: -1 1.6 3.5"&gt;&lt;/a-camera&gt;
+        &lt;a-sphere position="1 2 0.5" radius="1" side="double" color="silver" 
+          metalness="1" roughness="0" segments-height="36" shadow="" segments-width="64" 
+          <a alt="habilita a reflexão entre objetos da cena">camera-cube-env=</a>"distance: 500; resolution: 512; repeat: true; interval: 1;"&gt;&lt;/a-sphere&gt;
+        &lt;a-sphere position="-2 1.5 -0.5" color="green" radius="1" side="double" 
+          metalness="1" roughness="0" segments-height="36" shadow="" segments-width="64" 
+          <a alt="habilita a reflexão entre objetos da cena">camera-cube-env=</a>"distance: 500; resolution: 512; repeat: true; interval: 1;"&gt;&lt;/a-sphere&gt;
+        &lt;a-cylinder src="#metal" position="-3 0.5 1.5" color="white" radius="0.5" 
+          height="1.5" side="double" metalness="1" roughness="0" shadow="" 
+          <a alt="habilita a reflexão entre objetos da cena">camera-cube-env=</a>"distance: 500; resolution: 512; repeat: true; interval: 1;"&gt;&lt;/a-cylinder&gt;
         &lt;a-light type="ambient" color="#eaeaea" intensity="0.3"&gt;&lt;/a-light&gt;
-        &lt;a-light type="spot" intensity="0.75" angle="60" penumbra="0.5" shadow="cast: true; receive: false" position="-2 2 4"&gt;&lt;/a-light&gt;
+        &lt;a-light type="spot" intensity="0.75" angle="60" penumbra="0.5" 
+          shadow="cast: true; receive: false" position="-2 2 4"&gt;&lt;/a-light&gt;
     &lt;/a-scene&gt;
   &lt;/body&gt;
 &lt;/html&gt;
