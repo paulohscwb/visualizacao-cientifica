@@ -3005,8 +3005,79 @@ p.show()
 		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
   </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-125b.png"/>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Animação de intensidade de iluminação</summary>
+	<p>Veja o código HTML e a renderização da cena.</p>
+	  <ul class="slider">
+		  <li>
+			   <input type="radio" id="030" name="sl">
+			   <label for="030"></label>
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod94', 'cd94')" onmouseout="outFunc('cd94')"><span class="tooltiptext" id="cd94">Copiar o código</span></button></div>Animação com mudanças de cores:
+<pre><code id="cod94">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;script src="https://aframe.io/releases/1.3.0/aframe.min.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;a-scene shadow="type: pcfsoft"&gt;
+       &lt;a-plane color="#A9F5D0" position="0 2 -6" width="8" height="4" shadow="receive: true"&gt;&lt;/a-plane&gt;
+       &lt;a-plane color="#A9F5D0" position="0 0 -4" rotation="-90 0 0" width="8" height="4" shadow="receive: true"&gt;&lt;/a-plane&gt;
+       &lt;a-plane color="#A9F5D0" position="-4 2 -4" rotation="0 90 0" width="4" height="4" shadow="receive: true"&gt;&lt;/a-plane&gt;
+       &lt;a-cone color="royalblue" position="0 2 -3" rotation="0 0 45" radius-bottom="0.75" height="2.5" shadow="cast: true"&gt;&lt;/a-cone&gt;
+       &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
+       &lt;a-light type="hemisphere" color="#eaeaea" light="groundColor:green" intensity="0.7" <a alt="mudança de intensidade da luz hemisférica em 5 segundos">animation="property:</a> intensity; to: 0.2; loop: true; dir: alternate; dur: 5000;"&gt;&lt;/a-light&gt;
+       &lt;a-light type="spot" intensity="0.75" angle="45" penumbra="0.2" light="castShadow:true" position="0 2 -0.5"&gt;&lt;/a-light&gt;
+    &lt;/a-scene&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="031" name="sl">
+			   <label for="031"></label>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo10.htm" title="Animação de mudança de intensidade da luz" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+			   <figcaption>Animação de intensidade de luz.</figcaption>
+		   </li>
+		</ul>
+		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+  </details></div>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-126.png"/>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Animação de posição da fonte de luz</summary>
+	<p>Veja o código HTML e a renderização da cena.</p>
+	  <ul class="slider">
+		  <li>
+			   <input type="radio" id="032" name="sl">
+			   <label for="032"></label>
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod95', 'cd95')" onmouseout="outFunc('cd95')"><span class="tooltiptext" id="cd95">Copiar o código</span></button></div>Animação com mudanças de cores:
+<pre><code id="cod95">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;script src="https://aframe.io/releases/1.3.0/aframe.min.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;a-scene shadow="type: pcfsoft"&gt;
+       &lt;a-plane color="#A9F5D0" position="0 2 -6" width="8" height="4" shadow="receive: true"&gt;&lt;/a-plane&gt;
+       &lt;a-plane color="#A9F5D0" position="0 0 -4" rotation="-90 0 0" width="8" height="4" shadow="receive: true"&gt;&lt;/a-plane&gt;
+       &lt;a-plane color="#A9F5D0" position="-4 2 -4" rotation="0 90 0" width="4" height="4" shadow="receive: true"&gt;&lt;/a-plane&gt;
+       &lt;a-cone color="royalblue" position="0 2 -3" rotation="0 0 45" radius-bottom="0.75" height="2.5" shadow="cast: true"&gt;&lt;/a-cone&gt;
+       &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
+       &lt;a-light type="hemisphere" color="#eaeaea" light="groundColor:green" intensity="0.7"&gt;&lt;/a-light&gt;
+       &lt;a-light type="spot" intensity="0.75" angle="45" penumbra="0.2" light="castShadow:true" position="-2 2 -0.5" <a alt="mudança da posição da luz spot em 10 segundos">animation="property:</a> position; to: 2 2 -0.5; loop: true; dir: alternate; dur: 10000;"&gt;&lt;/a-light&gt;
+    &lt;/a-scene&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="033" name="sl">
+			   <label for="033"></label>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo11.htm" title="Animação de mudança de posição da luz" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+			   <figcaption>Animação da posição da fonte de luz.</figcaption>
+		   </li>
+		</ul>
+		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+  </details></div>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-126a.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-127.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
