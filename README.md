@@ -2863,7 +2863,7 @@ p.show()
        &lt;a-box color="#F7819F" position="0 2 -4" rotation="0 45 45" scale="2 2 2" shadow="cast: true"&gt;&lt;/a-box&gt;
        &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
        <a alt="luz hemisférica com intensidade 0.7">&lt;a-light type="hemisphere"</a> color="#eaeaea" light="groundColor:green" intensity="0.7"&gt;&lt;/a-light&gt;
-       <a alt="luz spot com intensidade 0.75">&lt;a-light type="spot" intensity="0.75" <a alt="ângulo de abertura">angle=</a>"45" <a alt="luz fator de suavização da sombra">penumbra=</a>"0.2" light="castShadow:true" position="0 2 -0.5"&gt;&lt;/a-light&gt;
+       <a alt="luz spot com intensidade 0.75">&lt;a-light type="spot" intensity=</a>"0.75" <a alt="ângulo de abertura">angle=</a>"45" <a alt="luz fator de suavização da sombra">penumbra=</a>"0.2" light="castShadow:true" position="0 2 -0.5"&gt;&lt;/a-light&gt;
     &lt;/a-scene&gt;
   &lt;/body&gt;
 &lt;/html&gt;
