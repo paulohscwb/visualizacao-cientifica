@@ -358,7 +358,7 @@ h3::after {
   overflow: hidden;
   max-width: 100%; 
   box-shadow: 0px 5px 5px -6px grey;
-  margin-bottom:10px;
+  margin-bottom:7px;
 }
 
 .embed-container iframe, .embed-container object, .embed-container embed {
