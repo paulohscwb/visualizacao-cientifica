@@ -2617,7 +2617,7 @@ p.show()
 		  <li>
 			   <input type="radio" id="010" name="sl">
 			   <label for="010"></label>
-			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod84', 'cd84')" onmouseout="outFunc('cd84')"><span class="tooltiptext" id="cd84">Copiar o código</span></button></div>Cena de RV da representação da Terra e da Lua :
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod84', 'cd84')" onmouseout="outFunc('cd84')"><span class="tooltiptext" id="cd84">Copiar o código</span></button></div>Cena de RV da representação da Terra e da Lua:
 <pre><code id="cod84">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
@@ -2650,6 +2650,42 @@ p.show()
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-119a.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-120.png"/>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Iluminação ambiente em uma cena de RV</summary>
+	<p>Veja o código HTML e a renderização da cena.</p>
+	  <ul class="slider">
+		  <li>
+			   <input type="radio" id="012" name="sl">
+			   <label for="012"></label>
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod85', 'cd85')" onmouseout="outFunc('cd85')"><span class="tooltiptext" id="cd85">Copiar o código</span></button></div>Iluminação ambiente em uma cena de RV:
+<pre><code id="cod85">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;script src="https://aframe.io/releases/1.3.0/aframe.min.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;a-scene&gt;
+       &lt;a-plane color="#A9F5D0" position="0 2 -6" width="8" height="4" &gt;&lt;/a-plane&gt;
+       &lt;a-plane color="#A9F5D0" position="0 0 -4" rotation="-90 0 0" width="8" height="4"&gt;&lt;/a-plane&gt;
+       &lt;a-plane color="#A9F5D0" position="-4 2 -4" rotation="0 90 0" width="4" height="4"&gt;&lt;/a-plane&gt;
+       &lt;a-box color="#F7819F" position="0 2 -4" rotation="0 45 45" scale="2 2 2" &gt;&lt;/a-box&gt;
+       &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
+       <a alt="luz ambiente branca com intensidade 0.8">&lt;a-light type="ambient"</a> color="white" intensity="0.8"&gt;&lt;/a-light&gt;
+    &lt;/a-scene&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="013" name="sl">
+			   <label for="013"></label>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo4a.htm" title="Iluminação ambiente" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+			   <figcaption>Iluminação ambiente em uma cena de RV.</figcaption>
+		   </li>
+		</ul>
+		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+  </details></div>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-120a.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-120b.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-121.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
