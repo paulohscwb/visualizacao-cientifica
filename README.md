@@ -2509,7 +2509,7 @@ p.show()
 		  <li>
 			   <input type="radio" id="003" name="sl">
 			   <label for="003"></label>
-			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod81', 'cd81')" onmouseout="outFunc('cd81')"><span class="tooltiptext" id="cd80">Copiar o código</span></button></div>Cena de RV com um cubo, com fundo azul:
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod81', 'cd81')" onmouseout="outFunc('cd81')"><span class="tooltiptext" id="cd81">Copiar o código</span></button></div>Cena de RV com um cubo, com fundo azul:
 <pre><code id="cod81">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
@@ -2541,7 +2541,7 @@ p.show()
 			   <input type="radio" id="005" name="sl">
 			   <label for="005"></label>
 			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod82', 'cd82')" onmouseout="outFunc('cd82')"><span class="tooltiptext" id="cd82">Copiar o código</span></button></div>Cena de RV com um cubo, com ambientes forest e japan:
-<pre><code id="cod80">&lt;!DOCTYPE html&gt;
+<pre><code id="cod82">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;script src="https://aframe.io/releases/1.3.0/aframe.min.js"&gt;&lt;/script&gt;
