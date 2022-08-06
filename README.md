@@ -2545,12 +2545,12 @@ p.show()
 &lt;html&gt;
   &lt;head&gt;
     &lt;script src="https://aframe.io/releases/1.3.0/aframe.min.js"&gt;&lt;/script&gt;
-	<a alt="biblioteca com ambientes a-frame">&lt;script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"&gt;&lt;/script&gt;</a>
+    <a alt="biblioteca com ambientes a-frame">&lt;script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"&gt;&lt;/script&gt;</a>
   &lt;/head&gt;
   &lt;body&gt;
     &lt;a-scene&gt;
        &lt;a-box color="green" position="0 2 -4" rotation="0 45 45" scale="2 2 3"&gt;&lt;/a-box&gt;
-	   <a alt="ambiente forest com 500 árvores">&lt;a-entity </a> environment="preset: forest; dressingAmount: 500"&gt;&lt;/a-entity&gt;
+       <a alt="ambiente forest com 500 árvores">&lt;a-entity </a> environment="preset: forest; dressingAmount: 500"&gt;&lt;/a-entity&gt;
     &lt;/a-scene&gt;
   &lt;/body&gt;
 &lt;/html&gt;
@@ -2738,19 +2738,26 @@ p.show()
   &lt;/head&gt;
   &lt;body&gt;
     &lt;a-scene&gt;
-       &lt;a-plane color="#A9F5D0" position="0 2 -6" width="8" height="4" <a alt="objeto que recebe projeção de sombra">shadow="receive: true"</a>&gt;&lt;/a-plane&gt;
-       &lt;a-plane color="#A9F5D0" position="0 0 -4" rotation="-90 0 0" width="8" height="4" <a alt="objeto que recebe projeção de sombra">shadow="receive: true"</a>&gt;&lt;/a-plane&gt;
-       &lt;a-plane color="#A9F5D0" position="-4 2 -4" rotation="0 90 0" width="4" height="4" <a alt="objeto que recebe projeção de sombra">shadow="receive: true"</a>&gt;&lt;/a-plane&gt;
-       &lt;a-box color="#F7819F" position="0 2 -4" rotation="0 45 45" scale="2 2 2" <a alt="objeto que produz projeção de sombra">shadow="cast: true"</a>&gt;&lt;/a-box&gt;
+       &lt;a-plane color="#A9F5D0" position="0 2 -6" width="8" height="4" 
+          <a alt="objeto que recebe projeção de sombra">shadow="receive: true"</a>&gt;&lt;/a-plane&gt;
+       &lt;a-plane color="#A9F5D0" position="0 0 -4" rotation="-90 0 0" width="8" height="4"
+          <a alt="objeto que recebe projeção de sombra">shadow="receive: true"</a>&gt;&lt;/a-plane&gt;
+       &lt;a-plane color="#A9F5D0" position="-4 2 -4" rotation="0 90 0" width="4" height="4"
+          <a alt="objeto que recebe projeção de sombra">shadow="receive: true"</a>&gt;&lt;/a-plane&gt;
+       &lt;a-box color="#F7819F" position="0 2 -4" rotation="0 45 45" scale="2 2 2" 
+          <a alt="objeto que produz projeção de sombra">shadow="cast: true"</a>&gt;&lt;/a-box&gt;
        &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
-       <a alt="luz direcional com intensidade 0.8">&lt;a-light type="directional" intensity="0.8"</a> position="0 5 -4" light="castShadow:true" target="#directionaltargetY"&gt;
-          <a alt="alvo na direção do eixo y">&lt;a-entity id="directionaltargetY"</a> position="0 -1 0"&gt;&lt;/a-entity&gt;
+       <a alt="luz direcional com intensidade 0.8">&lt;a-light type="directional" intensity="0.8"</a> position="0 5 -4" light="castShadow:true" 
+         target="#directionaltargetY"&gt;
+            <a alt="alvo na direção do eixo y">&lt;a-entity id="directionaltargetY"</a> position="0 -1 0"&gt;&lt;/a-entity&gt;
        &lt;/a-light&gt;
-       <a alt="luz direcional com intensidade 0.8">&lt;a-light type="directional" intensity="0.8"</a> position="0 0 2" light="castShadow:true" target="#directionaltargetZ"&gt;
-          <a alt="alvo na direção do eixo z">&lt;a-entity id="directionaltargetZ"</a> position="0 0 -1"&gt;&lt;/a-entity&gt;
+       <a alt="luz direcional com intensidade 0.8">&lt;a-light type="directional" intensity="0.8"</a> position="0 0 2" light="castShadow:true" 
+         target="#directionaltargetZ"&gt;
+            <a alt="alvo na direção do eixo z">&lt;a-entity id="directionaltargetZ"</a> position="0 0 -1"&gt;&lt;/a-entity&gt;
        &lt;/a-light&gt;
-       <a alt="luz direcional com intensidade 0.8">&lt;a-light type="directional" intensity="0.8"</a> position="5 0 -4" light="castShadow:true" target="#directionaltargetX"&gt;
-          <a alt="alvo na direção do eixo x">&lt;a-entity id="directionaltargetX"</a> position="-1 0 0"&gt;&lt;/a-entity&gt;
+       <a alt="luz direcional com intensidade 0.8">&lt;a-light type="directional" intensity="0.8"</a> position="5 0 -4" light="castShadow:true" 
+         target="#directionaltargetX"&gt;
+            <a alt="alvo na direção do eixo x">&lt;a-entity id="directionaltargetX"</a> position="-1 0 0"&gt;&lt;/a-entity&gt;
        &lt;/a-light&gt;
     &lt;/a-scene&gt;
   &lt;/body&gt;
@@ -2783,14 +2790,20 @@ p.show()
   &lt;/head&gt;
   &lt;body&gt;
     &lt;a-scene <a alt="suavização das projeções de sombras">shadow="type: pcfsoft"&gt;</a>
-       &lt;a-plane color="#A9F5D0" position="0 2 -6" width="8" height="4" shadow="receive: true"&gt;&lt;/a-plane&gt;
-       &lt;a-plane color="#A9F5D0" position="0 0 -4" rotation="-90 0 0" width="8" height="4" shadow="receive: true"&gt;&lt;/a-plane&gt;
-       &lt;a-plane color="#A9F5D0" position="-4 2 -4" rotation="0 90 0" width="4" height="4" shadow="receive: true"&gt;&lt;/a-plane&gt;
-       &lt;a-box color="#F7819F" position="0 2 -4" rotation="0 45 45" scale="2 2 2" shadow="cast: true"&gt;&lt;/a-box&gt;
+       &lt;a-plane color="#A9F5D0" position="0 2 -6" width="8" height="4" 
+          shadow="receive: true"&gt;&lt;/a-plane&gt;
+       &lt;a-plane color="#A9F5D0" position="0 0 -4" rotation="-90 0 0" width="8" height="4" 
+          shadow="receive: true"&gt;&lt;/a-plane&gt;
+       &lt;a-plane color="#A9F5D0" position="-4 2 -4" rotation="0 90 0" width="4" height="4" 
+          shadow="receive: true"&gt;&lt;/a-plane&gt;
+       &lt;a-box color="#F7819F" position="0 2 -4" rotation="0 45 45" scale="2 2 2" 
+          shadow="cast: true"&gt;&lt;/a-box&gt;
        &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
-       <a alt="luz hemisférica com intensidade 0.7">&lt;a-light type="hemisphere"</a> color=<a alt="cor da luz">"#eaeaea"</a> light="<a alt="cor da luz projetada no piso">groundColor:</a> green" intensity="0.7"&gt;&lt;/a-light&gt;
-       <a alt="luz direcional com intensidade 0.5">&lt;a-light type="directional"</a> intensity="0.5" position="8 5 5" light="castShadow:true" target="#directionaltargetZ"&gt;
-           &lt;a-entity id="directionaltargetZ" position="-1.3 -1 -1"&gt;&lt;/a-entity&gt;
+       <a alt="luz hemisférica com intensidade 0.7">&lt;a-light type="hemisphere"</a> color=<a alt="cor da luz">"#eaeaea"</a> light="<a alt="cor da luz projetada no piso">groundColor:</a> green" 
+          intensity="0.7"&gt;&lt;/a-light&gt;
+       <a alt="luz direcional com intensidade 0.5">&lt;a-light type="directional"</a> intensity="0.5" position="8 5 5" light="castShadow:true"
+         target="#directionaltargetZ"&gt;
+             &lt;a-entity id="directionaltargetZ" position="-1.3 -1 -1"&gt;&lt;/a-entity&gt;
        &lt;/a-light&gt;
     &lt;/a-scene&gt;
   &lt;/body&gt;
@@ -2821,13 +2834,19 @@ p.show()
   &lt;/head&gt;
   &lt;body&gt;
     &lt;a-scene shadow="type: pcfsoft"&gt;
-       &lt;a-plane color="#A9F5D0" position="0 2 -6" width="8" height="4" shadow="receive: true"&gt;&lt;/a-plane&gt;
-       &lt;a-plane color="#A9F5D0" position="0 0 -4" rotation="-90 0 0" width="8" height="4" shadow="receive: true"&gt;&lt;/a-plane&gt;
-       &lt;a-plane color="#A9F5D0" position="-4 2 -4" rotation="0 90 0" width="4" height="4" shadow="receive: true"&gt;&lt;/a-plane&gt;
-       &lt;a-box color="#F7819F" position="0 2 -4" rotation="0 45 45" scale="2 2 2" shadow="cast: true"&gt;&lt;/a-box&gt;
+       &lt;a-plane color="#A9F5D0" position="0 2 -6" width="8" height="4" 
+          shadow="receive: true"&gt;&lt;/a-plane&gt;
+       &lt;a-plane color="#A9F5D0" position="0 0 -4" rotation="-90 0 0" width="8" height="4" 
+          shadow="receive: true"&gt;&lt;/a-plane&gt;
+       &lt;a-plane color="#A9F5D0" position="-4 2 -4" rotation="0 90 0" width="4" height="4" 
+          shadow="receive: true"&gt;&lt;/a-plane&gt;
+       &lt;a-box color="#F7819F" position="0 2 -4" rotation="0 45 45" scale="2 2 2" 
+          shadow="cast: true"&gt;&lt;/a-box&gt;
        &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
-       <a alt="luz hemisférica com intensidade 0.7">&lt;a-light type="hemisphere"</a> color="#eaeaea" light="groundColor:green" intensity="0.7"&gt;&lt;/a-light&gt;
-       <a alt="luz point com intensidade 0.75">&lt;a-light type="point"</a> intensity="0.75" <a alt="distância de 50 metros">distance=</a>"50" <a alt="fator de decaimento 7">decay=</a>"7" position="0 3 0" light="castShadow: true"&gt;&lt;/a-light&gt;
+       <a alt="luz hemisférica com intensidade 0.7">&lt;a-light type="hemisphere"</a> color="#eaeaea" light="groundColor:green" 
+          intensity="0.7"&gt;&lt;/a-light&gt;
+       <a alt="luz point com intensidade 0.75">&lt;a-light type="point"</a> intensity="0.75" <a alt="distância de 50 metros">distance=</a>"50" <a alt="fator de decaimento 7">decay=</a>"7" position="0 3 0" 
+          light="castShadow: true"&gt;&lt;/a-light&gt;
     &lt;/a-scene&gt;
   &lt;/body&gt;
 &lt;/html&gt;
@@ -2857,13 +2876,19 @@ p.show()
   &lt;/head&gt;
   &lt;body&gt;
     &lt;a-scene shadow="type: pcfsoft"&gt;
-       &lt;a-plane color="#A9F5D0" position="0 2 -6" width="8" height="4" shadow="receive: true"&gt;&lt;/a-plane&gt;
-       &lt;a-plane color="#A9F5D0" position="0 0 -4" rotation="-90 0 0" width="8" height="4" shadow="receive: true"&gt;&lt;/a-plane&gt;
-       &lt;a-plane color="#A9F5D0" position="-4 2 -4" rotation="0 90 0" width="4" height="4" shadow="receive: true"&gt;&lt;/a-plane&gt;
-       &lt;a-box color="#F7819F" position="0 2 -4" rotation="0 45 45" scale="2 2 2" shadow="cast: true"&gt;&lt;/a-box&gt;
+       &lt;a-plane color="#A9F5D0" position="0 2 -6" width="8" height="4" 
+          shadow="receive: true"&gt;&lt;/a-plane&gt;
+       &lt;a-plane color="#A9F5D0" position="0 0 -4" rotation="-90 0 0" width="8" height="4" 
+          shadow="receive: true"&gt;&lt;/a-plane&gt;
+       &lt;a-plane color="#A9F5D0" position="-4 2 -4" rotation="0 90 0" width="4" height="4" 
+          shadow="receive: true"&gt;&lt;/a-plane&gt;
+       &lt;a-box color="#F7819F" position="0 2 -4" rotation="0 45 45" scale="2 2 2" 
+          shadow="cast: true"&gt;&lt;/a-box&gt;
        &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
-       <a alt="luz hemisférica com intensidade 0.7">&lt;a-light type="hemisphere"</a> color="#eaeaea" light="groundColor:green" intensity="0.7"&gt;&lt;/a-light&gt;
-       <a alt="luz spot com intensidade 0.75">&lt;a-light type="spot" intensity=</a>"0.75" <a alt="ângulo de abertura">angle=</a>"45" <a alt="fator de suavização da sombra">penumbra=</a>"0.2" light="castShadow:true" position="0 2 -0.5"&gt;&lt;/a-light&gt;
+       <a alt="luz hemisférica com intensidade 0.7">&lt;a-light type="hemisphere"</a> color="#eaeaea" light="groundColor:green" 
+          intensity="0.7"&gt;&lt;/a-light&gt;
+       <a alt="luz spot com intensidade 0.75">&lt;a-light type="spot" intensity=</a>"0.75" <a alt="ângulo de abertura">angle=</a>"45" <a alt="fator de suavização da sombra">penumbra=</a>"0.2" light="castShadow:true" 
+          position="0 2 -0.5"&gt;&lt;/a-light&gt;
     &lt;/a-scene&gt;
   &lt;/body&gt;
 &lt;/html&gt;
@@ -2897,16 +2922,21 @@ p.show()
   &lt;body&gt;
     &lt;a-scene shadow="type: pcfsoft"&gt;
        &lt;a-entity position="-1 0.5 -4"&gt;
-          <a alt="cilindros que representam os eixos">&lt;a-cylinder </a> radius="0.02" height="3" position="0 0.5 0" color="rgb(0,255,0)"&gt;&lt;/a-cylinder&gt;
-          &lt;a-cylinder rotation="0 0 90" radius="0.02" height="3" position="0.5 0 0" color="rgb(255,0,0)"&gt;&lt;/a-cylinder&gt;
-          &lt;a-cylinder rotation="90 0 0" radius="0.02" height="3" position="0 0 0.5" color="rgb(0,0,255)"&gt;&lt;/a-cylinder&gt;
+          <a alt="cilindros que representam os eixos">&lt;a-cylinder </a> radius="0.02" height="3" position="0 0.5 0" 
+             color="rgb(0,255,0)"&gt;&lt;/a-cylinder&gt;
+          &lt;a-cylinder rotation="0 0 90" radius="0.02" height="3" position="0.5 0 0" 
+             color="rgb(255,0,0)"&gt;&lt;/a-cylinder&gt;
+          &lt;a-cylinder rotation="90 0 0" radius="0.02" height="3" position="0 0 0.5" 
+             color="rgb(0,0,255)"&gt;&lt;/a-cylinder&gt;
           <a alt="textos dos rótulos dos eixos">&lt;a-text</a> position="0.05 -0.1 0" value="O" width="4" color="black"&gt;&lt;/a-text&gt;
           &lt;a-text position="2 0 0" value="x" width="4" color="black"&gt;&lt;/a-text&gt;
           &lt;a-text position="0 2 0" value="y" width="4" color="black"&gt;&lt;/a-text&gt;
           &lt;a-text position="0 0 2" value="z" width="4" color="black"&gt;&lt;/a-text&gt;
-          <a alt="toro para mostrar a trajetória da animação">&lt;a-torus </a> position="0 0 1"radius="1.1" radius-tubular="0.01" segments-tubular="100" opacity="0.2"&gt;&lt;/a-torus&gt;
-          <a alt="animação da esfera">&lt;a-entity animation="property: rotation;</a> to: 0 0 360; loop: true; dir: alternate; dur: 10000;"&gt;
-             &lt;a-sphere <a alt="posição inicial da esfera">position=</a>"0.5 1 1" radius="0.1" color="rgb(200,30,100)" &gt;&lt;/a-sphere&gt;
+          <a alt="toro para mostrar a trajetória da animação">&lt;a-torus </a> position="0 0 1"radius="1.1" radius-tubular="0.01" segments-tubular="100" 
+             opacity="0.2"&gt;&lt;/a-torus&gt;
+          <a alt="animação da esfera">&lt;a-entity animation="property: rotation;</a> to: 0 0 360; loop: true; 
+            dir: alternate; dur: 10000;"&gt;
+               &lt;a-sphere <a alt="posição inicial da esfera">position=</a>"0.5 1 1" radius="0.1" color="rgb(200,30,100)" &gt;&lt;/a-sphere&gt;
           &lt;/a-entity&gt;
        &lt;/a-entity&gt;
        &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
@@ -2947,16 +2977,20 @@ p.show()
           &lt;img id="textura2" src="./imagens/2k_moon.jpg"&gt;  
        &lt;/a-assets&gt;
        &lt;a-entity position="0 2 -4" rotation="0 0 30"&gt; 
-             &lt;a-entity rotation="0 0 -30"&gt;
-                 &lt;a-sphere src="#textura1" scale="2 2 2" <a alt="animação da Terra em torno do próprio eixo">animation="property:</a> rotation; from: 0 0 0; to: 0 360 0; loop: true; dur: 10000; easing: linear;"&gt;&lt;/a-sphere&gt;
-             &lt;/a-entity&gt;
-             &lt;a-entity <a alt="animação da Lua em torno do centro da Terra">animation="property:</a> rotation; from: 0 360 0; to: 0 0 0; loop: true; dur: 5000; easing: linear"&gt;
-                 &lt;a-sphere <a alt="posição relativa">position="3 0 0"</a> src="#textura2" scale="0.5 0.5 0.5" &gt;&lt;/a-sphere&gt;
-             &lt;/a-entity&gt;
+          &lt;a-entity rotation="0 0 -30"&gt;
+              &lt;a-sphere src="#textura1" scale="2 2 2" <a alt="animação da Terra em torno do próprio eixo">animation="property:</a> rotation; from: 0 0 0; 
+                to: 0 360 0; loop: true; dur: 10000; easing: linear;"&gt;&lt;/a-sphere&gt;
+          &lt;/a-entity&gt;
+          &lt;a-entity <a alt="animação da Lua em torno do centro da Terra">animation="property:</a> rotation; from: 0 360 0; to: 0 0 0; loop: true; 
+            dur: 5000; easing: linear"&gt;
+              &lt;a-sphere <a alt="posição relativa">position="3 0 0"</a> src="#textura2" scale="0.5 0.5 0.5" &gt;&lt;/a-sphere&gt;
+          &lt;/a-entity&gt;
        &lt;/a-entity&gt;
        &lt;a-sky src="#ceu"&gt;&lt;/a-sky&gt;
-       &lt;a-light type="hemisphere" color="#eaeaea" light="groundColor:green" intensity="0.7"&gt;&lt;/a-light&gt;
-       &lt;a-light type="point" intensity="0.75" distance="50" decay="2" position="0 3 0" light="castShadow: true"&gt;&lt;/a-light&gt;
+       &lt;a-light type="hemisphere" color="#eaeaea" light="groundColor:green" 
+         intensity="0.7"&gt;&lt;/a-light&gt;
+       &lt;a-light type="point" intensity="0.75" distance="50" decay="2" position="0 3 0" 
+         light="castShadow: true"&gt;&lt;/a-light&gt;
     &lt;/a-scene&gt;
   &lt;/body&gt;
 &lt;/html&gt;
@@ -2986,10 +3020,15 @@ p.show()
   &lt;/head&gt;
   &lt;body&gt;
     &lt;a-scene shadow="type: pcfsoft"&gt;
-       &lt;a-icosahedron color="blue" position="1 1.5 -4" radius="1.5" <a alt="mudança de cor do icosaedro em 5 segundos">animation=</a>"property: components.material.material.color; type: color; to: red; loop: true; dir: alternate; dur: 5000;"&gt;&lt;/a-icosahedron&gt;
-       &lt;a-sky color="aliceblue" <a alt="mudança de cor do fundo da cena em 7 segundos">animation=</a>"property: components.material.material.color; type: color; to: aqua; loop: true; dir: alternate; dur: 7000;"&gt;&lt;/a-sky&gt;
-       &lt;a-light type="hemisphere" color="#eaeaea" light="groundColor:green" intensity="0.7"&gt;&lt;/a-light&gt;
-       &lt;a-light type="point" intensity="0.75" distance="50" decay="2" position="0 3 0" light="castShadow: true"&gt;&lt;/a-light&gt;
+       &lt;a-icosahedron color="blue" position="1 1.5 -4" radius="1.5" 
+         <a alt="mudança de cor do icosaedro em 5 segundos">animation=</a>"property: components.material.material.color; type: color; to: red; 
+         loop: true; dir: alternate; dur: 5000;"&gt;&lt;/a-icosahedron&gt;
+       &lt;a-sky color="aliceblue" <a alt="mudança de cor do fundo da cena em 7 segundos">animation=</a>"property: components.material.material.color; type: color; 
+         to: aqua; loop: true; dir: alternate; dur: 7000;"&gt;&lt;/a-sky&gt;
+       &lt;a-light type="hemisphere" color="#eaeaea" light="groundColor:green" 
+         intensity="0.7"&gt;&lt;/a-light&gt;
+       &lt;a-light type="point" intensity="0.75" distance="50" decay="2" position="0 3 0" 
+         light="castShadow: true"&gt;&lt;/a-light&gt;
     &lt;/a-scene&gt;
   &lt;/body&gt;
 &lt;/html&gt;
@@ -3019,13 +3058,19 @@ p.show()
   &lt;/head&gt;
   &lt;body&gt;
     &lt;a-scene shadow="type: pcfsoft"&gt;
-       &lt;a-plane color="#A9F5D0" position="0 2 -6" width="8" height="4" shadow="receive: true"&gt;&lt;/a-plane&gt;
-       &lt;a-plane color="#A9F5D0" position="0 0 -4" rotation="-90 0 0" width="8" height="4" shadow="receive: true"&gt;&lt;/a-plane&gt;
-       &lt;a-plane color="#A9F5D0" position="-4 2 -4" rotation="0 90 0" width="4" height="4" shadow="receive: true"&gt;&lt;/a-plane&gt;
-       &lt;a-cone color="royalblue" position="0 2 -3" rotation="0 0 45" radius-bottom="0.75" height="2.5" shadow="cast: true"&gt;&lt;/a-cone&gt;
+       &lt;a-plane color="#A9F5D0" position="0 2 -6" width="8" height="4" 
+         shadow="receive: true"&gt;&lt;/a-plane&gt;
+       &lt;a-plane color="#A9F5D0" position="0 0 -4" rotation="-90 0 0" width="8" height="4" 
+         shadow="receive: true"&gt;&lt;/a-plane&gt;
+       &lt;a-plane color="#A9F5D0" position="-4 2 -4" rotation="0 90 0" width="4" height="4" 
+         shadow="receive: true"&gt;&lt;/a-plane&gt;
+       &lt;a-cone color="royalblue" position="0 2 -3" rotation="0 0 45" radius-bottom="0.75" 
+         height="2.5" shadow="cast: true"&gt;&lt;/a-cone&gt;
        &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
-       &lt;a-light type="hemisphere" color="#eaeaea" light="groundColor:green" intensity="0.7" <a alt="mudança de intensidade da luz hemisférica em 5 segundos">animation="property:</a> intensity; to: 0.2; loop: true; dir: alternate; dur: 5000;"&gt;&lt;/a-light&gt;
-       &lt;a-light type="spot" intensity="0.75" angle="45" penumbra="0.2" light="castShadow:true" position="0 2 -0.5"&gt;&lt;/a-light&gt;
+       &lt;a-light type="hemisphere" color="#eaeaea" light="groundColor:green" intensity="0.7" 
+         <a alt="mudança de intensidade da luz hemisférica em 5 segundos">animation="property:</a> intensity; to: 0.2; loop: true; dir: alternate; dur: 5000;"&gt;&lt;/a-light&gt;
+       &lt;a-light type="spot" intensity="0.75" angle="45" penumbra="0.2" light="castShadow:true" 
+         position="0 2 -0.5"&gt;&lt;/a-light&gt;
     &lt;/a-scene&gt;
   &lt;/body&gt;
 &lt;/html&gt;
