@@ -3119,6 +3119,57 @@ p.show()
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-127a.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-128.png"/>
+  <div class="combo"><details class="sub"><summary>&#x1f517; Link</summary>
+  <p><a href="https://jaxry.github.io/panorama-to-cubemap/" target="_blank">https://jaxry.github.io/panorama-to-cubemap/</a></p></details></div>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-128a.png"/>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
+	<p>Veja o código HTML e a renderização da cena.</p>
+	  <ul class="slider">
+		  <li>
+			   <input type="radio" id="036" name="sl">
+			   <label for="036"></label>
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod97', 'cd97')" onmouseout="outFunc('cd97')"><span class="tooltiptext" id="cd97">Copiar o código</span></button></div>Órbita da câmera e reflexão da imagem de fundo nos objetos:
+<pre><code id="cod97">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;script src="https://aframe.io/releases/1.3.0/aframe.min.js"&gt;&lt;/script&gt;
+	<a alt="biblioteca de órbita da câmera">&lt;script src="https://unpkg.com/aframe-orbit-controls@1.3.0/dist/aframe-orbit-controls.min.js"&gt;&lt;/script&gt;</a>
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;a-scene reflection&gt;
+        &lt;a-assets&gt;
+			&lt;img id="ceu" src="./imagens/equi1.jpg"&gt;
+			&lt;img id="metal" src="./imagens/metal1.png"&gt;
+			<a alt="imagens que formam o fundo da cena: formato cubemap">&lt;a-cubemap id="ceu2"&gt;</a>
+			      &lt;img src="./imagens/cubemap/Right.png"&gt;
+			      &lt;img src="./imagens/cubemap/Left.png"&gt;
+			      &lt;img src="./imagens/cubemap/Top.png"&gt;
+			      &lt;img src="./imagens/cubemap/Bottom.png"&gt;
+			      &lt;img src="./imagens/cubemap/Front.png"&gt;
+			      &lt;img src="./imagens/cubemap/Back.png"&gt;
+			&lt;/a-cubemap&gt;
+		&lt;/a-assets&gt;
+		&lt;a-sky src="#ceu"&gt;&lt;/a-sky&gt;
+		<a alt="câmera com propriedades de órbita">&lt;a-camera orbit-controls="<a alt="alvo">target:</a> -1 1.5 1; minDistance: 0.5; maxDistance: 180; <a alt="posição inicial da câmera">initialPosition:</a> -1 1.6 3.5"&gt;&lt;/a-camera&gt;
+		&lt;a-sphere position="1 2 0.5" radius="1" side="double" color="silver" metalness="1" roughness="0" segments-height="36" shadow="" segments-width="64" <a alt="cubemap para reflexão">material="envMap:</a> #ceu2;"&gt;&lt;/a-sphere&gt;
+		&lt;a-sphere position="-2 1.5 -0.5" color="green" radius="1" side="double" metalness="1" roughness="0" segments-height="36" shadow="" segments-width="64" <a alt="cubemap para reflexão">material=</a>"envMap: #ceu2;"&gt;&lt;/a-sphere&gt;		
+		&lt;a-cylinder src="#metal" position="-3 0.5 1.5" color="white" radius="0.5" height="1.5" side="double" metalness="1" roughness="0" shadow="" <a alt="cubemap para reflexão">material=</a>"envMap: #ceu2;"&gt;&lt;/a-cylinder&gt;		
+		&lt;a-light type="ambient" color="#eaeaea" intensity="0.3"&gt;&lt;/a-light&gt;
+		&lt;a-light type="spot" intensity="0.75" angle="60" penumbra="0.5" shadow="cast: true; receive: false" position="-2 2 4"&gt;&lt;/a-light&gt;
+    &lt;/a-scene&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="037" name="sl">
+			   <label for="037"></label>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo13.htm" title="Posição da câmera" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+			   <figcaption>Órbita da câmera e reflexão do fundo da cena nos objetos.</figcaption>
+		   </li>
+		</ul>
+		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+  </details></div>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-129.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
