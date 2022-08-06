@@ -2724,6 +2724,49 @@ p.show()
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-120b.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-121.png"/>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Iluminação direcional com 3 fontes</summary>
+	<p>Veja o código HTML e a renderização da cena.</p>
+	  <ul class="slider">
+		  <li>
+			   <input type="radio" id="016" name="sl">
+			   <label for="016"></label>
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod87', 'cd87')" onmouseout="outFunc('cd87')"><span class="tooltiptext" id="cd87">Copiar o código</span></button></div>Iluminação direcional com 3 fontes:
+<pre><code id="cod87">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;script src="https://aframe.io/releases/1.3.0/aframe.min.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;a-scene&gt;
+       &lt;a-plane color="#A9F5D0" position="0 2 -6" width="8" height="4" &gt;&lt;/a-plane&gt;
+       &lt;a-plane color="#A9F5D0" position="0 0 -4" rotation="-90 0 0" width="8" height="4"&gt;&lt;/a-plane&gt;
+       &lt;a-plane color="#A9F5D0" position="-4 2 -4" rotation="0 90 0" width="4" height="4"&gt;&lt;/a-plane&gt;
+       &lt;a-box color="#F7819F" position="0 2 -4" rotation="0 45 45" scale="2 2 2" &gt;&lt;/a-box&gt;
+       &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
+	   <a alt="luz direcional com intensidade 0.8">&lt;a-light type="directional" intensity="0.8"</a> position="0 5 -4" light="castShadow:true" target="#directionaltargetY"&gt;
+          <a alt="alvo na direção do eixo y">&lt;a-entity id="directionaltargetY"</a> position="0 -1 0"&gt;&lt;/a-entity&gt;
+       &lt;/a-light&gt;
+       <a alt="luz direcional com intensidade 0.8">&lt;a-light type="directional" intensity="0.8"</a> position="0 0 2" light="castShadow:true" target="#directionaltargetZ"&gt;
+          <a alt="alvo na direção do eixo z">&lt;a-entity id="directionaltargetZ"</a> position="0 0 -1"&gt;&lt;/a-entity&gt;
+       &lt;/a-light&gt;
+       <a alt="luz direcional com intensidade 0.8">&lt;a-light type="directional" intensity="0.8"</a> position="5 0 -4" light="castShadow:true" target="#directionaltargetX"&gt;
+          <a alt="alvo na direção do eixo x">&lt;a-entity id="directionaltargetX"</a> position="-1 0 0"&gt;&lt;/a-entity&gt;
+       &lt;/a-light&gt;
+    &lt;/a-scene&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="017" name="sl">
+			   <label for="017"></label>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo4.htm" title="Iluminação direcional" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+			   <figcaption>Iluminação direcional com 3 fontes.</figcaption>
+		   </li>
+		</ul>
+		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+  </details></div>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-121a.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-122.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
