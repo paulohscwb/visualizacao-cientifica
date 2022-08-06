@@ -2573,6 +2573,42 @@ p.show()
   </details></div>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-118.png"/>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Cena de RV com imagem equiretangular de fundo</summary>
+	<p>Veja o código HTML e a renderização da cena.</p>
+	  <ul class="slider">
+		  <li>
+			   <input type="radio" id="008" name="sl">
+			   <label for="008"></label>
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod83', 'cd83')" onmouseout="outFunc('cd83')"><span class="tooltiptext" id="cd83">Copiar o código</span></button></div>Cena de RV com imagem equiretangular de fundo:
+<pre><code id="cod83">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;script src="https://aframe.io/releases/1.3.0/aframe.min.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;a-scene&gt;
+       <a alt="tag para inserir as referências de imagens e objetos">&lt;a-assets&gt;</a>
+          <a alt="caminhos das imagens das texturas e fundo da cena">&lt;img id="ceu"</a> src="./imagens/equi1.jpg"&gt;
+          &lt;img id="textura1" src="./imagens/textura1.jpg"&gt;
+          &lt;img id="textura2" src="./imagens/textura2.jpg"&gt;  
+       &lt;/a-assets&gt;
+       <a alt="imagem textura1 no cubo">&lt;a-box src="textura1"</a> position="0 1 -4" rotation="0 45 45" scale="1 1 1.5"&gt;&lt;/a-box&gt;
+	   <a alt="imagem textura2 no cilindro">&lt;a-cylinder src="textura2"</a> position="2.5 1 -4" radius="0.5" height="2"&gt;&lt;/a-cylinder&gt;
+       <a alt="imagem equiretangular no céu da cena">&lt;a-sky src="#ceu"&gt;&lt;/a-sky&gt;</a>
+    &lt;/a-scene&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="009" name="sl">
+			   <label for="009"></label>
+			   <div class="embed-container"><iframe width="100%" height="500" src="modulo8/exemplo2.htm" title="Cena de RV com um cubo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+			   <figcaption>Cena de RV com um cubo, com imagem equiretangular de fundo.</figcaption>
+		   </li>
+		</ul>
+		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+  </details></div>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-119.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
