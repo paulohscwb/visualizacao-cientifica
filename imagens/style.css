@@ -358,6 +358,7 @@ h3::after {
   overflow: hidden;
   max-width: 100%; 
   box-shadow: 0px 5px 5px -6px grey;
+  margin-bottom:10px;
 }
 
 .embed-container iframe, .embed-container object, .embed-container embed {
@@ -375,5 +376,4 @@ iframe {
   margin: 0 auto;
   display: block;
   border-radius:7px;
-  margin-bottom:15px;
 }

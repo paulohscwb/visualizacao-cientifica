@@ -2473,7 +2473,7 @@ p.show()
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-116.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-117.png"/>
-  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Cena de RV com um cubo</summary>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
 		  <li>
@@ -2503,7 +2503,7 @@ p.show()
 		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
   </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-117a.png"/>
-  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Cena de RV com um cubo e fundo azul</summary>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
 		  <li>
@@ -2534,7 +2534,7 @@ p.show()
 		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
   </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-117b.png"/>
-  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Cena de RV com um cubo em um ambiente</summary>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
 		  <li>
@@ -2573,7 +2573,7 @@ p.show()
   </details></div>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-118.png"/>
-  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Cena de RV com imagem equiretangular de fundo</summary>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
 		  <li>
@@ -2611,7 +2611,7 @@ p.show()
   </details></div>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-119.png"/>
-  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Cena de RV da representação da Terra e da Lua</summary>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
 		  <li>
@@ -2650,7 +2650,7 @@ p.show()
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-119a.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-120.png"/>
-  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Iluminação ambiente em uma cena de RV</summary>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
 		  <li>
@@ -2685,7 +2685,7 @@ p.show()
 		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
   </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-120a.png"/>
-  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Iluminação direcional em uma cena de RV</summary>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
 		  <li>
@@ -2724,7 +2724,7 @@ p.show()
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-120b.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-121.png"/>
-  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Iluminação direcional com 3 fontes</summary>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
 		  <li>
@@ -2769,7 +2769,7 @@ p.show()
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-121a.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-122.png"/>
-  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Iluminação hemisférica de uma cena em RV</summary>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
 		  <li>
@@ -2807,7 +2807,7 @@ p.show()
 		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
   </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-122a.png"/>
-  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Iluminação ponto de uma cena em RV</summary>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
 		  <li>
@@ -2843,7 +2843,7 @@ p.show()
 		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
   </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-122b.png"/>
-  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Iluminação spot de uma cena em RV</summary>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
 		  <li>
@@ -2882,7 +2882,7 @@ p.show()
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-123.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-124.png"/>
-  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Animação de uma esfera em torno de um eixo</summary>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
 		  <li>
@@ -2927,7 +2927,7 @@ p.show()
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-124a.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-125.png"/>
-  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Animação na cena da Terra e da Lua</summary>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
 		  <li>
@@ -2972,7 +2972,7 @@ p.show()
 		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
   </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-125a.png"/>
-  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Animação com mudanças de propriedades</summary>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
 		  <li>
@@ -3005,7 +3005,7 @@ p.show()
 		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
   </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-125b.png"/>
-  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Animação de intensidade de iluminação</summary>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
 		  <li>
@@ -3042,7 +3042,7 @@ p.show()
   </details></div>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-126.png"/>
-  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Animação de posição da fonte de luz</summary>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
 		  <li>
@@ -3080,6 +3080,43 @@ p.show()
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-126a.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-127.png"/>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
+	<p>Veja o código HTML e a renderização da cena.</p>
+	  <ul class="slider">
+		  <li>
+			   <input type="radio" id="034" name="sl">
+			   <label for="034"></label>
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod96', 'cd96')" onmouseout="outFunc('cd96')"><span class="tooltiptext" id="cd96">Copiar o código</span></button></div>Propriedades da câmera:
+<pre><code id="cod96">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;script src="https://aframe.io/releases/1.3.0/aframe.min.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;a-scene shadow="type: pcfsoft"&gt;
+       &lt;a-assets&gt;
+           &lt;img id="arvore" src="./imagens/treebark.png"&gt;
+       &lt;/a-assets&gt;
+       <a alt="posição da câmera">&lt;a-camera</a> position="0 2 2"&gt;&lt;/a-camera&gt;
+       &lt;a-cylinder src="#arvore" position="0 2 0" radius="0.5" height="2" <a alt="propriedades do material">metalness="0.6" roughness="0.3"</a> side="double"&gt;&lt;/a-cylinder&gt;
+       &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
+       &lt;a-light type="ambient" color="white" intensity="0.4"&gt;&lt;/a-light&gt;
+       &lt;a-light type="directional" intensity="0.8" position="-1 0 0"&gt;&lt;/a-light&gt;
+    &lt;/a-scene&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="035" name="sl">
+			   <label for="035"></label>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo12.htm" title="Posição da câmera" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+			   <figcaption>Posição da câmera.</figcaption>
+		   </li>
+		</ul>
+		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+  </details></div>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-127a.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-128.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
