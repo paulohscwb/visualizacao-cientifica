@@ -2474,7 +2474,7 @@ p.show()
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-117.png"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Cena de RV com um cubo</summary>
-	<p>Vamos acompanhar o esquema com as etapas da criação de uma cena usando a biblioteca VTK - Visualization Toolkit.</p>
+	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
 		  <li>
 			   <input type="radio" id="001" name="sl">
@@ -2503,7 +2503,74 @@ p.show()
 		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
   </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-117a.png"/>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Cena de RV com um cubo e fundo azul</summary>
+	<p>Veja o código HTML e a renderização da cena.</p>
+	  <ul class="slider">
+		  <li>
+			   <input type="radio" id="003" name="sl">
+			   <label for="003"></label>
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod80', 'cd80')" onmouseout="outFunc('cd80')"><span class="tooltiptext" id="cd80">Copiar o código</span></button></div>Cena de RV com um cubo, com fundo azul:
+<pre><code id="cod80">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;script src="https://aframe.io/releases/1.3.0/aframe.min.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;a-scene&gt;
+       &lt;a-box color="green" position="0 2 -4" rotation="0 45 45" scale="2 2 3"&gt;&lt;/a-box&gt;
+	   <a alt="definição do fundo da cena">&lt;a-sky</a> color="#99ccff"&gt;&lt;/a-sky&gt;
+    &lt;/a-scene&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="004" name="sl">
+			   <label for="004"></label>
+			   <div class="embed-container"><iframe width="100%" height="500" src="modulo8/exemplo1b.htm" title="Cena de RV com um cubo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+			   <figcaption>Cena de RV com um cubo, sem imagem de fundo.</figcaption>
+		   </li>
+		</ul>
+		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+  </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-117b.png"/>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Cena de RV com um cubo em um ambiente</summary>
+	<p>Veja o código HTML e a renderização da cena.</p>
+	  <ul class="slider">
+		  <li>
+			   <input type="radio" id="005" name="sl">
+			   <label for="005"></label>
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod80', 'cd80')" onmouseout="outFunc('cd80')"><span class="tooltiptext" id="cd80">Copiar o código</span></button></div>Cena de RV com um cubo, com ambientes forest e japan:
+<pre><code id="cod80">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;script src="https://aframe.io/releases/1.3.0/aframe.min.js"&gt;&lt;/script&gt;
+	<a alt="biblioteca com ambientes a-frame">&lt;script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"&gt;&lt;/script&gt;</a>
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;a-scene&gt;
+       &lt;a-box color="green" position="0 2 -4" rotation="0 45 45" scale="2 2 3"&gt;&lt;/a-box&gt;
+	   <a alt="ambiente forest com 500 árvores">&lt;a-entity </a> environment="preset: forest; dressingAmount: 500"&gt;&lt;/a-entity&gt;
+    &lt;/a-scene&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="006" name="sl">
+			   <label for="006"></label>
+			   <div class="embed-container"><iframe width="100%" height="500" src="modulo8/exemplo1a.htm" title="Cena de RV com um cubo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+			   <figcaption>Cena de RV com um cubo, com ambiente forest.</figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="007" name="sl">
+			   <label for="007"></label>
+			   <div class="embed-container"><iframe width="100%" height="500" src="modulo8/exemplo1.htm" title="Cena de RV com um cubo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+			   <figcaption>Cena de RV com um cubo, com ambiente japan. Modifique a tag do ambiente no código para inserir o cubo em outros ambientes do a-frame.</figcaption>
+		   </li>
+		</ul>
+		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+  </details></div>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-118.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
