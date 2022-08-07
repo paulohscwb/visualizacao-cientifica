@@ -2496,8 +2496,8 @@ p.show()
 		   <li>
 			   <input type="radio" id="002" name="sl">
 			   <label for="002"></label>
-			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo0.htm" title="Cena de RV com um cubo" frameborder="0" allowfullscreen="yes" allowvr="yes" allowfullscreen="yes" allowvr="yes"></iframe></div>
-			   <figcaption>Cena de RV com um cubo, sem imagem de fundo.<br><a href="modulo8/exemplo0.htm" target="_blank">link da página</a></figcaption>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo0.htm" title="Cena de RV com um cubo" frameborder="0"></iframe></div>
+			   <figcaption>Cena de RV com um cubo, sem imagem de fundo.<br><a href="modulo8/exemplo0.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
 		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
@@ -2527,8 +2527,8 @@ p.show()
 		   <li>
 			   <input type="radio" id="004" name="sl">
 			   <label for="004"></label>
-			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo1b.htm" title="Cena de RV com um cubo" frameborder="0" allowfullscreen="yes" allowvr="yes"></iframe></div>
-			   <figcaption>Cena de RV com um cubo, sem imagem de fundo.<br><a href="modulo8/exemplo1b.htm" target="_blank">link da página</a></figcaption>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo1b.htm" title="Cena de RV com um cubo" frameborder="0"></iframe></div>
+			   <figcaption>Cena de RV com um cubo, sem imagem de fundo.<br><a href="modulo8/exemplo1b.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
 		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
@@ -2559,14 +2559,14 @@ p.show()
 		   <li>
 			   <input type="radio" id="006" name="sl">
 			   <label for="006"></label>
-			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo1a.htm" title="Cena de RV com um cubo" frameborder="0" allowfullscreen="yes" allowvr="yes"></iframe></div>
-			   <figcaption>Cena de RV com um cubo, com ambiente forest.<br><a href="modulo8/exemplo1a.htm" target="_blank">link da página</a></figcaption>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo1a.htm" title="Cena de RV com um cubo" frameborder="0"></iframe></div>
+			   <figcaption>Cena de RV com um cubo, com ambiente forest.<br><a href="modulo8/exemplo1a.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		   <li>
 			   <input type="radio" id="007" name="sl">
 			   <label for="007"></label>
-			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo1.htm" title="Cena de RV com um cubo" frameborder="0" allowfullscreen="yes" allowvr="yes"></iframe></div>
-			   <figcaption>Cena de RV com um cubo, com ambiente japan. Modifique a tag do ambiente no código para inserir o cubo em outros ambientes do a-frame.<br><a href="modulo8/exemplo1.htm" target="_blank">link da página</a></figcaption>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo1.htm" title="Cena de RV com um cubo" frameborder="0"></iframe></div>
+			   <figcaption>Cena de RV com um cubo, com ambiente japan. Modifique a tag do ambiente no código para inserir o cubo em outros ambientes do a-frame.<br><a href="modulo8/exemplo1.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
 		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
@@ -2603,8 +2603,8 @@ p.show()
 		   <li>
 			   <input type="radio" id="009" name="sl">
 			   <label for="009"></label>
-			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo2.htm" title="Cena de RV com um cubo" frameborder="0" allowfullscreen="yes" allowvr="yes"></iframe></div>
-			   <figcaption>Cena de RV com um cubo, com imagem equiretangular de fundo.<br><a href="modulo8/exemplo2.htm" target="_blank">link da página</a></figcaption>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo2.htm" title="Cena de RV com um cubo" frameborder="0"></iframe></div>
+			   <figcaption>Cena de RV com um cubo, com imagem equiretangular de fundo.<br><a href="modulo8/exemplo2.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
 		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
@@ -2641,8 +2641,8 @@ p.show()
 		   <li>
 			   <input type="radio" id="011" name="sl">
 			   <label for="011"></label>
-			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo3.htm" title="Cena de RV com a Terra e a Lua" frameborder="0" allowfullscreen="yes" allowvr="yes"></iframe></div>
-			   <figcaption>Cena de RV da representação da Terra e da Lua.</figcaption>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo3.htm" title="Cena de RV com a Terra e a Lua" frameborder="0"></iframe></div>
+			   <figcaption>Cena de RV da representação da Terra e da Lua.<br><a href="modulo8/exemplo3.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
 		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
@@ -2678,8 +2678,8 @@ p.show()
 		   <li>
 			   <input type="radio" id="013" name="sl">
 			   <label for="013"></label>
-			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo4a.htm" title="Iluminação ambiente" frameborder="0" allowfullscreen="yes" allowvr="yes"></iframe></div>
-			   <figcaption>Iluminação ambiente em uma cena de RV.</figcaption>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo4a.htm" title="Iluminação ambiente" frameborder="0"></iframe></div>
+			   <figcaption>Iluminação ambiente em uma cena de RV.<br><a href="modulo8/exemplo4a.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
 		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
@@ -2715,8 +2715,8 @@ p.show()
 		   <li>
 			   <input type="radio" id="015" name="sl">
 			   <label for="015"></label>
-			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo4b.htm" title="Iluminação ambiente" frameborder="0" allowfullscreen="yes" allowvr="yes"></iframe></div>
-			   <figcaption>Iluminação direcional em uma cena de RV.</figcaption>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo4b.htm" title="Iluminação ambiente" frameborder="0"></iframe></div>
+			   <figcaption>Iluminação direcional em uma cena de RV.<br><a href="modulo8/exemplo4b.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
 		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
@@ -2767,8 +2767,8 @@ p.show()
 		   <li>
 			   <input type="radio" id="017" name="sl">
 			   <label for="017"></label>
-			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo4.htm" title="Iluminação direcional" frameborder="0" allowfullscreen="yes" allowvr="yes"></iframe></div>
-			   <figcaption>Iluminação direcional com 3 fontes.</figcaption>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo4.htm" title="Iluminação direcional" frameborder="0"></iframe></div>
+			   <figcaption>Iluminação direcional com 3 fontes.<br><a href="modulo8/exemplo4.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
 		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
@@ -2813,8 +2813,8 @@ p.show()
 		   <li>
 			   <input type="radio" id="019" name="sl">
 			   <label for="019"></label>
-			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo5.htm" title="Iluminação hemisférica" frameborder="0" allowfullscreen="yes" allowvr="yes"></iframe></div>
-			   <figcaption>Iluminação hemisférica.</figcaption>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo5.htm" title="Iluminação hemisférica" frameborder="0"></iframe></div>
+			   <figcaption>Iluminação hemisférica.<br><a href="modulo8/exemplo5.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
 		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
@@ -2855,8 +2855,8 @@ p.show()
 		   <li>
 			   <input type="radio" id="021" name="sl">
 			   <label for="021"></label>
-			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo5.htm" title="Iluminação ponto" frameborder="0" allowfullscreen="yes" allowvr="yes"></iframe></div>
-			   <figcaption>Iluminação ponto.</figcaption>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo6.htm" title="Iluminação ponto" frameborder="0"></iframe></div>
+			   <figcaption>Iluminação ponto.<br><a href="modulo8/exemplo6.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
 		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
@@ -2897,8 +2897,8 @@ p.show()
 		   <li>
 			   <input type="radio" id="023" name="sl">
 			   <label for="023"></label>
-			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo7.htm" title="Iluminação spot" frameborder="0" allowfullscreen="yes" allowvr="yes"></iframe></div>
-			   <figcaption>Iluminação spot.</figcaption>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo7.htm" title="Iluminação spot" frameborder="0"></iframe></div>
+			   <figcaption>Iluminação spot.<br><a href="modulo8/exemplo7.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
 		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
@@ -2948,8 +2948,8 @@ p.show()
 		   <li>
 			   <input type="radio" id="025" name="sl">
 			   <label for="025"></label>
-			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo8a.htm" title="Animação em torno de um eixo" frameborder="0" allowfullscreen="yes" allowvr="yes"></iframe></div>
-			   <figcaption>Animação da esfera em torno do eixo z.</figcaption>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo8a.htm" title="Animação em torno de um eixo" frameborder="0"></iframe></div>
+			   <figcaption>Animação da esfera em torno do eixo z.<br><a href="modulo8/exemplo8a.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
 		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
@@ -2999,8 +2999,8 @@ p.show()
 		   <li>
 			   <input type="radio" id="027" name="sl">
 			   <label for="027"></label>
-			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo8.htm" title="Animação de duas esferas" frameborder="0" allowfullscreen="yes" allowvr="yes"></iframe></div>
-			   <figcaption>Animação da Lua em torno do centro da Terra.</figcaption>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo8.htm" title="Animação de duas esferas" frameborder="0"></iframe></div>
+			   <figcaption>Animação da Lua em torno do centro da Terra.<br><a href="modulo8/exemplo8.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
 		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
@@ -3037,8 +3037,8 @@ p.show()
 		   <li>
 			   <input type="radio" id="029" name="sl">
 			   <label for="029"></label>
-			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo9.htm" title="Animação de mudança de cor" frameborder="0" allowfullscreen="yes" allowvr="yes"></iframe></div>
-			   <figcaption>Animação com mudanças de cores.</figcaption>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo9.htm" title="Animação de mudança de cor" frameborder="0"></iframe></div>
+			   <figcaption>Animação com mudanças de cores.<br><a href="modulo8/exemplo9.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
 		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
@@ -3079,8 +3079,8 @@ p.show()
 		   <li>
 			   <input type="radio" id="031" name="sl">
 			   <label for="031"></label>
-			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo10.htm" title="Animação de mudança de intensidade da luz" frameborder="0" allowfullscreen="yes" allowvr="yes"></iframe></div>
-			   <figcaption>Animação de intensidade de luz.</figcaption>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo10.htm" title="Animação de mudança de intensidade da luz" frameborder="0"></iframe></div>
+			   <figcaption>Animação de intensidade de luz.<br><a href="modulo8/exemplo10.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
 		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
@@ -3123,8 +3123,8 @@ p.show()
 		   <li>
 			   <input type="radio" id="033" name="sl">
 			   <label for="033"></label>
-			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo11.htm" title="Animação de mudança de posição da luz" frameborder="0" allowfullscreen="yes" allowvr="yes"></iframe></div>
-			   <figcaption>Animação da posição da fonte de luz.</figcaption>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo11.htm" title="Animação de mudança de posição da luz" frameborder="0"></iframe></div>
+			   <figcaption>Animação da posição da fonte de luz.<br><a href="modulo8/exemplo11.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
 		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
@@ -3163,8 +3163,8 @@ p.show()
 		   <li>
 			   <input type="radio" id="035" name="sl">
 			   <label for="035"></label>
-			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo12.htm" title="Posição da câmera" frameborder="0" allowfullscreen="yes" allowvr="yes"></iframe></div>
-			   <figcaption>Posição da câmera.</figcaption>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo12.htm" title="Posição da câmera" frameborder="0"></iframe></div>
+			   <figcaption>Posição da câmera.<br><a href="modulo8/exemplo12.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
 		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
@@ -3225,8 +3225,8 @@ p.show()
 		   <li>
 			   <input type="radio" id="037" name="sl">
 			   <label for="037"></label>
-			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo13.htm" title="Posição da câmera" frameborder="0" allowfullscreen="yes" allowvr="yes"></iframe></div>
-			   <figcaption>Órbita da câmera e reflexão do fundo da cena nos objetos.</figcaption>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo13.htm" title="Posição da câmera" frameborder="0"></iframe></div>
+			   <figcaption>Órbita da câmera e reflexão do fundo da cena nos objetos.<br><a href="modulo8/exemplo13.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
 		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
@@ -3276,8 +3276,8 @@ p.show()
 		   <li>
 			   <input type="radio" id="039" name="sl">
 			   <label for="039"></label>
-			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo14.htm" title="Posição da câmera" frameborder="0" allowfullscreen="yes" allowvr="yes"></iframe></div>
-			   <figcaption>Órbita da câmera e reflexão do fundo e entre os objetos da cena.</figcaption>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo14.htm" title="Posição da câmera" frameborder="0"></iframe></div>
+			   <figcaption>Órbita da câmera e reflexão do fundo e entre os objetos da cena.<br><a href="modulo8/exemplo14.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
 		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
