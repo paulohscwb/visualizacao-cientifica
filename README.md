@@ -3225,7 +3225,7 @@ p.show()
 		   <li>
 			   <input type="radio" id="037" name="sl">
 			   <label for="037"></label>
-			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo13.htm" title="Posição da câmera" frameborder="0"></iframe></div>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo13.htm" srcDoc='<a href="modulo8/exemplo13.htm" target="_blank">&#x1f517; link da página</a>' title="Posição da câmera" frameborder="0"></iframe></div>
 			   <figcaption>Órbita da câmera e reflexão do fundo da cena nos objetos.<br><a href="modulo8/exemplo13.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
@@ -3276,7 +3276,7 @@ p.show()
 		   <li>
 			   <input type="radio" id="039" name="sl">
 			   <label for="039"></label>
-			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo14.htm" title="Posição da câmera" frameborder="0"></iframe></div>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo14.htm" srcDoc='<a href="modulo8/exemplo14.htm" target="_blank">&#x1f517; link da página</a>' title="Posição da câmera" frameborder="0"></iframe></div>
 			   <figcaption>Órbita da câmera e reflexão do fundo e entre os objetos da cena.<br><a href="modulo8/exemplo14.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
