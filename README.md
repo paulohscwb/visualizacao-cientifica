@@ -2496,7 +2496,7 @@ p.show()
 		   <li>
 			   <input type="radio" id="002" name="sl">
 			   <label for="002"></label>
-			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo0.htm" title="Cena de RV com um cubo" frameborder="0"><a href="modulo8/exemplo0.htm" target="_blank"></a></iframe></div>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo0.htm" title="Cena de RV com um cubo" frameborder="0"><a href="modulo8/exemplo0.htm" target="_blank">link da página</a></iframe></div>
 			   <figcaption>Cena de RV com um cubo, sem imagem de fundo.</figcaption>
 		   </li>
 		</ul>
@@ -2527,7 +2527,7 @@ p.show()
 		   <li>
 			   <input type="radio" id="004" name="sl">
 			   <label for="004"></label>
-			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo1b.htm" title="Cena de RV com um cubo" frameborder="0"><a href="modulo8/exemplo1b.htm" target="_blank"></a></iframe></div>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo1b.htm" title="Cena de RV com um cubo" frameborder="0"><a href="modulo8/exemplo1b.htm" target="_blank">link da página</a></iframe></div>
 			   <figcaption>Cena de RV com um cubo, sem imagem de fundo.</figcaption>
 		   </li>
 		</ul>
@@ -2559,13 +2559,13 @@ p.show()
 		   <li>
 			   <input type="radio" id="006" name="sl">
 			   <label for="006"></label>
-			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo1a.htm" title="Cena de RV com um cubo" frameborder="0"><a href="modulo8/exemplo1a.htm" target="_blank"></a></iframe></div>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo1a.htm" title="Cena de RV com um cubo" frameborder="0"><a href="modulo8/exemplo1a.htm" target="_blank">link da página</a></iframe></div>
 			   <figcaption>Cena de RV com um cubo, com ambiente forest.</figcaption>
 		   </li>
 		   <li>
 			   <input type="radio" id="007" name="sl">
 			   <label for="007"></label>
-			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo1.htm" title="Cena de RV com um cubo" frameborder="0"></iframe></div>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo1.htm" title="Cena de RV com um cubo" frameborder="0"><a href="modulo8/exemplo1.htm" target="_blank">link da página</a></iframe></div>
 			   <figcaption>Cena de RV com um cubo, com ambiente japan. Modifique a tag do ambiente no código para inserir o cubo em outros ambientes do a-frame.</figcaption>
 		   </li>
 		</ul>
@@ -2603,7 +2603,7 @@ p.show()
 		   <li>
 			   <input type="radio" id="009" name="sl">
 			   <label for="009"></label>
-			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo2.htm" title="Cena de RV com um cubo" frameborder="0"><a href="modulo8/exemplo2.htm" target="_blank"></a></iframe></iframe></div>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo2.htm" title="Cena de RV com um cubo" frameborder="0"><a href="modulo8/exemplo2.htm" target="_blank">link da página</a></iframe></div>
 			   <figcaption>Cena de RV com um cubo, com imagem equiretangular de fundo.</figcaption>
 		   </li>
 		</ul>
