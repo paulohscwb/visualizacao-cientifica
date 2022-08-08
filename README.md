@@ -3556,7 +3556,7 @@ p.show()
 		   <li>
 			   <input type="radio" id="049" name="sl">
 			   <label for="049"></label>
-			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo19c.htm" title="Interações com objetos" frameborder="0" loading="lazy"></iframe></div>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo19c.htm" title="Objeto GLTF" frameborder="0" loading="lazy"></iframe></div>
 			   <figcaption>Objeto GLTF inserido na cena.<br><a href="modulo8/exemplo19c.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
@@ -3600,13 +3600,13 @@ p.show()
 		   <li>
 			   <input type="radio" id="051" name="sl">
 			   <label for="051"></label>
-			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo19d.htm" title="Interações com objetos" frameborder="0" loading="lazy"></iframe></div>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo19d.htm" title="Objeto GLTF" frameborder="0" loading="lazy"></iframe></div>
 			   <figcaption>Primeiro exemplo de objeto GLTF com animação nativa na cena.<br><a href="modulo8/exemplo19d.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		   <li>
 			   <input type="radio" id="052" name="sl">
 			   <label for="052"></label>
-			   <div class="embed-container"><iframe width="100%" src="modulo9/exemplo3aVR.htm" title="Interações com objetos" frameborder="0" loading="lazy"></iframe></div>
+			   <div class="embed-container"><iframe width="100%" src="modulo9/exemplo3aVR.htm" title="Objeto GLTF" frameborder="0" loading="lazy"></iframe></div>
 			   <figcaption>Segundo exemplo de objeto GLTF com animação nativa na cena.<br><a href="modulo9/exemplo3aVR.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
@@ -3636,18 +3636,21 @@ p.show()
             &lt;a-mixin id="texto" text="color: black; align: left; width: 8; side:double;"&gt;&lt;/a-mixin&gt;
         &lt;/a-assets&gt;
         &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
-        &lt;a-entity camera="fov:20; near:1;" orbit-controls="target: 0 0 0; minDistance: 0.5; maxDistance: 180; 
-        initialPosition: 5 7 21"&gt;&lt;/a-entity&gt;
+        &lt;a-entity camera="fov:20; near:1;" orbit-controls="target: 0 0 0; minDistance: 0.5; 
+        maxDistance: 180; initialPosition: 5 7 21"&gt;&lt;/a-entity&gt;
         &lt;a-entity <a alt="posição e escala dos objetos">position=</a>"0 0 0" scale="0.8 0.8 0.8" rotation="0 -15 0"&gt;
             &lt;a-gltf-model <a alt="objeto estático">src=</a>"#objeto" shadow&gt;&lt;/a-gltf-model&gt;
             &lt;a-entity position="3.54 2.14 0.03" rotation="0 0 13.3"&gt;
-                &lt;a-gltf-model <a alt="hélice com animação de rotação">src=</a>"#objeto1" animation="property: rotation; to: 360 0 0; loop: true; dur: 5000; easing: linear" shadow&gt;&lt;/a-gltf-model&gt;
+                &lt;a-gltf-model <a alt="hélice com animação de rotação">src=</a>"#objeto1" animation="property: rotation; to: 360 0 0; loop: true; 
+                  dur: 5000; easing: linear" shadow&gt;&lt;/a-gltf-model&gt;
             &lt;/a-entity&gt;
-            &lt;a-text position="0 0.15 3.5" mixin="texto" value="A airplane  |  design: Jeroen Hut" rotation="-45 0 0"&gt;&lt;/a-text&gt;
+            &lt;a-text position="0 0.15 3.5" mixin="texto" value="A airplane  |  design: Jeroen Hut" 
+              rotation="-45 0 0"&gt;&lt;/a-text&gt;
         &lt;/a-entity&gt;
         &lt;a-box shadow scale="10 0.1 10" position="0 -0.05 0" color="rgb(100,180,100)"&gt;&lt;/a-box&gt;
         &lt;a-light type="ambient" color="#bbb" intensity="0.6"&gt;&lt;/a-light&gt;
-        &lt;a-light type="directional" color="white" intensity="0.8" position="-1 1 1" light="castShadow:true"&gt;&lt;/a-light&gt;
+        &lt;a-light type="directional" color="white" intensity="0.8" position="-1 1 1" 
+        light="castShadow:true"&gt;&lt;/a-light&gt;
     &lt;/a-scene&gt;
   &lt;/body&gt;
 &lt;/html&gt;
@@ -3656,7 +3659,7 @@ p.show()
 		   <li>
 			   <input type="radio" id="054" name="sl">
 			   <label for="054"></label>
-			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo19.htm" title="Interações com objetos" frameborder="0" loading="lazy"></iframe></div>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo19.htm" title="Objeto GLTF" frameborder="0" loading="lazy"></iframe></div>
 			   <figcaption>Exemplo de objeto GLTF com animação feita com a-frame.<br><a href="modulo8/exemplo19.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
@@ -3665,6 +3668,58 @@ p.show()
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-138a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-139.png" loading="lazy"/>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
+	<p>Veja o código HTML e a renderização da cena.</p>
+	  <ul class="slider">
+		  <li>
+			   <input type="radio" id="055" name="sl">
+			   <label for="055"></label>
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod106', 'cd106')" onmouseout="outFunc('cd106')"><span class="tooltiptext" id="cd106">Copiar o código</span></button></div>Inserção de objeto GLTF com animação na cena:
+<pre><code id="cod106">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;script src="https://aframe.io/releases/1.3.0/aframe.min.js"&gt;&lt;/script&gt;
+    &lt;script src="https://fernandojsg.github.io/aframe-teleport-controls/dist/aframe-teleport-controls.min.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;a-scene reflection shadow="type: pcfsoft"&gt;
+        &lt;a-assets&gt;
+            &lt;a-asset-item id="objeto" <a alt="objeto GLTF de uma caverna">src=</a>"objetos/cave/scene.gltf"&gt;&lt;/a-asset-item&gt;
+            &lt;a-mixin <a alt="piso para usar teleporte">id=</a>"piso" geometry="primitive: box; height:0.1; width:10; depth:20;" shadow&gt;&lt;/a-mixin&gt;
+            &lt;img id="ceu" src="imagens/equi4.jpg"&gt;
+        &lt;/a-assets&gt;
+        &lt;a-sky src="#ceu"&gt;&lt;/a-sky&gt;
+        &lt;a-entity id="cameraRig" position="0.5 1 0"&gt;
+            &lt;a-entity id="head" camera wasd-controls look-controls gearvr-controls daydream-controls&gt;&lt;/a-entity&gt;
+            &lt;a-entity id="left-hand" teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head;"&gt;&lt;/a-entity&gt;
+            &lt;a-entity id="right-hand"<a alt="propriedades do teleporte"> teleport-controls=</a>"cameraRig: #cameraRig; teleportOrigin: #head; collisionEntities: [mixin='box'], [mixin='piso'], [mixin='objeto']"&gt;&lt;/a-entity&gt;
+        &lt;/a-entity&gt;
+        &lt;a-entity mixin="piso" position="0 -0.55 0" visible="false"&gt;&lt;/a-entity&gt;
+        &lt;a-entity position="0 0 0"&gt;
+            &lt;a-gltf-model <a alt="referência do objeto na cena">src=</a>"#objeto" shadow material="metallic:0.2; roughness:0.8;"&gt;&lt;/a-gltf-model&gt;
+        &lt;/a-entity&gt;
+        &lt;a-light type="ambient" color="#eaeaea" intensity="0.3"&gt;&lt;/a-light&gt;
+        &lt;a-light type="spot" intensity="0.7" position="1 1 3" light="castShadow:true" rotation="-90 0 0" penumbra="0.5" &gt;&lt;/a-light&gt;
+    &lt;/a-scene&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="056" name="sl">
+			   <label for="056"></label>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo19b.htm" title="Interações com objetos" frameborder="0" loading="lazy"></iframe></div>
+			   <figcaption>Primeiro exemplo de objeto GLTF com teleporte.<br><a href="modulo8/exemplo19b.htm" target="_blank">&#x1f517; link da página</a></figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="057" name="sl">
+			   <label for="057"></label>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo19a.htm" title="Interações com objetos" frameborder="0" loading="lazy"></iframe></div>
+			   <figcaption>Segundo exemplo de objeto GLTF com teleporte.<br><a href="modulo8/exemplo19a.htm" target="_blank">&#x1f517; link da página</a></figcaption>
+		   </li>
+		</ul>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
+  </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-139a.png" loading="lazy"/>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-139b.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
