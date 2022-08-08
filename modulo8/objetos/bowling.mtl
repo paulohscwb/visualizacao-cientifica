@@ -8,10 +8,10 @@ newmtl Standard_7
 	Tr 0
 	Tf 1 1 1 
 	illum 1
-	Ka 1.2 1.2 1.2
-	Kd 1.8 1.8 1.8
+	Ka 1.1 1.1 1.1
+	Kd 1.1 1.1 1.1
 	Ks 0.2 0.2 0.2
-	Ke 0.3 0.3 0.3
+	Ke 0.1 0.1 0.1
 	map_Ka bowling.jpg
 	map_Kd bowling.jpg
 	map_Ke bowling.jpg
