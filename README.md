@@ -3759,7 +3759,7 @@ p.show()
 		   <li>
 			   <input type="radio" id="059" name="sl">
 			   <label for="059"></label>
-			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo20.htm" title="Interações com objetos" frameborder="0" loading="lazy"></iframe></div>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo21.htm" title="Interações com objetos" frameborder="0" loading="lazy"></iframe></div>
 			   <figcaption>Primeiro exemplo de objeto GLTF com teleporte.<br><a href="modulo8/exemplo20.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
@@ -3873,9 +3873,9 @@ p.show()
 </code></pre></figcaption>
 		   </li>
 		   <li>
-			   <input type="radio" id="061" name="sl">
-			   <label for="061"></label>
-			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo21a.htm" title="Interações com objetos" frameborder="0" loading="lazy"></iframe></div>
+			   <input type="radio" id="061a" name="sl">
+			   <label for="061a"></label>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo21.htm" title="Interações com objetos" frameborder="0" loading="lazy"></iframe></div>
 			   <figcaption>Cena com uma pista de boliche: teleporte, objetos GLTF, texturas e interação com os objetos.<br><a href="modulo8/exemplo21.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
