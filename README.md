@@ -8,41 +8,41 @@
 <details>
   <summary id="modulo1">1. Introdução</summary>
   <p>Material da página 1 até a página 14.</p>
-   <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-0.png"/>
+   <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-0.png" loading="lazy"/>
    <p class="topop"><a href="#modulo1" class="topo">voltar ao topo</a></p>
-   <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-1.png"/>
+   <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-1.png" loading="lazy"/>
    <p class="topop"><a href="#modulo1" class="topo">voltar ao topo</a></p>
-   <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-2.png"/>
+   <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-2.png" loading="lazy"/>
    <p class="topop"><a href="#modulo1" class="topo">voltar ao topo</a></p>
-   <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-3.png"/>
+   <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-3.png" loading="lazy"/>
    <p class="topop"><a href="#modulo1" class="topo">voltar ao topo</a></p>
-   <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-4.png"/>
+   <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-4.png" loading="lazy"/>
    <p class="topop"><a href="#modulo1" class="topo">voltar ao topo</a></p>
-   <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-5.png"/>
+   <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-5.png" loading="lazy"/>
    <p class="topop"><a href="#modulo1" class="topo">voltar ao topo</a></p>
-   <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-6.png"/>
+   <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-6.png" loading="lazy"/>
    <p class="topop"><a href="#modulo1" class="topo">voltar ao topo</a></p>
-   <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-7.png"/>
+   <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-7.png" loading="lazy"/>
    <p class="topop"><a href="#modulo1" class="topo">voltar ao topo</a></p>
-   <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-8.png"/>
+   <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-8.png" loading="lazy"/>
    <p class="topop"><a href="#modulo1" class="topo">voltar ao topo</a></p>
-   <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-9.png"/>
+   <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-9.png" loading="lazy"/>
    <p class="topop"><a href="#modulo1" class="topo">voltar ao topo</a></p>
-   <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-10.png"/>
+   <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-10.png" loading="lazy"/>
    <p class="topop"><a href="#modulo1" class="topo">voltar ao topo</a></p>
-   <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-11.png"/>
+   <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-11.png" loading="lazy"/>
    <p class="topop"><a href="#modulo1" class="topo">voltar ao topo</a></p>
-   <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-12.png"/>
+   <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-12.png" loading="lazy"/>
    <p class="topop"><a href="#modulo1" class="topo">voltar ao topo</a></p>
-   <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-13.png"/>
+   <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-13.png" loading="lazy"/>
    <p class="topop"><a href="#modulo1" class="topo">voltar ao topo</a></p>
 </details>
 
 <details>
   <summary id="modulo2">2. Conceitos básicos e estruturais de visualização</summary>
   <p>Material da página 14 até a página 24.</p>
-  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-13.png"/>
-  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-14.png"/>
+  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-13.png" loading="lazy"/>
+  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-14.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod1', 'cd1')" onmouseout="outFunc('cd1')"><span class="tooltiptext" id="cd1">Copiar o código</span></button></div>Código em C++ com Matplotlib:
 <pre><code id="cod1">#include <a alt="vetores de coordenadas">&lt;vector&gt;</a> 
@@ -60,7 +60,7 @@ return0;
 
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-14a.png"/>
+  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-14a.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod2', 'cd2')" onmouseout="outFunc('cd2')"><span class="tooltiptext" id="cd2">Copiar o código</span></button></div>Código em Python com Matplotlib:
 <pre><code id="cod2">import <a alt="gráfico plt da biblioteca matplotlib ">matplotlib.pyplot as plt</a> 
@@ -73,9 +73,9 @@ return0;
 
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-14b.png"/>
+  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-14b.png" loading="lazy"/>
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
-  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-15.png"/>
+  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-15.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod3', 'cd3')" onmouseout="outFunc('cd3')"><span class="tooltiptext" id="cd3">Copiar o código</span></button></div>Gráfico de dispersão 3D:
 <pre><code id="cod3">import <a alt="gráfico plt da biblioteca matplotlib ">matplotlib.pyplot as plt</a> 
@@ -92,13 +92,13 @@ plt.show()
 
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-15a.png"/>
+  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-15a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
-  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-16.png"/>
+  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-16.png" loading="lazy"/>
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
-  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-17.png"/>
+  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-17.png" loading="lazy"/>
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
-  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-18.png"/>
+  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-18.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod4', 'cd4')" onmouseout="outFunc('cd4')"><span class="tooltiptext" id="cd4">Copiar o código</span></button></div>Gráfico de dispersão 2D com rótulos:
 <pre><code id="cod4">import matplotlib.pyplot as plt 
@@ -115,9 +115,9 @@ plt.plot(x, y, <a alt="marcador laranja">color =</a> 'orange', <a alt="marcador 
 plt.show()
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-18a.png"/>
+  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-18a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
-  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-19.png"/>
+  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-19.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod5', 'cd5')" onmouseout="outFunc('cd5')"><span class="tooltiptext" id="cd5">Copiar o código</span></button></div>Gráfico de dispersão 3D com rótulos:
 <pre><code id="cod5">import matplotlib.pyplot as plt
@@ -138,7 +138,7 @@ z = [2, 7, 11, 5, 3, 1]
 plt.show()
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-19a.png"/>
+  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-19a.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod6', 'cd6')" onmouseout="outFunc('cd6')"><span class="tooltiptext" id="cd6">Copiar o código</span></button></div>Gráfico de curvas 2D com legendas:
 <pre><code id="cod6">import matplotlib.pyplot as plt
@@ -159,7 +159,7 @@ plt.legend()
 </code></pre></figcaption>
   </details></div>
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
-  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-20.png"/>
+  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-20.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod7', 'cd7')" onmouseout="outFunc('cd7')"><span class="tooltiptext" id="cd7">Copiar o código</span></button></div>Gráficos de curvas 2D:
 <pre><code id="cod7">import matplotlib.pyplot as plt
@@ -180,9 +180,9 @@ plt.plot(x2, np.cos(2*np.pi*x2), <a alt="linha pontilhada laranja no intervalo x
 plt.show()
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-20a.png"/>
+  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-20a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
-  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-21.png"/>
+  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-21.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod8', 'cd8')" onmouseout="outFunc('cd8')"><span class="tooltiptext" id="cd8">Copiar o código</span></button></div>Gráficos de curvas 3D:
 <pre><code id="cod8">import matplotlib.pyplot as plt
@@ -202,7 +202,7 @@ plt.show()
 </code></pre></figcaption>
   </details></div>
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
-  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-22.png"/>
+  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-22.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod9', 'cd9')" onmouseout="outFunc('cd9')"><span class="tooltiptext" id="cd9">Copiar o código</span></button></div>Gráfico da hélice cilíndrica:
 <pre><code id="cod9">import matplotlib.pyplot as plt
@@ -221,9 +221,9 @@ ax.legend()
 plt.show()
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-22a.png"/>
+  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-22a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
-  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-23.png"/>
+  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-23.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod10', 'cd10')" onmouseout="outFunc('cd10')"><span class="tooltiptext" id="cd10">Copiar o código</span></button></div>Gráfico da hélice cilíndrica com segmentos projetantes:
 <pre><code id="cod10">import matplotlib.pyplot as plt
@@ -241,25 +241,25 @@ y = d * np.cos(z)
 plt.show()
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-23a.png"/>
+  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-23a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
 </details>
 
 <details>
   <summary id="modulo3">3. Fundamentos dos dados</summary>
   <p>Material da página 24 até a página 54.</p>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-23.png"/>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-24.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-23.png" loading="lazy"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-24.png" loading="lazy"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-25.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-25.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f517; Links</summary>
   <figcaption>Conjunto Iris: <a href="https://archive.ics.uci.edu/ml/datasets/iris" target="_blank">https://archive.ics.uci.edu/ml/datasets/iris</a>
   <br>Conjunto dos Pinguins: <a href="https://inria.github.io/scikit-learn-mooc/python_scripts/trees_dataset.html" target="_blank">https://inria.github.io/scikit-learn-mooc/python_scripts/trees_dataset.html</a>
   <br>Outros conjuntos de dados: <a href="https://www.maptive.com/free-data-visualization-data-sets/" target="_blank">https://www.maptive.com/free-data-visualization-data-sets/</a>
   </figcaption></details></div>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-25a.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-25a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-26.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-26.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod11', 'cd11')" onmouseout="outFunc('cd11')"><span class="tooltiptext" id="cd11">Copiar o código</span></button></div>Conjunto de dados Iris com matplotlib (cor e movimento):
 <pre><code id="cod11"><a alt="biblioteca para leitura dos dados em formato CSV">import pandas as pd</a>
@@ -297,9 +297,9 @@ plt.grid()
 plt.show()
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-26a.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-26a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-27.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-27.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod12', 'cd12')" onmouseout="outFunc('cd12')"><span class="tooltiptext" id="cd12">Copiar o código</span></button></div>Conjunto de dados Iris com matplotlib (textura):
 <pre><code id="cod12">import pandas as pd
@@ -334,9 +334,9 @@ plt.legend(scatterpoints = 1)
 plt.show()
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-27a.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-27a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-28.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-28.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod13', 'cd13')" onmouseout="outFunc('cd13')"><span class="tooltiptext" id="cd13">Copiar o código</span></button></div>Conjunto de dados Iris com Seaborn (cores):
 <pre><code id="cod13">import pandas as pd
@@ -349,15 +349,15 @@ sns.relplot(data = iris, x = 'Comprimento da Sépala', y = 'Comprimento da Péta
 	
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-28a.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-28a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-29.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-29.png" loading="lazy"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-30.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-30.png" loading="lazy"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-31.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-31.png" loading="lazy"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-32.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-32.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod14', 'cd14')" onmouseout="outFunc('cd14')"><span class="tooltiptext" id="cd14">Copiar o código</span></button></div>Conjunto de dados Iris com Seaborn (cores e tamanhos):
 <pre><code id="cod14">import pandas as pd
@@ -370,9 +370,9 @@ sns.relplot(data = iris, x = 'Comprimento da Sépala', y = 'Comprimento da Péta
 	
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-32a.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-32a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-33.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-33.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod15', 'cd15')" onmouseout="outFunc('cd15')"><span class="tooltiptext" id="cd15">Copiar o código</span></button></div>Conjunto de dados Iris com Seaborn (dispersão e frequência):
 <pre><code id="cod15">import pandas as pd
@@ -386,9 +386,9 @@ iris = pd.read_csv('C:/dados/iris.csv')
 	
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-33a.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-33a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-34.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-34.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod16', 'cd16')" onmouseout="outFunc('cd16')"><span class="tooltiptext" id="cd16">Copiar o código</span></button></div>Conjunto de dados dos pinguins com Seaborn (regressão linear):
 <pre><code id="cod16">import pandas as pd
@@ -402,9 +402,9 @@ sns.set_style("whitegrid")
 
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-34a.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-34a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-35.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-35.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod17', 'cd17')" onmouseout="outFunc('cd17')"><span class="tooltiptext" id="cd17">Copiar o código</span></button></div>Conjunto de dados dos pinguins com Seaborn (combinações de gráficos):
 <pre><code id="cod17">import pandas as pd
@@ -418,7 +418,7 @@ sns.set_style("whitegrid")
 
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-35a.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-35a.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod18', 'cd18')" onmouseout="outFunc('cd18')"><span class="tooltiptext" id="cd18">Copiar o código</span></button></div>Conjunto de dados dos pinguins com Seaborn (combinações de gráficos):
 <pre><code id="cod18">import pandas as pd
@@ -434,9 +434,9 @@ pinguins.drop(['Id','Ano'], inplace = True, axis = 1)
 g.add_legend()
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-35b.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-35b.png" loading="lazy"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-36.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-36.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod19', 'cd19')" onmouseout="outFunc('cd19')"><span class="tooltiptext" id="cd19">Copiar o código</span></button></div>Conjunto de dados dos pinguins com Seaborn (combinações de gráficos):
 <pre><code id="cod19">import pandas as pd
@@ -453,7 +453,7 @@ pinguins.drop(['Id','Ano'], inplace = True, axis = 1)
 g.add_legend(title = '', adjust_subtitles = True)
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-36a.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-36a.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod20', 'cd20')" onmouseout="outFunc('cd20')"><span class="tooltiptext" id="cd20">Copiar o código</span></button></div>Conjunto de dados Iris com Plotly (dispersão 3D):
 <pre><code id="cod20">import pandas as pd
@@ -472,11 +472,11 @@ fig.show()
 </code></pre></figcaption>
   </details></div>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-37.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-37.png" loading="lazy"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-38.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-38.png" loading="lazy"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-39.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-39.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod21', 'cd21')" onmouseout="outFunc('cd21')"><span class="tooltiptext" id="cd21">Copiar o código</span></button></div>Duas hélices (movimento):
 <pre><code id="cod21">import matplotlib.pyplot as plt
@@ -501,9 +501,9 @@ plt.show()
 </code></pre></figcaption>
   </details></div>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-40.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-40.png" loading="lazy"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-41.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-41.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod22', 'cd22')" onmouseout="outFunc('cd22')"><span class="tooltiptext" id="cd22">Copiar o código</span></button></div>Dados vetoriais 2D:
 <pre><code id="cod22">import matplotlib.pyplot as plt
@@ -526,7 +526,7 @@ plt.grid()
 plt.show()
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-41a.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-41a.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod23', 'cd23')" onmouseout="outFunc('cd23')"><span class="tooltiptext" id="cd23">Copiar o código</span></button></div>Dados vetoriais 2D:
 <pre><code id="cod23">import matplotlib.pyplot as plt
@@ -551,9 +551,9 @@ plt.show()
 </code></pre></figcaption>
   <p>&#x1f4ca; <a href="modulo3/dados_teste.csv" target="_blank">Arquivo CSV</a></p>
   </details></div>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-41b.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-41b.png" loading="lazy"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-42.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-42.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod24', 'cd24')" onmouseout="outFunc('cd24')"><span class="tooltiptext" id="cd24">Copiar o código</span></button></div>Dados vetoriais 2D:
 <pre><code id="cod24">import matplotlib.pyplot as plt
@@ -573,7 +573,7 @@ ax.set_aspect('equal', 'box')
 plt.show()
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-42a.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-42a.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod25', 'cd25')" onmouseout="outFunc('cd25')"><span class="tooltiptext" id="cd25">Copiar o código</span></button></div>Dados vetoriais 3D:
 <pre><code id="cod25">import matplotlib.pyplot as plt
@@ -593,9 +593,9 @@ ax.plot(x, y, z, 'ob')
 plt.show()
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-42b.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-42b.png" loading="lazy"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-43.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-43.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod26', 'cd26')" onmouseout="outFunc('cd26')"><span class="tooltiptext" id="cd26">Copiar o código</span></button></div>Dados vetoriais 3D:
 <pre><code id="cod26">import matplotlib.pyplot as plt
@@ -617,9 +617,9 @@ a = ax.quiver(x, y, z, u, v, w, length = 0.4, normalize = True, colors = cor, lw
 plt.show()
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-43a.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-43a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-44.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-44.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod27', 'cd27')" onmouseout="outFunc('cd27')"><span class="tooltiptext" id="cd27">Copiar o código</span></button></div>Dados vetoriais 3D:
 <pre><code id="cod27">import matplotlib.pyplot as plt
@@ -650,9 +650,9 @@ plt.show()
 </code></pre></figcaption>
   <p>&#x1f4ca; <a href="modulo3/flow_field.zip" target="_blank">Arquivo MAT</a></p>
   </details></div>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-44a.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-44a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-45.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-45.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod28', 'cd28')" onmouseout="outFunc('cd28')"><span class="tooltiptext" id="cd28">Copiar o código</span></button></div>Dados vetoriais 3D:
 <pre><code id="cod28">import numpy as np
@@ -683,11 +683,11 @@ plt.show()
 </code></pre></figcaption>
   <p>&#x1f4ca; <a href="modulo3/tornado3d.zip" target="_blank">Arquivo NC</a></p>
   </details></div>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-45a.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-45a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-46.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-46.png" loading="lazy"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-47.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-47.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod29', 'cd29')" onmouseout="outFunc('cd29')"><span class="tooltiptext" id="cd29">Copiar o código</span></button></div>Linhas de fluxo 2D:
 <pre><code id="cod29">import plotly.figure_factory as ff
@@ -708,7 +708,7 @@ fig = <a alt="função para criar as linhas de fluxo: streamlines">ff.create_str
 fig.show()
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-47a.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-47a.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod30', 'cd30')" onmouseout="outFunc('cd30')"><span class="tooltiptext" id="cd30">Copiar o código</span></button></div>Linhas de fluxo 3D:
 <pre><code id="cod30">import plotly.graph_objects as go
@@ -730,43 +730,43 @@ fig.show()
   <p>&#x1f4ca; <a href="modulo3/streamtube-wind.zip" target="_blank">Arquivo CSV</a></p>
   </details></div>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-48.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-48.png" loading="lazy"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-49.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-49.png" loading="lazy"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-50.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-50.png" loading="lazy"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-51.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-51.png" loading="lazy"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-52.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-52.png" loading="lazy"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
-  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-53.png"/>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-53.png" loading="lazy"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
 </details>
 
 <details>
   <summary id="modulo4">4. Taxonomia dos dados</summary>
   <p>Material da página 54 até a página 81.</p>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-53.png"/>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-54.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-53.png" loading="lazy"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-54.png" loading="lazy"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-55.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-55.png" loading="lazy"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-56.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-56.png" loading="lazy"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-57.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-57.png" loading="lazy"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-58.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-58.png" loading="lazy"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-59.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-59.png" loading="lazy"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-60.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-60.png" loading="lazy"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-61.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-61.png" loading="lazy"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-62.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-62.png" loading="lazy"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-63.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-63.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod31', 'cd31')" onmouseout="outFunc('cd31')"><span class="tooltiptext" id="cd31">Copiar o código</span></button></div>Gráfico radar (polar):
 <pre><code id="cod31">import plotly.io as pio
@@ -790,9 +790,9 @@ name = 'Ringo', opacity = 0.3))
 fig.show()
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-63a.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-63a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-64.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-64.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod32', 'cd32')" onmouseout="outFunc('cd32')"><span class="tooltiptext" id="cd32">Copiar o código</span></button></div>Gráfico com coordenadas paralelas:
 <pre><code id="cod32">import pandas as pd
@@ -816,9 +816,9 @@ fig.update_layout(font = dict(size = 24))
 fig.show()
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-64a.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-64a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-65.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-65.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod33', 'cd33')" onmouseout="outFunc('cd33')"><span class="tooltiptext" id="cd33">Copiar o código</span></button></div>Gráfico com seleção interativa:
 <pre><code id="cod33"><a alt="biblioteca bokeh de gráficos interativos">from bokeh.layouts import gridplot</a>
@@ -857,11 +857,11 @@ p = gridplot([[p1, p2]])
 show(p)
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-65a.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-65a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-66.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-66.png" loading="lazy"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-67.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-67.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod34', 'cd34')" onmouseout="outFunc('cd34')"><span class="tooltiptext" id="cd34">Copiar o código</span></button></div>Grafo orientado:
 <pre><code id="cod34"><a alt="biblioteca networkx de grafos orientados">import networkx as nx</a>
@@ -902,9 +902,9 @@ plt.figure()
 plt.show()
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-67a.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-67a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-68.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-68.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod35', 'cd35')" onmouseout="outFunc('cd35')"><span class="tooltiptext" id="cd35">Copiar o código</span></button></div>Grafo orientado para circuito Hamiltoniano:
 <pre><code id="cod35">import networkx as nx
@@ -930,9 +930,9 @@ plt.show()
   <p>&#x1f4ca; <a href="modulo4/alb1000.csv" target="_blank">Arquivo com os dados dos nós</a></p>
   <p>&#x1f4ca; <a href="modulo4/alb1000_opt.csv" target="_blank">Arquivo com a solução ótima</a></p>
   </details></div>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-68a.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-68a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-69.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-69.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod36', 'cd36')" onmouseout="outFunc('cd36')"><span class="tooltiptext" id="cd36">Copiar o código</span></button></div>Grafo orientado para o problema do Caixeiro Viajante:
 <pre><code id="cod36">import networkx as nx
@@ -960,11 +960,11 @@ plt.show()
   <p>&#x1f4ca; <a href="modulo4/pcb442.csv" target="_blank">Arquivo com os dados dos nós</a></p>
   <p>&#x1f4ca; <a href="modulo4/pcb442_opt.csv" target="_blank">Arquivo com a solução ótima</a></p>
   </details></div>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-69a.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-69a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-70.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-70.png" loading="lazy"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-71.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-71.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod37', 'cd37')" onmouseout="outFunc('cd37')"><span class="tooltiptext" id="cd37">Copiar o código</span></button></div>Gráfico de setores:
 <pre><code id="cod37">import plotly.io as pio
@@ -983,9 +983,9 @@ fig = <a alt="função do gráfico de setores">px.pie</a>(values = valores, name
 fig.show()
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-71a.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-71a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-72.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-72.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod38', 'cd38')" onmouseout="outFunc('cd38')"><span class="tooltiptext" id="cd38">Copiar o código</span></button></div>Gráfico Treeview:
 <pre><code id="cod38">import plotly.express as px
@@ -1013,9 +1013,9 @@ fig.update_layout(margin = dict(t = 25, l = 25, r = 25, b = 25))
 fig.show()
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-72a.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-72a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-73.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-73.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod39', 'cd39')" onmouseout="outFunc('cd39')"><span class="tooltiptext" id="cd39">Copiar o código</span></button></div>Gráfico Treeview:
 <pre><code id="cod39">import plotly.express as px
@@ -1046,9 +1046,9 @@ fig.update_layout(margin = dict(t = 25, l = 25, r = 25, b = 25))
 fig.show()
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-73a.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-73a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-74.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-74.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod40', 'cd40')" onmouseout="outFunc('cd40')"><span class="tooltiptext" id="cd40">Copiar o código</span></button></div>Gráfico Treeview:
 <pre><code id="cod40">import plotly.express as px
@@ -1071,7 +1071,7 @@ fig.show()
 </code></pre></figcaption>
   <p>&#x1f4ca; <a href="modulo4/treemap1.csv" target="_blank">Arquivo de dados para o Treemap</a></p>
   </details></div>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-74a.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-74a.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod41', 'cd41')" onmouseout="outFunc('cd41')"><span class="tooltiptext" id="cd41">Copiar o código</span></button></div>Gráfico Sunburst (aneis aninhados):
 <pre><code id="cod41">import plotly.express as px
@@ -1102,7 +1102,7 @@ fig.update_layout(margin = dict(t = 25, l = 25, r = 25, b = 25))
 fig.show()
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-74b.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-74b.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod42', 'cd42')" onmouseout="outFunc('cd42')"><span class="tooltiptext" id="cd42">Copiar o código</span></button></div>Gráfico Sunburst (aneis aninhados):
 <pre><code id="cod42">import plotly.express as px
@@ -1133,7 +1133,7 @@ fig.update_layout(margin = dict(t = 25, l = 25, r = 25, b = 25))
 fig.show()
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-74c.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-74c.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod43', 'cd43')" onmouseout="outFunc('cd43')"><span class="tooltiptext" id="cd43">Copiar o código</span></button></div>Gráfico Sunburst (aneis aninhados):
 <pre><code id="cod43">import plotly.express as px
@@ -1156,11 +1156,11 @@ fig.show()
 </code></pre></figcaption>
   </details></div>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-75.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-75.png" loading="lazy"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-76.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-76.png" loading="lazy"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-77.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-77.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod44', 'cd44')" onmouseout="outFunc('cd44')"><span class="tooltiptext" id="cd44">Copiar o código</span></button></div>Gráfico RadViz:
 <pre><code id="cod44">import pandas as pd
@@ -1174,7 +1174,7 @@ fig = <a alt="função para criar o gráfico RadViz">pd.plotting.radviz</a>(ping
 fig.show
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-77a.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-77a.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod45', 'cd45')" onmouseout="outFunc('cd45')"><span class="tooltiptext" id="cd45">Copiar o código</span></button></div>Gráfico de enxame (swarm):
 <pre><code id="cod45">import pandas as pd
@@ -1184,7 +1184,7 @@ pinguin = pd.read_csv('C:/dados/penguin2.csv')
 <a alt="função para criar o gráfico swarm">sns.swarmplot</a>(x = 'Comprimento da nadadeira', y = 'Espécie', <a alt="critério de separação">hue = 'Sexo'</a>, data = pinguin)
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-77b.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-77b.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod46', 'cd46')" onmouseout="outFunc('cd46')"><span class="tooltiptext" id="cd46">Copiar o código</span></button></div>Gráfico de enxame (swarm) com diagrama em caixas (boxplot):
 <pre><code id="cod46">import pandas as pd
@@ -1196,7 +1196,7 @@ sns.swarmplot(x = 'Comprimento da nadadeira', y = 'Espécie', hue = 'Sexo', data
 </code></pre></figcaption>
   </details></div>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-78.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-78.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod47', 'cd47')" onmouseout="outFunc('cd47')"><span class="tooltiptext" id="cd47">Copiar o código</span></button></div>Gráfico de enxame (swarm) com violino:
 <pre><code id="cod47">import pandas as pd
@@ -1209,9 +1209,9 @@ sns.swarmplot(x = 'Comprimento da nadadeira', y = 'Espécie', hue = 'Sexo', data
     palette = 'Blues')
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-78a.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-78a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-79.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-79.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod48', 'cd48')" onmouseout="outFunc('cd48')"><span class="tooltiptext" id="cd48">Copiar o código</span></button></div>Reconhecimento de imagens:
 <pre><code id="cod48"><a alt="biblioteca para carregar imagens">from PIL import Image</a>
@@ -1229,17 +1229,17 @@ print(imf)
 </code></pre></figcaption>
   <p>&#x1f4ca; <a href="modulo4/imagem.png" target="_blank">Imagem de 16x16 pixels</a></p>
   </details></div>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-79a.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-79a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
-  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-80.png"/>
+  <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-80.png" loading="lazy"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
 </details>
 
 <details>
   <summary id="modulo5">5. Linhas, polígonos, poliedros e superfícies</summary>
   <p>Material da página 81 até a página 92.</p>
-  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-80.png"/>
-  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-81.png"/>
+  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-80.png" loading="lazy"/>
+  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-81.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod49', 'cd49')" onmouseout="outFunc('cd49')"><span class="tooltiptext" id="cd49">Copiar o código</span></button></div>Construção de um retângulo:
 <pre><code id="cod49">import matplotlib.pyplot as plt
@@ -1261,7 +1261,7 @@ ax.set_ylim(-1, 1.5)
 plt.show()
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-81a.png"/>
+  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-81a.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod50', 'cd50')" onmouseout="outFunc('cd50')"><span class="tooltiptext" id="cd50">Copiar o código</span></button></div>Construção de uma elipse:
 <pre><code id="cod50">import matplotlib.pyplot as plt
@@ -1274,9 +1274,9 @@ ax.add_patch(patch)
 plt.show()
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-81b.png"/>
+  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-81b.png" loading="lazy"/>
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
-  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-82.png"/>
+  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-82.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod51', 'cd51')" onmouseout="outFunc('cd51')"><span class="tooltiptext" id="cd51">Copiar o código</span></button></div>Construção da superfície lateral de um cilindro circular reto:
 <pre><code id="cod51">import matplotlib.pyplot as plt
@@ -1300,7 +1300,7 @@ ax.plot_surface(x1, -y1, z1, alpha = 0.7, color = 'green', rstride = rstride, cs
 plt.show()
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-82a.png"/>
+  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-82a.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod52', 'cd52')" onmouseout="outFunc('cd52')"><span class="tooltiptext" id="cd52">Copiar o código</span></button></div>Construção de um cilindro circular reto:
 <pre><code id="cod52">import matplotlib.pyplot as plt
@@ -1334,9 +1334,9 @@ art3d.pathpatch_2d_to_3d(p, z = altura, zdir = 'z')
 plt.show()
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-82b.png"/>
+  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-82b.png" loading="lazy"/>
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
-  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-83.png"/>
+  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-83.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod53', 'cd53')" onmouseout="outFunc('cd53')"><span class="tooltiptext" id="cd53">Copiar o código</span></button></div>Construção de um cone circular reto:
 <pre><code id="cod53">import matplotlib.pyplot as plt
@@ -1366,7 +1366,7 @@ art3d.pathpatch_2d_to_3d(p, z = -altura, zdir = 'z')
 plt.show()
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-83a.png"/>
+  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-83a.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod54', 'cd54')" onmouseout="outFunc('cd54')"><span class="tooltiptext" id="cd54">Copiar o código</span></button></div>Construção de um cone circular reto (coordenadas polares):
 <pre><code id="cod54">import matplotlib.pyplot as plt
@@ -1399,9 +1399,9 @@ plt.show()
 </code></pre></figcaption>
   </details></div>
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
-  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-84.png"/>
+  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-84.png" loading="lazy"/>
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
-  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-85.png"/>
+  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-85.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod55', 'cd55')" onmouseout="outFunc('cd55')"><span class="tooltiptext" id="cd55">Copiar o código</span></button></div>Construção de uma superfície:
 <pre><code id="cod55">import matplotlib.pyplot as plt
@@ -1421,9 +1421,9 @@ ax.plot_surface(x1, y1, z1, alpha = 0.7, <a alt="mapa de cores cool invertido">c
 plt.show()
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-85a.png"/>
+  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-85a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
-  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-86.png"/>
+  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-86.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod56', 'cd56')" onmouseout="outFunc('cd56')"><span class="tooltiptext" id="cd56">Copiar o código</span></button></div>Construção de um poliedro:
 <pre><code id="cod56">from matplotlib import pyplot as plt
@@ -1447,7 +1447,7 @@ ax = fig.add_subplot(projection = '3d')
 plt.show()
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-86a.png"/>
+  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-86a.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod57', 'cd57')" onmouseout="outFunc('cd57')"><span class="tooltiptext" id="cd57">Copiar o código</span></button></div>Construção de um poliedro com rótulos dos vértices:
 <pre><code id="cod57">from matplotlib import pyplot as plt
@@ -1484,9 +1484,9 @@ z = v[:, 2]
 plt.show()
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-86b.png"/>
+  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-86b.png" loading="lazy"/>
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
-  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-87.png"/>
+  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-87.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod58', 'cd58')" onmouseout="outFunc('cd58')"><span class="tooltiptext" id="cd58">Copiar o código</span></button></div>Construção de uma superfície com triangulação:
 <pre><code id="cod58">import matplotlib.pyplot as plt
@@ -1509,7 +1509,7 @@ ax.set_box_aspect((np.ptp(x), np.ptp(y), np.ptp(z)))
 plt.show()
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-87a.png"/>
+  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-87a.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod59', 'cd59')" onmouseout="outFunc('cd59')"><span class="tooltiptext" id="cd59">Copiar o código</span></button></div>Construção de uma superfície com coordenadas de um arquivo:
 <pre><code id="cod59">import numpy as np
@@ -1530,9 +1530,9 @@ plt.show()
   <p>&#x1f4ca; <a href="modulo5/volcano.txt" target="_blank">Arquivo com as coordenadas da superfície</a></p>
   </details></div>
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
-  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-88.png"/>
+  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-88.png" loading="lazy"/>
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
-  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-89.png"/>
+  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-89.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod60', 'cd60')" onmouseout="outFunc('cd60')"><span class="tooltiptext" id="cd60">Copiar o código</span></button></div>Triangulação de um objeto 3D de extensão PLY:
 <pre><code id="cod60"><a alt="biblioteca para leitura de arquivo PLY">from plyfile import PlyData</a>
@@ -1563,7 +1563,7 @@ plt.show()
 </code></pre></figcaption>
   <p>&#x1f4ca; <a href="modulo5/galleon.ply" target="_blank">Arquivo galleon PLY</a></p>
   </details></div>
-  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-89a.png"/>
+  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-89a.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod61', 'cd61')" onmouseout="outFunc('cd61')"><span class="tooltiptext" id="cd61">Copiar o código</span></button></div>Triangulação de um objeto 3D de extensão PLY:
 <pre><code id="cod61">from plyfile import PlyData
@@ -1597,12 +1597,12 @@ plt.show()
   <p>&#x1f4ca; <a href="modulo5/chopper.ply" target="_blank">Arquivo chopper PLY</a></p>
   </details></div>
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
-  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-90.png"/>
+  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-90.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f517; Link</summary>
   <p><a href="https://people.sc.fsu.edu/~jburkardt/data/ply/ply.html" target="_blank">https://people.sc.fsu.edu/~jburkardt/data/ply/ply.html</a></p></details></div>
-  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-90a.png"/>
+  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-90a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
-  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-91.png"/>
+  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-91.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod62', 'cd62')" onmouseout="outFunc('cd62')"><span class="tooltiptext" id="cd62">Copiar o código</span></button></div>Triangulação de um objeto 3D:
 <pre><code id="cod62">import numpy as np
@@ -1631,15 +1631,15 @@ plt.show()
   <p>&#x1f4ca; <a href="modulo5/vertices_hind.txt" target="_blank">Arquivo dos vértices</a></p>
   <p>&#x1f4ca; <a href="modulo5/faces_hind.txt" target="_blank">Arquivo das faces</a></p>
   </details></div>
-  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-91a.png"/>
+  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-91a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
 </details>
 
 <details>
   <summary id="modulo6">6. Modelos de iluminação</summary>
   <p>Material da página 92 até a página 105.</p>
-  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-91.png"/>
-  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-92.png"/>
+  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-91.png" loading="lazy"/>
+  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-92.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod63', 'cd63')" onmouseout="outFunc('cd63')"><span class="tooltiptext" id="cd63">Copiar o código</span></button></div>Cena com eixos e um cilindro programados com VTK:
 <pre><code id="cod63"><a alt="Conexões com as bibliotecas que serão usadas para renderizar os atores">import vtkmodules.vtkRenderingOpenGL2</a>
@@ -1695,54 +1695,54 @@ if __name__ == '__main__':
 </code></pre></figcaption>
   </details></div>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
-  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-93.png"/>
+  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-93.png" loading="lazy"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Etapas da renderização de uma cena com VTK</summary>
 	<p>Vamos acompanhar o esquema com as etapas da criação de uma cena usando a biblioteca VTK - Visualization Toolkit.</p>
 	  <ul class="slider">
 		  <li>
 			   <input type="radio" id="219" name="sl">
 			   <label for="219"></label>
-			   <img src="modulo6/1.png"/>
+			   <img src="modulo6/1.png" loading="lazy"/>
 			   <figcaption>Depois de criarmos as ligações com as bibliotecas do VTK, podemos definir quais serão os atores da cena (polígonos, objetos 3D, poliedros e eixos).</figcaption>
 		   </li>
 		   <li>
 			   <input type="radio" id="220" name="sl">
 			   <label for="220"></label>
-			   <img src="modulo6/2.png"/>
+			   <img src="modulo6/2.png" loading="lazy"/>
 			   <figcaption>Com os atores da cena definidos, utilizamos as propriedades para cada ator (cores, texturas, tamanhos e posições).</figcaption>
 		   </li>
 		   <li>
 			   <input type="radio" id="221" name="sl">
 			   <label for="221"></label>
-			   <img src="modulo6/3.png"/>
+			   <img src="modulo6/3.png" loading="lazy"/>
 			   <figcaption>A renderização da cena pode ser definida com a inicialização da câmera.</figcaption>
 		   </li>
 		   <li>
 			   <input type="radio" id="222" name="sl">
 			   <label for="222"></label>
-			   <img src="modulo6/4.png"/>
+			   <img src="modulo6/4.png" loading="lazy"/>
 			   <figcaption>Na etapa seguinte, definimos a iluminação da cena (posição, tipo de iluminação e cor).</figcaption>
 		   </li>
 		   <li>
 			   <input type="radio" id="223" name="sl">
 			   <label for="223"></label>
-			   <img src="modulo6/5.png"/>
+			   <img src="modulo6/5.png" loading="lazy"/>
 			   <figcaption>A janela de visualização deve ser definida, onde serão mostrados os elementos programados da cena.</figcaption>
 		   </li>
 		   <li>
 			   <input type="radio" id="224" name="sl">
 			   <label for="224"></label>
-			   <img src="modulo6/6.png"/>
+			   <img src="modulo6/6.png" loading="lazy"/>
 			   <figcaption>Para finalizar, podemos indicar quais serão os tipos de interação usados pelo usuário com os atores da cena.</figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/1.png" class="fundo"/>
+		<img src="modulo6/1.png" class="fundo" loading="lazy"/>
   </details></div>
-  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-93a.png"/>
+  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-93a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
-  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-94.png"/>
+  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-94.png" loading="lazy"/>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
-  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-95.png"/>
+  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-95.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod64', 'cd64')" onmouseout="outFunc('cd64')"><span class="tooltiptext" id="cd64">Copiar o código</span></button></div>Variação de iluminação ambiente com VTK:
 <pre><code id="cod64">import vtkmodules.vtkInteractionStyle
@@ -1837,7 +1837,7 @@ if __name__ == '__main__':
 </code></pre></figcaption>
   </details></div>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
-  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-96.png"/>
+  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-96.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod65', 'cd65')" onmouseout="outFunc('cd65')"><span class="tooltiptext" id="cd65">Copiar o código</span></button></div>Variação de iluminação specular com VTK:
 <pre><code id="cod65">import vtkmodules.vtkRenderingOpenGL2
@@ -1939,7 +1939,7 @@ if __name__ == '__main__':
 </code></pre></figcaption>
   </details></div>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
-  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-97.png"/>
+  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-97.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod66', 'cd66')" onmouseout="outFunc('cd66')"><span class="tooltiptext" id="cd66">Copiar o código</span></button></div>Iluminação de 2 fontes de luz com VTK:
 <pre><code id="cod66">import vtkmodules.vtkRenderingOpenGL2
@@ -2054,7 +2054,7 @@ if __name__ == '__main__':
 </code></pre></figcaption>
   </details></div>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
-  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-98.png"/>
+  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-98.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod67', 'cd67')" onmouseout="outFunc('cd67')"><span class="tooltiptext" id="cd67">Copiar o código</span></button></div>Criação de uma cena com Pyvista:
 <pre><code id="cod67"><a alt="biblioteca Pyvista">import pyvista</a>
@@ -2080,9 +2080,9 @@ p.set_background('royalblue', top = 'aliceblue')
 p.show()
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-98a.png"/>
+  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-98a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
-  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-99.png"/>
+  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-99.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod68', 'cd68')" onmouseout="outFunc('cd68')"><span class="tooltiptext" id="cd68">Copiar o código</span></button></div>Criação de uma cena com Pyvista:
 <pre><code id="cod68">import pyvista
@@ -2109,11 +2109,11 @@ p.set_background('royalblue', top = 'aliceblue')
 p.show()
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-99a.png"/>
+  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-99a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
-  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-100.png"/>
+  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-100.png" loading="lazy"/>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
-  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-101.png"/>
+  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-101.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod69', 'cd69')" onmouseout="outFunc('cd69')"><span class="tooltiptext" id="cd69">Copiar o código</span></button></div>Criação de sombras em objetos de uma cena com Pyvista:
 <pre><code id="cod69">import pyvista
@@ -2151,11 +2151,11 @@ p.add_mesh(grid, color = 'white')
 p.show()
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-101a.png"/>
+  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-101a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
-  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-102.png"/>
+  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-102.png" loading="lazy"/>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
-  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-103.png"/>
+  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-103.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod70', 'cd70')" onmouseout="outFunc('cd70')"><span class="tooltiptext" id="cd70">Copiar o código</span></button></div>Criação de poliedros em uma cena do Pyvista:
 <pre><code id="cod70">import pyvista as pv
@@ -2184,7 +2184,7 @@ p.enable_shadows()
 p.show()
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-103a.png"/>
+  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-103a.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod71', 'cd71')" onmouseout="outFunc('cd71')"><span class="tooltiptext" id="cd71">Copiar o código</span></button></div>Inserção de uma superfície em uma cena do Pyvista:
 <pre><code id="cod71">import pyvista
@@ -2212,15 +2212,15 @@ p.show()
   <p>&#x1f4ca; <a href="modulo6/palcoyo.obj" target="_blank">Arquivo OBJ - montanhas de Palcoyo</a></p>
   </details></div>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
-  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-104.png"/>
+  <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-104.png" loading="lazy"/>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
 </details>
 
 <details>
   <summary id="modulo7">7. Câmera</summary>
   <p>Material da página 105 até a página 114.</p>
-  <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-104.png"/>
-  <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-105.png"/>
+  <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-104.png" loading="lazy"/>
+  <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-105.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod72', 'cd72')" onmouseout="outFunc('cd72')"><span class="tooltiptext" id="cd72">Copiar o código</span></button></div>Projeção ortogonal (paralela) do Pyvista:
 <pre><code id="cod72">import pyvista
@@ -2248,8 +2248,8 @@ p.show()
 </code></pre></figcaption>
   </details></div>
   <p class="topop"><a href="#modulo7" class="topo">voltar ao topo</a></p>
-  <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-106.png"/>
-  <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-106a.png"/>
+  <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-106.png" loading="lazy"/>
+  <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-106a.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod73', 'cd73')" onmouseout="outFunc('cd73')"><span class="tooltiptext" id="cd73">Copiar o código</span></button></div>Zoom e Clipping plane da cena do Pyvista:
 <pre><code id="cod73">import pyvista
@@ -2278,9 +2278,9 @@ print(p.camera.clipping_range)
 p.show()
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-106b.png"/>
+  <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-106b.png" loading="lazy"/>
   <p class="topop"><a href="#modulo7" class="topo">voltar ao topo</a></p>
-  <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-107.png"/>
+  <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-107.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod74', 'cd74')" onmouseout="outFunc('cd74')"><span class="tooltiptext" id="cd74">Copiar o código</span></button></div>Ponto focal da câmera em uma cena do Pyvista:
 <pre><code id="cod74">import pyvista
@@ -2307,7 +2307,7 @@ p.add_mesh(mesh, cmap = 'GnBu_r', scalars = mesh.points[:, 2], show_scalar_bar =
 p.show()
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-107a.png"/>
+  <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-107a.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod75', 'cd75')" onmouseout="outFunc('cd75')"><span class="tooltiptext" id="cd75">Copiar o código</span></button></div>Ângulo de visualização da câmera do Pyvista:
 <pre><code id="cod75">import pyvista
@@ -2334,7 +2334,7 @@ p.add_mesh(mesh, cmap = 'GnBu_r', scalars = mesh.points[:, 2], show_scalar_bar =
 p.show()
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-107b.png"/>
+  <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-107b.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod76', 'cd76')" onmouseout="outFunc('cd76')"><span class="tooltiptext" id="cd76">Copiar o código</span></button></div>Posição da câmera em uma cena do Pyvista:
 <pre><code id="cod76">import pyvista
@@ -2362,7 +2362,7 @@ p.show()
 </code></pre></figcaption>
   </details></div>
   <p class="topop"><a href="#modulo7" class="topo">voltar ao topo</a></p>
-  <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-108.png"/>
+  <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-108.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod77', 'cd77')" onmouseout="outFunc('cd77')"><span class="tooltiptext" id="cd77">Copiar o código</span></button></div>Ângulos elevation, azimuth e roll da câmera do Pyvista:
 <pre><code id="cod77">import pyvista
@@ -2392,13 +2392,13 @@ p.show()
 </code></pre></figcaption>
   </details></div>
   <p class="topop"><a href="#modulo7" class="topo">voltar ao topo</a></p>
-  <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-109.png"/>
+  <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-109.png" loading="lazy"/>
   <p class="topop"><a href="#modulo7" class="topo">voltar ao topo</a></p>
-  <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-110.png"/>
+  <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-110.png" loading="lazy"/>
   <p class="topop"><a href="#modulo7" class="topo">voltar ao topo</a></p>
-  <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-111.png"/>
+  <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-111.png" loading="lazy"/>
   <p class="topop"><a href="#modulo7" class="topo">voltar ao topo</a></p>
-  <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-112.png"/>
+  <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-112.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod78', 'cd78')" onmouseout="outFunc('cd78')"><span class="tooltiptext" id="cd78">Copiar o código</span></button></div>CubeMap em uma cena do Pyvista:
 <pre><code id="cod78">import pyvista
@@ -2428,9 +2428,9 @@ p.show()
 </code></pre></figcaption>
   <p>&#x1f4ca; <a href="modulo7/cubemap.zip" target="_blank">Arquivos que formam o Cubemap do fundo da cena</a></p>
   </details></div>
-  <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-112a.png"/>
+  <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-112a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo7" class="topo">voltar ao topo</a></p>
-  <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-113.png"/>
+  <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-113.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod79', 'cd79')" onmouseout="outFunc('cd79')"><span class="tooltiptext" id="cd79">Copiar o código</span></button></div>CubeMap em uma cena do Pyvista:
 <pre><code id="cod79">import pyvista
@@ -2459,20 +2459,20 @@ p.show()
 </code></pre></figcaption>
   <p>&#x1f4ca; <a href="modulo7/cubemap1.zip" target="_blank">Arquivos que formam o Cubemap do fundo da cena</a></p>
   </details></div>
-  <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-113a.png"/>
+  <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-113a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo7" class="topo">voltar ao topo</a></p>
 </details>
 
 <details>
   <summary id="modulo8">8. Realidade Virtual</summary>
   <p>Material da página 115 até a página 144.</p>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-114.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-114.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-115.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-115.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-116.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-116.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-117.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-117.png" loading="lazy"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
@@ -2500,9 +2500,9 @@ p.show()
 			   <figcaption>Cena de RV com um cubo, sem imagem de fundo.<br><a href="modulo8/exemplo0.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
   </details></div>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-117a.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-117a.png" loading="lazy"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
@@ -2531,9 +2531,9 @@ p.show()
 			   <figcaption>Cena de RV com um cubo, sem imagem de fundo.<br><a href="modulo8/exemplo1b.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
   </details></div>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-117b.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-117b.png" loading="lazy"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
@@ -2569,10 +2569,10 @@ p.show()
 			   <figcaption>Cena de RV com um cubo, com ambiente japan. Modifique a tag do ambiente no código para inserir o cubo em outros ambientes do a-frame.<br><a href="modulo8/exemplo1.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
   </details></div>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-118.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-118.png" loading="lazy"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
@@ -2607,10 +2607,10 @@ p.show()
 			   <figcaption>Cena de RV com um cubo, com imagem equiretangular de fundo.<br><a href="modulo8/exemplo2.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
   </details></div>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-119.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-119.png" loading="lazy"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
@@ -2645,11 +2645,11 @@ p.show()
 			   <figcaption>Cena de RV da representação da Terra e da Lua.<br><a href="modulo8/exemplo3.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
   </details></div>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-119a.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-119a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-120.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-120.png" loading="lazy"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
@@ -2682,9 +2682,9 @@ p.show()
 			   <figcaption>Iluminação ambiente em uma cena de RV.<br><a href="modulo8/exemplo4a.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
   </details></div>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-120a.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-120a.png" loading="lazy"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
@@ -2719,11 +2719,11 @@ p.show()
 			   <figcaption>Iluminação direcional em uma cena de RV.<br><a href="modulo8/exemplo4b.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
   </details></div>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-120b.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-120b.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-121.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-121.png" loading="lazy"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
@@ -2771,11 +2771,11 @@ p.show()
 			   <figcaption>Iluminação direcional com 3 fontes.<br><a href="modulo8/exemplo4.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
   </details></div>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-121a.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-121a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-122.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-122.png" loading="lazy"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
@@ -2817,9 +2817,9 @@ p.show()
 			   <figcaption>Iluminação hemisférica.<br><a href="modulo8/exemplo5.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
   </details></div>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-122a.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-122a.png" loading="lazy"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
@@ -2859,9 +2859,9 @@ p.show()
 			   <figcaption>Iluminação ponto.<br><a href="modulo8/exemplo6.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
   </details></div>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-122b.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-122b.png" loading="lazy"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
@@ -2901,12 +2901,12 @@ p.show()
 			   <figcaption>Iluminação spot.<br><a href="modulo8/exemplo7.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
   </details></div>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-123.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-123.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-124.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-124.png" loading="lazy"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
@@ -2952,11 +2952,11 @@ p.show()
 			   <figcaption>Animação da esfera em torno do eixo z.<br><a href="modulo8/exemplo8a.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
   </details></div>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-124a.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-124a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-125.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-125.png" loading="lazy"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
@@ -3003,9 +3003,9 @@ p.show()
 			   <figcaption>Animação da Lua em torno do centro da Terra.<br><a href="modulo8/exemplo8.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
   </details></div>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-125a.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-125a.png" loading="lazy"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
@@ -3041,9 +3041,9 @@ p.show()
 			   <figcaption>Animação com mudanças de cores.<br><a href="modulo8/exemplo9.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
   </details></div>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-125b.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-125b.png" loading="lazy"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
@@ -3083,10 +3083,10 @@ p.show()
 			   <figcaption>Animação de intensidade de luz.<br><a href="modulo8/exemplo10.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
   </details></div>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-126.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-126.png" loading="lazy"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
@@ -3127,11 +3127,11 @@ p.show()
 			   <figcaption>Animação da posição da fonte de luz.<br><a href="modulo8/exemplo11.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
   </details></div>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-126a.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-126a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-127.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-127.png" loading="lazy"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
@@ -3167,14 +3167,14 @@ p.show()
 			   <figcaption>Posição da câmera.<br><a href="modulo8/exemplo12.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
   </details></div>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-127a.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-127a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-128.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-128.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f517; Link</summary>
   <p><a href="https://jaxry.github.io/panorama-to-cubemap/" target="_blank">https://jaxry.github.io/panorama-to-cubemap/</a></p></details></div>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-128a.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-128a.png" loading="lazy"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
@@ -3229,10 +3229,10 @@ p.show()
 			   <figcaption>Órbita da câmera e reflexão do fundo da cena nos objetos.<br><a href="modulo8/exemplo13.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
   </details></div>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-129.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-129.png" loading="lazy"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
@@ -3280,11 +3280,11 @@ p.show()
 			   <figcaption>Órbita da câmera e reflexão do fundo e entre os objetos da cena.<br><a href="modulo8/exemplo14.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
   </details></div>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-129a.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-129a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-130.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-130.png" loading="lazy"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
@@ -3325,11 +3325,11 @@ p.show()
 			   <figcaption>Octaedro com sombras projetadas em um plano, produzidas por meio de luz direcional.<br><a href="modulo8/exemplo15.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
   </details></div>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-130a.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-130a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-131.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-131.png" loading="lazy"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
@@ -3382,11 +3382,11 @@ p.show()
 			   <figcaption>Propriedades agrupadas na tag a-mixin.<br><a href="modulo8/exemplo16.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
   </details></div>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-131a.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-131a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-132.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-132.png" loading="lazy"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
@@ -3442,15 +3442,15 @@ p.show()
 			   <figcaption>Representação de uma pirâmide com rótulos nos vértices, altura e projeção de uma aresta na base.<br><a href="modulo8/exemplo17.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
   </details></div>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-132a.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-132a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-133.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-133.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-134.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-134.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-135.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-135.png" loading="lazy"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
@@ -3513,47 +3513,47 @@ p.show()
 			   <figcaption>Interações com cubos em uma cena.<br><a href="modulo8/exemplo18a.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
   </details></div>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-135a.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-135a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-136.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-136.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-137.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-137.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-138.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-138.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-139.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-139.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-140.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-140.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-141.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-141.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-142.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-142.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-143.png"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-143.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
 </details>
 
 <details style="border-bottom: 1px solid #a2dec0;">
   <summary id="modulo9">9. Realidade Aumentada</summary>
   <p>Material da página 144 até a página 152.</p>
-  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-143.png"/>
-  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-144.png"/>
+  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-143.png" loading="lazy"/>
+  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-144.png" loading="lazy"/>
   <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
-  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-145.png"/>
+  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-145.png" loading="lazy"/>
   <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
-  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-146.png"/>
+  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-146.png" loading="lazy"/>
   <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
-  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-147.png"/>
+  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-147.png" loading="lazy"/>
   <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
-  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-148.png"/>
+  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-148.png" loading="lazy"/>
   <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
-  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-149.png"/>
+  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-149.png" loading="lazy"/>
   <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
-  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-150.png"/>
+  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-150.png" loading="lazy"/>
   <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
-  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-151.png"/>
+  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-151.png" loading="lazy"/>
   <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
 </details>
 
