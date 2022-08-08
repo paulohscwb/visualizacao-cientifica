@@ -3539,13 +3539,15 @@ p.show()
             &lt;a-asset-item <a alt="identificação do objeto">id=</a>"objeto" <a alt="caminho do arquivo GLTF">src=</a>"objetos/robo/scene.gltf"&gt;&lt;/a-asset-item&gt;
         &lt;/a-assets&gt;
         &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
-        &lt;a-entity camera orbit-controls="target: 0 0 0; minDistance: 0.5; maxDistance: 180; initialPosition: 1 1 2.5"&gt;&lt;/a-entity&gt;
+        &lt;a-entity camera orbit-controls="target: 0 0 0; minDistance: 0.5; maxDistance: 180; 
+        initialPosition: 1 1 2.5"&gt;&lt;/a-entity&gt;
         &lt;a-entity <a alt="posição e escala do objeto na cena">position=</a>"0 0 0.5" scale="0.1 0.1 0.1"&gt;
             &lt;a-gltf-model <a alt="referência do objeto">src=</a>"#objeto" shadow&gt;&lt;/a-gltf-model&gt;
         &lt;/a-entity&gt;
         &lt;a-box scale="7 0.1 7" shadow color="rgb(100,180,100)"&gt;&lt;/a-box&gt;
         &lt;a-light type="ambient" color="#white" intensity="0.3"&gt;&lt;/a-light&gt;
-        &lt;a-light type="directional" color="white" intensity="0.6" position="-1 1 1" light="castShadow:true"&gt;&lt;/a-light&gt;
+        &lt;a-light type="directional" color="white" intensity="0.6" position="-1 1 1" 
+        light="castShadow:true"&gt;&lt;/a-light&gt;
     &lt;/a-scene&gt;
   &lt;/body&gt;
 &lt;/html&gt;
@@ -3581,13 +3583,15 @@ p.show()
             &lt;a-asset-item id="objeto" <a alt="caminho do objeto GLTF com animação nativa">src=</a>"objetos/mushroom/scene.gltf"&gt;&lt;/a-asset-item&gt;
         &lt;/a-assets&gt;
         &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
-        &lt;a-entity camera orbit-controls="target: 0 0 0; minDistance: 0.05; maxDistance: 180; initialPosition: 1 1 2.5"&gt;&lt;/a-entity&gt;
+        &lt;a-entity camera orbit-controls="target: 0 0 0; minDistance: 0.05; maxDistance: 180; 
+        initialPosition: 1 1 2.5"&gt;&lt;/a-entity&gt;
         &lt;a-entity position="0 0 0.5" scale="0.5 0.5 0.5"&gt;
             &lt;a-gltf-model <a alt="referência do objeto">src=</a>"#objeto" shadow animation-mixer&gt;&lt;/a-gltf-model&gt;
         &lt;/a-entity&gt;
         &lt;a-box scale="3.5 0.1 3.5" position="0 -0.07 0" shadow color="rgb(100,180,100)"&gt;&lt;/a-box&gt;
         &lt;a-light type="ambient" color="#white" intensity="0.4"&gt;&lt;/a-light&gt;
-        &lt;a-light type="spot" intensity="0.7" color="white" position="-1 2 1" angle="80" rotation="-90 0 0" penumbra="0.7" light="castShadow:true;"&gt;&lt;/a-light&gt;
+        &lt;a-light type="spot" intensity="0.7" color="white" position="-1 2 1" angle="80" 
+        rotation="-90 0 0" penumbra="0.7" light="castShadow:true;"&gt;&lt;/a-light&gt;
     &lt;/a-scene&gt;
   &lt;/body&gt;
 &lt;/html&gt;
