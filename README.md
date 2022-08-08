@@ -3472,14 +3472,21 @@ p.show()
   &lt;body&gt;
     &lt;a-scene physics shadow="type: pcfsoft"&gt;
         &lt;a-assets&gt;
-           &lt;a-mixin id="cubo" geometry="primitive: box; width: 0.5; height: 0.5; depth: 0.5;" <a alt="propriedades para os cubos móveis">hoverable grabbable stretchable draggable droppable</a> event-set__hoveron="_event: hover-start; material.opacity: 0.7; transparent: true" event-set__hoveroff="_event: hover-end; material.opacity: 1; transparent: false" <a alt="propriedades físicas dos cubos">dynamic-body=</a>"linearDamping:0.1; angularDamping:0.8; mass:0.5;" shadow&gt;&lt;/a-mixin&gt;
-           &lt;a-mixin id="piso" geometry="primitive: box; width: 10; height: 0.3; depth: 10;" static-body shadow&gt;&lt;/a-mixin&gt;
+           &lt;a-mixin id="cubo" geometry="primitive: box; width: 0.5; height: 0.5; depth: 0.5;" <a alt="propriedades para os cubos móveis">
+             hoverable grabbable stretchable draggable droppable</a> event-set__hoveron="_event: hover-start; 
+             material.opacity: 0.7; transparent: true" event-set__hoveroff="_event: hover-end; 
+             material.opacity: 1; transparent: false" <a alt="propriedades físicas dos cubos">dynamic-body=</a>"linearDamping:0.1; 
+             angularDamping:0.8; mass:0.5;" shadow&gt;&lt;/a-mixin&gt;
+           &lt;a-mixin id="piso" geometry="primitive: box; width: 10; height: 0.3; depth: 10;" 
+             static-body shadow&gt;&lt;/a-mixin&gt;
         &lt;/a-assets&gt;
         &lt;a-entity <a alt="interações conectadas com a câmera">id="cameraRig"</a>&gt;
-           &lt;a-camera look-controls wasd-controls position="0 1 2"
-			<a alt="interação com o cursor do mouse">capture-mouse raycaster=</a>"objects: .cubo" cursor="rayOrigin:mouse" static-body="shape: sphere; sphereRadius: 0.001" <a alt="propriedades de colisão e rastreamento">super-hands=</a>"colliderEvent: raycaster-intersection; colliderEventProperty: els; colliderEndEvent:raycaster-intersection-cleared; colliderEndEventProperty: clearedEls;"&gt;
-           &lt;/a-camera&gt;
-           &lt;a-entity <a alt="teleporte nos cubos e no piso">teleport-controls=</a>"cameraRig: #cameraRig; collisionEntities: [mixin='cubo'], [mixin='piso']" <a alt="óculos gear e daydream">gearvr-controls daydream-controls</a>&gt;&lt;/a-entity&gt;
+           &lt;a-camera look-controls wasd-controls position="0 1 2" <a alt="interação com o cursor do mouse">capture-mouse raycaster=</a>"objects: .cubo" 
+             cursor="rayOrigin:mouse" static-body="shape: sphere; sphereRadius: 0.001" 
+             <a alt="propriedades de colisão e rastreamento">super-hands=</a>"colliderEvent: raycaster-intersection; colliderEventProperty: els; 
+             colliderEndEvent:raycaster-intersection-cleared; colliderEndEventProperty: clearedEls;"&gt;&lt;/a-camera&gt;
+           &lt;a-entity <a alt="teleporte nos cubos e no piso">teleport-controls=</a>"cameraRig: #cameraRig; collisionEntities: [mixin='cubo'],
+             [mixin='piso']" <a alt="óculos gear e daydream">gearvr-controls daydream-controls</a>&gt;&lt;/a-entity&gt;
            &lt;a-entity <a alt="controle de raio laser">laser-controls</a> raycaster="showLine:true; far:3;" line="color:rgb(0,255,0); opacity:0.33;"&gt;&lt;/a-entity&gt;
            &lt;a-entity <a alt="controles de manipulação da mão esquerda">oculus-touch-controls=</a>"hand: left"&gt;&lt;/a-entity&gt;
            &lt;a-entity <a alt="controles de manipulação da mão direita">oculus-touch-controls=</a>"hand: right"&gt;&lt;/a-entity&gt;
@@ -3491,7 +3498,8 @@ p.show()
         &lt;a-entity class="cubo" mixin="cubo" position="-1 1.6 -1" material="color: blue"&gt;&lt;/a-entity&gt;
         &lt;a-entity class="cubo" mixin="cubo" position="0.9 1 -0.9" material="color: green"&gt;&lt;/a-entity&gt;
         &lt;a-entity class="cubo" mixin="cubo" position="1 1.6 -1" material="color: green"&gt;&lt;/a-entity&gt;
-        &lt;a-light type="spot" intensity="0.8" color="white" position="1 3 0" angle="60" rotation="-90 0 0" penumbra="0.5" light="castShadow:true;"&gt;&lt;/a-light&gt;
+        &lt;a-light type="spot" intensity="0.8" color="white" position="1 3 0" angle="60" rotation="-90 0 0" penumbra="0.5" 
+          light="castShadow:true;"&gt;&lt;/a-light&gt;
         &lt;a-light type="ambient" intensity="0.5" color="white"&gt;&lt;/a-light&gt;
     &lt;/a-scene&gt;
   &lt;/body&gt;
