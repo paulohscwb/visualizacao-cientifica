@@ -3446,6 +3446,59 @@ p.show()
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-134.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-135.png"/>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
+	<p>Veja o código HTML e a renderização da cena.</p>
+	  <ul class="slider">
+		  <li>
+			   <input type="radio" id="046" name="sl">
+			   <label for="046"></label>
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod102', 'cd102')" onmouseout="outFunc('cd102')"><span class="tooltiptext" id="cd102">Copiar o código</span></button></div>Interação com objetos de uma cena:
+<pre><code id="cod102">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    <a alt="referência da biblioteca com suporte do faceset">&lt;script src="https://aframe.io/releases/1.1.0/aframe.min.js"&gt;&lt;/script&gt;</a>
+    &lt;script src="https://unpkg.com/aframe-orbit-controls@1.3.0/dist/aframe-orbit-controls.min.js"&gt;&lt;/script&gt;
+    <a alt="referência da biblioteca faceset">&lt;script src="https://andreasplesch.github.io/aframe-faceset-component/dist/aframe-faceset-component.min.js"&gt;&lt;/script&gt;</a>
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;a-scene&gt;
+        &lt;a-assets&gt;
+            &lt;a-mixin <a alt="propriedade das arestas da pirâmide">id="aramado"</a> material="color: red; wireframe: true; wireframe-linewidth:1;"&gt;&lt;/a-mixin&gt;
+            &lt;a-mixin <a alt="padrão da cor da pirâmide">id="cor1"</a> material="color: #d8ef09"&gt;&lt;/a-mixin&gt;
+            &lt;a-mixin <a alt="propriedades de materiais">id="padrao"</a> material="opacity: 0.5; side: double; metalness:0.3; roughness:0.9;"&gt;&lt;/a-mixin&gt;
+            &lt;a-mixin <a alt="propriedades dos rótulos">id="texto"</a> text="width: 4; side:double; color: black" rotation="-25 0 0"&gt;
+        &lt;/a-assets&gt;
+        &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
+        &lt;a-entity camera orbit-controls="target: 0 1 0.7; minDistance: 0.5; maxDistance: 180; initialPosition: 0 1.6 3"&gt;&lt;/a-entity&gt;
+        &lt;a-entity <a alt="tag para agrupar os elementos do poliedro">id="piramide_pentagonal_reta"</a>&gt;
+           <a alt="rótulos dos vértices">&lt;a-text</a> position="-0.2 0 0" value="A" mixin="texto"&gt;&lt;/a-text&gt;
+           &lt;a-text position="1.1 0 0" value="B" mixin="texto"&gt;&lt;/a-text&gt;
+           &lt;a-text position="1.31 0 0.95" value="C" mixin="texto"&gt;&lt;/a-text&gt;
+           &lt;a-text position="0.5 0 1.5" value="D" mixin="texto"&gt;&lt;/a-text&gt;
+           &lt;a-text position="-0.45 0 0.95" value="E" mixin="texto"&gt;&lt;/a-text&gt;
+           &lt;a-text position="0.5 2.1 0.7" value="V" mixin="texto"&gt;&lt;/a-text&gt;
+           &lt;a-entity <a alt="sequência dos vértices da base da pirâmide">faceset=</a>"vertices: 0 0 0  1 0 0  1.31 0 0.95  0.5 0 1.5  -0.31 0 0.95" mixin="cor1 padrao"&gt;&lt;/a-entity&gt;
+           &lt;a-entity <a alt="sequência dos vértices das faces laterais">faceset=</a>"vertices: 0 0 0  1 0 0  1.31 0 0.95  0.5 0 1.5  -0.31 0 0.95  0.5 2 0.7; <a alt="projeção ortogonal ao eixo y">projectdir:y"</a>  mixin="cor1 padrao"&gt;&lt;/a-entity&gt;
+           &lt;a-entity <a alt="arestas do poliedro">faceset=</a>"vertices: 0 0 0  1 0 0  1.31 0 0.95  0.5 0 1.5  -0.31 0 0.95  0.5 2 0.7; projectdir:y" mixin="aramado"&gt;&lt;/a-entity&gt;
+           &lt;a-entity <a alt="linhas que representam a altura e a projeção da aresta VD">line=</a>"start: 0.5 2 0.7; end: 0.5 0 0.7; color: white" line__2="start: 0.5 0 0.7; end: 0.5 0 1.5; color: white"&gt;&lt;/a-entity&gt;
+        &lt;/a-entity&gt;
+        &lt;a-light type="ambient" color="#eaeaea" intensity="0.3"&gt;&lt;/a-light&gt;
+        &lt;a-light type="spot" intensity="0.6" position="1 1 3" light="castShadow:true"&gt;&lt;/a-light&gt;
+    &lt;/a-scene&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="045" name="sl">
+			   <label for="045"></label>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo17.htm" title="Representação de uma pirâmide" frameborder="0" loading="lazy"></iframe></div>
+			   <figcaption>Representação de uma pirâmide com rótulos nos vértices, altura e projeção de uma aresta na base.<br><a href="modulo8/exemplo17.htm" target="_blank">&#x1f517; link da página</a></figcaption>
+		   </li>
+		</ul>
+		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+  </details></div>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-135a.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-136.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
