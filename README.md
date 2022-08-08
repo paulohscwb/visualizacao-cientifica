@@ -2500,7 +2500,7 @@ p.show()
 			   <figcaption>Cena de RV com um cubo, sem imagem de fundo.<br><a href="modulo8/exemplo0.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
   </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-117a.png"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
@@ -2531,7 +2531,7 @@ p.show()
 			   <figcaption>Cena de RV com um cubo, sem imagem de fundo.<br><a href="modulo8/exemplo1b.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
   </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-117b.png"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
@@ -2569,7 +2569,7 @@ p.show()
 			   <figcaption>Cena de RV com um cubo, com ambiente japan. Modifique a tag do ambiente no código para inserir o cubo em outros ambientes do a-frame.<br><a href="modulo8/exemplo1.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
   </details></div>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-118.png"/>
@@ -2607,7 +2607,7 @@ p.show()
 			   <figcaption>Cena de RV com um cubo, com imagem equiretangular de fundo.<br><a href="modulo8/exemplo2.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
   </details></div>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-119.png"/>
@@ -2645,7 +2645,7 @@ p.show()
 			   <figcaption>Cena de RV da representação da Terra e da Lua.<br><a href="modulo8/exemplo3.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
   </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-119a.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
@@ -2682,7 +2682,7 @@ p.show()
 			   <figcaption>Iluminação ambiente em uma cena de RV.<br><a href="modulo8/exemplo4a.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
   </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-120a.png"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
@@ -2719,7 +2719,7 @@ p.show()
 			   <figcaption>Iluminação direcional em uma cena de RV.<br><a href="modulo8/exemplo4b.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
   </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-120b.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
@@ -2771,7 +2771,7 @@ p.show()
 			   <figcaption>Iluminação direcional com 3 fontes.<br><a href="modulo8/exemplo4.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
   </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-121a.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
@@ -2817,7 +2817,7 @@ p.show()
 			   <figcaption>Iluminação hemisférica.<br><a href="modulo8/exemplo5.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
   </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-122a.png"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
@@ -2859,7 +2859,7 @@ p.show()
 			   <figcaption>Iluminação ponto.<br><a href="modulo8/exemplo6.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
   </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-122b.png"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
@@ -2901,7 +2901,7 @@ p.show()
 			   <figcaption>Iluminação spot.<br><a href="modulo8/exemplo7.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
   </details></div>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-123.png"/>
@@ -2952,7 +2952,7 @@ p.show()
 			   <figcaption>Animação da esfera em torno do eixo z.<br><a href="modulo8/exemplo8a.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
   </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-124a.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
@@ -3003,7 +3003,7 @@ p.show()
 			   <figcaption>Animação da Lua em torno do centro da Terra.<br><a href="modulo8/exemplo8.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
   </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-125a.png"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
@@ -3041,7 +3041,7 @@ p.show()
 			   <figcaption>Animação com mudanças de cores.<br><a href="modulo8/exemplo9.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
   </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-125b.png"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
@@ -3083,7 +3083,7 @@ p.show()
 			   <figcaption>Animação de intensidade de luz.<br><a href="modulo8/exemplo10.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
   </details></div>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-126.png"/>
@@ -3127,7 +3127,7 @@ p.show()
 			   <figcaption>Animação da posição da fonte de luz.<br><a href="modulo8/exemplo11.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
   </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-126a.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
@@ -3167,7 +3167,7 @@ p.show()
 			   <figcaption>Posição da câmera.<br><a href="modulo8/exemplo12.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
   </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-127a.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
@@ -3229,7 +3229,7 @@ p.show()
 			   <figcaption>Órbita da câmera e reflexão do fundo da cena nos objetos.<br><a href="modulo8/exemplo13.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
   </details></div>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-129.png"/>
@@ -3280,7 +3280,7 @@ p.show()
 			   <figcaption>Órbita da câmera e reflexão do fundo e entre os objetos da cena.<br><a href="modulo8/exemplo14.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
   </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-129a.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
@@ -3325,7 +3325,7 @@ p.show()
 			   <figcaption>Octaedro com sombras projetadas em um plano, produzidas por meio de luz direcional.<br><a href="modulo8/exemplo15.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
   </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-130a.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
@@ -3382,7 +3382,7 @@ p.show()
 			   <figcaption>Propriedades agrupadas na tag a-mixin.<br><a href="modulo8/exemplo16.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
   </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-131a.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
@@ -3442,7 +3442,7 @@ p.show()
 			   <figcaption>Representação de uma pirâmide com rótulos nos vértices, altura e projeção de uma aresta na base.<br><a href="modulo8/exemplo17.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
   </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-132a.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
@@ -3513,7 +3513,7 @@ p.show()
 			   <figcaption>Interações com cubos em uma cena.<br><a href="modulo8/exemplo18a.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;"/>
   </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-135a.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
