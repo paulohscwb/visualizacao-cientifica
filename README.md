@@ -3113,8 +3113,8 @@ p.show()
        &lt;a-light type="hemisphere" color="#eaeaea" light="groundColor:green" 
          intensity="0.7"&gt;&lt;/a-light&gt;
        &lt;a-light type="spot" intensity="0.75" angle="45" penumbra="0.2" light="castShadow:true" 
-         position="-2 2 -0.5" <a alt="mudança da posição da luz spot em 10 segundos">animation="property:</a> position; to: 2 2 -0.5; loop: true; dir: alternate;
-         dur: 10000;"&gt;&lt;/a-light&gt;
+         position="-2 2 -0.5" <a alt="mudança da posição da luz spot em 10 segundos">animation="property:</a> position; to: 2 2 -0.5; loop: true;
+         dir: alternate; dur: 10000;"&gt;&lt;/a-light&gt;
     &lt;/a-scene&gt;
   &lt;/body&gt;
 &lt;/html&gt;
@@ -3301,15 +3301,16 @@ p.show()
   &lt;body&gt;
     &lt;a-scene reflection&gt;
         &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
-        &lt;a-entity camera orbit-controls="target: 0 2 0; minDistance: 0.5; maxDistance: 180; initialPosition: -1 1.6 4.5"&gt;&lt;/a-entity&gt;
+        &lt;a-entity camera orbit-controls="target: 0 2 0; minDistance: 0.5; maxDistance: 180; 
+          initialPosition: -1 1.6 4.5"&gt;&lt;/a-entity&gt;
         &lt;a-octahedron position="0 2 0" radius="2" color="black" 
-        <a alt="representação aramada: arestas">wireframe=</a>"true" <a alt="habilita a projeção de sombra">shadow=</a>"cast:true"&gt;&lt;/a-octahedron&gt;
+          <a alt="representação aramada: arestas">wireframe=</a>"true" <a alt="habilita a projeção de sombra">shadow=</a>"cast:true"&gt;&lt;/a-octahedron&gt;
         <a alt="representação das faces">&lt;a-octahedron</a> position="0 2 0" radius="2" side="double"
-        color="tomato" metalness="0.6" roughness="0.3" opacity="0.5"&gt;&lt;/a-octahedron&gt;
-		&lt;a-plane color="#A9F5D0" position="0 -0.5 0" rotation="-90 0 0" width="5" height="5"
-        <a alt="habilita a projeção de sombra">shadow=</a>"receive: true;"&gt;&lt;/a-plane&gt;
+          color="tomato" metalness="0.6" roughness="0.3" opacity="0.5"&gt;&lt;/a-octahedron&gt;
+        &lt;a-plane color="#A9F5D0" position="0 -0.5 0" rotation="-90 0 0" width="5" height="5"
+          <a alt="habilita a projeção de sombra">shadow=</a>"receive: true;"&gt;&lt;/a-plane&gt;
         &lt;a-light type="ambient" color="#eaeaea" intensity="0.3"&gt;&lt;/a-light&gt;
-        &lt;a-light type="directional" intensity="0.3" position="0 5 0" 
+          &lt;a-light type="directional" intensity="0.3" position="0 5 0" 
         <a alt="luz que produz as sombras na cena">light=</a>"castShadow:true" target="#directionaltargetY"&gt;
             &lt;a-entity id="directionaltargetY" position="0 -1 0"&gt;&lt;/a-entity&gt;
         &lt;/a-light&gt;
@@ -3357,19 +3358,19 @@ p.show()
               &lt;img src="./imagens/cubemap/Back.png"&gt;
            &lt;/a-cubemap&gt;
            &lt;a-mixin <a alt="propriedades de reflexões e materiais">id="padrao"</a> material="metalness:1; roughness:0; side:double; envMap: #ceu2;" 
-           shadow=""&gt;&lt;/a-mixin&gt;
+             shadow=""&gt;&lt;/a-mixin&gt;
            &lt;a-mixin <a alt="propriedades geométricas">id="padrao2"</a> geometry="segments-height:36; segments-width:64; radius:1;"&gt;&lt;/a-mixin&gt;
         &lt;/a-assets&gt;
         &lt;a-sky src="#ceu"&gt;&lt;/a-sky&gt;
         &lt;a-entity camera orbit-controls="target: -1 1.5 1; minDistance: 0.5; maxDistance: 180; 
-        initialPosition: -1 1.6 3.5"&gt;&lt;/a-entity&gt;
+          initialPosition: -1 1.6 3.5"&gt;&lt;/a-entity&gt;
         &lt;a-sphere position="1 2 0.5" color="silver" <a alt="atribuição das propriedades">mixin="padrao padrao2"</a>&gt;&lt;/a-sphere&gt;
         &lt;a-sphere position="-2 1.5 -0.5" color="green" <a alt="atribuição das propriedades">mixin="padrao padrao2"</a>&gt;&lt;/a-sphere&gt;
         &lt;a-cylinder src="#metal" position="-3 0.5 1.5" color="white" radius="0.5" 
-        height="1.5" <a alt="atribuição das propriedades">mixin="padrao"</a>&gt;&lt;/a-cylinder&gt;
+          height="1.5" <a alt="atribuição das propriedades">mixin="padrao"</a>&gt;&lt;/a-cylinder&gt;
         &lt;a-light type="ambient" color="#eaeaea" intensity="0.3"&gt;&lt;/a-light&gt;
         &lt;a-light type="spot" intensity="0.75" angle="60" penumbra="0.5" 
-        shadow="cast: true; receive: false" position="-2 2 4"&gt;&lt;/a-light&gt;
+          shadow="cast: true; receive: false" position="-2 2 4"&gt;&lt;/a-light&gt;
     &lt;/a-scene&gt;
   &lt;/body&gt;
 &lt;/html&gt;
@@ -3411,7 +3412,7 @@ p.show()
         &lt;/a-assets&gt;
         &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
         &lt;a-entity camera orbit-controls="target: 0 1 0.7; minDistance: 0.5; maxDistance: 180; 
-        initialPosition: 0 1.6 3"&gt;&lt;/a-entity&gt;
+          initialPosition: 0 1.6 3"&gt;&lt;/a-entity&gt;
         &lt;a-entity <a alt="tag para agrupar os elementos do poliedro">id="piramide_pentagonal_reta"</a>&gt;
            <a alt="rótulos dos vértices">&lt;a-text</a> position="-0.2 0 0" value="A" mixin="texto"&gt;&lt;/a-text&gt;
            &lt;a-text position="1.1 0 0" value="B" mixin="texto"&gt;&lt;/a-text&gt;
@@ -3420,13 +3421,13 @@ p.show()
            &lt;a-text position="-0.45 0 0.95" value="E" mixin="texto"&gt;&lt;/a-text&gt;
            &lt;a-text position="0.5 2.1 0.7" value="V" mixin="texto"&gt;&lt;/a-text&gt;
            &lt;a-entity <a alt="sequência dos vértices da base da pirâmide">faceset=</a>"vertices: 0 0 0  1 0 0  1.31 0 0.95  0.5 0 1.5  -0.31 0 0.95" 
-           mixin="cor1 padrao"&gt;&lt;/a-entity&gt;
+             mixin="cor1 padrao"&gt;&lt;/a-entity&gt;
            &lt;a-entity <a alt="sequência dos vértices das faces laterais">faceset=</a>"vertices: 0 0 0  1 0 0  1.31 0 0.95  0.5 0 1.5  -0.31 0 0.95  0.5 2 0.7;
-           <a alt="projeção ortogonal ao eixo y">projectdir:y"</a>  mixin="cor1 padrao"&gt;&lt;/a-entity&gt;
+             <a alt="projeção ortogonal ao eixo y">projectdir:y"</a> mixin="cor1 padrao"&gt;&lt;/a-entity&gt;
            &lt;a-entity <a alt="arestas do poliedro">faceset=</a>"vertices: 0 0 0  1 0 0  1.31 0 0.95  0.5 0 1.5  -0.31 0 0.95  0.5 2 0.7; 
-           projectdir:y" mixin="aramado"&gt;&lt;/a-entity&gt;
+             projectdir:y" mixin="aramado"&gt;&lt;/a-entity&gt;
            &lt;a-entity <a alt="linhas que representam a altura e a projeção da aresta VD">line=</a>"start: 0.5 2 0.7; end: 0.5 0 0.7; color: white" 
-           line__2="start: 0.5 0 0.7; end: 0.5 0 1.5; color: white"&gt;&lt;/a-entity&gt;
+             line__2="start: 0.5 0 0.7; end: 0.5 0 1.5; color: white"&gt;&lt;/a-entity&gt;
         &lt;/a-entity&gt;
         &lt;a-light type="ambient" color="#eaeaea" intensity="0.3"&gt;&lt;/a-light&gt;
         &lt;a-light type="spot" intensity="0.6" position="1 1 3" light="castShadow:true"&gt;&lt;/a-light&gt;
@@ -3540,14 +3541,14 @@ p.show()
         &lt;/a-assets&gt;
         &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
         &lt;a-entity camera orbit-controls="target: 0 0 0; minDistance: 0.5; maxDistance: 180; 
-        initialPosition: 1 1 2.5"&gt;&lt;/a-entity&gt;
+          initialPosition: 1 1 2.5"&gt;&lt;/a-entity&gt;
         &lt;a-entity <a alt="posição e escala do objeto na cena">position=</a>"0 0 0.5" scale="0.1 0.1 0.1"&gt;
             &lt;a-gltf-model <a alt="referência do objeto">src=</a>"#objeto" shadow&gt;&lt;/a-gltf-model&gt;
         &lt;/a-entity&gt;
         &lt;a-box scale="7 0.1 7" shadow color="rgb(100,180,100)"&gt;&lt;/a-box&gt;
         &lt;a-light type="ambient" color="#white" intensity="0.3"&gt;&lt;/a-light&gt;
         &lt;a-light type="directional" color="white" intensity="0.6" position="-1 1 1" 
-        light="castShadow:true"&gt;&lt;/a-light&gt;
+          light="castShadow:true"&gt;&lt;/a-light&gt;
     &lt;/a-scene&gt;
   &lt;/body&gt;
 &lt;/html&gt;
@@ -3584,14 +3585,14 @@ p.show()
         &lt;/a-assets&gt;
         &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
         &lt;a-entity camera orbit-controls="target: 0 0 0; minDistance: 0.05; maxDistance: 180; 
-        initialPosition: 1 1 2.5"&gt;&lt;/a-entity&gt;
+          initialPosition: 1 1 2.5"&gt;&lt;/a-entity&gt;
         &lt;a-entity position="0 0 0.5" scale="0.5 0.5 0.5"&gt;
-            &lt;a-gltf-model <a alt="referência do objeto">src=</a>"#objeto" shadow animation-mixer&gt;&lt;/a-gltf-model&gt;
+            &lt;a-gltf-model <a alt="referência do objeto">src=</a>"#objeto" shadow <a alt="habilita a animação nativa do objeto">animation-mixer</a>&gt;&lt;/a-gltf-model&gt;
         &lt;/a-entity&gt;
         &lt;a-box scale="3.5 0.1 3.5" position="0 -0.07 0" shadow color="rgb(100,180,100)"&gt;&lt;/a-box&gt;
         &lt;a-light type="ambient" color="#white" intensity="0.4"&gt;&lt;/a-light&gt;
         &lt;a-light type="spot" intensity="0.7" color="white" position="-1 2 1" angle="80" 
-        rotation="-90 0 0" penumbra="0.7" light="castShadow:true;"&gt;&lt;/a-light&gt;
+          rotation="-90 0 0" penumbra="0.7" light="castShadow:true;"&gt;&lt;/a-light&gt;
     &lt;/a-scene&gt;
   &lt;/body&gt;
 &lt;/html&gt;
@@ -3637,7 +3638,7 @@ p.show()
         &lt;/a-assets&gt;
         &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
         &lt;a-entity camera="fov:20; near:1;" orbit-controls="target: 0 0 0; minDistance: 0.5; 
-        maxDistance: 180; initialPosition: 5 7 21"&gt;&lt;/a-entity&gt;
+          maxDistance: 180; initialPosition: 5 7 21"&gt;&lt;/a-entity&gt;
         &lt;a-entity <a alt="posição e escala dos objetos">position=</a>"0 0 0" scale="0.8 0.8 0.8" rotation="0 -15 0"&gt;
             &lt;a-gltf-model <a alt="objeto estático">src=</a>"#objeto" shadow&gt;&lt;/a-gltf-model&gt;
             &lt;a-entity position="3.54 2.14 0.03" rotation="0 0 13.3"&gt;
@@ -3650,7 +3651,7 @@ p.show()
         &lt;a-box shadow scale="10 0.1 10" position="0 -0.05 0" color="rgb(100,180,100)"&gt;&lt;/a-box&gt;
         &lt;a-light type="ambient" color="#bbb" intensity="0.6"&gt;&lt;/a-light&gt;
         &lt;a-light type="directional" color="white" intensity="0.8" position="-1 1 1" 
-        light="castShadow:true"&gt;&lt;/a-light&gt;
+         light="castShadow:true"&gt;&lt;/a-light&gt;
     &lt;/a-scene&gt;
   &lt;/body&gt;
 &lt;/html&gt;
@@ -3692,7 +3693,8 @@ p.show()
         &lt;a-entity id="cameraRig" position="0.5 1 0"&gt;
             &lt;a-entity id="head" camera wasd-controls look-controls gearvr-controls daydream-controls&gt;&lt;/a-entity&gt;
             &lt;a-entity id="left-hand" teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head;"&gt;&lt;/a-entity&gt;
-            &lt;a-entity id="right-hand"<a alt="propriedades do teleporte"> teleport-controls=</a>"cameraRig: #cameraRig; teleportOrigin: #head; collisionEntities: [mixin='box'], [mixin='piso'], [mixin='objeto']"&gt;&lt;/a-entity&gt;
+            &lt;a-entity id="right-hand"<a alt="propriedades do teleporte"> teleport-controls=</a>"cameraRig: #cameraRig; teleportOrigin: #head; 
+              collisionEntities: [mixin='box'], [mixin='piso'], [mixin='objeto']"&gt;&lt;/a-entity&gt;
         &lt;/a-entity&gt;
         &lt;a-entity mixin="piso" position="0 -0.55 0" visible="false"&gt;&lt;/a-entity&gt;
         &lt;a-entity position="0 0 0"&gt;
@@ -3700,7 +3702,7 @@ p.show()
         &lt;/a-entity&gt;
         &lt;a-light type="ambient" color="#eaeaea" intensity="0.3"&gt;&lt;/a-light&gt;
         &lt;a-light type="spot" intensity="0.7" position="1 1 3" light="castShadow:true" 
-        rotation="-90 0 0" penumbra="0.5"&gt;&lt;/a-light&gt;
+          rotation="-90 0 0" penumbra="0.5"&gt;&lt;/a-light&gt;
     &lt;/a-scene&gt;
   &lt;/body&gt;
 &lt;/html&gt;
@@ -3743,14 +3745,14 @@ p.show()
         &lt;/a-assets&gt;
         &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
         &lt;a-entity camera orbit-controls="target: 0 0 0; minDistance: 0.05; maxDistance: 180; 
-        initialPosition: 1 1 2"&gt;&lt;/a-entity&gt;
+          initialPosition: 1 1 2"&gt;&lt;/a-entity&gt;
         &lt;a-entity position="0 0 0" scale="0.03 0.03 0.03" rotation="-90 0 0"&gt;
             &lt;a-obj-model <a alt="referência do arquivo OBJ">src=</a>"#objeto" <a alt="referência dos materiais">mtl=</a>"#objeto-mtl" shadow &gt;&lt;/a-obj-model&gt;
         &lt;/a-entity&gt;
         &lt;a-box scale="3.5 0.1 3.5" position="0 -0.07 0" shadow color="rgb(100,180,100)"&gt;&lt;/a-box&gt;
         &lt;a-light type="ambient" color="#white" intensity="0.7"&gt;&lt;/a-light&gt;
         &lt;a-light type="spot" intensity="0.7" color="white" position="1 2 1" angle="80" rotation="-90 0 0" 
-        penumbra="0.7" light="castShadow:true;"&gt;&lt;/a-light&gt;
+          penumbra="0.7" light="castShadow:true;"&gt;&lt;/a-light&gt;
     &lt;/a-scene&gt;
   &lt;/body&gt;
 &lt;/html&gt;
