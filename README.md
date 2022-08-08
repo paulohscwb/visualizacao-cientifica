@@ -3674,7 +3674,7 @@ p.show()
 		  <li>
 			   <input type="radio" id="055" name="sl">
 			   <label for="055"></label>
-			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod106', 'cd106')" onmouseout="outFunc('cd106')"><span class="tooltiptext" id="cd106">Copiar o código</span></button></div>Inserção de objeto GLTF com animação na cena:
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod106', 'cd106')" onmouseout="outFunc('cd106')"><span class="tooltiptext" id="cd106">Copiar o código</span></button></div>Inserção de objeto GLTF para uso de teleporte:
 <pre><code id="cod106">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
@@ -3699,7 +3699,8 @@ p.show()
             &lt;a-gltf-model <a alt="referência do objeto na cena">src=</a>"#objeto" shadow material="metallic:0.2; roughness:0.8;"&gt;&lt;/a-gltf-model&gt;
         &lt;/a-entity&gt;
         &lt;a-light type="ambient" color="#eaeaea" intensity="0.3"&gt;&lt;/a-light&gt;
-        &lt;a-light type="spot" intensity="0.7" position="1 1 3" light="castShadow:true" rotation="-90 0 0" penumbra="0.5" &gt;&lt;/a-light&gt;
+        &lt;a-light type="spot" intensity="0.7" position="1 1 3" light="castShadow:true" 
+        rotation="-90 0 0" penumbra="0.5"&gt;&lt;/a-light&gt;
     &lt;/a-scene&gt;
   &lt;/body&gt;
 &lt;/html&gt;
@@ -3721,6 +3722,49 @@ p.show()
 		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
   </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-139a.png" loading="lazy"/>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
+	<p>Veja o código HTML e a renderização da cena.</p>
+	  <ul class="slider">
+		  <li>
+			   <input type="radio" id="058" name="sl">
+			   <label for="058"></label>
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod107', 'cd107')" onmouseout="outFunc('cd107')"><span class="tooltiptext" id="cd107">Copiar o código</span></button></div>Inserção de objeto OBJ em uma cena:
+<pre><code id="cod107">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;script src="https://aframe.io/releases/1.3.0/aframe.min.js"&gt;&lt;/script&gt;
+    &lt;script src="https://unpkg.com/aframe-orbit-controls@1.3.0/dist/aframe-orbit-controls.min.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;a-scene reflection shadow="type: pcfsoft" renderer='colorManagement: true;'&gt;
+        &lt;a-assets&gt;
+            &lt;a-asset-item id="objeto" <a alt="arquivo da geometria OBJ">src=</a>"objetos/bowling.obj"&gt;&lt;/a-asset-item&gt;
+            &lt;a-asset-item id="objeto-mtl" <a alt="arquivo dos materiais">src=</a>"objetos/bowling.mtl"&gt;&lt;/a-asset-item&gt;
+        &lt;/a-assets&gt;
+        &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
+        &lt;a-entity camera orbit-controls="target: 0 0 0; minDistance: 0.05; maxDistance: 180; 
+        initialPosition: 1 1 2"&gt;&lt;/a-entity&gt;
+        &lt;a-entity position="0 0 0" scale="0.03 0.03 0.03" rotation="-90 0 0"&gt;
+            &lt;a-obj-model <a alt="referência do arquivo OBJ">src=</a>"#objeto" <a alt="referência dos materiais">mtl=</a>"#objeto-mtl" shadow &gt;&lt;/a-obj-model&gt;
+        &lt;/a-entity&gt;
+        &lt;a-box scale="3.5 0.1 3.5" position="0 -0.07 0" shadow color="rgb(100,180,100)"&gt;&lt;/a-box&gt;
+        &lt;a-light type="ambient" color="#white" intensity="0.4"&gt;&lt;/a-light&gt;
+        &lt;a-light type="spot" intensity="0.7" color="white" position="1 2 1" angle="80" rotation="-90 0 0" 
+        penumbra="0.7" light="castShadow:true;"&gt;&lt;/a-light&gt;
+    &lt;/a-scene&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="059" name="sl">
+			   <label for="059"></label>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo20.htm" title="Interações com objetos" frameborder="0" loading="lazy"></iframe></div>
+			   <figcaption>Primeiro exemplo de objeto GLTF com teleporte.<br><a href="modulo8/exemplo20.htm" target="_blank">&#x1f517; link da página</a></figcaption>
+		   </li>
+		</ul>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
+  </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-139b.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-140.png" loading="lazy"/>

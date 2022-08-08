@@ -15,14 +15,15 @@
 		<a-entity id="cameraRig" position="0.5 1.6 9">
 			<a-entity id="head" camera wasd-controls look-controls gearvr-controls daydream-controls></a-entity>
 			<a-entity id="left-hand" teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head;"></a-entity>
-			<a-entity id="right-hand" teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head; collisionEntities: [mixin='box'], [mixin='piso'], [mixin='objeto']"></a-entity>
+			<a-entity id="right-hand" teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head; 
+			  collisionEntities: [mixin='box'], [mixin='piso'], [mixin='objeto']"></a-entity>
 		</a-entity>
 		<a-entity mixin="piso" position="0 -0.55 0" visible="false"></a-entity>
 		<a-entity position="-45 0 -35">
 			<a-gltf-model src="#objeto" shadow material="metallic:0.2; roughness:0.8;"></a-gltf-model>
 		</a-entity>
-		<a-light type="spot" intensity="0.7" color="white" position="-2 10 -2" angle="80" rotation="-90 0 0" penumbra="0.5" light="castShadow:true;"></a-light>
-		<a-light type="ambient" intensity="0.5" color="white"></a-light>
+		<a-light type="spot" intensity="0.9" color="white" position="-2 10 -2" angle="80" rotation="-90 0 0" penumbra="0.5" light="castShadow:true;"></a-light>
+		<a-light type="ambient" intensity="0.7" color="white"></a-light>
     </a-scene>
   </body>
 </html>
