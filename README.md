@@ -3615,8 +3615,58 @@ p.show()
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-137b.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-138.png" loading="lazy"/>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
+	<p>Veja o código HTML e a renderização da cena.</p>
+	  <ul class="slider">
+		  <li>
+			   <input type="radio" id="053" name="sl">
+			   <label for="053"></label>
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod105', 'cd105')" onmouseout="outFunc('cd105')"><span class="tooltiptext" id="cd105">Copiar o código</span></button></div>Inserção de objeto GLTF com animação na cena:
+<pre><code id="cod105">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;script src="https://aframe.io/releases/1.3.0/aframe.min.js"&gt;&lt;/script&gt;
+    &lt;script src="https://unpkg.com/aframe-orbit-controls@1.3.0/dist/aframe-orbit-controls.min.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;a-scene reflection shadow="type: pcfsoft"&gt;
+        &lt;a-assets&gt;
+            &lt;a-asset-item id="objeto" <a alt="caminho do arquivo GLTF do avião">src=</a>"objetos/aviao.glb"&gt;&lt;/a-asset-item&gt;
+            &lt;a-asset-item <a alt="caminho do arquivo GLTF da hélice">id=</a>"objeto1" src="objetos/helice.glb"&gt;&lt;/a-asset-item&gt;
+            &lt;a-mixin id="texto" text="color: black; align: left; width: 8; side:double;"&gt;&lt;/a-mixin&gt;
+        &lt;/a-assets&gt;
+        &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
+        &lt;a-entity camera="fov:20; near:1;" orbit-controls="target: 0 0 0; minDistance: 0.5; maxDistance: 180; 
+        initialPosition: 5 7 21"&gt;&lt;/a-entity&gt;
+        &lt;a-entity <a alt="posição e escala dos objetos">position=</a>"0 0 0" scale="0.8 0.8 0.8" rotation="0 -15 0"&gt;
+            &lt;a-gltf-model <a alt="objeto estático">src=</a>"#objeto" shadow&gt;&lt;/a-gltf-model&gt;
+            &lt;a-entity position="3.54 2.14 0.03" rotation="0 0 13.3"&gt;
+                &lt;a-gltf-model <a alt="hélice com animação de rotação">src=</a>"#objeto1" animation="property: rotation; to: 360 0 0; loop: true; dur: 5000; easing: linear" shadow&gt;&lt;/a-gltf-model&gt;
+            &lt;/a-entity&gt;
+            &lt;a-text position="0 0.15 3.5" mixin="texto" value="A airplane  |  design: Jeroen Hut" rotation="-45 0 0"&gt;&lt;/a-text&gt;
+        &lt;/a-entity&gt;
+        &lt;a-box shadow scale="10 0.1 10" position="0 -0.05 0" color="rgb(100,180,100)"&gt;&lt;/a-box&gt;
+        &lt;a-light type="ambient" color="#bbb" intensity="0.6"&gt;&lt;/a-light&gt;
+        &lt;a-light type="directional" color="white" intensity="0.8" position="-1 1 1" light="castShadow:true"&gt;&lt;/a-light&gt;
+    &lt;/a-scene&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="054" name="sl">
+			   <label for="054"></label>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo19.htm" title="Interações com objetos" frameborder="0" loading="lazy"></iframe></div>
+			   <figcaption>Exemplo de objeto GLTF com animação feita com a-frame.<br><a href="modulo8/exemplo19.htm" target="_blank">&#x1f517; link da página</a></figcaption>
+		   </li>
+		</ul>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
+  </details></div>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-138a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-139.png" loading="lazy"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-139a.png" loading="lazy"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-139b.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-140.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
