@@ -3310,8 +3310,8 @@ p.show()
         &lt;a-plane color="#A9F5D0" position="0 -0.5 0" rotation="-90 0 0" width="5" height="5"
           <a alt="habilita a projeção de sombra">shadow=</a>"receive: true;"&gt;&lt;/a-plane&gt;
         &lt;a-light type="ambient" color="#eaeaea" intensity="0.3"&gt;&lt;/a-light&gt;
-          &lt;a-light type="directional" intensity="0.3" position="0 5 0" 
-        <a alt="luz que produz as sombras na cena">light=</a>"castShadow:true" target="#directionaltargetY"&gt;
+        &lt;a-light type="directional" intensity="0.3" position="0 5 0" 
+          <a alt="luz que produz as sombras na cena">light=</a>"castShadow:true" target="#directionaltargetY"&gt;
             &lt;a-entity id="directionaltargetY" position="0 -1 0"&gt;&lt;/a-entity&gt;
         &lt;/a-light&gt;
     &lt;/a-scene&gt;
@@ -3651,7 +3651,7 @@ p.show()
         &lt;a-box shadow scale="10 0.1 10" position="0 -0.05 0" color="rgb(100,180,100)"&gt;&lt;/a-box&gt;
         &lt;a-light type="ambient" color="#bbb" intensity="0.6"&gt;&lt;/a-light&gt;
         &lt;a-light type="directional" color="white" intensity="0.8" position="-1 1 1" 
-         light="castShadow:true"&gt;&lt;/a-light&gt;
+          light="castShadow:true"&gt;&lt;/a-light&gt;
     &lt;/a-scene&gt;
   &lt;/body&gt;
 &lt;/html&gt;
