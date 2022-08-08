@@ -3797,34 +3797,35 @@ p.show()
     &lt;a-scene reflection shadow="type: pcfsoft" renderer='colorManagement: true;'&gt;
         &lt;a-assets&gt;
            &lt;a-mixin <a alt="bolas de boliche com propriedades físicas">id="bola"</a> geometry="primitive: sphere; radius: 0.3;" material="color: grey; metalness:0.8;" 
-		   hoverable grabbable stretchable draggable droppable shadow dynamic-body="linearDamping:0.2; 
-           angularDamping:0.2; mass:7;" event-set__hoveron="_event: hover-start; material.opacity: 0.7; transparent: true" 
-           event-set__hoveroff="_event: hover-end; material.opacity: 1; transparent: false"&gt;&lt;/a-mixin&gt;
+             hoverable grabbable stretchable draggable droppable shadow dynamic-body="linearDamping:0.2; 
+             angularDamping:0.2; mass:7;" event-set__hoveron="_event: hover-start; material.opacity: 0.7; transparent: true" 
+             event-set__hoveroff="_event: hover-end; material.opacity: 1; transparent: false"&gt;&lt;/a-mixin&gt;
            &lt;a-mixin <a alt="pinos com propriedades físicas">id="pino"</a> scale="0.25 0.2 0.25" hoverable grabbable stretchable draggable droppable shadow 
-           dynamic-body="linearDamping:0.3; angularDamping:0.3; mass:0.5;"&gt;&lt;/a-mixin&gt;
+             dynamic-body="linearDamping:0.3; angularDamping:0.3; mass:0.5;"&gt;&lt;/a-mixin&gt;
            &lt;a-asset-item id="bow-gltf" <a alt="arquivo GLTF do modelo de pino">src="objetos/bowling.gltf"</a>&gt;&lt;/a-asset-item&gt;
            &lt;a-mixin static-body <a alt="plataforma da pista, com propriedades físicas">id="plataforma"</a> geometry="primitive: box; height:0.1; width:18; depth:1.5;" 
-           material="src:#piso2; repeat:15 2; side:double; metalness:0.2; roughness:0.7" shadow&gt;&lt;/a-mixin&gt;
+             material="src:#piso2; repeat:15 2; side:double; metalness:0.2; roughness:0.7" shadow&gt;&lt;/a-mixin&gt;
            &lt;a-mixin static-body <a alt="barras laterais da pista">id="lateral"</a> geometry="primitive: box;" material="src:#piso2; repeat:15 1; side:double; 
-           metalness:0.2; roughness:0.7" shadow&gt;&lt;/a-mixin&gt;
+             metalness:0.2; roughness:0.7" shadow&gt;&lt;/a-mixin&gt;
            &lt;a-mixin static-body <a alt="piso da pista">id="piso"</a> geometry="primitive: box; height:0.1; width:30; depth:15;" 
-           material="src:#piso1; repeat:27 14; side:double; metalness:0.2; roughness:0.7" shadow&gt;&lt;/a-mixin&gt;
+             material="src:#piso1; repeat:27 14; side:double; metalness:0.2; roughness:0.7" shadow&gt;&lt;/a-mixin&gt;
            <a alt="texturas da cena">&lt;img id=</a>"ceu" src="imagens/bowling.jpg"&gt;
            &lt;img id="piso1" src="imagens/piso_madeira.jpg"&gt;
            &lt;img id="piso2" src="imagens/piso.jpg"&gt;
            &lt;a-mixin <a alt="indicador de seleção de objetos">id="point"</a> raycaster="showLine: false; objects: .pino, .bola" line="color:rgb(255,255,255); 
-           opacity:0.33;"static-body="shape: sphere; sphereRadius: 0.1" super-hands="colliderEvent: raycaster-intersection; 
-           colliderEventProperty: els; colliderEndEvent:raycaster-intersection-cleared; colliderEndEventProperty: clearedEls;"&gt;&lt;/a-mixin&gt;
+             opacity:0.33;"static-body="shape: sphere; sphereRadius: 0.1" super-hands="colliderEvent: raycaster-intersection; 
+             colliderEventProperty: els; colliderEndEvent:raycaster-intersection-cleared; 
+             colliderEndEventProperty: clearedEls;"&gt;&lt;/a-mixin&gt;
         &lt;/a-assets&gt;
         &lt;a-sky src="#ceu"&gt;&lt;/a-sky&gt;
         &lt;a-entity <a alt="propriedades de interação ligadas à câmera">id="cameraRig"</a> position="3 1.6 2"&gt;
            &lt;a-camera id="head" look-controls capture-mouse cursor="rayOrigin:mouse" static-body="shape: sphere; 
-           sphereRadius: 0.1" super-hands="colliderEvent: raycaster-intersection; colliderEventProperty: els; 
-           colliderEndEvent:raycaster-intersection-cleared; colliderEndEventProperty: clearedEls;"&gt;&lt;/a-camera&gt;
+             sphereRadius: 0.1" super-hands="colliderEvent: raycaster-intersection; colliderEventProperty: els; 
+             colliderEndEvent:raycaster-intersection-cleared; colliderEndEventProperty: clearedEls;"&gt;&lt;/a-camera&gt;
            &lt;a-entity teleport-controls="cameraRig: #cameraRig; collisionEntities:  [mixin='piso']; 
-           teleportOrigin: #head; button: grip;" gearvr-controls daydream-controls&gt;&lt;/a-entity&gt;
+             teleportOrigin: #head; button: grip;" gearvr-controls daydream-controls&gt;&lt;/a-entity&gt;
            &lt;a-entity laser-controls raycaster="showLine:true; far:3;" line="color:rgb(0,255,0); opacity:0.33;" 
-           hand-controls="hand: right"&gt;&lt;/a-entity&gt;
+             hand-controls="hand: right"&gt;&lt;/a-entity&gt;
            &lt;a-entity oculus-touch-controls="hand: left"&gt;&lt;/a-entity&gt;
            &lt;a-entity oculus-touch-controls="hand: right"&gt;&lt;/a-entity&gt;
         &lt;/a-entity&gt;
@@ -3835,13 +3836,13 @@ p.show()
            &lt;a-entity mixin="lateral" scale="18.3 0.5 0.1" position="0 0.2 0.8"&gt;&lt;/a-entity&gt;
            &lt;a-entity <a alt="suporte com as bolas de boliche">id="suporte"</a>&gt;
               &lt;a-entity mixin="lateral" material="src:#piso2; repeat:2 2;" scale="2.1 0.5 0.1" 
-              position="8 0.2 -2.5"&gt;&lt;/a-entity&gt;
+                position="8 0.2 -2.5"&gt;&lt;/a-entity&gt;
               &lt;a-entity mixin="lateral" material="src:#piso2; repeat:2 2;" scale="2.1 0.5 0.1" 
-              position="8 0.2 -1.5" rotation="0 0 0"&gt;&lt;/a-entity&gt;
+                position="8 0.2 -1.5" rotation="0 0 0"&gt;&lt;/a-entity&gt;
               &lt;a-entity mixin="lateral" material="src:#piso2; repeat:2 2;" scale="0.9 0.5 0.1" 
-              position="7 0.2 -2" rotation="0 90 0"&gt;&lt;/a-entity&gt;
+                position="7 0.2 -2" rotation="0 90 0"&gt;&lt;/a-entity&gt;
               &lt;a-entity mixin="lateral" material="src:#piso2; repeat:2 2;" scale="0.9 0.5 0.1" 
-              position="9 0.2 -2" rotation="0 90 0"&gt;&lt;/a-entity&gt;
+                position="9 0.2 -2" rotation="0 90 0"&gt;&lt;/a-entity&gt;
            &lt;/a-entity&gt;
            &lt;a-entity class="bola" mixin="bola" position="7.5 0 -2"&gt;&lt;/a-entity&gt;
            &lt;a-entity class="bola" mixin="bola" position="8 0 -2"&gt;&lt;/a-entity&gt;
@@ -3858,13 +3859,13 @@ p.show()
               &lt;a-entity class="pino" gltf-model="#bow-gltf" position="-8 0 -0.15" mixin="pino"&gt;&lt;/a-entity&gt;
               &lt;a-entity class="pino" gltf-model="#bow-gltf" position="-7.7 0 0" mixin="pino"&gt;&lt;/a-entity&gt;
            &lt;/a-entity&gt;
-		&lt;/a-entity&gt;
+        &lt;/a-entity&gt;
         <a alt="iluminação da cena com 1 luz ambiente e 3 spots">&lt;a-light</a> type="spot" intensity="0.7" color="white" position="-8 3 -2" angle="75" rotation="-90 0 0" 
-        penumbra="0.3" light="castShadow:true;"&gt;&lt;/a-light&gt;
+          penumbra="0.3" light="castShadow:true;"&gt;&lt;/a-light&gt;
         &lt;a-light type="spot" intensity="0.7" color="white" position="0 3 -2" angle="75" rotation="-90 0 0" 
-        penumbra="0.3" light="castShadow:true;"&gt;&lt;/a-light&gt;
+          penumbra="0.3" light="castShadow:true;"&gt;&lt;/a-light&gt;
         &lt;a-light type="spot" intensity="0.7" color="white" position="8 3 -2" angle="75" rotation="-90 0 0" 
-        penumbra="0.3" light="castShadow:true;"&gt;&lt;/a-light&gt;
+          penumbra="0.3" light="castShadow:true;"&gt;&lt;/a-light&gt;
         &lt;a-light type="ambient" intensity="0.5" color="white"&gt;&lt;/a-light&gt;
     &lt;/a-scene&gt;
   &lt;/body&gt;
@@ -3874,7 +3875,7 @@ p.show()
 		   <li>
 			   <input type="radio" id="061" name="sl">
 			   <label for="061"></label>
-			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo21.htm" title="Interações com objetos" frameborder="0" loading="lazy"></iframe></div>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo21a.htm" title="Interações com objetos" frameborder="0" loading="lazy"></iframe></div>
 			   <figcaption>Cena com uma pista de boliche: teleporte, objetos GLTF, texturas e interação com os objetos.<br><a href="modulo8/exemplo21.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
