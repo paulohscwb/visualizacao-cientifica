@@ -3463,9 +3463,9 @@ p.show()
   &lt;head&gt;
 	&lt;title&gt;Interações com objetos de uma cena&lt;/title&gt;
 	<a alt="referência da biblioteca com suporte de interações">&lt;script src="https://aframe.io/releases/1.1.0/aframe.min.js"&gt;&lt;/script&gt;</a>
-	<a alt="referência da biblioteca com interação">&lt;script src="https://unpkg.com/aframe-event-set-component@^4.1.1/dist/aframe-event-set-component.min.js"&gt;&lt;/script&gt;</a>
-	<a alt="referência da biblioteca para movimentar objetos">&lt;script src="https://unpkg.com/super-hands@^3.0.3/dist/super-hands.min.js"&gt;&lt;/script&gt;</a>
-	<a alt="referência da biblioteca de teleporte">&lt;script src="https://fernandojsg.github.io/aframe-teleport-controls/dist/aframe-teleport-controls.min.js"&gt;&lt;/script&gt;</a>
+	<a alt="biblioteca de interação">&lt;script src="https://unpkg.com/aframe-event-set-component@^4.1.1/dist/aframe-event-set-component.min.js"&gt;&lt;/script&gt;</a>
+	<a alt="biblioteca de constroles par movimentar objetos">&lt;script src="https://unpkg.com/super-hands@^3.0.3/dist/super-hands.min.js"&gt;&lt;/script&gt;</a>
+	<a alt="biblioteca de teleporte">&lt;script src="https://fernandojsg.github.io/aframe-teleport-controls/dist/aframe-teleport-controls.min.js"&gt;&lt;/script&gt;</a>
 	<a alt="biblioteca de propriedades físicas">&lt;script src="https://rawgit.com/donmccurdy/aframe-physics-system/v3.2.0/dist/aframe-physics-system.min.js"&gt;&lt;/script&gt;</a>
 	<a alt="biblioteca com propriedades físicas adicionais">&lt;script src="https://unpkg.com/aframe-physics-extras@0.1.2/dist/aframe-physics-extras.min.js"&gt;&lt;/script&gt;</a>
   &lt;/head&gt;
