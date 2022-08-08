@@ -3285,8 +3285,98 @@ p.show()
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-129a.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-130.png"/>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
+	<p>Veja o código HTML e a renderização da cena.</p>
+	  <ul class="slider">
+		  <li>
+			   <input type="radio" id="040" name="sl">
+			   <label for="040"></label>
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod99', 'cd99')" onmouseout="outFunc('cd99')"><span class="tooltiptext" id="cd99">Copiar o código</span></button></div>Representação de poliedro com sombra em um plano:
+<pre><code id="cod99">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;script src="https://aframe.io/releases/1.3.0/aframe.min.js"&gt;&lt;/script&gt;
+    &lt;script src="https://unpkg.com/aframe-orbit-controls@1.3.0/dist/aframe-orbit-controls.min.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;a-scene reflection&gt;
+        &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
+        &lt;a-entity camera orbit-controls="target: 0 2 0; minDistance: 0.5; maxDistance: 180; initialPosition: -1 1.6 4.5"&gt;&lt;/a-entity&gt;
+		&lt;a-octahedron position="0 2 0" radius="2" color="black" <a alt="representação aramada: arestas">wireframe=</a>"true" <a alt="habilita a projeção de sombra">shadow=</a>"cast:true"&gt;&lt;/a-octahedron&gt;
+		<a alt="representação das faces">&lt;a-octahedron</a> position="0 2 0" radius="2" side="double" color="tomato" metalness="0.6" roughness="0.3" opacity="0.5"&gt;&lt;/a-octahedron&gt;
+		&lt;a-plane color="#A9F5D0" position="0 -0.5 0" rotation="-90 0 0" width="5" height="5" <a alt="habilita a projeção de sombra">shadow=</a>"receive: true;"&gt;&lt;/a-plane&gt;
+		&lt;a-light type="ambient" color="#eaeaea" intensity="0.3"&gt;&lt;/a-light&gt;
+		&lt;a-light type="directional" intensity="0.3" position="0 5 0" <a alt="luz que produz as sombras na cena">light=</a>"castShadow:true" target="#directionaltargetY"&gt;
+			&lt;a-entity id="directionaltargetY" position="0 -1 0"&gt;&lt;/a-entity&gt;
+		&lt;/a-light&gt;
+    &lt;/a-scene&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="041" name="sl">
+			   <label for="041"></label>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo15.htm" title="Sombras de poliedros" frameborder="0" loading="lazy"></iframe></div>
+			   <figcaption>Octaedro com sombras projetadas em um plano, produzidas por meio de luz direcional.<br><a href="modulo8/exemplo15.htm" target="_blank">&#x1f517; link da página</a></figcaption>
+		   </li>
+		</ul>
+		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+  </details></div>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-130a.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-131.png"/>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
+	<p>Veja o código HTML e a renderização da cena.</p>
+	  <ul class="slider">
+		  <li>
+			   <input type="radio" id="042" name="sl">
+			   <label for="042"></label>
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod100', 'cd100')" onmouseout="outFunc('cd100')"><span class="tooltiptext" id="cd100">Copiar o código</span></button></div>Propriedades comuns de objetos agrupadas com a tag a-mixin:
+<pre><code id="cod100">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;script src="https://aframe.io/releases/1.3.0/aframe.min.js"&gt;&lt;/script&gt;
+    &lt;script src="https://unpkg.com/aframe-orbit-controls@1.3.0/dist/aframe-orbit-controls.min.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;a-scene reflection&gt;
+        &lt;a-assets&gt;
+           &lt;img id="ceu" src="./imagens/equi1.jpg"&gt;
+           &lt;img id="metal" src="./imagens/metal1.png"&gt;
+           &lt;a-cubemap id="ceu2"&gt;
+              &lt;img src="./imagens/cubemap/Right.png"&gt;
+              &lt;img src="./imagens/cubemap/Left.png"&gt;
+              &lt;img src="./imagens/cubemap/Top.png"&gt;
+              &lt;img src="./imagens/cubemap/Bottom.png"&gt;
+              &lt;img src="./imagens/cubemap/Front.png"&gt;
+              &lt;img src="./imagens/cubemap/Back.png"&gt;
+           &lt;/a-cubemap&gt;
+           &lt;a-mixin <a alt="propriedades de reflexões e materiais">id="padrao"</a> material="metalness:1; roughness:0; side:double; envMap: #ceu2;" shadow=""&gt;&lt;/a-mixin&gt;
+           &lt;a-mixin <a alt="propriedades geométricas">id="padrao2"</a> geometry="segments-height:36; segments-width:64; radius:1;"&gt;&lt;/a-mixin&gt;
+        &lt;/a-assets&gt;
+        &lt;a-sky src="#ceu"&gt;&lt;/a-sky&gt;
+        &lt;a-entity camera orbit-controls="target: -1 1.5 1; minDistance: 0.5; maxDistance: 180; initialPosition: -1 1.6 3.5"&gt;&lt;/a-entity&gt;
+        &lt;a-sphere position="1 2 0.5" color="silver" <a alt="atribuição das propriedades">mixin="padrao padrao2"</a>&gt;&lt;/a-sphere&gt;
+        &lt;a-sphere position="-2 1.5 -0.5" color="green" <a alt="atribuição das propriedades">mixin="padrao padrao2"</a>&gt;&lt;/a-sphere&gt;
+        &lt;a-cylinder src="#metal" position="-3 0.5 1.5" color="white" radius="0.5" height="1.5" <a alt="atribuição das propriedades">mixin="padrao"</a>&gt;&lt;/a-cylinder&gt;
+        &lt;a-light type="ambient" color="#eaeaea" intensity="0.3"&gt;&lt;/a-light&gt;
+        &lt;a-light type="spot" intensity="0.75" angle="60" penumbra="0.5" shadow="cast: true; receive: false" position="-2 2 4"&gt;&lt;/a-light&gt;
+    &lt;/a-scene&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="043" name="sl">
+			   <label for="043"></label>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo16.htm" title="Tag mixin de propriedades" frameborder="0" loading="lazy"></iframe></div>
+			   <figcaption>Propriedades agrupadas na tag a-mixin.<br><a href="modulo8/exemplo15.htm" target="_blank">&#x1f517; link da página</a></figcaption>
+		   </li>
+		</ul>
+		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
+  </details></div>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-131a.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-132.png"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
