@@ -2559,13 +2559,13 @@ p.show()
 		   <li>
 			   <input type="radio" id="006" name="sl">
 			   <label for="006"></label>
-			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo1a.htm" srcDoc='<a href="modulo8/exemplo1a.htm" target="_blank">&#x1f517; link da página</a>' title="Cena de RV com um cubo" frameborder="0"></iframe></div>
+			   <div class="embed-container"><iframe width="100%" srcDoc='<a href="modulo8/exemplo1a.htm" target="_blank">&#x1f517; link da página</a>' src="modulo8/exemplo1a.htm" title="Cena de RV com um cubo" frameborder="0"></iframe></div>
 			   <figcaption>Cena de RV com um cubo, com ambiente forest.</figcaption>
 		   </li>
 		   <li>
 			   <input type="radio" id="007" name="sl">
 			   <label for="007"></label>
-			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo1.htm" srcDoc='<a href="modulo8/exemplo1.htm" target="_blank">&#x1f517; link da página</a>' title="Cena de RV com um cubo" frameborder="0"></iframe></div>
+			   <div class="embed-container"><iframe width="100%" srcDoc='<a href="modulo8/exemplo1.htm" target="_blank">&#x1f517; link da página</a>' src="modulo8/exemplo1.htm" title="Cena de RV com um cubo" frameborder="0"></iframe></div>
 			   <figcaption>Cena de RV com um cubo, com ambiente japan. Modifique a tag do ambiente no código para inserir o cubo em outros ambientes do a-frame.</figcaption>
 		   </li>
 		</ul>
