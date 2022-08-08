@@ -7,7 +7,7 @@ newmtl Standard_7
 	d 1
 	Tr 0
 	Tf 1 1 1 
-	illum 2
+	illum 1
 	Ka 0.8 0.8 0.8
 	Kd 0.8 0.8 0.8
 	Ks 0.2 0.2 0.2
