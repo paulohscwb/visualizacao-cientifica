@@ -3520,6 +3520,95 @@ p.show()
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-136.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-137.png" loading="lazy"/>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
+	<p>Veja o código HTML e a renderização da cena.</p>
+	  <ul class="slider">
+		  <li>
+			   <input type="radio" id="048" name="sl">
+			   <label for="048"></label>
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod103', 'cd103')" onmouseout="outFunc('cd103')"><span class="tooltiptext" id="cd103">Copiar o código</span></button></div>Inserção de objeto GLTF na cena:
+<pre><code id="cod103">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;script src="https://aframe.io/releases/1.3.0/aframe.min.js"&gt;&lt;/script&gt;
+    &lt;script src="https://unpkg.com/aframe-orbit-controls@1.3.0/dist/aframe-orbit-controls.min.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;a-scene reflection shadow="type: pcfsoft"&gt;
+        &lt;a-assets&gt;
+            &lt;a-asset-item <a alt="identificação do objeto">id=</a>"objeto" <a alt="caminho do arquivo GLTF">src=</a>"objetos/robo/scene.gltf"&gt;&lt;/a-asset-item&gt;
+        &lt;/a-assets&gt;
+        &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
+        &lt;a-entity camera orbit-controls="target: 0 0 0; minDistance: 0.5; maxDistance: 180; initialPosition: 1 1 2.5"&gt;&lt;/a-entity&gt;
+        &lt;a-entity <a alt="posição e escala do objeto na cena">position=</a>"0 0 0.5" scale="0.1 0.1 0.1"&gt;
+            &lt;a-gltf-model <a alt="referência do objeto">src=</a>"#objeto" shadow&gt;&lt;/a-gltf-model&gt;
+        &lt;/a-entity&gt;
+        &lt;a-box scale="7 0.1 7" shadow color="rgb(100,180,100)"&gt;&lt;/a-box&gt;
+        &lt;a-light type="ambient" color="#white" intensity="0.3"&gt;&lt;/a-light&gt;
+        &lt;a-light type="directional" color="white" intensity="0.6" position="-1 1 1" light="castShadow:true"&gt;&lt;/a-light&gt;
+    &lt;/a-scene&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="049" name="sl">
+			   <label for="049"></label>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo19c.htm" title="Interações com objetos" frameborder="0" loading="lazy"></iframe></div>
+			   <figcaption>Objeto GLTF inserido na cena.<br><a href="modulo8/exemplo19c.htm" target="_blank">&#x1f517; link da página</a></figcaption>
+		   </li>
+		</ul>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
+  </details></div>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-137a.png" loading="lazy"/>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
+	<p>Veja o código HTML e a renderização da cena.</p>
+	  <ul class="slider">
+		  <li>
+			   <input type="radio" id="050" name="sl">
+			   <label for="050"></label>
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod104', 'cd104')" onmouseout="outFunc('cd104')"><span class="tooltiptext" id="cd104">Copiar o código</span></button></div>Inserção de objeto GLTF com animação nativa na cena:
+<pre><code id="cod104">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;script src="https://aframe.io/releases/1.3.0/aframe.min.js"&gt;&lt;/script&gt;
+	<a alt="referência da biblioteca para animação nativa de objetos">&lt;script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"&gt;&lt;/script&gt;</a>
+    &lt;script src="https://unpkg.com/aframe-orbit-controls@1.3.0/dist/aframe-orbit-controls.min.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;a-scene reflection shadow="type: pcfsoft"&gt;
+        &lt;a-assets&gt;
+            &lt;a-asset-item id="objeto" <a alt="caminho do objeto GLTF com animação nativa">src=</a>"objetos/mushroom/scene.gltf"&gt;&lt;/a-asset-item&gt;
+        &lt;/a-assets&gt;
+        &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
+        &lt;a-entity camera orbit-controls="target: 0 0 0; minDistance: 0.05; maxDistance: 180; initialPosition: 1 1 2.5"&gt;&lt;/a-entity&gt;
+        &lt;a-entity position="0 0 0.5" scale="0.5 0.5 0.5"&gt;
+            &lt;a-gltf-model <a alt="referência do objeto">src=</a>"#objeto" shadow animation-mixer&gt;&lt;/a-gltf-model&gt;
+        &lt;/a-entity&gt;
+        &lt;a-box scale="3.5 0.1 3.5" position="0 -0.07 0" shadow color="rgb(100,180,100)"&gt;&lt;/a-box&gt;
+        &lt;a-light type="ambient" color="#white" intensity="0.4"&gt;&lt;/a-light&gt;
+        &lt;a-light type="spot" intensity="0.7" color="white" position="-1 2 1" angle="80" rotation="-90 0 0" penumbra="0.7" light="castShadow:true;"&gt;&lt;/a-light&gt;
+    &lt;/a-scene&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="051" name="sl">
+			   <label for="051"></label>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo19d.htm" title="Interações com objetos" frameborder="0" loading="lazy"></iframe></div>
+			   <figcaption>Primeiro exemplo de objeto GLTF com animação nativa na cena.<br><a href="modulo8/exemplo19d.htm" target="_blank">&#x1f517; link da página</a></figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="052" name="sl">
+			   <label for="052"></label>
+			   <div class="embed-container"><iframe width="100%" src="modulo9/exemplo3aVR.htm" title="Interações com objetos" frameborder="0" loading="lazy"></iframe></div>
+			   <figcaption>Segundo exemplo de objeto GLTF com animação nativa na cena.<br><a href="modulo9/exemplo3aVR.htm" target="_blank">&#x1f517; link da página</a></figcaption>
+		   </li>
+		</ul>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
+  </details></div>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-137b.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-138.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>

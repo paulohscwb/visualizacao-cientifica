@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
@@ -9,15 +10,12 @@
 		<a-assets>
 			<a-asset-item id="objeto" src="objetos/mushroom/scene.gltf"></a-asset-item>
 		</a-assets>
-		
 		<a-sky color="#66ccff"></a-sky>
 		<a-entity camera orbit-controls="target: 0 0 0; minDistance: 0.05; maxDistance: 180; initialPosition: 1 1 2.5"></a-entity>
-			
 		<a-entity position="0 0 0.5" scale="0.5 0.5 0.5">
 			<a-gltf-model src="#objeto" shadow animation-mixer></a-gltf-model>
 		</a-entity>
 		<a-box scale="3.5 0.1 3.5" position="0 -0.07 0" shadow color="rgb(100,180,100)"></a-box>
-		
 		<a-light type="ambient" color="#white" intensity="0.4"></a-light>
 		<a-light type="spot" intensity="0.7" color="white" position="-1 2 1" angle="80" rotation="-90 0 0" penumbra="0.7" light="castShadow:true;"></a-light>
     </a-scene>
