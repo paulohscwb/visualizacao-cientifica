@@ -3,13 +3,13 @@
 
 newmtl Standard_7
 	Ns 15
-	Ni 1
+	Ni 2
 	d 1
 	Tr 0
 	Tf 1 1 1 
 	illum 2
-	Ka 1.1 1.1 1.1
-	Kd 1.1 1.1 1.1
+	Ka 0.8 0.8 0.8
+	Kd 0.8 0.8 0.8
 	Ks 0.2 0.2 0.2
 	Ke 0.1 0.1 0.1
 	map_Ka bowling.jpg
