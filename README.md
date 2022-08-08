@@ -3461,19 +3461,19 @@ p.show()
 <pre><code id="cod102">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
-	&lt;title&gt;Interações com objetos de uma cena&lt;/title&gt;
-	<a alt="referência da biblioteca com suporte de interações">&lt;script src="https://aframe.io/releases/1.1.0/aframe.min.js"&gt;&lt;/script&gt;</a>
-	<a alt="biblioteca de interação">&lt;script src="https://unpkg.com/aframe-event-set-component@^4.1.1/dist/aframe-event-set-component.min.js"&gt;&lt;/script&gt;</a>
-	<a alt="biblioteca de constroles par movimentar objetos">&lt;script src="https://unpkg.com/super-hands@^3.0.3/dist/super-hands.min.js"&gt;&lt;/script&gt;</a>
-	<a alt="biblioteca de teleporte">&lt;script src="https://fernandojsg.github.io/aframe-teleport-controls/dist/aframe-teleport-controls.min.js"&gt;&lt;/script&gt;</a>
-	<a alt="biblioteca de propriedades físicas">&lt;script src="https://rawgit.com/donmccurdy/aframe-physics-system/v3.2.0/dist/aframe-physics-system.min.js"&gt;&lt;/script&gt;</a>
-	<a alt="biblioteca com propriedades físicas adicionais">&lt;script src="https://unpkg.com/aframe-physics-extras@0.1.2/dist/aframe-physics-extras.min.js"&gt;&lt;/script&gt;</a>
+    &lt;title&gt;Interações com objetos de uma cena&lt;/title&gt;
+    <a alt="referência da biblioteca com suporte de interações">&lt;script src="https://aframe.io/releases/1.1.0/aframe.min.js"&gt;&lt;/script&gt;</a>
+    <a alt="biblioteca de interação">&lt;script src="https://unpkg.com/aframe-event-set-component@^4.1.1/dist/aframe-event-set-component.min.js"&gt;&lt;/script&gt;</a>
+    <a alt="biblioteca de constroles par movimentar objetos">&lt;script src="https://unpkg.com/super-hands@^3.0.3/dist/super-hands.min.js"&gt;&lt;/script&gt;</a>
+    <a alt="biblioteca de teleporte">&lt;script src="https://fernandojsg.github.io/aframe-teleport-controls/dist/aframe-teleport-controls.min.js"&gt;&lt;/script&gt;</a>
+    <a alt="biblioteca de propriedades físicas">&lt;script src="https://rawgit.com/donmccurdy/aframe-physics-system/v3.2.0/dist/aframe-physics-system.min.js"&gt;&lt;/script&gt;</a>
+    <a alt="biblioteca com propriedades físicas adicionais">&lt;script src="https://unpkg.com/aframe-physics-extras@0.1.2/dist/aframe-physics-extras.min.js"&gt;&lt;/script&gt;</a>
   &lt;/head&gt;
   &lt;body&gt;
     &lt;a-scene physics shadow="type: pcfsoft"&gt;
         &lt;a-assets&gt;
-           &lt;a-mixin id="cubo" geometry="primitive: box; width: 0.5; height: 0.5; depth: 0.5;" <a alt="propriedades para os cubos móveis">
-             hoverable grabbable stretchable draggable droppable</a> event-set__hoveron="_event: hover-start; 
+           &lt;a-mixin id="cubo" geometry="primitive: box; width: 0.5; height: 0.5; depth: 0.5;" 
+             <a alt="propriedades para os cubos móveis">hoverable grabbable stretchable draggable droppable</a> event-set__hoveron="_event: hover-start; 
              material.opacity: 0.7; transparent: true" event-set__hoveroff="_event: hover-end; 
              material.opacity: 1; transparent: false" <a alt="propriedades físicas dos cubos">dynamic-body=</a>"linearDamping:0.1; 
              angularDamping:0.8; mass:0.5;" shadow&gt;&lt;/a-mixin&gt;
