@@ -3410,7 +3410,8 @@ p.show()
             &lt;a-mixin <a alt="propriedades dos rótulos">id="texto"</a> text="width: 4; side:double; color: black" rotation="-25 0 0"&gt;
         &lt;/a-assets&gt;
         &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
-        &lt;a-entity camera orbit-controls="target: 0 1 0.7; minDistance: 0.5; maxDistance: 180; initialPosition: 0 1.6 3"&gt;&lt;/a-entity&gt;
+        &lt;a-entity camera orbit-controls="target: 0 1 0.7; minDistance: 0.5; maxDistance: 180; 
+        initialPosition: 0 1.6 3"&gt;&lt;/a-entity&gt;
         &lt;a-entity <a alt="tag para agrupar os elementos do poliedro">id="piramide_pentagonal_reta"</a>&gt;
            <a alt="rótulos dos vértices">&lt;a-text</a> position="-0.2 0 0" value="A" mixin="texto"&gt;&lt;/a-text&gt;
            &lt;a-text position="1.1 0 0" value="B" mixin="texto"&gt;&lt;/a-text&gt;
@@ -3418,10 +3419,14 @@ p.show()
            &lt;a-text position="0.5 0 1.5" value="D" mixin="texto"&gt;&lt;/a-text&gt;
            &lt;a-text position="-0.45 0 0.95" value="E" mixin="texto"&gt;&lt;/a-text&gt;
            &lt;a-text position="0.5 2.1 0.7" value="V" mixin="texto"&gt;&lt;/a-text&gt;
-           &lt;a-entity <a alt="sequência dos vértices da base da pirâmide">faceset=</a>"vertices: 0 0 0  1 0 0  1.31 0 0.95  0.5 0 1.5  -0.31 0 0.95" mixin="cor1 padrao"&gt;&lt;/a-entity&gt;
-           &lt;a-entity <a alt="sequência dos vértices das faces laterais">faceset=</a>"vertices: 0 0 0  1 0 0  1.31 0 0.95  0.5 0 1.5  -0.31 0 0.95  0.5 2 0.7; <a alt="projeção ortogonal ao eixo y">projectdir:y"</a>  mixin="cor1 padrao"&gt;&lt;/a-entity&gt;
-           &lt;a-entity <a alt="arestas do poliedro">faceset=</a>"vertices: 0 0 0  1 0 0  1.31 0 0.95  0.5 0 1.5  -0.31 0 0.95  0.5 2 0.7; projectdir:y" mixin="aramado"&gt;&lt;/a-entity&gt;
-           &lt;a-entity <a alt="linhas que representam a altura e a projeção da aresta VD">line=</a>"start: 0.5 2 0.7; end: 0.5 0 0.7; color: white" line__2="start: 0.5 0 0.7; end: 0.5 0 1.5; color: white"&gt;&lt;/a-entity&gt;
+           &lt;a-entity <a alt="sequência dos vértices da base da pirâmide">faceset=</a>"vertices: 0 0 0  1 0 0  1.31 0 0.95  0.5 0 1.5  -0.31 0 0.95" 
+           mixin="cor1 padrao"&gt;&lt;/a-entity&gt;
+           &lt;a-entity <a alt="sequência dos vértices das faces laterais">faceset=</a>"vertices: 0 0 0  1 0 0  1.31 0 0.95  0.5 0 1.5  -0.31 0 0.95  0.5 2 0.7;
+           <a alt="projeção ortogonal ao eixo y">projectdir:y"</a>  mixin="cor1 padrao"&gt;&lt;/a-entity&gt;
+           &lt;a-entity <a alt="arestas do poliedro">faceset=</a>"vertices: 0 0 0  1 0 0  1.31 0 0.95  0.5 0 1.5  -0.31 0 0.95  0.5 2 0.7; 
+           projectdir:y" mixin="aramado"&gt;&lt;/a-entity&gt;
+           &lt;a-entity <a alt="linhas que representam a altura e a projeção da aresta VD">line=</a>"start: 0.5 2 0.7; end: 0.5 0 0.7; color: white" 
+           line__2="start: 0.5 0 0.7; end: 0.5 0 1.5; color: white"&gt;&lt;/a-entity&gt;
         &lt;/a-entity&gt;
         &lt;a-light type="ambient" color="#eaeaea" intensity="0.3"&gt;&lt;/a-light&gt;
         &lt;a-light type="spot" intensity="0.6" position="1 1 3" light="castShadow:true"&gt;&lt;/a-light&gt;
@@ -3456,44 +3461,48 @@ p.show()
 <pre><code id="cod102">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
-    <a alt="referência da biblioteca com suporte do faceset">&lt;script src="https://aframe.io/releases/1.1.0/aframe.min.js"&gt;&lt;/script&gt;</a>
-    &lt;script src="https://unpkg.com/aframe-orbit-controls@1.3.0/dist/aframe-orbit-controls.min.js"&gt;&lt;/script&gt;
-    <a alt="referência da biblioteca faceset">&lt;script src="https://andreasplesch.github.io/aframe-faceset-component/dist/aframe-faceset-component.min.js"&gt;&lt;/script&gt;</a>
+	&lt;title&gt;Interações com objetos de uma cena&lt;/title&gt;
+	<a alt="referência da biblioteca com suporte de interações">&lt;script src="https://aframe.io/releases/1.1.0/aframe.min.js"&gt;&lt;/script&gt;</a>
+	<a alt="referência da biblioteca com interação">&lt;script src="https://unpkg.com/aframe-event-set-component@^4.1.1/dist/aframe-event-set-component.min.js"&gt;&lt;/script&gt;</a>
+	<a alt="referência da biblioteca para movimentar objetos">&lt;script src="https://unpkg.com/super-hands@^3.0.3/dist/super-hands.min.js"&gt;&lt;/script&gt;</a>
+	<a alt="referência da biblioteca de teleporte">&lt;script src="https://fernandojsg.github.io/aframe-teleport-controls/dist/aframe-teleport-controls.min.js"&gt;&lt;/script&gt;</a>
+	<a alt="biblioteca de propriedades físicas">&lt;script src="https://rawgit.com/donmccurdy/aframe-physics-system/v3.2.0/dist/aframe-physics-system.min.js"&gt;&lt;/script&gt;</a>
+	<a alt="biblioteca com propriedades físicas adicionais">&lt;script src="https://unpkg.com/aframe-physics-extras@0.1.2/dist/aframe-physics-extras.min.js"&gt;&lt;/script&gt;</a>
   &lt;/head&gt;
   &lt;body&gt;
-    &lt;a-scene&gt;
+    &lt;a-scene physics shadow="type: pcfsoft"&gt;
         &lt;a-assets&gt;
-            &lt;a-mixin <a alt="propriedade das arestas da pirâmide">id="aramado"</a> material="color: red; wireframe: true; wireframe-linewidth:1;"&gt;&lt;/a-mixin&gt;
-            &lt;a-mixin <a alt="padrão da cor da pirâmide">id="cor1"</a> material="color: #d8ef09"&gt;&lt;/a-mixin&gt;
-            &lt;a-mixin <a alt="propriedades de materiais">id="padrao"</a> material="opacity: 0.5; side: double; metalness:0.3; roughness:0.9;"&gt;&lt;/a-mixin&gt;
-            &lt;a-mixin <a alt="propriedades dos rótulos">id="texto"</a> text="width: 4; side:double; color: black" rotation="-25 0 0"&gt;
+           &lt;a-mixin id="cubo" geometry="primitive: box; width: 0.5; height: 0.5; depth: 0.5;" <a alt="propriedades para os cubos móveis">hoverable grabbable stretchable draggable droppable</a> event-set__hoveron="_event: hover-start; material.opacity: 0.7; transparent: true" event-set__hoveroff="_event: hover-end; material.opacity: 1; transparent: false" <a alt="propriedades físicas dos cubos">dynamic-body=</a>"linearDamping:0.1; angularDamping:0.8; mass:0.5;" shadow&gt;&lt;/a-mixin&gt;
+           &lt;a-mixin id="piso" geometry="primitive: box; width: 10; height: 0.3; depth: 10;" static-body shadow&gt;&lt;/a-mixin&gt;
         &lt;/a-assets&gt;
-        &lt;a-sky color="#66ccff"&gt;&lt;/a-sky&gt;
-        &lt;a-entity camera orbit-controls="target: 0 1 0.7; minDistance: 0.5; maxDistance: 180; initialPosition: 0 1.6 3"&gt;&lt;/a-entity&gt;
-        &lt;a-entity <a alt="tag para agrupar os elementos do poliedro">id="piramide_pentagonal_reta"</a>&gt;
-           <a alt="rótulos dos vértices">&lt;a-text</a> position="-0.2 0 0" value="A" mixin="texto"&gt;&lt;/a-text&gt;
-           &lt;a-text position="1.1 0 0" value="B" mixin="texto"&gt;&lt;/a-text&gt;
-           &lt;a-text position="1.31 0 0.95" value="C" mixin="texto"&gt;&lt;/a-text&gt;
-           &lt;a-text position="0.5 0 1.5" value="D" mixin="texto"&gt;&lt;/a-text&gt;
-           &lt;a-text position="-0.45 0 0.95" value="E" mixin="texto"&gt;&lt;/a-text&gt;
-           &lt;a-text position="0.5 2.1 0.7" value="V" mixin="texto"&gt;&lt;/a-text&gt;
-           &lt;a-entity <a alt="sequência dos vértices da base da pirâmide">faceset=</a>"vertices: 0 0 0  1 0 0  1.31 0 0.95  0.5 0 1.5  -0.31 0 0.95" mixin="cor1 padrao"&gt;&lt;/a-entity&gt;
-           &lt;a-entity <a alt="sequência dos vértices das faces laterais">faceset=</a>"vertices: 0 0 0  1 0 0  1.31 0 0.95  0.5 0 1.5  -0.31 0 0.95  0.5 2 0.7; <a alt="projeção ortogonal ao eixo y">projectdir:y"</a>  mixin="cor1 padrao"&gt;&lt;/a-entity&gt;
-           &lt;a-entity <a alt="arestas do poliedro">faceset=</a>"vertices: 0 0 0  1 0 0  1.31 0 0.95  0.5 0 1.5  -0.31 0 0.95  0.5 2 0.7; projectdir:y" mixin="aramado"&gt;&lt;/a-entity&gt;
-           &lt;a-entity <a alt="linhas que representam a altura e a projeção da aresta VD">line=</a>"start: 0.5 2 0.7; end: 0.5 0 0.7; color: white" line__2="start: 0.5 0 0.7; end: 0.5 0 1.5; color: white"&gt;&lt;/a-entity&gt;
+        &lt;a-entity <a alt="interações conectadas com a câmera">id="cameraRig"</a>&gt;
+           &lt;a-camera look-controls wasd-controls position="0 1 2"
+			<a alt="interação com o cursor do mouse">capture-mouse raycaster=</a>"objects: .cubo" cursor="rayOrigin:mouse" static-body="shape: sphere; sphereRadius: 0.001" <a alt="propriedades de colisão e rastreamento">super-hands=</a>"colliderEvent: raycaster-intersection; colliderEventProperty: els; colliderEndEvent:raycaster-intersection-cleared; colliderEndEventProperty: clearedEls;"&gt;
+           &lt;/a-camera&gt;
+           &lt;a-entity <a alt="teleporte nos cubos e no piso">teleport-controls=</a>"cameraRig: #cameraRig; collisionEntities: [mixin='cubo'], [mixin='piso']" <a alt="óculos gear e daydream">gearvr-controls daydream-controls</a>&gt;&lt;/a-entity&gt;
+           &lt;a-entity <a alt="controle de raio laser">laser-controls</a> raycaster="showLine:true; far:3;" line="color:rgb(0,255,0); opacity:0.33;"&gt;&lt;/a-entity&gt;
+           &lt;a-entity <a alt="controles de manipulação da mão esquerda">oculus-touch-controls=</a>"hand: left"&gt;&lt;/a-entity&gt;
+           &lt;a-entity <a alt="controles de manipulação da mão direita">oculus-touch-controls=</a>"hand: right"&gt;&lt;/a-entity&gt;
         &lt;/a-entity&gt;
-        &lt;a-light type="ambient" color="#eaeaea" intensity="0.3"&gt;&lt;/a-light&gt;
-        &lt;a-light type="spot" intensity="0.6" position="1 1 3" light="castShadow:true"&gt;&lt;/a-light&gt;
+        <a alt="posições dos objetos na cena">&lt;a-entity mixin="piso"</a> class="piso" position="0 -1 0" material="color: rgb(100,180,100)"&gt;&lt;/a-entity&gt;
+        &lt;a-entity class="cubo" mixin="cubo" position="0 1 -1.25" material="color: red"&gt;&lt;/a-entity&gt;
+        &lt;a-entity class="cubo" mixin="cubo" position="0 1.6 -1.5" material="color: red"&gt;&lt;/a-entity&gt;
+        &lt;a-entity class="cubo" mixin="cubo" position="-0.9 1 -0.9" material="color: blue"&gt;&lt;/a-entity&gt;
+        &lt;a-entity class="cubo" mixin="cubo" position="-1 1.6 -1" material="color: blue"&gt;&lt;/a-entity&gt;
+        &lt;a-entity class="cubo" mixin="cubo" position="0.9 1 -0.9" material="color: green"&gt;&lt;/a-entity&gt;
+        &lt;a-entity class="cubo" mixin="cubo" position="1 1.6 -1" material="color: green"&gt;&lt;/a-entity&gt;
+        &lt;a-light type="spot" intensity="0.8" color="white" position="1 3 0" angle="60" rotation="-90 0 0" penumbra="0.5" light="castShadow:true;"&gt;&lt;/a-light&gt;
+        &lt;a-light type="ambient" intensity="0.5" color="white"&gt;&lt;/a-light&gt;
     &lt;/a-scene&gt;
   &lt;/body&gt;
 &lt;/html&gt;
 </code></pre></figcaption>
 		   </li>
 		   <li>
-			   <input type="radio" id="045" name="sl">
-			   <label for="045"></label>
-			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo17.htm" title="Representação de uma pirâmide" frameborder="0" loading="lazy"></iframe></div>
-			   <figcaption>Representação de uma pirâmide com rótulos nos vértices, altura e projeção de uma aresta na base.<br><a href="modulo8/exemplo17.htm" target="_blank">&#x1f517; link da página</a></figcaption>
+			   <input type="radio" id="047" name="sl">
+			   <label for="047"></label>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo18a.htm" title="Interações com objetos" frameborder="0" loading="lazy"></iframe></div>
+			   <figcaption>Interações com cubos em uma cena.<br><a href="modulo8/exemplo18a.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
 		<img src="modulo6/1.png" class="fundo" style="visibility:hidden;"/>
