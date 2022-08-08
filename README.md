@@ -2559,8 +2559,8 @@ p.show()
 		   <li>
 			   <input type="radio" id="006" name="sl">
 			   <label for="006"></label>
-			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo1a.htm" title="Cena de RV com um cubo" frameborder="0" loading="lazy"></iframe></div>
-			   <figcaption>Cena de RV com um cubo, com ambiente forest.<br><a href="modulo8/exemplo1a.htm" target="_blank">&#x1f517; link da página</a></figcaption>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo1a.htm" srcDoc='<a href="modulo8/exemplo1a.htm" target="_blank">&#x1f517; link da página</a>' title="Cena de RV com um cubo" frameborder="0" loading="lazy"></iframe></div>
+			   <figcaption>Cena de RV com um cubo, com ambiente forest.</figcaption>
 		   </li>
 		   <li>
 			   <input type="radio" id="007" name="sl">
