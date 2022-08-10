@@ -4050,6 +4050,10 @@ p.show()
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-147a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-148.png" loading="lazy"/>
+	<div class="combo"><details class="sub"><summary>&#x1f517; Links</summary>
+  <figcaption>Padrões de QR codes 3x3 e 4x4: <a href="https://github.com/artoolkit/ARToolKit5/tree/master/doc/patterns" target="_blank">https://github.com/artoolkit/ARToolKit5/tree/master/doc/patterns</a>
+  </figcaption></details></div>
+  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-148.png" loading="lazy"/>
   <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-149.png" loading="lazy"/>
 <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
