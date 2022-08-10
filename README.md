@@ -3993,7 +3993,7 @@ p.show()
     &lt;/div&gt;
   &lt;/body&gt;
 </code></pre></figcaption>
-<br><a href="modulo9/exemplo1.htm" target="_blank">&#x1f517; link da página</a>
+<p><a href="modulo9/exemplo1.htm" target="_blank">&#x1f517; link da página</a></p>
   </details></div>
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-146a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
@@ -4045,7 +4045,7 @@ p.show()
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre></figcaption>
-<br><a href="modulo9/exemplo2aVR.htm" target="_blank">&#x1f517; link da página do helicóptero em RV</a>
+<p><a href="modulo9/exemplo2aVR.htm" target="_blank">&#x1f517; link da página do helicóptero em RV</a></p>
   </details></div>
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-147a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
@@ -4114,7 +4114,7 @@ p.show()
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre></figcaption>
-<br><a href="modulo9/exemplo3.htm" target="_blank">&#x1f517; link da página</a>
+<p><a href="modulo9/exemplo3.htm" target="_blank">&#x1f517; link da página</a></p>
   </details></div>
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-149a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
