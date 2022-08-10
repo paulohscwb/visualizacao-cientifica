@@ -4064,7 +4064,8 @@ p.show()
 &lt;/head&gt;
 
 &lt;body style="margin: 0px; overflow: hidden;"&gt;
-    &lt;a-scene embedded renderer="logarithmicDepthBuffer: true;" arjs='sourceType: webcam; trackingMethod: best; detectionMode: mono_and_matrix; matrixCodeType: 3x3; debugUIEnabled: false;'&gt;
+    &lt;a-scene embedded renderer="logarithmicDepthBuffer: true;" arjs='sourceType: webcam; trackingMethod: best; 
+      <a alt="detecção de marcadores 3x3">detectionMode:</a> mono_and_matrix; matrixCodeType: 3x3; debugUIEnabled: false;'&gt;
         <a alt="caminhos dos arquivos dos objetos da cena RA">&lt;a-assets&gt;</a>
             &lt;a-asset-item id="modelo" src="objetos/helicoptero.glb"&gt;&lt;/a-asset-item&gt;
             &lt;a-asset-item id="modelo1" src="objetos/helicea.glb"&gt;&lt;/a-asset-item&gt;
@@ -4077,10 +4078,12 @@ p.show()
             <a alt="propriedades do objeto que aparecerá sobre o marcador Hiro">&lt;a-entity scale="0.5 0.5 0.5" position="0 0.5 0"&gt;</a>
                 &lt;a-gltf-model src="#modelo"&gt;&lt;/a-gltf-model&gt;
                 &lt;a-entity position="0 0 0"&gt;
-                    &lt;a-gltf-model src="#modelo1" animation="property: rotation; to: 0 360 0; loop: true; dur: 4000; easing: linear"&gt;&lt;/a-gltf-model&gt;
+                    &lt;a-gltf-model src="#modelo1" animation="property: rotation; to: 0 360 0; 
+                      loop: true; dur: 4000; easing: linear"&gt;&lt;/a-gltf-model&gt;
                 &lt;/a-entity&gt;
                 &lt;a-entity position="0.037 1.947 5.267" rotation="10 0 0"&gt;
-                    &lt;a-gltf-model src="#modelo2" animation="property: rotation; to: 360 0 0; loop: true; dur: 3200; easing: linear"&gt;&lt;/a-gltf-model&gt;
+                    &lt;a-gltf-model src="#modelo2" animation="property: rotation; to: 360 0 0; 
+                      loop: true; dur: 3200; easing: linear"&gt;&lt;/a-gltf-model&gt;
                 &lt;/a-entity&gt;
             &lt;/a-entity&gt;
         &lt;/a-marker&gt;
