@@ -3898,10 +3898,10 @@ p.show()
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod109', 'cd109')" onmouseout="outFunc('cd109')"><span class="tooltiptext" id="cd109">Copiar o código</span></button></div>Cabeçalho da página em RA de rastreamento de faces
 <pre><code id="cod109">  &lt;head&gt;
     &lt;meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"&gt;
-    &lt;a alt="referências das bibliotecas para rastreamento de faces"&gt;&lt;script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-face.prod.js"&gt;&lt;/script&gt;&lt;/a&gt;
+    <a alt="referências das bibliotecas para rastreamento de faces">&lt;script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-face.prod.js"&gt;&lt;/script&gt;&lt;/a&gt;
     &lt;script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-face-aframe.prod.js"&gt;&lt;/script&gt;
-    &lt;a alt="versão do aframe com suporte"&gt;&lt;script src="https://aframe.io/releases/1.2.0/aframe.min.js"&gt;&lt;/script&gt;&lt;/a&gt;
-    &lt;a alt="função para trocar os objetos GLTF que aparecem na cena"&gt;&lt;script&gt;&lt;/a&gt;
+    <a alt="versão do aframe com suporte">&lt;script src="https://aframe.io/releases/1.2.0/aframe.min.js"&gt;&lt;/script&gt;</a>
+    <a alt="função para trocar os objetos GLTF que aparecem na cena">&lt;script&gt;</a>
       document.addEventListener("DOMContentLoaded", function() {
     const list = ["glasses1", "glasses2", "hat1", "hat2", "earring"];
     const visibles = [true, false, false, true, true];
@@ -3926,11 +3926,12 @@ p.show()
     });
       })
     &lt;/script&gt;
-    &lt;a alt="folha de estilos para posicionar os botões para escolha dos objetos da cena"&gt;&lt;style&gt;&lt;/a&gt;
+    <a alt="folha de estilos para posicionar os botões para escolha dos objetos da cena">&lt;style&gt;</a>
       body {margin: 0;}
       .example-container {overflow: hidden; position: absolute; width: 100%; height: 100%;}
       .options-panel {position: fixed; left: 0; top: 0; z-index: 2;}
-      .options-panel img {border: solid 2px; width: 50px; height: 50px;	object-fit: cover; cursor: pointer;}
+      .options-panel img {border: solid 2px; width: 50px; height: 50px;	object-fit: cover; 
+        cursor: pointer;}
       .options-panel img.selected {border-color: green;}
     &lt;/style&gt;
   &lt;/head&gt;
