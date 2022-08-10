@@ -253,10 +253,10 @@ plt.show()
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-25.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f517; Links</summary>
-  <figcaption>Conjunto Iris: <a href="https://archive.ics.uci.edu/ml/datasets/iris" target="_blank">https://archive.ics.uci.edu/ml/datasets/iris</a>
+  <p>Conjunto Iris: <a href="https://archive.ics.uci.edu/ml/datasets/iris" target="_blank">https://archive.ics.uci.edu/ml/datasets/iris</a>
   <br>Conjunto dos Pinguins: <a href="https://inria.github.io/scikit-learn-mooc/python_scripts/trees_dataset.html" target="_blank">https://inria.github.io/scikit-learn-mooc/python_scripts/trees_dataset.html</a>
   <br>Outros conjuntos de dados: <a href="https://www.maptive.com/free-data-visualization-data-sets/" target="_blank">https://www.maptive.com/free-data-visualization-data-sets/</a>
-  </figcaption></details></div>
+  </p></details></div>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-25a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-26.png" loading="lazy"/>
@@ -4050,9 +4050,9 @@ p.show()
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-147a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-148.png" loading="lazy"/>
-	<div class="combo"><details class="sub"><summary>&#x1f517; Links</summary>
-  <figcaption>Padrões de QR codes 3x3 e 4x4: <a href="https://github.com/artoolkit/ARToolKit5/tree/master/doc/patterns" target="_blank">https://github.com/artoolkit/ARToolKit5/tree/master/doc/patterns</a>
-  </figcaption></details></div>
+	<div class="combo"><details class="sub"><summary>&#x1f517; Link</summary>
+  <p>Padrões de QR codes 3x3 e 4x4: <a href="https://github.com/artoolkit/ARToolKit5/tree/master/doc/patterns" target="_blank">https://github.com/artoolkit/ARToolKit5/tree/master/doc/patterns</a>
+  </p></details></div>
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-148.png" loading="lazy"/>
   <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-149.png" loading="lazy"/>
