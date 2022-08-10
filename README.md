@@ -4004,9 +4004,9 @@ p.show()
 &lt;head&gt;
     &lt;meta charset='utf-8'&gt;
     &lt;meta http-equiv='X-UA-Compatible' content='IE=edge'&gt;
-	&lt;meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"&gt;
+    &lt;meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"&gt;
     <a alt="referência da biblioteca aframe com suporte">&lt;script src="https://aframe.io/releases/1.2.0/aframe.min.js"&gt;&lt;/script&gt;</a>
-	<a alt="biblioteca de RA baseada em localização">&lt;script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"&gt;&lt;/script&gt;</a>
+    <a alt="biblioteca de RA baseada em localização">&lt;script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"&gt;&lt;/script&gt;</a>
     <a alt="biblioteca da criação da cena em RA">&lt;script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"&gt;&lt;/script&gt;</a>
     &lt;script&gt;
         THREEx.ArToolkitContext.baseURL = 'https://raw.githack.com/jeromeetienne/ar.js/master/three.js/'
@@ -4026,10 +4026,12 @@ p.show()
             <a alt="propriedades do objeto na cena">&lt;a-entity rotation="0 120 0" scale="0.4 0.4 0.4"&gt; </a>
                 &lt;a-gltf-model src="#modelo"&gt;&lt;/a-gltf-model&gt;
                 &lt;a-entity position="0 0 0"&gt;
-                    &lt;a-gltf-model src="#modelo1" <a alt="animação da hélice">animation=</a>"property: rotation; to: 0 360 0; loop: true; dur: 4000; easing: linear"&gt;&lt;/a-gltf-model&gt;
+                    &lt;a-gltf-model src="#modelo1" <a alt="animação da primeira hélice">animation=</a>"property: rotation; to: 0 360 0; 
+                      loop: true; dur: 4000; easing: linear"&gt;&lt;/a-gltf-model&gt;
                 &lt;/a-entity&gt;
                 &lt;a-entity position="0.037 1.947 5.267" rotation="10 0 0"&gt;
-                    &lt;a-gltf-model src="#modelo2" <a alt="animação da hélice">animation=</a>"property: rotation; to: 360 0 0; loop: true; dur: 3200; easing: linear"&gt;&lt;/a-gltf-model&gt;
+                    &lt;a-gltf-model src="#modelo2" <a alt="animação da segunda hélice">animation=</a>"property: rotation; to: 360 0 0; 
+                      loop: true; dur: 3200; easing: linear"&gt;&lt;/a-gltf-model&gt;
                 &lt;/a-entity&gt;
             &lt;/a-entity&gt;
         &lt;/a-entity&gt;
@@ -4048,6 +4050,63 @@ p.show()
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-148.png" loading="lazy"/>
   <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-149.png" loading="lazy"/>
+<div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod112', 'cd112')" onmouseout="outFunc('cd112')"><span class="tooltiptext" id="cd112">Copiar o código</span></button></div>Código da página em RA baseada em marcadores QR codes impressos
+<pre><code id="cod112">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge" /&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"&gt;
+    <a alt="referências das bibliotecas aframe e de RA">&lt;script src="https://aframe.io/releases/1.2.0/aframe.min.js"&gt;&lt;/script&gt;</a>
+    &lt;script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"&gt;&lt;/script&gt;
+    <a alt="biblioteca de animação nativa de arquivos GLTF">&lt;script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"&gt;&lt;/script&gt;</a>
+&lt;/head&gt;
+
+&lt;body style="margin: 0px; overflow: hidden;"&gt;
+    &lt;a-scene embedded renderer="logarithmicDepthBuffer: true;" arjs='sourceType: webcam; trackingMethod: best; detectionMode: mono_and_matrix; matrixCodeType: 3x3; debugUIEnabled: false;'&gt;
+        <a alt="caminhos dos arquivos dos objetos da cena RA">&lt;a-assets&gt;</a>
+            &lt;a-asset-item id="modelo" src="objetos/helicoptero.glb"&gt;&lt;/a-asset-item&gt;
+            &lt;a-asset-item id="modelo1" src="objetos/helicea.glb"&gt;&lt;/a-asset-item&gt;
+            &lt;a-asset-item id="modelo2" src="objetos/heliceb.glb"&gt;&lt;/a-asset-item&gt;
+            &lt;a-asset-item id="modelo3" src="objetos/lamp2/scene.gltf"&gt;&lt;/a-asset-item&gt;
+            &lt;a-asset-item id="modelo4" src="objetos/evening/scene.gltf"&gt;&lt;/a-asset-item&gt;
+        &lt;/a-assets&gt;
+
+        &lt;a-marker preset="hiro"&gt;
+            <a alt="propriedades do objeto que aparecerá sobre o marcador Hiro">&lt;a-entity scale="0.5 0.5 0.5" position="0 0.5 0"&gt;</a>
+                &lt;a-gltf-model src="#modelo"&gt;&lt;/a-gltf-model&gt;
+                &lt;a-entity position="0 0 0"&gt;
+                    &lt;a-gltf-model src="#modelo1" animation="property: rotation; to: 0 360 0; loop: true; dur: 4000; easing: linear"&gt;&lt;/a-gltf-model&gt;
+                &lt;/a-entity&gt;
+                &lt;a-entity position="0.037 1.947 5.267" rotation="10 0 0"&gt;
+                    &lt;a-gltf-model src="#modelo2" animation="property: rotation; to: 360 0 0; loop: true; dur: 3200; easing: linear"&gt;&lt;/a-gltf-model&gt;
+                &lt;/a-entity&gt;
+            &lt;/a-entity&gt;
+        &lt;/a-marker&gt;
+		
+        &lt;a-marker type="barcode" value="20"&gt;
+            <a alt="propriedades do objeto que aparecerá sobre o marcador #20">&lt;a-entity scale="0.5 0.5 0.5" position="0 0.05 0"&gt;</a>
+                &lt;a-gltf-model src="#modelo3"&gt;&lt;/a-gltf-model&gt;
+            &lt;/a-entity&gt;
+        &lt;/a-marker&gt;
+		
+        &lt;a-marker type="barcode" value="10"&gt;
+            <a alt="propriedades do objeto que aparecerá sobre o marcador #10">&lt;a-entity scale="0.01 0.01 0.01" position="0 0.05 0"&gt;</a>
+                &lt;a-gltf-model src="#modelo4" animation-mixer&gt;&lt;/a-gltf-model&gt;
+            &lt;/a-entity&gt;
+        &lt;/a-marker&gt;
+		
+        <a alt="inserção da câmera e da iluminação da cena">&lt;a-entity camera&gt;&lt;/a-entity&gt;</a>
+        &lt;a-light type="ambient" color="white" intensity="2"&gt;&lt;/a-light&gt;
+        &lt;a-light type="directional" color="white" intensity="1.5" position="-1 1 1"&gt;&lt;/a-light&gt;
+        &lt;a-light type="directional" color="white" intensity="1.5" position="1 1 1"&gt;&lt;/a-light&gt;
+    &lt;/a-scene&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-149a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-150.png" loading="lazy"/>
   <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
