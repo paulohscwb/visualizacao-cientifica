@@ -3894,6 +3894,49 @@ p.show()
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-144.png" loading="lazy"/>
   <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-145.png" loading="lazy"/>
+<div class="combo"><details class="sub"><summary>&#x1f4c3; Código do cabeçalho</summary>
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod109', 'cd109')" onmouseout="outFunc('cd109')"><span class="tooltiptext" id="cd109">Copiar o código</span></button></div>Cabeçalho da página em RA de rastreamento de faces
+<pre><code id="cod109">  &lt;head&gt;
+    &lt;meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"&gt;
+    &lt;a alt="referências das bibliotecas para rastreamento de faces"&gt;&lt;script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-face.prod.js"&gt;&lt;/script&gt;&lt;/a&gt;
+    &lt;script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-face-aframe.prod.js"&gt;&lt;/script&gt;
+    &lt;a alt="versão do aframe com suporte"&gt;&lt;script src="https://aframe.io/releases/1.2.0/aframe.min.js"&gt;&lt;/script&gt;&lt;/a&gt;
+    &lt;a alt="função para trocar os objetos GLTF que aparecem na cena"&gt;&lt;script&gt;&lt;/a&gt;
+      document.addEventListener("DOMContentLoaded", function() {
+    const list = ["glasses1", "glasses2", "hat1", "hat2", "earring"];
+    const visibles = [true, false, false, true, true];
+    const setVisible = (button, entities, visible) =&gt; {
+      if (visible) {
+        button.classList.add("selected");
+      } else {
+        button.classList.remove("selected");
+      }
+      entities.forEach((entity) =&gt; {
+        entity.setAttribute("visible", visible);
+      });
+    }
+    list.forEach((item, index) =&gt; {
+      const button = document.querySelector("#" + item);
+      const entities = document.querySelectorAll("." + item + "-entity");
+      setVisible(button, entities, visibles[index]);
+      button.addEventListener('click', () =&gt; {
+        visibles[index] = !visibles[index];
+        setVisible(button, entities, visibles[index]);
+      });
+    });
+      })
+    &lt;/script&gt;
+    &lt;a alt="folha de estilos para posicionar os botões para escolha dos objetos da cena"&gt;&lt;style&gt;&lt;/a&gt;
+      body {margin: 0;}
+      .example-container {overflow: hidden; position: absolute; width: 100%; height: 100%;}
+      .options-panel {position: fixed; left: 0; top: 0; z-index: 2;}
+      .options-panel img {border: solid 2px; width: 50px; height: 50px;	object-fit: cover; cursor: pointer;}
+      .options-panel img.selected {border-color: green;}
+    &lt;/style&gt;
+  &lt;/head&gt;
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-145a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-146.png" loading="lazy"/>
   <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
