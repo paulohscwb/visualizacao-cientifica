@@ -3897,7 +3897,7 @@ p.show()
 <div class="combo"><details class="sub"><summary>&#x1f4c3; Código do cabeçalho</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod109', 'cd109')" onmouseout="outFunc('cd109')"><span class="tooltiptext" id="cd109">Copiar o código</span></button></div>Cabeçalho da página em RA de rastreamento de faces
 <pre><code id="cod109">  &lt;head&gt;
-    &lt;meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"&gt;
+    &lt;meta name="viewport" content="width=device-width, <a alt="impede distorções dos objetos">user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"&gt;</a>
     <a alt="referências das bibliotecas para rastreamento de faces">&lt;script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-face.prod.js"&gt;&lt;/script&gt;</a>
     &lt;script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-face-aframe.prod.js"&gt;&lt;/script&gt;
     <a alt="versão do aframe com suporte">&lt;script src="https://aframe.io/releases/1.2.0/aframe.min.js"&gt;&lt;/script&gt;</a>
@@ -3961,26 +3961,33 @@ p.show()
           &lt;a-asset-item id="earringModel" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/examples/face-tracking/assets/earring/scene.gltf"&gt;&lt;/a-asset-item&gt;
         &lt;/a-assets&gt;
         &lt;a-camera active="false" position="0 0 0"&gt;&lt;/a-camera&gt;
-        <a alt="inserção do objeto escolhido, de acordo com o índice selecionado">&lt;a-entity mindar-face-target="anchorIndex: 168"&gt;</a>
-            &lt;a-gltf-model mindar-face-occluder position="0 -0.3 0.15"rotation="0 0 0" scale="0.065 0.065 0.065" src="#headModel"&gt;&lt;/a-gltf-model&gt;
+        <a alt="modelo de uma face, usado para o rastreamento">&lt;a-entity mindar-face-target="anchorIndex: 168"&gt;</a>
+            &lt;a-gltf-model mindar-face-occluder position="0 -0.3 0.15" rotation="0 0 0" 
+              scale="0.065 0.065 0.065" src="#headModel"&gt;&lt;/a-gltf-model&gt;
+        &lt;/a-entity&gt;
+        <a alt="inserção do objeto escolhido, de acordo com o índice selecionado">&lt;a-entity mindar-face-target="anchorIndex: 10"&gt;</a>
+            &lt;a-gltf-model rotation="0 -0 0" position="0 1.0 -0.5" 
+              scale="0.35 0.35 0.35" src="#hatModel" class="hat1-entity" visible="false"&gt;&lt;/a-gltf-model&gt;
         &lt;/a-entity&gt;
         &lt;a-entity mindar-face-target="anchorIndex: 10"&gt;
-            &lt;a-gltf-model rotation="0 -0 0" position="0 1.0 -0.5" scale="0.35 0.35 0.35" src="#hatModel" class="hat1-entity" visible="false"&gt;&lt;/a-gltf-model&gt;
-        &lt;/a-entity&gt;
-        &lt;a-entity mindar-face-target="anchorIndex: 10"&gt;
-            &lt;a-gltf-model rotation="0 -0 0" position="0 -0.2 -0.5" scale="0.008 0.008 0.008" src="#hatModel2" class="hat2-entity" visible="false"&gt;&lt;/a-gltf-model&gt;
+            &lt;a-gltf-model rotation="0 -0 0" position="0 -0.2 -0.5" 
+              scale="0.008 0.008 0.008" src="#hatModel2" class="hat2-entity" visible="false"&gt;&lt;/a-gltf-model&gt;
         &lt;/a-entity&gt;
         &lt;a-entity mindar-face-target="anchorIndex: 168"&gt;
-            &lt;a-gltf-model rotation="0 -0 0" position="0 0 0" scale="0.01 0.01 0.01" src="#glassesModel" class="glasses1-entity" visible="false"&gt;&lt;/a-gltf-model&gt;
+            &lt;a-gltf-model rotation="0 -0 0" position="0 0 0" 
+              scale="0.01 0.01 0.01" src="#glassesModel" class="glasses1-entity" visible="false"&gt;&lt;/a-gltf-model&gt;
         &lt;/a-entity&gt;
         &lt;a-entity mindar-face-target="anchorIndex: 168"&gt;
-            &lt;a-gltf-model rotation="0 -90 0" position="0 -0.3 0" scale="0.6 0.6 0.6" src="#glassesModel2" class="glasses2-entity" visible="false"&gt;&lt;/a-gltf-model&gt;
+            &lt;a-gltf-model rotation="0 -90 0" position="0 -0.3 0" 
+              scale="0.6 0.6 0.6" src="#glassesModel2" class="glasses2-entity" visible="false"&gt;&lt;/a-gltf-model&gt;
         &lt;/a-entity&gt;
         &lt;a-entity mindar-face-target="anchorIndex: 127"&gt;
-            &lt;a-gltf-model rotation="-0.1 -0 0" position="0 -0.3 -0.3" scale="0.05 0.05 0.05" src="#earringModel" class="earring-entity" visible="false"&gt;&lt;/a-gltf-model&gt;
+            &lt;a-gltf-model rotation="-0.1 -0 0" position="0 -0.3 -0.3" 
+              scale="0.05 0.05 0.05" src="#earringModel" class="earring-entity" visible="false"&gt;&lt;/a-gltf-model&gt;
         &lt;/a-entity&gt;
         &lt;a-entity mindar-face-target="anchorIndex: 356"&gt;
-            &lt;a-gltf-model rotation="0.1 -0 0" position="0 -0.3 -0.3" scale="0.05 0.05 0.05" src="#earringModel" class="earring-entity" visible="false"&gt;&lt;/a-gltf-model&gt;
+            &lt;a-gltf-model rotation="0.1 -0 0" position="0 -0.3 -0.3" 
+              scale="0.05 0.05 0.05" src="#earringModel" class="earring-entity" visible="false"&gt;&lt;/a-gltf-model&gt;
         &lt;/a-entity&gt;
       &lt;/a-scene&gt;
     &lt;/div&gt;
@@ -3990,6 +3997,53 @@ p.show()
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-146a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-147.png" loading="lazy"/>
+<div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
+  <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod111', 'cd111')" onmouseout="outFunc('cd111')"><span class="tooltiptext" id="cd111">Copiar o código</span></button></div>Código da página em RA baseada em localização
+<pre><code id="cod111">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset='utf-8'&gt;
+    &lt;meta http-equiv='X-UA-Compatible' content='IE=edge'&gt;
+	&lt;meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"&gt;
+    <a alt="referência da biblioteca aframe com suporte">&lt;script src="https://aframe.io/releases/1.2.0/aframe.min.js"&gt;&lt;/script&gt;</a>
+	<a alt="biblioteca de RA baseada em localização">&lt;script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"&gt;&lt;/script&gt;</a>
+    <a alt="biblioteca da criação da cena em RA">&lt;script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"&gt;&lt;/script&gt;</a>
+    &lt;script&gt;
+        THREEx.ArToolkitContext.baseURL = 'https://raw.githack.com/jeromeetienne/ar.js/master/three.js/'
+    &lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body style="margin: 0px; overflow: hidden;"&gt;
+    &lt;a-scene vr-mode-ui="enabled: false" renderer="logarithmicDepthBuffer: true;" embedded arjs='sourceType: webcam; 
+      sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'&gt;
+        <a alt="caminhos dos objetos da cena">&lt;a-assets&gt;</a>
+            &lt;a-asset-item id="modelo" src="objetos/helicoptero.glb"&gt;&lt;/a-asset-item&gt;
+            &lt;a-asset-item id="modelo1" src="objetos/helicea.glb"&gt;&lt;/a-asset-item&gt;
+            &lt;a-asset-item id="modelo2" src="objetos/heliceb.glb"&gt;&lt;/a-asset-item&gt;
+        &lt;/a-assets&gt;
+
+        &lt;a-entity look-at="[gps-camera]" <a alt="insira os valores da latitude e da longitude onde o objeto vai aparecer">gps-entity-place=</a>"latitude: &lt;DIGITE AQUI&gt;; longitude: &lt;DIGITE AQUI&gt;;"&gt;
+            <a alt="propriedades do objeto na cena">&lt;a-entity rotation="0 120 0" scale="0.4 0.4 0.4"&gt; </a>
+                &lt;a-gltf-model src="#modelo"&gt;&lt;/a-gltf-model&gt;
+                &lt;a-entity position="0 0 0"&gt;
+                    &lt;a-gltf-model src="#modelo1" <a alt="animação da hélice">animation=</a>"property: rotation; to: 0 360 0; loop: true; dur: 4000; easing: linear"&gt;&lt;/a-gltf-model&gt;
+                &lt;/a-entity&gt;
+                &lt;a-entity position="0.037 1.947 5.267" rotation="10 0 0"&gt;
+                    &lt;a-gltf-model src="#modelo2" <a alt="animação da hélice">animation=</a>"property: rotation; to: 360 0 0; loop: true; dur: 3200; easing: linear"&gt;&lt;/a-gltf-model&gt;
+                &lt;/a-entity&gt;
+            &lt;/a-entity&gt;
+        &lt;/a-entity&gt;
+		
+        <a alt="propriedades da câmera">&lt;a-camera gps-camera rotation-reader&gt;&lt;/a-camera&gt;</a>
+        <a alt="iluminação da cena">&lt;a-light type=</a>"ambient" color="white" intensity="2"&gt;&lt;/a-light&gt;
+        &lt;a-light type="directional" color="white" intensity="1.5" position="-1 1 1"&gt;&lt;/a-light&gt;
+        &lt;a-light type="directional" color="white" intensity="1.5" position="1 1 1"&gt;&lt;/a-light&gt;
+    &lt;/a-scene&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></figcaption>
+  </details></div>
+  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-147a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-148.png" loading="lazy"/>
   <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
