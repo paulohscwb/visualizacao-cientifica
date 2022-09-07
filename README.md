@@ -144,8 +144,7 @@ z = [2, 7, 11, 5, 3, 1]
 
 <a alt="gráfico de dispersão 3D">ax.scatter(x, y,</a> z, color = 'r', marker = 'o')</a>
 
-<a alt="laço para rotular cada ponto">for x, y, z, tag in zip(x, y, z, rotulos):</a>
-    label = tag
+<a alt="laço para rotular cada ponto">for x, y, z, label in zip(x, y, z, rotulos):</a>
     ax.text3D(x, y, z, label, <a alt="direção dos rótulos: eixo z">zdir = 'z'</a>)
 	
 plt.show()
