@@ -102,8 +102,14 @@ plt.show()
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-15a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-16.png" loading="lazy"/>
+  <div class="combo"><details class="sub"><summary>&#x1f517; Link</summary>
+  <p><a href="https://www.w3schools.com/colors/colors_rgb.asp" target="_blank">https://www.w3schools.com/colors/colors_rgb.asp</a></p></details></div>
+  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-16a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-17.png" loading="lazy"/>
+  <div class="combo"><details class="sub"><summary>&#x1f517; Link</summary>
+  <p><a href="https://www.w3schools.com/colors/colors_names.asp" target="_blank">https://www.w3schools.com/colors/colors_names.asp</a></p></details></div>
+  <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-17a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-18.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
