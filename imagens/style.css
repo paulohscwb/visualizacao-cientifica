@@ -377,5 +377,5 @@ iframe {
   border:none;
   margin: 0 auto;
   display: block;
-  border-radius:7px;
+  border-radius:7px 7px 0 0;
 }
