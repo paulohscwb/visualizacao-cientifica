@@ -75,7 +75,7 @@ return0;
 <a alt="coordenadas x">x =</a> [0, 1, 2, 3, 4, 5]
 <a alt="coordenadas y">y =</a> [1, 4, 9, 16, 32, 64]
 
-<a alt="gráfico de dispersão 2D">plt.scatter</a>(x, y, <a alt="marcador vermelho">color =</a> 'red', <a alt="marcador circular">marker =</a> 'o')</a>
+<a alt="gráfico de dispersão 2D">plt.scatter</a>(x, y, <a alt="marcador vermelho">color =</a> 'red', <a alt="marcador circular">marker =</a> 'o')
 <a alt="comando para visualizar o gráfico">plt.show()</a>
 
 </code></pre></figcaption>
