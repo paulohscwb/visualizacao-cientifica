@@ -123,7 +123,7 @@ y = [1, 4, 9, 16, 32, 64, 128]
 <a alt="laço para rotular cada ponto">for i, txt in enumerate(rotulos):</a>
     plt.annotate(txt, (x[i], y[i]))
 	
-plt.plot(x, y, <a alt="marcador laranja">color =</a> 'orange', <a alt="marcador triângular">marker =</a> '^', <a alt="linha contínua">linestyle =</a> '-')</a>
+plt.plot(x, y, <a alt="marcador laranja">color =</a> 'orange', <a alt="marcador triângular">marker =</a> '^', <a alt="linha contínua">linestyle =</a> '-')
 
 plt.show()
 </code></pre></figcaption>
@@ -142,7 +142,7 @@ y = [1, 4, 9, 16, 32, 64]
 z = [2, 7, 11, 5, 3, 1]
 <a alt="rótulos dos pontos">rotulos =</a> ['A', 'B', 'C', 'D', 'E', 'F']
 
-<a alt="gráfico de dispersão 3D">ax.scatter(x, y,</a> z, color = 'r', marker = 'o')</a>
+<a alt="gráfico de dispersão 3D">ax.scatter(x, y,</a> z, color = 'r', marker = 'o')
 
 <a alt="laço para rotular cada ponto">for x, y, z, label in zip(x, y, z, rotulos):</a>
     ax.text3D(x, y, z, label, <a alt="direção dos rótulos: eixo z">zdir = 'z'</a>)
@@ -158,9 +158,9 @@ import <a alt="biblioteca de operações matemáticas">numpy as np</a>
 
 <a alt="intervalo [0, 5] com espaçamento 0.1">x = np.arange(0, 5, 0.1)</a>
 
-<a alt="função linear">plt.plot</a>(x, x, <a alt="linha tracejada azul">'b--',</a> label = 'y = x')</a>
-<a alt="função linear">plt.plot</a>(x, 2*x+1, <a alt="linha contínua verde">'g-',</a> label = 'y = 2x + 1')</a>
-<a alt="função quadrática">plt.plot</a>(x, x**2+2*x+3, <a alt="linha traço-ponto vermelha">'r-.',</a> label = 'y = x^2 + 2x + 3')</a>
+<a alt="função linear">plt.plot</a>(x, x, <a alt="linha tracejada azul">'b--',</a> label = 'y = x')
+<a alt="função linear">plt.plot</a>(x, 2*x+1, <a alt="linha contínua verde">'g-',</a> label = 'y = 2x + 1')
+<a alt="função quadrática">plt.plot</a>(x, x**2+2*x+3, <a alt="linha traço-ponto vermelha">'r-.',</a> label = 'y = x^2 + 2x + 3')
 
 <a alt="rótulo do eixo x">plt.xlabel('x')</a>
 <a alt="rótulo do eixo y">plt.ylabel('y')</a>
@@ -223,7 +223,7 @@ import numpy as np
 ax = plt.figure().add_subplot(projection = '3d')
 
 d = 5
-<a alt="grid para a variável z">z =</a> np.linspace(-10, 10, 100)</a>
+<a alt="grid para a variável z">z =</a> np.linspace(-10, 10, 100)
 <a alt="equação com parâmetro d para x">x =</a> d * np.sin(z)
 <a alt="equação com parâmetro d para y">y =</a> d * np.cos(z)
 
