@@ -49,6 +49,9 @@
   <summary id="modulo2">2. Conceitos básicos e estruturais de visualização</summary>
   <p>Material da página 14 até a página 24.</p>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-13.png" loading="lazy"/>
+  <div class="embed-container">
+		<iframe width="100%" src="https://www.youtube.com/embed/hH89iocE484" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div> 
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-14.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod1', 'cd1')" onmouseout="outFunc('cd1')"><span class="tooltiptext" id="cd1">Copiar o código</span></button></div>Código em C++ com Matplotlib:
@@ -109,6 +112,9 @@ plt.show()
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-17.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f517; Link</summary>
   <p><a href="https://www.w3schools.com/colors/colors_names.asp" target="_blank">https://www.w3schools.com/colors/colors_names.asp</a></p></details></div>
+  <div class="embed-container">
+		<iframe width="100%" src="https://www.youtube.com/embed/2gt9w7yPI7g" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div> 
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-17a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-18.png" loading="lazy"/>
