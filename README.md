@@ -10,7 +10,7 @@
   <p>Material da página 1 até a página 14.</p>
    <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-0.png" loading="lazy"/>
    <p class="topop"><a href="#modulo1" class="topo">voltar ao topo</a></p>
-   <div class="embed-container">
+   <div class="embed-containerA">
 		<iframe width="100%" src="https://www.youtube.com/embed/9wgs_H7FCzM" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
    </div> 
    <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-1.png" loading="lazy"/>
@@ -32,7 +32,7 @@
    <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-9.png" loading="lazy"/>
    <p class="topop"><a href="#modulo1" class="topo">voltar ao topo</a></p>
    <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-10.png" loading="lazy"/>
-   <div class="embed-container">
+   <div class="embed-containerA">
 		<iframe width="100%" src="https://www.youtube.com/embed/aOVwjCVWx1w" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
    </div>
    <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-10a.png" loading="lazy"/>   
@@ -49,7 +49,7 @@
   <summary id="modulo2">2. Conceitos básicos e estruturais de visualização</summary>
   <p>Material da página 14 até a página 24.</p>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-13.png" loading="lazy"/>
-  <div class="embed-container">
+  <div class="embed-containerA">
 		<iframe width="100%" src="https://www.youtube.com/embed/hH89iocE484" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div> 
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-14.png" loading="lazy"/>
@@ -112,7 +112,7 @@ plt.show()
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-17.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f517; Link</summary>
   <p><a href="https://www.w3schools.com/colors/colors_names.asp" target="_blank">https://www.w3schools.com/colors/colors_names.asp</a></p></details></div>
-  <div class="embed-container">
+  <div class="embed-containerA">
 		<iframe width="100%" src="https://www.youtube.com/embed/2gt9w7yPI7g" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div> 
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-17a.png" loading="lazy"/>
