@@ -267,7 +267,7 @@ plt.show()
   <summary id="modulo3">3. Fundamentos dos dados</summary>
   <p>Material da página 24 até a página 54.</p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-23.png" loading="lazy"/>
-  <div class="embed-containerA">
+  <div class="embed-container">
 		<iframe width="100%" src="https://www.youtube.com/embed/3SN9-o3iP2c" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div> 
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-24.png" loading="lazy"/>
@@ -372,7 +372,7 @@ sns.relplot(data = iris, x = 'Comprimento da Sépala', y = 'Comprimento da Péta
   </details></div>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-28a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
-  <div class="embed-containerA">
+  <div class="embed-container">
 		<iframe width="100%" src="https://www.youtube.com/embed/ZIa_LA38AYg" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-29.png" loading="lazy"/>
@@ -496,7 +496,7 @@ fig.show()
 </code></pre></figcaption>
   </details></div>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
-  <div class="embed-containerA">
+  <div class="embed-container">
 		<iframe width="100%" src="https://www.youtube.com/embed/UigLE_aRPb0" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-37.png" loading="lazy"/>
@@ -714,7 +714,7 @@ plt.show()
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-46.png" loading="lazy"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
-  <div class="embed-containerA">
+  <div class="embed-container">
 		<iframe width="100%" src="https://www.youtube.com/embed/lnIB0oqEe7I" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-47.png" loading="lazy"/>
