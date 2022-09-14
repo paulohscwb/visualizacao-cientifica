@@ -1212,6 +1212,7 @@ import seaborn as sns
 
 pinguin = pd.read_csv('C:/dados/penguin2.csv')
 <a alt="função para criar o gráfico swarm">sns.swarmplot</a>(x = 'Comprimento da nadadeira', y = 'Espécie', <a alt="critério de separação">hue = 'Sexo'</a>, data = pinguin)
+
 </code></pre></figcaption>
   </details></div>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-77b.png" loading="lazy"/>
