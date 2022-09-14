@@ -1196,7 +1196,7 @@ fig.show()
 <pre><code id="cod44">import pandas as pd
 from matplotlib import pyplot as plt
 
-pinguin = pd.read_csv('C:/dados/penguin2.csv', header = 0, <a alt="colunas que contém os dados que serão usados">usecols =</a> [1,3,4,5,6,8])
+pinguin = pd.read_csv('C:/dados/penguin2.csv', header = 0, <a alt="colunas que contém os dados usados">usecols =</a> [1,3,4,5,6,8])
 
 ax = plt.grid(color = '#d5f8e3', linewidth = 0.5)
 fig = <a alt="função para criar o gráfico RadViz">pd.plotting.radviz</a>(pinguin, <a alt="critério de separação dos dados">'Espécie'</a>, colormap = 'rainbow', alpha = 0.6, ax = ax)
