@@ -680,8 +680,11 @@ plt.show()
   </details></div>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-44a.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f517; Link</summary>
-  <p><a href="https://cgl.ethz.ch/research/visualization/data.php" target="_blank">https://cgl.ethz.ch/research/visualization/data.php</a></p></details></div>
+  <p><a href="https://www.bco-dmo.org/dataset/834530" target="_blank">https://www.bco-dmo.org/dataset/834530</a></p></details></div>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-44b.png" loading="lazy"/>
+  <div class="combo"><details class="sub"><summary>&#x1f517; Link</summary>
+  <p><a href="https://raw.githubusercontent.com/plotly/datasets/master/vortex.csv" target="_blank">https://raw.githubusercontent.com/plotly/datasets/master/vortex.csv</a></p></details></div>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-44c.png" loading="lazy"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-45.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
