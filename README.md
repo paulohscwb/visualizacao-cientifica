@@ -785,6 +785,9 @@ fig.show()
   <summary id="modulo4">4. Taxonomia dos dados</summary>
   <p>Material da página 54 até a página 81.</p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-53.png" loading="lazy"/>
+  <div class="embed-containerA">
+		<iframe width="100%" src="https://www.youtube.com/embed/zWIc2NOLsCE" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </div> 
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-54.png" loading="lazy"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-55.png" loading="lazy"/>
@@ -803,6 +806,9 @@ fig.show()
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-62.png" loading="lazy"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
+  <div class="embed-containerA">
+		<iframe width="100%" src="https://www.youtube.com/embed/BxU1DZDSTiY" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </div>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-63.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod31', 'cd31')" onmouseout="outFunc('cd31')"><span class="tooltiptext" id="cd31">Copiar o código</span></button></div>Gráfico radar (polar):
@@ -999,6 +1005,9 @@ plt.show()
   </details></div>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-69a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
+  <div class="embed-containerA">
+		<iframe width="100%" src="https://www.youtube.com/embed/qoVXh9qJuOI" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </div>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-70.png" loading="lazy"/>
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-71.png" loading="lazy"/>
