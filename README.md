@@ -1578,6 +1578,9 @@ plt.show()
   </details></div>
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-88.png" loading="lazy"/>
+  <div class="combo"><details class="sub"><summary>&#x1f517; Link</summary>
+  <p><a href="https://python-graph-gallery.com/371-surface-plot" target="_blank">https://python-graph-gallery.com/371-surface-plot</a></p></details></div>
+  <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-88a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-89.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
