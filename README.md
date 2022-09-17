@@ -1286,6 +1286,9 @@ print(imf)
   <summary id="modulo5">5. Linhas, polígonos, poliedros e superfícies</summary>
   <p>Material da página 81 até a página 92.</p>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-80.png" loading="lazy"/>
+  <div class="embed-container">
+		<iframe width="100%" src="https://www.youtube.com/embed/CV7nSgcqYpU" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-81.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod49', 'cd49')" onmouseout="outFunc('cd49')"><span class="tooltiptext" id="cd49">Copiar o código</span></button></div>Construção de um retângulo:
@@ -1533,6 +1536,9 @@ plt.show()
   </details></div>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-86b.png" loading="lazy"/>
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
+  <div class="embed-container">
+		<iframe width="100%" src="https://www.youtube.com/embed/UZnpu-CP0tI" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-87.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod58', 'cd58')" onmouseout="outFunc('cd58')"><span class="tooltiptext" id="cd58">Copiar o código</span></button></div>Construção de uma superfície com triangulação:
