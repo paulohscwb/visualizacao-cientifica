@@ -535,7 +535,7 @@ df = X.join (y)
 			   <figcaption>Dados com a combinação de 2 variáveis do conjunto Iris com o uso da técnica PCA.</figcaption>
 		   </li>
 		</ul>
-		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
+		<img src="modulo3/pca1.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
   </details></div>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-36b.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
@@ -829,6 +829,115 @@ fig.show()
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-48.png" loading="lazy"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-49.png" loading="lazy"/>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Comandos básicos de dataframe</summary>
+	<p>Exemplos de comandos da biblioteca pandas para dataframes.</p>
+	  <ul class="slider">
+		  <li>
+			   <input type="radio" id="104" name="sl">
+			   <label for="104"></label>
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod997', 'cd997')" onmouseout="outFunc('cd997')"><span class="tooltiptext" id="cd997">Copiar o código</span></button></div>Criando um dataframe:
+<pre><code id="cod997"><a alt="importação das bibliotecas">import pandas as pd</a>
+import numpy as np
+
+<a alt="atributos x1, x2 e x3">x1 = </a>[1,2,1,1,3,4]
+x2 = [7,8,np.nan,6,9,8]
+x3 = [6,6,4,3,9,7]
+<a alt="rótulos de classificação">classificacao =</a> ['Tipo 1','Tipo 1','Tipo 2','Tipo 2','Tipo 3','Tipo 3']
+
+<a alt="criação do dataframe">df =</a> pd.DataFrame ([x1,x2,x3,classificacao], index = ['x1', 'x2', 'x3', 'Classificação']).T
+
+<a alt="visualização do dataframe criado">df</a>
+
+</code></pre>
+<hr>
+<pre><code><a alt="dataframe criado">	x1	x2	x3	Classificação</a>
+0	1	7	6	Tipo 1
+1	2	8	6	Tipo 1
+2	1	NaN	4	Tipo 2
+3	1	6	3	Tipo 2
+4	3	9	9	Tipo 3
+5	4	8	7	Tipo 3
+</code></pre></figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="105" name="sl">
+			   <label for="105"></label>
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod996', 'cd996')" onmouseout="outFunc('cd996')"><span class="tooltiptext" id="cd996">Copiar o código</span></button></div>Eliminando uma coluna:
+<pre><code id="cod996">df.drop ('x2', axis = 1)
+</code></pre>
+<hr>
+<pre><code><a alt="dataframe modificado">	x1	x3	Classificação</a>
+0	1	6	Tipo 1
+1	2	6	Tipo 1
+2	1	4	Tipo 2
+3	1	3	Tipo 2
+4	3	9	Tipo 3
+5	4	7	Tipo 3
+</code></pre></figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="106" name="sl">
+			   <label for="106"></label>
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod995', 'cd995')" onmouseout="outFunc('cd995')"><span class="tooltiptext" id="cd995">Copiar o código</span></button></div>Selecionando somente os dados de Tipo 2:
+<pre><code id="cod995">df [df ['Classificação'] == 'Tipo 2']
+</code></pre>
+<hr>
+<pre><code><a alt="dataframe modificado">	x1	x2	x3	Classificação</a>
+2	1	NaN	4	Tipo 2
+3	1	6	3	Tipo 2
+</code></pre></figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="107" name="sl">
+			   <label for="107"></label>
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod994', 'cd994')" onmouseout="outFunc('cd994')"><span class="tooltiptext" id="cd994">Copiar o código</span></button></div>Preenchendo os valores vazios:
+<pre><code id="cod994">df.fillna(value=10, inplace = True)
+</code></pre>
+<hr>
+<pre><code><a alt="dataframe modificado">	x1	x2	x3	Classificação</a>
+0	1	7	6	Tipo 1
+1	2	8	6	Tipo 1
+2	1	<a alt="dado substituído">10</a>	4	Tipo 2
+3	1	6	3	Tipo 2
+4	3	9	9	Tipo 3
+5	4	8	7	Tipo 3
+</code></pre></figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="108" name="sl">
+			   <label for="108"></label>
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod993', 'cd993')" onmouseout="outFunc('cd993')"><span class="tooltiptext" id="cd993">Copiar o código</span></button></div>Calculando a média dos dados de cada atributo pra cada classificação:
+<pre><code id="cod993">df.groupby ('Classificação').mean ()
+</code></pre>
+<hr>
+<pre><code><a alt="médias dos atributos">Classificação	x1	x2	x3</a>
+Tipo 1		1.5	7.5	6.0
+Tipo 2		1.0	8.0	3.5
+Tipo 3		3.5	8.5	8.0
+</code></pre></figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="109" name="sl">
+			   <label for="109"></label>
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod992', 'cd992')" onmouseout="outFunc('cd992')"><span class="tooltiptext" id="cd992">Copiar o código</span></button></div>Descrevendo os dados:
+<pre><code id="cod992">df.describe ()
+</code></pre>
+<hr>
+<pre><code><a alt="médias dos atributos">	x1	x2	x3</a>
+count		6.000000	6.000000	6.000000
+mean		2.000000	8.000000	5.833333
+std		1.264911	1.414214	2.136976
+min		1.000000 	6.000000 	3.000000
+25%		1.000000 	7.250000 	4.500000
+50%		1.500000 	8.000000 	6.000000
+75%		2.750000 	8.750000 	6.750000
+max		4.000000 	10.000000 	9.000000
+</code></pre></figcaption>
+		   </li>
+		</ul>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
+  </details></div>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-49a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-50.png" loading="lazy"/>
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
