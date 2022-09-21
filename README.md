@@ -479,6 +479,66 @@ g.add_legend(title = '', adjust_subtitles = True)
 </code></pre></figcaption>
   </details></div>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-36a.png" loading="lazy"/>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Exemplo do uso da técnica PCA</summary>
+	<p>Técnica PCA aplicada ao conjunto de dados Iris.</p>
+	  <ul class="slider">
+		  <li>
+			   <input type="radio" id="100" name="sl">
+			   <label for="100"></label>
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod999', 'cd999')" onmouseout="outFunc('cd999')"><span class="tooltiptext" id="cd999">Copiar o código</span></button></div>PCA aplicada ao conjunto Iris:
+<pre><code id="cod999">
+<a alt="importação das bibliotecas">import pandas as pd</a>
+import numpy as np
+import matplotlib.pyplot as plt
+
+from sklearn import decomposition
+from sklearn import datasets
+
+import seaborn as sns
+
+<a alt="dados Originais">iris = datasets.load_iris()</a>
+X = pd.DataFrame (iris.data, columns = ["sepal length (cm)","sepal width (cm)","petal length (cm)","petal width (cm)",])
+y = pd.DataFrame (iris.target, columns = ["target"])
+df = X.join (y)
+
+<a alt="gráfico com as combinações de variáveis">sns.pairplot</a> (df, hue = "target",palette = "tab10");
+
+</code></pre></figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="101" name="sl">
+			   <label for="101"></label>
+			   <img src="modulo3/pca1.png" loading="lazy"/>
+			   <figcaption>Dados originais do conjunto Iris.</figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="102" name="sl">
+			   <label for="102"></label>
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod998', 'cd998')" onmouseout="outFunc('cd998')"><span class="tooltiptext" id="cd998">Copiar o código</span></button></div>PCA aplicada ao conjunto Iris:
+<pre><code id="cod998">
+<a alt="dados modificados com o PCA">X = iris.data</a>
+y = iris.target
+
+pca = <a alt="escolha de 2 variáveis">decomposition.PCA(n_components=2)</a>
+pca.fit(X)
+X = pd.DataFrame (pca.transform(X), columns = ["Component 1", "Component 2"])
+y = pd.DataFrame (iris.target, columns = ["target"])
+df = X.join (y)
+
+<a alt="gráfico com a combinação de variáveis obtida pelo PCA">sns.pairplot (df, hue = "target",palette = "tab10");
+
+</code></pre></figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="103" name="sl">
+			   <label for="103"></label>
+			   <img src="modulo3/pca2.png" loading="lazy"/>
+			   <figcaption>Dados com a combinação de 2 variáveis do conjunto Iris com o uso da técnica PCA.</figcaption>
+		   </li>
+		</ul>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
+  </details></div>
+  <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-36b.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod20', 'cd20')" onmouseout="outFunc('cd20')"><span class="tooltiptext" id="cd20">Copiar o código</span></button></div>Conjunto de dados Iris com Plotly (dispersão 3D):
 <pre><code id="cod20">import pandas as pd
