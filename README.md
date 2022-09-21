@@ -496,7 +496,8 @@ from sklearn import datasets
 import seaborn as sns
 
 <a alt="dados Originais">iris = datasets.load_iris()</a>
-X = pd.DataFrame (iris.data, columns = ["sepal length (cm)","sepal width (cm)","petal length (cm)","petal width (cm)",])
+X = pd.DataFrame (iris.data, 
+columns = ["sepal length (cm)","sepal width (cm)","petal length (cm)","petal width (cm)",])
 y = pd.DataFrame (iris.target, columns = ["target"])
 df = X.join (y)
 
@@ -507,7 +508,7 @@ df = X.join (y)
 		   <li>
 			   <input type="radio" id="101" name="sl">
 			   <label for="101"></label>
-			   <img src="modulo3/pca1.png" style="margin:auto; width:85%;" loading="lazy"/>
+			   <img src="modulo3/pca1.png" loading="lazy"/>
 			   <figcaption>Dados originais do conjunto Iris.</figcaption>
 		   </li>
 		   <li>
@@ -530,7 +531,7 @@ df = X.join (y)
 		   <li>
 			   <input type="radio" id="103" name="sl">
 			   <label for="103"></label>
-			   <img src="modulo3/pca2.png" style="margin:auto; width:85%;"  loading="lazy"/>
+			   <img src="modulo3/pca2.png" loading="lazy"/>
 			   <figcaption>Dados com a combinação de 2 variáveis do conjunto Iris com o uso da técnica PCA.</figcaption>
 		   </li>
 		</ul>
