@@ -5,7 +5,7 @@
 <p>Esta página contém os códigos, algoritmos e exemplos das técnicas mostradas na disciplina de Visualização Científica.</p>
 <p>A apostila está disponível no link: <a href="imagens/apostila_2022.pdf" target="_blank">apostila de Visualização Científica</a></p>
 
-<details>
+<details open>
   <summary id="modulo1">1. Introdução</summary>
   <p>Material da página 1 até a página 14.</p>
    <img src="modulo1/59f0152f9f78561f6fb413c7e4f88ba0-0.png" loading="lazy"/>
