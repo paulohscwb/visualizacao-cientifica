@@ -2259,7 +2259,6 @@ def main():
     renWin.AddRenderer(ren)
     iren = vtkRenderWindowInteractor()
     iren.SetRenderWindow(renWin)
-    ren.AddActor(axes)
     ren.AddActor(textActor)
     ren.AddActor(textActor1)
     ren.AddActor(spheres[0])
