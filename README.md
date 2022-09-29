@@ -1872,6 +1872,9 @@ plt.show()
   <summary id="modulo6">6. Modelos de iluminação</summary>
   <p>Material da página 92 até a página 105.</p>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-91.png" loading="lazy"/>
+  <div class="embed-containerA">
+		<iframe width="100%" src="https://www.youtube.com/embed/8qseMynFIcg" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </div> 
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-92.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod63', 'cd63')" onmouseout="outFunc('cd63')"><span class="tooltiptext" id="cd63">Copiar o código</span></button></div>Cena com eixos e um cilindro programados com VTK:
@@ -2246,7 +2249,7 @@ def main():
     <a alt="texto da fonte de luz 2">atext1 =</a> vtkVectorText()
     atext1.SetText('Fonte 2')
     textMapper = vtkPolyDataMapper()
-    textMapper.SetInputConnection(atext.GetOutputPort())
+    textMapper.SetInputConnection(atext1.GetOutputPort())
     textActor1 = vtkFollower()
     textActor1.SetMapper(textMapper)
     textActor1.SetScale(0.2, 0.2, 0.2)
@@ -2286,6 +2289,9 @@ if __name__ == '__main__':
 </code></pre></figcaption>
   </details></div>
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
+  <div class="embed-containerA">
+		<iframe width="100%" src="https://www.youtube.com/embed/4n8xrXzlMU4" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </div>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-98.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod67', 'cd67')" onmouseout="outFunc('cd67')"><span class="tooltiptext" id="cd67">Copiar o código</span></button></div>Criação de uma cena com Pyvista:
