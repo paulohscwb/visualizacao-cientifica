@@ -2622,9 +2622,10 @@ p.set_background('white', top = 'white')
 p.add_mesh(mesh, cmap = 'GnBu_r', scalars = mesh.points[:, 2], show_scalar_bar = False,
       	ambient = 0.3, diffuse = 0.5, specular = 0.5, specular_power = 15)
 
-<a alt="ajuste do ângulo elevation da câmera">p.camera.elevation =</a> 15
-<a alt="ajuste do ângulo azimuth da câmera">p.camera.azimuth =</a> -30
-<a alt="ajuste do ângulo roll da câmera">p.camera.roll =</a> -150
+<a alt="câmera perpendicular ao plano xy">p.camera_position =</a> 'xy'
+<a alt="ajuste do ângulo elevation da câmera">p.camera.elevation =</a> 45
+<a alt="ajuste do ângulo azimuth da câmera">p.camera.azimuth =</a> 0
+<a alt="ajuste do ângulo roll da câmera">p.camera.roll =</a> 0
 
 p.show()
 </code></pre></figcaption>
