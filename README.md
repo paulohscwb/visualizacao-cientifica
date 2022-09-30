@@ -2739,7 +2739,7 @@ p.show()
 			   <figcaption>Cena de RV com um cubo, sem imagem de fundo.<br><a href="modulo8/exemplo0.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<!--<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>-->
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
   </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-117a.png" loading="lazy"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
@@ -2770,7 +2770,7 @@ p.show()
 			   <figcaption>Cena de RV com um cubo, sem imagem de fundo.<br><a href="modulo8/exemplo1b.htm" target="_blank">&#x1f517; link da página</a></figcaption>
 		   </li>
 		</ul>
-		<!--<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>-->
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
   </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-117b.png" loading="lazy"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
