@@ -369,6 +369,7 @@ h3::after {
   left: 0;
   width: 100%;
   height: 98%;
+  border-radius:5px;
 }
 
 .sub .embed-container iframe {visibility: hidden; opacity:0;}
