@@ -2757,7 +2757,7 @@ p.show()
   &lt;body&gt;
     &lt;a-scene&gt;
        &lt;a-box color="green" position="0 2 -4" rotation="0 45 45" scale="2 2 3"&gt;&lt;/a-box&gt;
-	   <a alt="definição da cor do fundo da cena">&lt;a-sky</a> color="#99ccff"&gt;&lt;/a-sky&gt;
+       <a alt="definição da cor do fundo da cena">&lt;a-sky</a> color="#99ccff"&gt;&lt;/a-sky&gt;
     &lt;/a-scene&gt;
   &lt;/body&gt;
 &lt;/html&gt;
