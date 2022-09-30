@@ -372,7 +372,7 @@ h3::after {
 }
 
 .sub .embed-container iframe {visibility: hidden; opacity:0;}
-.sub .embed-container {box-shadow:none;}
+
 iframe {
   border:none;
   margin: 0 auto;
