@@ -2458,6 +2458,9 @@ p.show()
   <summary id="modulo7">7. Câmera</summary>
   <p>Material da página 105 até a página 114.</p>
   <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-104.png" loading="lazy"/>
+  <div class="embed-containerA">
+		<iframe width="100%" src="https://www.youtube.com/embed/0HnuLDxwu0Y" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </div>
   <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-105.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod72', 'cd72')" onmouseout="outFunc('cd72')"><span class="tooltiptext" id="cd72">Copiar o código</span></button></div>Projeção ortogonal (paralela) do Pyvista:
@@ -2633,6 +2636,9 @@ p.show()
   <p class="topop"><a href="#modulo7" class="topo">voltar ao topo</a></p>
   <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-109.png" loading="lazy"/>
   <p class="topop"><a href="#modulo7" class="topo">voltar ao topo</a></p>
+  <div class="embed-containerA">
+		<iframe width="100%" src="https://www.youtube.com/embed/x4mJ9RzEA3Q " frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </div>
   <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-110.png" loading="lazy"/>
   <p class="topop"><a href="#modulo7" class="topo">voltar ao topo</a></p>
   <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-111.png" loading="lazy"/>
