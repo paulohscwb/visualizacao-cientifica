@@ -264,7 +264,7 @@ plt.show()
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
 </details>
 
-<details>
+<details open>
   <summary id="modulo3">3. Fundamentos dos dados</summary>
   <p>Material da página 24 até a página 54.</p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-23.png" loading="lazy"/>
