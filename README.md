@@ -2805,7 +2805,7 @@ p.show()
 			   <input type="radio" id="006a" name="sl">
 			   <label for="006a"></label>
 			   <img src="modulo8/imagens/wasd.png" loading="lazy"/>
-			   <figcaption>Combinação de teclas WASD usada para a movimentação de personagens em cenas de Realidade Virtual e jogos 3D.</figcaption>
+			   <figcaption>Combinação das teclas WASD usada para a movimentação de personagens em cenas de Realidade Virtual e jogos 3D.</figcaption>
 		   </li>
 		   <li>
 			   <input type="radio" id="006" name="sl">
