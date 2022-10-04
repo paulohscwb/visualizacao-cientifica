@@ -2802,6 +2802,12 @@ p.show()
 </code></pre></figcaption>
 		   </li>
 		   <li>
+			   <input type="radio" id="006a" name="sl">
+			   <label for="006a"></label>
+			   <img src="modulo8/wasd.png" loading="lazy"/>
+			   <figcaption>Combinação de teclas WASD usada para a movimentação na cena de Realidade Virtual.</figcaption>
+		   </li>
+		   <li>
 			   <input type="radio" id="006" name="sl">
 			   <label for="006"></label>
 			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo1a.htm" title="Cena de RV com um cubo" frameborder="0" loading="lazy"></iframe></div>
