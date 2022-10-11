@@ -2713,6 +2713,9 @@ p.show()
   <p>Material da página 115 até a página 144.</p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-114.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
+  <div class="embed-containerA">
+		<iframe width="100%" src="https://www.youtube.com/embed/PKF6a0Q_n5s" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </div> 
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-115.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f517; Link</summary>
   <p><a href="https://aframe.io/" target="_blank">https://aframe.io/</a></p></details></div>
@@ -2826,6 +2829,9 @@ p.show()
 		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
   </details></div>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
+  <div class="embed-containerA">
+		<iframe width="100%" src="https://www.youtube.com/embed/gZXwqvR7WY4" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </div> 
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-118.png" loading="lazy"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
@@ -2903,6 +2909,9 @@ p.show()
   </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-119a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
+  <div class="embed-containerA">
+		<iframe width="100%" src="https://www.youtube.com/embed/-hE0FfxyLqg" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </div> 
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-120.png" loading="lazy"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
