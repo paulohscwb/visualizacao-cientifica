@@ -3169,6 +3169,9 @@ p.show()
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-123.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
+  <div class="embed-containerA">
+		<iframe width="100%" src="https://www.youtube.com/embed/NRAsCe9N0c4" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </div> 
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-124.png" loading="lazy"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
@@ -3434,6 +3437,9 @@ p.show()
   </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-127a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
+  <div class="embed-containerA">
+		<iframe width="100%" src="https://www.youtube.com/embed/hcGsdK-VYuM" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </div> 
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-128.png" loading="lazy"/>
   <div class="combo"><details class="sub"><summary>&#x1f517; Link</summary>
   <p><a href="https://jaxry.github.io/panorama-to-cubemap/" target="_blank">https://jaxry.github.io/panorama-to-cubemap/</a></p></details></div>
