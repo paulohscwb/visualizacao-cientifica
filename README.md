@@ -3553,6 +3553,9 @@ p.show()
   </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-129a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
+  <div class="embed-containerA">
+		<iframe width="100%" src="https://www.youtube.com/embed/r7XGkJEqSds" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </div> 
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-130.png" loading="lazy"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
@@ -3716,6 +3719,9 @@ p.show()
   </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-132a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
+  <div class="embed-containerA">
+		<iframe width="100%" src="https://www.youtube.com/embed/6MQbCJGCnI4" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </div> 
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-133.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-134.png" loading="lazy"/>
@@ -3789,6 +3795,9 @@ p.show()
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-136.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
+  <div class="embed-containerA">
+		<iframe width="100%" src="https://www.youtube.com/embed/jU-GJ6S7blA" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </div> 
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-137.png" loading="lazy"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
