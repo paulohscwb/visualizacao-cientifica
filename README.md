@@ -264,7 +264,7 @@ plt.show()
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
 </details>
 
-<details open>
+<details>
   <summary id="modulo3">3. Fundamentos dos dados</summary>
   <p>Material da página 24 até a página 54.</p>
   <img src="modulo3/59f0152f9f78561f6fb413c7e4f88ba0-23.png" loading="lazy"/>
@@ -1459,7 +1459,7 @@ print(imf)
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
 </details>
 
-<details>
+<details open>
   <summary id="modulo5">5. Linhas, polígonos, poliedros e superfícies</summary>
   <p>Material da página 81 até a página 92.</p>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-80.png" loading="lazy"/>
