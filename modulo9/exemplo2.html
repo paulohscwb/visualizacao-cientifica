@@ -19,6 +19,7 @@
             <a-asset-item id="modelo" src="objetos/helicoptero.glb"></a-asset-item>
             <a-asset-item id="modelo1" src="objetos/helicea.glb"></a-asset-item>
             <a-asset-item id="modelo2" src="objetos/heliceb.glb"></a-asset-item>
+			<a-asset-item id="modelo3" src="objetos/lamp2/scene.gltf"></a-asset-item>
         </a-assets>
 
         <a-entity look-at="[gps-camera]" gps-entity-place="latitude: -25.40789341643119; longitude: -49.264673459404165;">
@@ -32,6 +33,9 @@
                     <a-gltf-model src="#modelo2" animation="property: rotation; to: 360 0 0; 
                       loop: true; dur: 3200; easing: linear"></a-gltf-model>
                 </a-entity>
+            </a-entity>
+			<a-entity scale="0.5 0.5 0.5" position="0 0 0">
+                <a-gltf-model src="#modelo3"></a-gltf-model>
             </a-entity>
         </a-entity>
 		
