@@ -4174,7 +4174,9 @@ p.show()
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-145.png" loading="lazy"/>
 <div class="combo"><details class="sub"><summary>&#x1f4c3; Código do cabeçalho</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod109', 'cd109')" onmouseout="outFunc('cd109')"><span class="tooltiptext" id="cd109">Copiar o código</span></button></div>Cabeçalho da página em RA de rastreamento de faces
-<pre><code id="cod109">  &lt;head&gt;
+<pre><code id="cod109">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
     &lt;meta name="viewport" content="width=device-width, <a alt="impede distorções dos objetos">user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"&gt;</a>
     <a alt="referências das bibliotecas para rastreamento de faces">&lt;script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-face.prod.js"&gt;&lt;/script&gt;</a>
     &lt;script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-face-aframe.prod.js"&gt;&lt;/script&gt;
@@ -4270,6 +4272,7 @@ p.show()
       &lt;/a-scene&gt;
     &lt;/div&gt;
   &lt;/body&gt;
+&lt;/html&gt;  
 </code></pre></figcaption>
 <p><a href="modulo9/exemplo1.htm" target="_blank">&#x1f517; link da página</a></p>
   </details></div>
