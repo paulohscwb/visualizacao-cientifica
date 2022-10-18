@@ -4240,7 +4240,7 @@ p.show()
           &lt;a-asset-item id="hatModel2" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/examples/face-tracking/assets/hat2/scene.gltf"&gt;&lt;/a-asset-item&gt;
           &lt;a-asset-item id="earringModel" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/examples/face-tracking/assets/earring/scene.gltf"&gt;&lt;/a-asset-item&gt;
         &lt;/a-assets&gt;
-        &lt;a-camera active="false" position="0 0 0"&gt;&lt;/a-camera&gt;
+        &lt;a-camera rotation-reader position="0 0 0"&gt;&lt;/a-camera&gt;
         <a alt="modelo de uma face, usado para o rastreamento">&lt;a-entity mindar-face-target="anchorIndex: 168"&gt;</a>
             &lt;a-gltf-model mindar-face-occluder position="0 -0.3 0.15" rotation="0 0 0" 
               scale="0.065 0.065 0.065" src="#headModel"&gt;&lt;/a-gltf-model&gt;
