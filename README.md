@@ -4240,7 +4240,7 @@ p.show()
           &lt;a-asset-item id="hatModel2" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/examples/face-tracking/assets/hat2/scene.gltf"&gt;&lt;/a-asset-item&gt;
           &lt;a-asset-item id="earringModel" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/examples/face-tracking/assets/earring/scene.gltf"&gt;&lt;/a-asset-item&gt;
         &lt;/a-assets&gt;
-        &lt;a-camera active="false" position="0 0 0"&gt;&lt;/a-camera&gt;
+        <a alt="configurações da câmera">&lt;a-camera</a> active="false" position="0 0 0" look-controls-enabled="false" rotation-reader&gt;&lt;/a-camera&gt;
         <a alt="modelo de uma face, usado para o rastreamento">&lt;a-entity mindar-face-target="anchorIndex: 168"&gt;</a>
             &lt;a-gltf-model mindar-face-occluder position="0 -0.3 0.15" rotation="0 0 0" 
               scale="0.065 0.065 0.065" src="#headModel"&gt;&lt;/a-gltf-model&gt;
@@ -4287,12 +4287,9 @@ p.show()
     &lt;meta charset='utf-8'&gt;
     &lt;meta http-equiv='X-UA-Compatible' content='IE=edge'&gt;
     &lt;meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"&gt;
-    <a alt="referência da biblioteca aframe com suporte">&lt;script src="https://aframe.io/releases/1.2.0/aframe.min.js"&gt;&lt;/script&gt;</a>
-    <a alt="biblioteca de RA baseada em localização">&lt;script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"&gt;&lt;/script&gt;</a>
-    <a alt="biblioteca da criação da cena em RA">&lt;script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"&gt;&lt;/script&gt;</a>
-    &lt;script&gt;
-        THREEx.ArToolkitContext.baseURL = 'https://raw.githack.com/jeromeetienne/ar.js/master/three.js/'
-    &lt;/script&gt;
+    <a alt="referência da biblioteca aframe">&lt;script src="https://aframe.io/releases/1.3.0/aframe.min.js"&gt;&lt;/script&gt;</a>
+    <a alt="biblioteca de RA baseada em localização">&lt;script src="https://unpkg.com/aframe-look-at-component@1.0.0/dist/aframe-look-at-component.min.js"&gt;&lt;/script&gt;</a>
+    <a alt="biblioteca da criação da cena em RA">&lt;script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"&gt;&lt;/script&gt;</a>
 &lt;/head&gt;
 
 &lt;body style="margin: 0px; overflow: hidden;"&gt;
