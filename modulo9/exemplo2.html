@@ -18,8 +18,8 @@
 			<a-asset-item id="modelo3" src="objetos/lamp2/scene.gltf"></a-asset-item>
         </a-assets>
 
-        <a-entity look-at="[gps-camera]" >
-            <a-entity gps-entity-place="latitude: -25.407839453249615 ; longitude: -49.264638725658074;"  scale="0.4 0.4 0.4"> 
+        <a-entity look-at="[gps-camera]" gps-entity-place="latitude: -25.407881948458567 ; longitude: -49.264665912012504;">
+            <a-entity position="2 -1 -4" rotation="0 120 0" scale="0.4 0.4 0.4"> 
                 <a-gltf-model src="#modelo"></a-gltf-model>
                 <a-entity position="0 0 0">
                     <a-gltf-model src="#modelo1" animation="property: rotation; to: 0 360 0; 
@@ -30,11 +30,12 @@
                       loop: true; dur: 3200; easing: linear"></a-gltf-model>
                 </a-entity>
             </a-entity>
-			<a-entity scale="0.3 0.3 0.3" gps-entity-place="latitude: -25.407863075324283 ; longitude: -49.26469639316029;" >
+			<a-entity scale="0.3 0.3 0.3" position="-2 -1 -4" rotation="0 120 0">
                 <a-gltf-model src="#modelo3"></a-gltf-model>
             </a-entity>
         </a-entity>
-        <a-camera gps-camera="simulateLatitude:-25.40786428671248; simulateLongitude:-49.26469505205556;" rotation-reader arjs-look-controls="smoothingFactor: 0.05"></a-camera>
+		
+        <a-camera gps-camera rotation-reader active="false" look-controls-enabled="false" position="0 0 0" arjs-look-controls="smoothingFactor: 0.05"></a-camera>
         <a-light type="ambient" color="white" intensity="2"></a-light>
         <a-light type="directional" color="white" intensity="1.5" position="-1 1 1"></a-light>
         <a-light type="directional" color="white" intensity="1.5" position="1 1 1"></a-light>
