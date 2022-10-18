@@ -4302,7 +4302,7 @@ p.show()
         &lt;/a-assets&gt;
 
         &lt;a-entity look-at="[gps-camera]" <a alt="insira os valores da latitude e da longitude onde o objeto vai aparecer">gps-entity-place=</a>"latitude: &lt;DIGITE AQUI&gt;; longitude: &lt;DIGITE AQUI&gt;;"&gt;
-            <a alt="propriedades do objeto na cena">&lt;a-entity rotation="0 120 0" scale="0.4 0.4 0.4"&gt; </a>
+            <a alt="propriedades do objeto na cena">&lt;a-entity rotation="0 120 0" scale="0.5 0.5 0.5" position="2 0 -4"&gt; </a>
                 &lt;a-gltf-model src="#modelo"&gt;&lt;/a-gltf-model&gt;
                 &lt;a-entity position="0 0 0"&gt;
                     &lt;a-gltf-model src="#modelo1" <a alt="animação da primeira hélice">animation=</a>"property: rotation; to: 0 360 0; 
@@ -4315,8 +4315,8 @@ p.show()
             &lt;/a-entity&gt;
         &lt;/a-entity&gt;
 		
-        <a alt="propriedades da câmera">&lt;a-camera gps-camera rotation-reader position="0 0 0" active="false"  
-          arjs-look-controls="smoothingFactor: 0.05"&gt;&lt;/a-camera&gt;</a>
+        <a alt="propriedades da câmera">&lt;a-camera gps-camera rotation-reader active="false" position="0 0 0" 
+          look-controls-enabled="false"&gt;&lt;/a-camera&gt;</a>
         <a alt="iluminação da cena">&lt;a-light type=</a>"ambient" color="white" intensity="2"&gt;&lt;/a-light&gt;
         &lt;a-light type="directional" color="white" intensity="1.5" position="-1 1 1"&gt;&lt;/a-light&gt;
         &lt;a-light type="directional" color="white" intensity="1.5" position="1 1 1"&gt;&lt;/a-light&gt;
