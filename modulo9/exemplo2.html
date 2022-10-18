@@ -10,8 +10,7 @@
 </head>
 
 <body style="margin: 0px; overflow: hidden;">
-    <a-scene vr-mode-ui="enabled: false" renderer="logarithmicDepthBuffer: true;" embedded arjs='sourceType: webcam; 
-      debugUIEnabled: false;'>
+    <a-scene vr-mode-ui="enabled: false" renderer="logarithmicDepthBuffer: true;" embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
         <a-assets>
             <a-asset-item id="modelo" src="objetos/helicoptero.glb"></a-asset-item>
             <a-asset-item id="modelo1" src="objetos/helicea.glb"></a-asset-item>
@@ -36,7 +35,7 @@
             </a-entity>
         </a-entity>
 		
-        <a-camera gps-camera rotation-reader position="0 0 0" look-controls-enabled="false" arjs-look-controls="smoothingFactor: 0.5"></a-camera>
+        <a-camera gps-camera rotation-reader position="0 0 0" active="false" look-controls-enabled="false" arjs-look-controls="smoothingFactor: 0.05"></a-camera>
         <a-light type="ambient" color="white" intensity="2"></a-light>
         <a-light type="directional" color="white" intensity="1.5" position="-1 1 1"></a-light>
         <a-light type="directional" color="white" intensity="1.5" position="1 1 1"></a-light>

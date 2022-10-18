@@ -4294,7 +4294,7 @@ p.show()
 
 &lt;body style="margin: 0px; overflow: hidden;"&gt;
     &lt;a-scene vr-mode-ui="enabled: false" renderer="logarithmicDepthBuffer: true;" embedded arjs='sourceType: webcam; 
-      sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'&gt;
+      debugUIEnabled: false;'&gt;
         <a alt="caminhos dos objetos da cena">&lt;a-assets&gt;</a>
             &lt;a-asset-item id="modelo" src="objetos/helicoptero.glb"&gt;&lt;/a-asset-item&gt;
             &lt;a-asset-item id="modelo1" src="objetos/helicea.glb"&gt;&lt;/a-asset-item&gt;
