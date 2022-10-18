@@ -4315,7 +4315,8 @@ p.show()
             &lt;/a-entity&gt;
         &lt;/a-entity&gt;
 		
-        <a alt="propriedades da câmera">&lt;a-camera gps-camera rotation-reader&gt;&lt;/a-camera&gt;</a>
+        <a alt="propriedades da câmera">&lt;a-camera gps-camera rotation-reader position="0 0 0" 
+          arjs-look-controls="smoothingFactor: 0.05"&gt;&lt;/a-camera&gt;</a>
         <a alt="iluminação da cena">&lt;a-light type=</a>"ambient" color="white" intensity="2"&gt;&lt;/a-light&gt;
         &lt;a-light type="directional" color="white" intensity="1.5" position="-1 1 1"&gt;&lt;/a-light&gt;
         &lt;a-light type="directional" color="white" intensity="1.5" position="1 1 1"&gt;&lt;/a-light&gt;
