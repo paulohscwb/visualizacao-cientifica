@@ -18,15 +18,7 @@
             <a-asset-item id="modelo2" src="objetos/heliceb.glb"></a-asset-item>
 			<a-asset-item id="modelo3" src="objetos/lamp2/scene.gltf"></a-asset-item>
         </a-assets>
-		<script>
-			AFRAME.registerComponent('locationfinder', {
-				init: function() {
-					navigator.geolocation.getCurrentPosition(function(location){
-						console.log(location);
-					});
-				}
-			});
-		</script>
+
         <a-entity look-at="[gps-camera]" gps-entity-place="latitude: -25.407881948458567 ; longitude: -49.264665912012504;">
             <a-entity position="2 -1 -4" rotation="0 120 0" scale="0.3 0.3 0.3"> 
                 <a-gltf-model src="#modelo"></a-gltf-model>
@@ -44,7 +36,7 @@
             </a-entity>
         </a-entity>
 		
-        <a-camera locationfinder gps-camera="simulateLatitude:-25.407881948458567; simulateLongitude:-49.264665912012504;" rotation-reader></a-camera>
+        <a-camera gps-camera="simulateLatitude:-25.407881948458567; simulateLongitude:-49.264665912012504;" rotation-reader position="0 0 0" active="false" look-controls-enabled="false" arjs-look-controls="smoothingFactor: 0.1"></a-camera>
         <a-light type="ambient" color="white" intensity="2"></a-light>
         <a-light type="directional" color="white" intensity="1.5" position="-1 1 1"></a-light>
         <a-light type="directional" color="white" intensity="1.5" position="1 1 1"></a-light>
