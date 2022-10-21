@@ -10,7 +10,7 @@
 </head>
 
 <body style="margin: 0px; overflow: hidden;">
-    <a-scene embedded renderer="logarithmicDepthBuffer: true;" arjs='sourceType: webcam; trackingMethod: best; detectionMode: mono_and_matrix; matrixCodeType: 3x3; debugUIEnabled: false;'>
+    <a-scene embedded renderer="logarithmicDepthBuffer: true; precision: medium;" arjs='sourceType: webcam; trackingMethod: best; detectionMode: mono_and_matrix; matrixCodeType: 3x3; debugUIEnabled: false;'>
 		<a-assets>
 			<a-asset-item id="modelo" src="objetos/helicoptero.glb"></a-asset-item>
 			<a-asset-item id="modelo1" src="objetos/helicea.glb"></a-asset-item>
@@ -43,7 +43,7 @@
 			</a-entity>
 		</a-marker>
 		
-        <a-entity camera arjs-look-controls="smoothingFactor: 0.05"></a-entity>
+        <a-entity camera></a-entity>
 		<a-light type="ambient" color="white" intensity="2"></a-light>
 		<a-light type="directional" color="white" intensity="1.5" position="-1 1 1"></a-light>
 		<a-light type="directional" color="white" intensity="1.5" position="1 1 1"></a-light>
