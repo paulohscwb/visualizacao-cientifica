@@ -958,7 +958,7 @@ max	4.000000 	10.000000 	9.000000
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
 </details>
 
-<details open>
+<details>
   <summary id="modulo4">4. Taxonomia dos dados</summary>
   <p>Material da página 54 até a página 81.</p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-53.png" loading="lazy"/>
@@ -1868,7 +1868,7 @@ plt.show()
   <p class="topop"><a href="#modulo5" class="topo">voltar ao topo</a></p>
 </details>
 
-<details>
+<details open>
   <summary id="modulo6">6. Modelos de iluminação</summary>
   <p>Material da página 92 até a página 105.</p>
   <img src="modulo6/59f0152f9f78561f6fb413c7e4f88ba0-91.png" loading="lazy"/>
