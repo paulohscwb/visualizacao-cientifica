@@ -4379,14 +4379,25 @@ p.show()
             &lt;/a-entity&gt;
         &lt;/a-marker&gt;
 		
-        &lt;a-marker type="barcode" value="10"&gt;
+        &lt;a-marker type="barcode" value="17"&gt;
+            <a alt="propriedades do objeto que aparecerá sobre o marcador #17">&lt;a-entity position="1.5 0.05 -2"&gt;</a>
+                &lt;a-entity position="0 1 0" animation="property:rotation; to:0 360 0; dur:8000; easing:linear; loop:true"&gt;
+                    &lt;a-octahedron color="orange" radius="1" opacity="0.8"&gt;&lt;/a-octahedron&gt;
+                    &lt;a-octahedron color="grey" radius="1" wireframe="true"&gt;&lt;/a-octahedron&gt;
+                &lt;/a-entity&gt;
+                &lt;a-box position="0 1 0" scale="2 2 2" color="blue" opacity="0.6"&gt;&lt;/a-box&gt;
+                &lt;a-text position="-1 0 2" rotation="-90 0 0" text="width:6; side:double; color:black" value="Octaedro em RA"&gt;&lt;/a-text&gt;
+            &lt;/a-entity&gt;
+        &lt;/a-marker&gt;
+		
+		&lt;a-marker type="barcode" value="10"&gt;
             <a alt="propriedades do objeto que aparecerá sobre o marcador #10">&lt;a-entity scale="0.01 0.01 0.01" position="0 0.05 0"&gt;</a>
                 &lt;a-gltf-model src="#modelo4" animation-mixer&gt;&lt;/a-gltf-model&gt;
             &lt;/a-entity&gt;
         &lt;/a-marker&gt;
 		
         <a alt="inserção da câmera e da iluminação da cena">&lt;a-entity camera&gt;&lt;/a-entity&gt;</a>
-        &lt;a-light type="ambient" color="white" intensity="2"&gt;&lt;/a-light&gt;
+        &lt;a-light type="ambient" color="white" intensity="1"&gt;&lt;/a-light&gt;
         &lt;a-light type="directional" color="white" intensity="1.5" position="-1 1 1"&gt;&lt;/a-light&gt;
         &lt;a-light type="directional" color="white" intensity="1.5" position="1 1 1"&gt;&lt;/a-light&gt;
     &lt;/a-scene&gt;
