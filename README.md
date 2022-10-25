@@ -4169,6 +4169,9 @@ p.show()
   <summary id="modulo9">9. Realidade Aumentada</summary>
   <p>Material da página 144 até a página 153.</p>
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-143.png" loading="lazy"/>
+  <div class="embed-containerA">
+		<iframe width="100%" src="https://www.youtube.com/embed/9Ug6sSLWvf8" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </div> 
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-144.png" loading="lazy"/>
   <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-145.png" loading="lazy"/>
@@ -4278,6 +4281,9 @@ p.show()
   </details></div>
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-146a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
+  <div class="embed-containerA">
+		<iframe width="100%" src="https://www.youtube.com/embed/JLvD8Xt5_kI" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </div> 
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-147.png" loading="lazy"/>
 <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod111', 'cd111')" onmouseout="outFunc('cd111')"><span class="tooltiptext" id="cd111">Copiar o código</span></button></div>Código da página em RA baseada em localização
