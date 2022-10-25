@@ -4414,6 +4414,8 @@ p.show()
   <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-151.png" loading="lazy"/>
   <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
+  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-152.png" loading="lazy"/>
+  <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
 </details>
 
 <h4>página desenvolvida por:</h4> 
