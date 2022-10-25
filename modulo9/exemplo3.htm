@@ -38,9 +38,11 @@
 		</a-marker>
 		
 		<a-marker type="barcode" value="17">
-			<a-entity position="1 0.05 1">
-                <a-octahedron color="orange" radius="1" opacity="0.3" animation="property: rotation; to: 0 360 0; dur: 8000; easing: linear; loop: true"></a-octahedron>
-				<a-octahedron radius="1" wireframe="true" color="grey" animation="property: rotation; to: 0 360 0; dur: 8000; easing: linear; loop: true"></a-octahedron>
+			<a-entity position="2 0.05 -1">
+                <a-entity animation="property: rotation; to: 0 360 0; dur: 8000; easing: linear; loop: true">
+					<a-octahedron color="orange" radius="1" opacity="0.3"></a-octahedron>
+					<a-octahedron color="grey" radius="1" wireframe="true"></a-octahedron>
+				</a-entity>
 				<a-box scale="2 2 2" color="blue" opacity="0.2"></a-box>
 				<a-text position="0 0 2" rotation="-90 0 0" text="width: 7; side:double; color: black" value="Octaedro em RA"></a-text>
             </a-entity>
