@@ -4167,7 +4167,7 @@ p.show()
 
 <details style="border-bottom: 1px solid #a2dec0;">
   <summary id="modulo9">9. Realidade Aumentada</summary>
-  <p>Material da página 144 até a página 152.</p>
+  <p>Material da página 144 até a página 153.</p>
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-143.png" loading="lazy"/>
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-144.png" loading="lazy"/>
   <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
