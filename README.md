@@ -1459,7 +1459,7 @@ print(imf)
   <p class="topop"><a href="#modulo4" class="topo">voltar ao topo</a></p>
 </details>
 
-<details open>
+<details>
   <summary id="modulo5">5. Linhas, polígonos, poliedros e superfícies</summary>
   <p>Material da página 81 até a página 92.</p>
   <img src="modulo5/59f0152f9f78561f6fb413c7e4f88ba0-80.png" loading="lazy"/>
@@ -2454,7 +2454,7 @@ p.show()
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
 </details>
 
-<details>
+<details open>
   <summary id="modulo7">7. Câmera</summary>
   <p>Material da página 105 até a página 114.</p>
   <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-104.png" loading="lazy"/>
