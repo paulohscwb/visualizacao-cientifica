@@ -2454,7 +2454,7 @@ p.show()
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
 </details>
 
-<details open>
+<details>
   <summary id="modulo7">7. Câmera</summary>
   <p>Material da página 105 até a página 114.</p>
   <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-104.png" loading="lazy"/>
@@ -4165,7 +4165,7 @@ p.show()
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
 </details>
 
-<details style="border-bottom: 1px solid #a2dec0;">
+<details open style="border-bottom: 1px solid #a2dec0;">
   <summary id="modulo9">9. Realidade Aumentada</summary>
   <p>Material da página 144 até a página 153.</p>
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-143.png" loading="lazy"/>
