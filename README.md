@@ -2708,7 +2708,7 @@ p.show()
   <p class="topop"><a href="#modulo7" class="topo">voltar ao topo</a></p>
 </details>
 
-<details open>
+<details>
   <summary id="modulo8">8. Realidade Virtual</summary>
   <p>Material da página 115 até a página 144.</p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-114.png" loading="lazy"/>
