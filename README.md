@@ -4182,18 +4182,18 @@ p.show()
   &lt;head&gt;
     &lt;meta name="viewport" content="width=device-width, <a alt="impede distorções dos objetos">user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"&gt;</a>
     <a alt="referências das bibliotecas para rastreamento de faces">&lt;script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-face.prod.js"&gt;&lt;/script&gt;</a>
-    &lt;script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-face-aframe.prod.js"&gt;&lt;/script&gt;
     <a alt="versão do aframe com suporte">&lt;script src="https://aframe.io/releases/1.2.0/aframe.min.js"&gt;&lt;/script&gt;</a>
+    &lt;script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/dist/mindar-face-aframe.prod.js"&gt;&lt;/script&gt;
     <a alt="função para trocar os objetos GLTF que aparecem na cena">&lt;script&gt;</a>
       document.addEventListener("DOMContentLoaded", function() {
-    const list = ["glasses1", "glasses2", "hat1", "hat2", "earring"];
-    const visibles = [true, false, false, true, true];
-    const setVisible = (button, entities, visible) =&gt; {
-      if (visible) {
-        button.classList.add("selected");
-      } else {
-        button.classList.remove("selected");
-      }
+      const list = ["glasses1", "glasses2", "hat1", "hat2", "earring"];
+      const visibles = [true, false, false, true, true];
+      const setVisible = (button, entities, visible) =&gt; {
+        if (visible) {
+          button.classList.add("selected");
+        } else {
+          button.classList.remove("selected");
+        }
       entities.forEach((entity) =&gt; {
         entity.setAttribute("visible", visible);
       });
@@ -4206,14 +4206,14 @@ p.show()
         visibles[index] = !visibles[index];
         setVisible(button, entities, visibles[index]);
       });
-    });
-      })
+     });
+    })
     &lt;/script&gt;
     <a alt="folha de estilos para posicionar os botões para escolha dos objetos da cena">&lt;style&gt;</a>
       body {margin: 0;}
       .example-container {overflow: hidden; position: absolute; width: 100%; height: 100%;}
       .options-panel {position: fixed; left: 0; top: 0; z-index: 2;}
-      .options-panel img {border: solid 2px; width: 50px; height: 50px;	object-fit: cover; 
+      .options-panel img {border: solid 2px; width: 50px; height: 50px;	object-fit: cover;  
         cursor: pointer;}
       .options-panel img.selected {border-color: green;}
     &lt;/style&gt;
@@ -4229,7 +4229,7 @@ p.show()
     &lt;div class="example-container"&gt;
       <a alt="janela de opções dos objetos da cena">&lt;div class="options-panel"&gt;</a>
         &lt;img id="hat1" src="imagens/hat1.png"&gt;
-        &lt;img id="hat2" src=" imagens/hat2.png"&gt;
+        &lt;img id="hat2" src="imagens/hat2.png"&gt;
         &lt;img id="glasses1" src="imagens/glasses1.png"&gt;
         &lt;img id="glasses2" src="imagens/glasses2.png"&gt;
         &lt;img id="earring" src="imagens/earring.png"/&gt;
@@ -4243,7 +4243,8 @@ p.show()
           &lt;a-asset-item id="hatModel2" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/examples/face-tracking/assets/hat2/scene.gltf"&gt;&lt;/a-asset-item&gt;
           &lt;a-asset-item id="earringModel" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.4/examples/face-tracking/assets/earring/scene.gltf"&gt;&lt;/a-asset-item&gt;
         &lt;/a-assets&gt;
-        <a alt="configurações da câmera">&lt;a-camera</a> active="false" position="0 0 0" look-controls-enabled="false" rotation-reader&gt;&lt;/a-camera&gt;
+        <a alt="configurações da câmera">&lt;a-camera</a> position="0 0 0" active="false"  look-controls-enabled="false" rotation-reader 
+          arjs-look-controls="smoothingFactor: 0.05" &gt;&lt;/a-camera&gt;
         <a alt="modelo de uma face, usado para o rastreamento">&lt;a-entity mindar-face-target="anchorIndex: 168"&gt;</a>
             &lt;a-gltf-model mindar-face-occluder position="0 -0.3 0.15" rotation="0 0 0" 
               scale="0.065 0.065 0.065" src="#headModel"&gt;&lt;/a-gltf-model&gt;
