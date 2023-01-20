@@ -2,9 +2,9 @@
 <html>
 <head>
   <title>Pista de Boliche</title>
-  <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+  <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
   <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
-  <script src="https://unpkg.com/super-hands@^3.0.2/dist/super-hands.min.js"></script>
+  <script src="https://unpkg.com/super-hands@^3.0.3/dist/super-hands.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.misc.min.js"></script>
   <script src="https://fernandojsg.github.io/aframe-teleport-controls/dist/aframe-teleport-controls.min.js"></script>
   <script src="https://rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
@@ -27,7 +27,7 @@
 	  <a-sky src="#ceu"></a-sky>
 		<a-entity id="cameraRig" position="3 1.6 2">
 			<a-camera id="head" look-controls capture-mouse cursor="rayOrigin:mouse" static-body="shape: sphere; sphereRadius: 0.1"></a-camera>
-			<a-entity sphere-collider="objects: .bola" super-hands="colliderEvent: raycaster-intersection; colliderEventProperty: els; colliderEndEvent:raycaster-intersection-cleared; colliderEndEventProperty: clearedEls;" hand-controls="hand: left"></a-entity>
+			<a-entity sphere-collider="objects: .bola" super-hands hand-controls="hand: left"></a-entity>
 			<a-entity teleport-controls="cameraRig: #cameraRig; collisionEntities:  [mixin='piso']; teleportOrigin: #head; button: grip;" hand-controls="hand: right"> </a-entity> <!--gearvr-controls daydream-controls> </a-entity>-->
 			<a-entity laser-controls raycaster="objects:.bola; showLine:true; far:3;" line="color:rgb(0,255,0); opacity:0.33;" hand-controls="hand: left"></a-entity>
 		  	<!--<a-entity laser-controls raycaster="showLine:true; far:3;" line="color:rgb(0,255,0); opacity:0.33;" hand-controls="hand: right"></a-entity>-->
