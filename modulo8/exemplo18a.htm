@@ -17,8 +17,9 @@
       </a-assets>
 	  <a-entity id="cameraRig">
 		  <a-camera look-controls wasd-controls position="0 1 2" capture-mouse raycaster="objects: .cubo" cursor="rayOrigin:mouse" static-body="shape: sphere; sphereRadius: 0.001" super-hands="colliderEvent: raycaster-intersection; colliderEventProperty: els; colliderEndEvent:raycaster-intersection-cleared; colliderEndEventProperty: clearedEls;"></a-camera>
-		  <a-entity teleport-controls="cameraRig: #cameraRig; collisionEntities: [mixin='cubo'], [mixin='piso']" gearvr-controls daydream-controls> </a-entity>
-		  <a-entity laser-controls raycaster="showLine:true; far:3;" line="color:rgb(0,255,0); opacity:0.33;"></a-entity>
+		  <a-entity teleport-controls="cameraRig: #cameraRig; collisionEntities: [mixin='cubo'], [mixin='piso']" hand-controls="hand: left"> </a-entity> <!--gearvr-controls daydream-controls> </a-entity>-->
+		  <a-entity laser-controls="hand: left" raycaster="objects:.cubo; showLine:true; far:3;" line="color:rgb(0,255,0); opacity:0.33;"></a-entity>
+		  <!--<a-entity laser-controls raycaster="showLine:true; far:3;" line="color:rgb(0,255,0); opacity:0.33;"></a-entity>-->
 		  <a-entity oculus-touch-controls="hand: left"></a-entity>
 		  <a-entity oculus-touch-controls="hand: right"></a-entity>
 	  </a-entity>
