@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Interações com objetos de uma cena</title>
-  <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+  <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
   <script src="https://unpkg.com/aframe-event-set-component@^4.1.1/dist/aframe-event-set-component.min.js"></script>
   <script src="https://unpkg.com/super-hands@^3.0.3/dist/super-hands.min.js"></script>
   <script src="https://fernandojsg.github.io/aframe-teleport-controls/dist/aframe-teleport-controls.min.js"></script>
@@ -17,7 +17,8 @@
       </a-assets>
 	  <a-entity id="cameraRig">
 		  <a-camera look-controls wasd-controls position="0 1 2" capture-mouse raycaster="objects: .cubo" cursor="rayOrigin:mouse" static-body="shape: sphere; sphereRadius: 0.001"></a-camera>
-		  <a-entity sphere-collider="objects: .cubo" super-hands="colliderEvent: raycaster-intersection; colliderEventProperty: els; colliderEndEvent:raycaster-intersection-cleared; colliderEndEventProperty: clearedEls;" hand-controls="hand: left"></a-entity>
+		  <a-entity sphere-collider="objects: .cubo" super-hands hand-controls="hand: left"></a-entity>
+      		  <a-entity sphere-collider="objects: .cubo" super-hands hand-controls="hand: right"></a-entity>
 		  <a-entity teleport-controls="cameraRig: #cameraRig; collisionEntities: [mixin='cubo'], [mixin='piso']" hand-controls="hand: right"> </a-entity> <!--gearvr-controls daydream-controls> </a-entity>-->
 		  <a-entity laser-controls="hand: left" raycaster="objects:.cubo; showLine:true; far:3;" line="color:rgb(0,255,0); opacity:0.33;"></a-entity>
 		  <!--<a-entity laser-controls raycaster="showLine:true; far:3;" line="color:rgb(0,255,0); opacity:0.33;"></a-entity>-->
