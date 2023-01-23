@@ -26,8 +26,8 @@
       </a-assets>
 	  <a-sky src="#ceu"></a-sky>
 		<a-entity id="cameraRig" position="3 1.6 2">
-			<a-camera id="head" look-controls capture-mouse cursor="rayOrigin:mouse" static-body="shape: sphere; sphereRadius: 0.1" super-hands="colliderEvent: raycaster-intersection; colliderEventProperty: els; colliderEndEvent:raycaster-intersection-cleared; colliderEndEventProperty: clearedEls;"></a-camera>
-			<a-entity sphere-collider="objects: .bola" super-hands hand-controls="hand: left"></a-entity>
+			<a-camera look-controls wasd-controls position="0 1 2" raycaster="objects: .cubo" cursor="rayOrigin:mouse" static-body="shape: sphere; sphereRadius: 0.001" super-hands="colliderEvent: raycaster-intersection; colliderEventProperty: els;  colliderEndEvent: raycaster-intersection-cleared; colliderEndEventProperty: clearedEls;"></a-camera>
+		  	<a-entity sphere-collider="objects: .bola" super-hands hand-controls="hand: left"></a-entity>
 			<a-entity teleport-controls="cameraRig: #cameraRig; collisionEntities:  [mixin='piso']; teleportOrigin: #head; button: grip;" hand-controls="hand: right"> </a-entity> <!--gearvr-controls daydream-controls> </a-entity>-->
 			<a-entity laser-controls raycaster="objects:.bola; showLine:true; far:3;" line="color:rgb(0,255,0); opacity:0.33;" hand-controls="hand: left"></a-entity>
 		  	<!--<a-entity laser-controls raycaster="showLine:true; far:3;" line="color:rgb(0,255,0); opacity:0.33;" hand-controls="hand: right"></a-entity>-->
