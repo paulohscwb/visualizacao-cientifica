@@ -29,10 +29,10 @@
 			<a-camera id="head" look-controls wasd-controls position="0 1 2" cursor="rayOrigin:mouse" static-body="shape: sphere; sphereRadius: 0.001" super-hands="colliderEvent: raycaster-intersection; colliderEventProperty: els;  colliderEndEvent: raycaster-intersection-cleared; colliderEndEventProperty: clearedEls;"></a-camera>
 		  	<a-entity sphere-collider="objects: a-gltf-model, a-sphere, .bola, .pino" super-hands="colliderEvent: raycaster-intersection; colliderEventProperty: els; colliderEndEvent:raycaster-intersection-cleared; colliderEndEventProperty: clearedEls;" hand-controls="hand: left"></a-entity>
 		        <a-entity teleport-controls="cameraRig: #cameraRig; collisionEntities:  [mixin='piso']; teleportOrigin: #head; button: grip;" hand-controls="hand: right"> </a-entity> <!--gearvr-controls daydream-controls> </a-entity>-->
-			<a-entity laser-controls="hand: left" raycaster="objects: a-gltf-model, a-sphere, .bola, .pino; showLine:true; far:3;" line="color:rgb(0,255,0); opacity:0.33;"></a-entity>
-		  	<!--<a-entity laser-controls raycaster="showLine:true; far:3;" line="color:rgb(0,255,0); opacity:0.33;" hand-controls="hand: right"></a-entity>-->
+			<a-entity laser-controls="hand: left" raycaster="objects: a-gltf-model, a-sphere, .bola, .pino; showLine:true; far:3;" line="color:green; opacity:0.33;"></a-entity>
+		  	<!--<a-entity laser-controls raycaster="showLine:true; far:3;" line="color:rgb(0,255,0); opacity:0.33;" hand-controls="hand: right"></a-entity>
 			<a-entity oculus-touch-controls="hand: left"></a-entity>
-			<a-entity oculus-touch-controls="hand: right"></a-entity>
+			<a-entity oculus-touch-controls="hand: right"></a-entity>-->
 		</a-entity>
 		<a-entity position="0 0 -2">
 		  <a-entity mixin="piso" position="0 -0.1 0"></a-entity>
@@ -45,9 +45,9 @@
 			  <a-entity mixin="lateral" material="src:#piso2; repeat:2 2;" scale="0.9 0.5 0.1" position="7 0.2 -2" rotation="0 90 0"></a-entity>
 			  <a-entity mixin="lateral" material="src:#piso2; repeat:2 2;" scale="0.9 0.5 0.1" position="9 0.2 -2" rotation="0 90 0"></a-entity>
 		  </a-entity>
-		  <a-sphere class="bola" mixin="bola" position="7.5 0 -2"></a-sphere>
-		  <a-sphere class="bola" mixin="bola" position="8 0 -2"></a-sphere>
-		  <a-sphere class="bola" mixin="bola" position="8.5 0 0"></a-sphere>
+		  <a-sphere class="bola" mixin="bola" hoverable grabbable stretchable draggable droppable position="7.5 0 -2"></a-sphere>
+		  <a-sphere class="bola" mixin="bola" hoverable grabbable stretchable draggable droppable position="8 0 -2"></a-sphere>
+		  <a-sphere class="bola" mixin="bola" hoverable grabbable stretchable draggable droppable position="8.5 0 0"></a-sphere>
 		  <a-entity position="0 0.7 0.1">
 			  <a-gltf-model class="pino" gltf-model="#bow-gltf" position="-8.6 0 0.15" mixin="pino"></a-gltf-model>
 			  <a-gltf-model class="pino" gltf-model="#bow-gltf" position="-8.6 0 -0.15" mixin="pino"></a-gltf-model>
