@@ -8,7 +8,7 @@
   <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.misc.min.js"></script>
   <script src="https://fernandojsg.github.io/aframe-teleport-controls/dist/aframe-teleport-controls.min.js"></script>
   <script src="https://rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
-  <script src="https://unpkg.com/aframe-physics-extras@0.1.2/dist/aframe-physics-extras.min.js"></script>
+  <!--<script src="https://unpkg.com/aframe-physics-extras@0.1.2/dist/aframe-physics-extras.min.js"></script>-->
 </head>
 <body>
     <a-scene physics shadow="type: pcfsoft">
@@ -20,8 +20,8 @@
 		  <a-camera id="head" look-controls wasd-controls position="0 1 2" cursor="rayOrigin:mouse" static-body="shape: sphere; sphereRadius: 0.001" super-hands="colliderEvent: raycaster-intersection; colliderEventProperty: els;  colliderEndEvent: raycaster-intersection-cleared; colliderEndEventProperty: clearedEls;"></a-camera>
 		  <a-entity sphere-collider="objects: a-box, .cubo" super-hands hand-controls="hand: left"></a-entity>
 		  <a-entity teleport-controls="cameraRig: #cameraRig; collisionEntities: [mixin='cubo'], [mixin='piso']; teleportOrigin: #head; button: grip;" hand-controls="hand: right"> </a-entity> <!--gearvr-controls daydream-controls> </a-entity>-->
-		  <a-entity laser-controls="hand: left" raycaster="objects: a-box, .cubo" line="color:rgb(0,255,0); opacity:0.33;"></a-entity>
-		  <!--<a-entity laser-controls raycaster="showLine:true; far:3;" line="color: green; opacity:0.33;"></a-entity>
+		  <!--<a-entity laser-controls="hand: left" raycaster="objects: a-box, .cubo" line="color:rgb(0,255,0); opacity:0.33;"></a-entity>
+		  <a-entity laser-controls raycaster="showLine:true; far:3;" line="color: green; opacity:0.33;"></a-entity>
 		  <a-entity oculus-touch-controls="hand: left"></a-entity>
 		  <a-entity oculus-touch-controls="hand: right"></a-entity>-->
 	  </a-entity>
