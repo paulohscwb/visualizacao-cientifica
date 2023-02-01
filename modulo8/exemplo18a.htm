@@ -18,13 +18,13 @@
       </a-assets>
 	  <a-entity id="cameraRig">
 		  <a-camera id="head" look-controls wasd-controls position="0 1 2" cursor="rayOrigin:mouse" static-body="shape: sphere; sphereRadius: 0.001" super-hands="colliderEvent: raycaster-intersection; colliderEventProperty: els;  colliderEndEvent: raycaster-intersection-cleared; colliderEndEventProperty: clearedEls;"></a-camera>
-		  <a-entity sphere-collider="objects: a-box, .cubo" super-hands hand-controls="hand: left"></a-entity>
 		  <a-entity teleport-controls="cameraRig: #cameraRig; collisionEntities: [mixin='cubo'], [mixin='piso']; teleportOrigin: #head; button: grip;" hand-controls="hand: right"> </a-entity> <!--gearvr-controls daydream-controls> </a-entity>-->
 		  <!--<a-entity laser-controls="hand: left" raycaster="objects: a-box, .cubo" line="color:rgb(0,255,0); opacity:0.33;"></a-entity>
 		  <a-entity laser-controls raycaster="showLine:true; far:3;" line="color: green; opacity:0.33;"></a-entity>
 		  <a-entity oculus-touch-controls="hand: left"></a-entity>
 		  <a-entity oculus-touch-controls="hand: right"></a-entity>-->
 	  </a-entity>
+	  <a-entity sphere-collider="objects: a-box, .cubo" super-hands hand-controls="hand: left"></a-entity>
 	  <a-entity mixin="piso" class="piso" position="0 -1 0" material="color: rgb(100,180,100)"></a-entity>
       <a-box class="cubo" mixin="cubo" position="0 1 -1.25" material="color: red"></a-box>
       <a-box class="cubo" mixin="cubo" position="0 1.6 -1.5" material="color: red"></a-box>
