@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Interações com objetos de uma cena</title>
-  <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+  <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
   <script src="https://unpkg.com/aframe-event-set-component@^4.1.1/dist/aframe-event-set-component.min.js"></script>
   <script src="https://unpkg.com/super-hands@^3.0.3/dist/super-hands.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.misc.min.js"></script>
@@ -19,15 +19,15 @@
 	  <a-entity id="cameraRig">
 		  <a-camera id="head" look-controls wasd-controls position="0 1 2" cursor="rayOrigin:mouse" static-body="shape: sphere; sphereRadius: 0.001" super-hands="colliderEvent: raycaster-intersection; colliderEventProperty: els;  colliderEndEvent: raycaster-intersection-cleared; colliderEndEventProperty: clearedEls;"></a-camera>
 		  <a-entity teleport-controls="cameraRig: #cameraRig; collisionEntities: [mixin='cubo'], [mixin='piso']; teleportOrigin: #head; button: grip;" hand-controls="hand: right"> </a-entity> <!--gearvr-controls daydream-controls> </a-entity>-->
-		  <a-entity sphere-collider="objects: a-box, .cubo" super-hands hand-controls="hand: left"></a-entity>
-		  <!--<a-entity laser-controls="hand: left" raycaster="objects: a-box, .cubo" line="color:rgb(0,255,0); opacity:0.33;"></a-entity>
-		  <a-entity laser-controls raycaster="showLine:true; far:3;" line="color: green; opacity:0.33;"></a-entity>
+		  <a-entity sphere-collider="objects: .cubo" super-hands hand-controls="hand: left"></a-entity>
+		  <a-entity laser-controls="hand: left" raycaster="objects: .cubo" line="color:rgb(255,0,0); opacity:0.33;"></a-entity>
+		  <!--<a-entity laser-controls raycaster="showLine:true; far:3;" line="color: green; opacity:0.33;"></a-entity>
 		  <a-entity oculus-touch-controls="hand: left"></a-entity>
 		  <a-entity oculus-touch-controls="hand: right"></a-entity>-->
 	  </a-entity>
 	  <a-entity mixin="piso" class="piso" position="0 -1 0" material="color: rgb(100,180,100)"></a-entity>
-      <a-box class="cubo" mixin="cubo" position="0 1 -1.25" material="color: red"></a-box>
-      <a-box class="cubo" mixin="cubo" position="0 1.6 -1.5" material="color: red"></a-box>
+      <a-box class="cubo" mixin="cubo" hoverable grabbable stretchable draggable droppable position="0 1 -1.25" material="color: red"></a-box>
+      <a-box class="cubo" mixin="cubo" hoverable grabbable stretchable draggable droppable position="0 1.6 -1.5" material="color: red"></a-box>
       <a-box class="cubo" mixin="cubo" position="-0.9 1 -0.9" material="color: blue"></a-box>
       <a-box class="cubo" mixin="cubo" position="-1 1.6 -1" material="color: blue"></a-box>
       <a-box class="cubo" mixin="cubo" position="0.9 1 -0.9" material="color: green"></a-box>
