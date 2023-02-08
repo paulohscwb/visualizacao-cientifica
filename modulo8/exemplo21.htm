@@ -41,7 +41,7 @@
 		<a-entity id="cameraRig" position="3 1.6 2">
 			<a-camera id="head" look-controls wasd-controls position="0 1 2" cursor="rayOrigin:mouse" static-body="shape: sphere; sphereRadius: 0.001" super-hands="colliderEvent: raycaster-intersection; colliderEventProperty: els;  colliderEndEvent: raycaster-intersection-cleared; colliderEndEventProperty: clearedEls;"></a-camera>
 		  	<a-entity teleport-controls="cameraRig: #cameraRig; collisionEntities: [mixin='piso']; teleportOrigin: #head; button: grip;" hand-controls="hand: right"> </a-entity> <!--gearvr-controls daydream-controls> </a-entity>-->
-			<a-entity id="lhand" mixin="controller" super-hands></a-entity>
+			<a-entity id="lhand" mixin="controle" super-hands></a-entity>
 		</a-entity>
 	        <a-entity position="0 0 -2">
 		  <a-entity mixin="piso" position="0 -0.1 0"></a-entity>
