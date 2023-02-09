@@ -12,7 +12,7 @@
 			<img id="ceu" src="imagens/equi6.jpg">
 		</a-assets>
 		<a-sky src="#ceu"></a-sky>
-		<a-entity id="cameraRig" position="0.5 1.6 9">
+		<a-entity id="cameraRig" position="0.5 0 9">
 			<a-camera id="head" wasd-controls look-controls></a-camera>
 			<a-entity id="lhand" teleport-controls="cameraRig: #cameraRig; collisionEntities: [mixin='piso']; teleportOrigin: #head; button: grip;" hand-controls="hand: right"></a-entity>
 			<a-entity id="rhand" teleport-controls="cameraRig: #cameraRig; collisionEntities: [mixin='piso']; teleportOrigin: #head; button: grip;" hand-controls="hand: left"></a-entity>
