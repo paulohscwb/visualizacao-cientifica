@@ -4109,7 +4109,7 @@ p.show()
              event-set__hoveroff="_event: hover-end; material.opacity: 1; transparent: false"&gt;&lt;/a-mixin&gt;
            &lt;a-mixin <a alt="pinos com propriedades físicas">id="pino"</a> scale="0.25 0.2 0.25" hoverable grabbable stretchable draggable droppable 
              dynamic-body="linearDamping:0.3; angularDamping:0.3; mass:0.5;" shadow&gt;&lt;/a-mixin&gt;
-           &lt;a-asset-item id="bow-gltf" <a alt="arquivo GLTF do modelo de pino">src="objetos/bowling.gltf"</a>&gt;&lt;/a-asset-item&gt;
+           &lt;a-asset-item id="bow" <a alt="arquivo GLTF do modelo de pino">src="objetos/bowling.gltf"</a>&gt;&lt;/a-asset-item&gt;
            &lt;a-mixin static-body <a alt="plataforma da pista, com propriedades físicas">id="plataforma"</a> geometry="height:0.1; width:18; depth:1.5;" 
              material="src:#piso2; repeat:15 2; side:double; metalness:0.2; roughness:0.7" shadow&gt;&lt;/a-mixin&gt;
            &lt;a-mixin static-body <a alt="barras laterais da pista">id="lateral"</a> material="src:#piso2; repeat:15 1; side:double; 
@@ -4122,7 +4122,7 @@ p.show()
            &lt;a-mixin <a alt="ponteiro para selecionar os objetos">id="pointer" phase-shift</a> raycaster="showLine: true; objects: .bola, a-sphere, 
 	     .pino, a-gltf" collision-filter="collisionForces: false" static-body="shape: sphere; sphereRadius: 0.02" 
 	     super-hands="colliderEvent: raycaster-intersection; colliderEventProperty: els; 
-	     colliderEndEvent:raycaster-intersection-cleared; colliderEndEventProperty: clearedEls;"&gt;&lt;/a-mixin&gt;
+	     colliderEndEvent: raycaster-intersection-cleared; colliderEndEventProperty: clearedEls;"&gt;&lt;/a-mixin&gt;
            &lt;a-mixin <a alt="controle para manipular os objetos">id="controle" mixin="pointer"</a> hand-controls="hand: left"&gt;&lt;/a-mixin&gt;
         &lt;/a-assets&gt;
         &lt;a-sky src="#ceu"&gt;&lt;/a-sky&gt;
@@ -4154,16 +4154,16 @@ p.show()
            &lt;a-sphere class="bola" mixin="bola" position="8 0 -2"&gt;&lt;/a-sphere&gt;
            &lt;a-sphere class="bola" mixin="bola" position="8.5 0 0"&gt;&lt;/a-sphere&gt;
            &lt;a-entity <a alt="posição do conjunto de pinos">position="0 0.7 0.1"</a>&gt;
-              &lt;a-gltf-model class="pino" src="#bow-gltf" position="-8.6 0 0.15" mixin="pino"&gt;&lt;/a-gltf-model&gt;
-              &lt;a-gltf-model class="pino" src="#bow-gltf" position="-8.6 0 -0.15" mixin="pino"&gt;&lt;/a-gltf-model&gt;
-              &lt;a-gltf-model class="pino" src="#bow-gltf" position="-8.6 0 0.45" mixin="pino"&gt;&lt;/a-gltf-model&gt;
-              &lt;a-gltf-model class="pino" src="#bow-gltf" position="-8.6 0 -0.45" mixin="pino"&gt;&lt;/a-gltf-model&gt;
-              &lt;a-gltf-model class="pino" src="#bow-gltf" position="-8.3 0 0" mixin="pino"&gt;&lt;/a-gltf-model&gt;
-              &lt;a-gltf-model class="pino" src="#bow-gltf" position="-8.3 0 -0.3" mixin="pino"&gt;&lt;/a-gltf-model&gt;
-              &lt;a-gltf-model class="pino" src="#bow-gltf" position="-8.3 0 0.3" mixin="pino"&gt;&lt;/a-gltf-model&gt;
-              &lt;a-gltf-model class="pino" src="#bow-gltf" position="-8 0 0.15" mixin="pino"&gt;&lt;/a-gltf-model&gt;
-              &lt;a-gltf-model class="pino" src="#bow-gltf" position="-8 0 -0.15" mixin="pino"&gt;&lt;/a-gltf-model&gt;
-              &lt;a-gltf-model class="pino" src="#bow-gltf" position="-7.7 0 0" mixin="pino"&gt;&lt;/a-gltf-model&gt;
+              &lt;a-gltf-model class="pino" src="#bow" position="-8.6 0 0.15" mixin="pino"&gt;&lt;/a-gltf-model&gt;
+              &lt;a-gltf-model class="pino" src="#bow" position="-8.6 0 -0.15" mixin="pino"&gt;&lt;/a-gltf-model&gt;
+              &lt;a-gltf-model class="pino" src="#bow" position="-8.6 0 0.45" mixin="pino"&gt;&lt;/a-gltf-model&gt;
+              &lt;a-gltf-model class="pino" src="#bow" position="-8.6 0 -0.45" mixin="pino"&gt;&lt;/a-gltf-model&gt;
+              &lt;a-gltf-model class="pino" src="#bow" position="-8.3 0 0" mixin="pino"&gt;&lt;/a-gltf-model&gt;
+              &lt;a-gltf-model class="pino" src="#bow" position="-8.3 0 -0.3" mixin="pino"&gt;&lt;/a-gltf-model&gt;
+              &lt;a-gltf-model class="pino" src="#bow" position="-8.3 0 0.3" mixin="pino"&gt;&lt;/a-gltf-model&gt;
+              &lt;a-gltf-model class="pino" src="#bow" position="-8 0 0.15" mixin="pino"&gt;&lt;/a-gltf-model&gt;
+              &lt;a-gltf-model class="pino" src="#bow" position="-8 0 -0.15" mixin="pino"&gt;&lt;/a-gltf-model&gt;
+              &lt;a-gltf-model class="pino" src="#bow" position="-7.7 0 0" mixin="pino"&gt;&lt;/a-gltf-model&gt;
            &lt;/a-entity&gt;
         &lt;/a-entity&gt;
         <a alt="iluminação da cena com 1 luz ambiente e 3 spots">&lt;a-light</a> type="spot" intensity="0.7" color="white" position="-8 3 -2" angle="75" 
