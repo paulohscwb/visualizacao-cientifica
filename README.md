@@ -3778,7 +3778,7 @@ p.show()
              <a alt="propriedades de colisão e rastreamento">super-hands=</a>"colliderEvent: raycaster-intersection; colliderEventProperty: els;
              colliderEndEvent:raycaster-intersection-cleared; colliderEndEventProperty: clearedEls;"&gt;&lt;/a-camera&gt;
            &lt;a-entity <a alt="teleporte nos cubos e no piso">teleport-controls=</a>"cameraRig: #cameraRig; collisionEntities: [mixin='cubo'],
-             [mixin='piso'] teleportOrigin: #head; button: grip;" <a alt="controle com a mão direita">hand-controls="hand: right"</a>
+             [mixin='piso']; teleportOrigin: #head; button: grip;" <a alt="controle com a mão direita">hand-controls="hand: right"</a>
              gearvr-controls daydream-controls&gt;&lt;/a-entity&gt;
            &lt;a-entity <a alt="controle de manipulação da mão esquerda">id="lhand" mixin="controle"</a> super-hands&gt;&lt;/a-entity&gt;
         &lt;/a-entity&gt;
@@ -4082,86 +4082,97 @@ p.show()
   &lt;head&gt;
     &lt;title&gt;Pista de Boliche&lt;/title&gt;
     <a alt="referências das bibliotecas com suporte teleporte, interação e física">&lt;script src=</a>"https://aframe.io/releases/1.1.0/aframe.min.js"&gt;&lt;/script&gt;
-    &lt;script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"&gt;&lt;/script&gt;
-    &lt;script src="https://unpkg.com/super-hands@^3.0.2/dist/super-hands.min.js"&gt;&lt;/script&gt;
-    &lt;script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.misc.min.js"&gt;&lt;/script&gt;
+    &lt;script src="https://unpkg.com/super-hands/dist/super-hands.min.js"&gt;&lt;/script&gt;
+    &lt;script src="https://rawgit.com/donmccurdy/aframe-physics-system/v4.0.0/dist/aframe-physics-system.min.js"&gt;&lt;/script&gt;
+    &lt;script src="https://unpkg.com/aframe-event-set-component@^4.1.1/dist/aframe-event-set-component.min.js"&gt;&lt;/script&gt;
+    &lt;script src="https://unpkg.com/aframe-physics-extras/dist/aframe-physics-extras.min.js"&gt;&lt;/script&gt;
     &lt;script src="https://fernandojsg.github.io/aframe-teleport-controls/dist/aframe-teleport-controls.min.js"&gt;&lt;/script&gt;
-    &lt;script src="https://rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"&gt;&lt;/script&gt;
-    &lt;script src="https://unpkg.com/aframe-physics-extras@0.1.2/dist/aframe-physics-extras.min.js"&gt;&lt;/script&gt;
+    &lt;script&gt; AFRAME.registerComponent('phase-shift', {
+    init: function () {
+      var el = this.el
+        el.addEventListener('gripdown', function () {
+          el.setAttribute('collision-filter', {collisionForces: true})
+        })
+        el.addEventListener('gripup', function () {
+          el.setAttribute('collision-filter', {collisionForces: false})
+        })
+      }
+    });
+    &lt;/script&gt;
   &lt;/head&gt;
   &lt;body&gt;
-    &lt;a-scene reflection shadow="type: pcfsoft" renderer='colorManagement: true;'&gt;
+    &lt;a-scene shadow="type: pcfsoft"&gt;
         &lt;a-assets&gt;
-           &lt;a-mixin <a alt="bolas de boliche com propriedades físicas">id="bola"</a> geometry="primitive: sphere; radius: 0.3;" material="color: grey; metalness:0.8;" 
+           &lt;a-mixin <a alt="bolas de boliche com propriedades físicas">id="bola"</a> geometry="radius: 0.3;" material="color: grey; metalness:0.8;" 
              hoverable grabbable stretchable draggable droppable shadow dynamic-body="linearDamping:0.2; 
              angularDamping:0.2; mass:7;" event-set__hoveron="_event: hover-start; material.opacity: 0.7; transparent: true" 
              event-set__hoveroff="_event: hover-end; material.opacity: 1; transparent: false"&gt;&lt;/a-mixin&gt;
-           &lt;a-mixin <a alt="pinos com propriedades físicas">id="pino"</a> scale="0.25 0.2 0.25" hoverable grabbable stretchable draggable droppable shadow 
-             dynamic-body="linearDamping:0.3; angularDamping:0.3; mass:0.5;"&gt;&lt;/a-mixin&gt;
+           &lt;a-mixin <a alt="pinos com propriedades físicas">id="pino"</a> scale="0.25 0.2 0.25" hoverable grabbable stretchable draggable droppable 
+             dynamic-body="linearDamping:0.3; angularDamping:0.3; mass:0.5;" shadow&gt;&lt;/a-mixin&gt;
            &lt;a-asset-item id="bow-gltf" <a alt="arquivo GLTF do modelo de pino">src="objetos/bowling.gltf"</a>&gt;&lt;/a-asset-item&gt;
-           &lt;a-mixin static-body <a alt="plataforma da pista, com propriedades físicas">id="plataforma"</a> geometry="primitive: box; height:0.1; width:18; depth:1.5;" 
+           &lt;a-mixin static-body <a alt="plataforma da pista, com propriedades físicas">id="plataforma"</a> geometry="height:0.1; width:18; depth:1.5;" 
              material="src:#piso2; repeat:15 2; side:double; metalness:0.2; roughness:0.7" shadow&gt;&lt;/a-mixin&gt;
-           &lt;a-mixin static-body <a alt="barras laterais da pista">id="lateral"</a> geometry="primitive: box;" material="src:#piso2; repeat:15 1; side:double; 
+           &lt;a-mixin static-body <a alt="barras laterais da pista">id="lateral"</a> material="src:#piso2; repeat:15 1; side:double; 
              metalness:0.2; roughness:0.7" shadow&gt;&lt;/a-mixin&gt;
-           &lt;a-mixin static-body <a alt="piso da pista">id="piso"</a> geometry="primitive: box; height:0.1; width:30; depth:15;" 
-             material="src:#piso1; repeat:27 14; side:double; metalness:0.2; roughness:0.7" shadow&gt;&lt;/a-mixin&gt;
+           &lt;a-mixin static-body <a alt="piso da pista">id="piso"</a> geometry="height:0.1; width:30; depth:15;" shadow
+             material="src:#piso1; repeat:27 14; side:double; metalness:0.2; roughness:0.7"&gt;&lt;/a-mixin&gt;
            <a alt="texturas da cena">&lt;img id=</a>"ceu" src="imagens/bowling.jpg"&gt;
            &lt;img id="piso1" src="imagens/piso_madeira.jpg"&gt;
            &lt;img id="piso2" src="imagens/piso.jpg"&gt;
-           &lt;a-mixin <a alt="indicador de seleção de objetos">id="point"</a> raycaster="showLine: false; objects: .pino, .bola" line="color:rgb(255,255,255); 
-             opacity:0.33;"static-body="shape: sphere; sphereRadius: 0.1" super-hands="colliderEvent: raycaster-intersection; 
-             colliderEventProperty: els; colliderEndEvent:raycaster-intersection-cleared; 
-             colliderEndEventProperty: clearedEls;"&gt;&lt;/a-mixin&gt;
+           &lt;a-mixin <a alt="indicador de seleção de objetos">id="point"</a> raycaster="showLine: false; objects: .pino, .bola" 
+	   &lt;a-mixin <a alt="ponteiro para selecionar os objetos">id="pointer" phase-shift</a> raycaster="showLine: true; objects: .bola, a-sphere, 
+	     .pino, a-gltf" collision-filter="collisionForces: false" static-body="shape: sphere; sphereRadius: 0.02" 
+	     super-hands="colliderEvent: raycaster-intersection; colliderEventProperty: els; 
+	     colliderEndEvent:raycaster-intersection-cleared; colliderEndEventProperty: clearedEls;"&gt;&lt;/a-mixin&gt;
+           &lt;a-mixin <a alt="controle para manipular os objetos">id="controle" mixin="pointer"</a> hand-controls="hand: left"&gt;&lt;/a-mixin&gt;
         &lt;/a-assets&gt;
         &lt;a-sky src="#ceu"&gt;&lt;/a-sky&gt;
         &lt;a-entity <a alt="propriedades de interação ligadas à câmera">id="cameraRig"</a> position="3 1.6 2"&gt;
-           &lt;a-camera id="head" look-controls capture-mouse cursor="rayOrigin:mouse" static-body="shape: sphere; 
-             sphereRadius: 0.1" super-hands="colliderEvent: raycaster-intersection; colliderEventProperty: els; 
-             colliderEndEvent:raycaster-intersection-cleared; colliderEndEventProperty: clearedEls;"&gt;&lt;/a-camera&gt;
-           &lt;a-entity teleport-controls="cameraRig: #cameraRig; collisionEntities:  [mixin='piso']; 
-             teleportOrigin: #head; button: grip;" gearvr-controls daydream-controls&gt;&lt;/a-entity&gt;
-           &lt;a-entity laser-controls raycaster="showLine:true; far:3;" line="color:rgb(0,255,0); opacity:0.33;" 
-             hand-controls="hand: right"&gt;&lt;/a-entity&gt;
-           &lt;a-entity oculus-touch-controls="hand: left"&gt;&lt;/a-entity&gt;
-           &lt;a-entity oculus-touch-controls="hand: right"&gt;&lt;/a-entity&gt;
+           &lt;a-camera id="head" look-controls wasd-controls position="0 1 2" cursor="rayOrigin:mouse" 
+             static-body="shape: sphere; sphereRadius: 0.001" super-hands="colliderEvent: raycaster-intersection; 
+             colliderEventProperty: els; colliderEndEvent: raycaster-intersection-cleared; 
+             colliderEndEventProperty: clearedEls;"&gt;&lt;/a-camera&gt;
+           &lt;a-entity teleport-controls="cameraRig: #cameraRig; collisionEntities: [mixin='piso']; 
+             teleportOrigin: #head; button: grip;" hand-controls="hand: right" gearvr-controls daydream-controls&gt;&lt;/a-entity&gt;
+           &lt;a-entity id="lhand" mixin="controle" super-hands&gt;&lt;/a-entity&gt;
         &lt;/a-entity&gt;
         &lt;a-entity <a alt="posição do conjunto de objetos da cena">position="0 0 -2"</a>&gt;
-           &lt;a-entity mixin="piso" position="0 -0.1 0"&gt;&lt;/a-entity&gt;
-           &lt;a-entity mixin="plataforma" position="0 -0.05 0"&gt;&lt;/a-entity&gt;
-           &lt;a-entity mixin="lateral" scale="18.3 0.5 0.1" position="0 0.2 -0.8"&gt;&lt;/a-entity&gt;
-           &lt;a-entity mixin="lateral" scale="18.3 0.5 0.1" position="0 0.2 0.8"&gt;&lt;/a-entity&gt;
+           &lt;a-box mixin="piso" position="0 -0.1 0"&gt;&lt;/a-box&gt;
+           &lt;a-box mixin="plataforma" position="0 -0.05 0"&gt;&lt;/a-box&gt;
+           &lt;a-box mixin="lateral" scale="18.3 0.5 0.1" position="0 0.2 -0.8"&gt;&lt;/a-box&gt;
+           &lt;a-box mixin="lateral" scale="18.3 0.5 0.1" position="0 0.2 0.8"&gt;&lt;/a-box&gt;
            &lt;a-entity <a alt="suporte com as bolas de boliche">id="suporte"</a>&gt;
-              &lt;a-entity mixin="lateral" material="src:#piso2; repeat:2 2;" scale="2.1 0.5 0.1" 
-                position="8 0.2 -2.5"&gt;&lt;/a-entity&gt;
-              &lt;a-entity mixin="lateral" material="src:#piso2; repeat:2 2;" scale="2.1 0.5 0.1" 
-                position="8 0.2 -1.5" rotation="0 0 0"&gt;&lt;/a-entity&gt;
-              &lt;a-entity mixin="lateral" material="src:#piso2; repeat:2 2;" scale="0.9 0.5 0.1" 
-                position="7 0.2 -2" rotation="0 90 0"&gt;&lt;/a-entity&gt;
-              &lt;a-entity mixin="lateral" material="src:#piso2; repeat:2 2;" scale="0.9 0.5 0.1" 
-                position="9 0.2 -2" rotation="0 90 0"&gt;&lt;/a-entity&gt;
+              &lt;a-box mixin="lateral" material="src:#piso2; repeat:2 2;" scale="2.1 0.5 0.1" 
+                position="8 0.2 -2.5"&gt;&lt;/a-box&gt;
+              &lt;a-box mixin="lateral" material="src:#piso2; repeat:2 2;" scale="2.1 0.5 0.1" 
+                position="8 0.2 -1.5" rotation="0 0 0"&gt;&lt;/a-box&gt;
+              &lt;a-box mixin="lateral" material="src:#piso2; repeat:2 2;" scale="0.9 0.5 0.1" 
+                position="7 0.2 -2" rotation="0 90 0"&gt;&lt;/a-box&gt;
+              &lt;a-box mixin="lateral" material="src:#piso2; repeat:2 2;" scale="0.9 0.5 0.1" 
+                position="9 0.2 -2" rotation="0 90 0"&gt;&lt;/a-box&gt;
            &lt;/a-entity&gt;
-           &lt;a-entity class="bola" mixin="bola" position="7.5 0 -2"&gt;&lt;/a-entity&gt;
-           &lt;a-entity class="bola" mixin="bola" position="8 0 -2"&gt;&lt;/a-entity&gt;
-           &lt;a-entity class="bola" mixin="bola" position="8.5 0 0"&gt;&lt;/a-entity&gt;
+           &lt;a-sphere class="bola" mixin="bola" position="7.5 0 -2"&gt;&lt;/a-sphere&gt;
+           &lt;a-sphere class="bola" mixin="bola" position="8 0 -2"&gt;&lt;/a-sphere&gt;
+           &lt;a-sphere class="bola" mixin="bola" position="8.5 0 0"&gt;&lt;/a-sphere&gt;
            &lt;a-entity <a alt="posição do conjunto de pinos">position="0 0.7 0.1"</a>&gt;
-              &lt;a-entity class="pino" gltf-model="#bow-gltf" position="-8.6 0 0.15" mixin="pino"&gt;&lt;/a-entity&gt;
-              &lt;a-entity class="pino" gltf-model="#bow-gltf" position="-8.6 0 -0.15" mixin="pino"&gt;&lt;/a-entity&gt;
-              &lt;a-entity class="pino" gltf-model="#bow-gltf" position="-8.6 0 0.45" mixin="pino"&gt;&lt;/a-entity&gt;
-              &lt;a-entity class="pino" gltf-model="#bow-gltf" position="-8.6 0 -0.45" mixin="pino"&gt;&lt;/a-entity&gt;
-              &lt;a-entity class="pino" gltf-model="#bow-gltf" position="-8.3 0 0" mixin="pino"&gt;&lt;/a-entity&gt;
-              &lt;a-entity class="pino" gltf-model="#bow-gltf" position="-8.3 0 -0.3" mixin="pino"&gt;&lt;/a-entity&gt;
-              &lt;a-entity class="pino" gltf-model="#bow-gltf" position="-8.3 0 0.3" mixin="pino"&gt;&lt;/a-entity&gt;
-              &lt;a-entity class="pino" gltf-model="#bow-gltf" position="-8 0 0.15" mixin="pino"&gt;&lt;/a-entity&gt;
-              &lt;a-entity class="pino" gltf-model="#bow-gltf" position="-8 0 -0.15" mixin="pino"&gt;&lt;/a-entity&gt;
-              &lt;a-entity class="pino" gltf-model="#bow-gltf" position="-7.7 0 0" mixin="pino"&gt;&lt;/a-entity&gt;
+              &lt;a-gltf-model class="pino" src="#bow-gltf" position="-8.6 0 0.15" mixin="pino"&gt;&lt;/a-gltf-model&gt;
+              &lt;a-gltf-model class="pino" src="#bow-gltf" position="-8.6 0 -0.15" mixin="pino"&gt;&lt;/a-gltf-model&gt;
+              &lt;a-gltf-model class="pino" src="#bow-gltf" position="-8.6 0 0.45" mixin="pino"&gt;&lt;/a-gltf-model&gt;
+              &lt;a-gltf-model class="pino" src="#bow-gltf" position="-8.6 0 -0.45" mixin="pino"&gt;&lt;/a-gltf-model&gt;
+              &lt;a-gltf-model class="pino" src="#bow-gltf" position="-8.3 0 0" mixin="pino"&gt;&lt;/a-gltf-model&gt;
+              &lt;a-gltf-model class="pino" src="#bow-gltf" position="-8.3 0 -0.3" mixin="pino"&gt;&lt;/a-gltf-model&gt;
+              &lt;a-gltf-model class="pino" src="#bow-gltf" position="-8.3 0 0.3" mixin="pino"&gt;&lt;/a-gltf-model&gt;
+              &lt;a-gltf-model class="pino" src="#bow-gltf" position="-8 0 0.15" mixin="pino"&gt;&lt;/a-gltf-model&gt;
+              &lt;a-gltf-model class="pino" src="#bow-gltf" position="-8 0 -0.15" mixin="pino"&gt;&lt;/a-gltf-model&gt;
+              &lt;a-gltf-model class="pino" src="#bow-gltf" position="-7.7 0 0" mixin="pino"&gt;&lt;/a-gltf-model&gt;
            &lt;/a-entity&gt;
         &lt;/a-entity&gt;
-        <a alt="iluminação da cena com 1 luz ambiente e 3 spots">&lt;a-light</a> type="spot" intensity="0.7" color="white" position="-8 3 -2" angle="75" rotation="-90 0 0" 
-          penumbra="0.3" light="castShadow:true;"&gt;&lt;/a-light&gt;
-        &lt;a-light type="spot" intensity="0.7" color="white" position="0 3 -2" angle="75" rotation="-90 0 0" 
-          penumbra="0.3" light="castShadow:true;"&gt;&lt;/a-light&gt;
-        &lt;a-light type="spot" intensity="0.7" color="white" position="8 3 -2" angle="75" rotation="-90 0 0" 
-          penumbra="0.3" light="castShadow:true;"&gt;&lt;/a-light&gt;
+        <a alt="iluminação da cena com 1 luz ambiente e 3 spots">&lt;a-light</a> type="spot" intensity="0.7" color="white" position="-8 3 -2" angle="75" 
+          rotation="-90 0 0" penumbra="0.3" light="castShadow:true; shadowBias: -0.001;"&gt;&lt;/a-light&gt;
+        &lt;a-light type="spot" intensity="0.7" color="white" position="0 3 -2" angle="75" 
+          rotation="-90 0 0" penumbra="0.3" light="castShadow:true; shadowBias: -0.001;"&gt;&lt;/a-light&gt;
+        &lt;a-light type="spot" intensity="0.7" color="white" position="8 3 -2" angle="75"  
+          rotation="-90 0 0" penumbra="0.3" light="castShadow:true; shadowBias: -0.001;"&gt;&lt;/a-light&gt;
         &lt;a-light type="ambient" intensity="0.5" color="white"&gt;&lt;/a-light&gt;
     &lt;/a-scene&gt;
   &lt;/body&gt;
