@@ -3970,9 +3970,9 @@ p.show()
         &lt;a-sky src="#ceu"&gt;&lt;/a-sky&gt;
         &lt;a-entity id="cameraRig" position="0.5 0 0"&gt;
             &lt;a-camera id="head" wasd-controls look-controls&gt;&lt;/a-camera&gt;
-            &lt;a-entity id="lhand" <a alt="propriedades do teleporte">teleport-controls</a>="cameraRig: #cameraRig; collisionEntities: [mixin='piso'];  
+            &lt;a-entity id="rhand" <a alt="propriedades do teleporte">teleport-controls</a>="cameraRig: #cameraRig; collisionEntities: [mixin='piso'];  
               teleportOrigin: #head; button: grip;" hand-controls="hand: right"&gt;&lt;/a-entity&gt;
-            &lt;a-entity id="rhand" teleport-controls="cameraRig: #cameraRig; collisionEntities: [mixin='piso']; 
+            &lt;a-entity id="lhand" teleport-controls="cameraRig: #cameraRig; collisionEntities: [mixin='piso']; 
               teleportOrigin: #head; button: grip;" hand-controls="hand: left"&gt;&lt;/a-entity&gt;
         &lt;/a-entity&gt;
         &lt;a-box mixin="piso" position="0 -0.55 0" visible="false"&gt;&lt;/a-box&gt;
