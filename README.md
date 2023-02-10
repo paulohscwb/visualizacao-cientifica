@@ -3753,9 +3753,9 @@ p.show()
         el.addEventListener('gripup', function () {
            el.setAttribute('collision-filter', {collisionForces: false})
         })
-     }
-  });
-  &lt;/script&gt;
+      }
+    });
+    &lt;/script&gt;
   &lt;/head&gt;
   &lt;body&gt;
     &lt;a-scene physics shadow="type: pcfsoft"&gt;
@@ -3773,13 +3773,14 @@ p.show()
 	   &lt;a-mixin <a alt="controle para manipular objetos">id="controle" mixin="pointer"</a> hand-controls="hand: left"&gt;&lt;/a-mixin&gt;
         &lt;/a-assets&gt;
         &lt;a-entity <a alt="interações conectadas com a câmera">id="cameraRig"</a>&gt;
-           &lt;a-camera id="head" look-controls wasd-controls position="0 1 2" <a alt="interação com o cursor do mouse">cursor="rayOrigin:mouse"</a> 
-             static-body="shape: sphere; sphereRadius: 0.001" <a alt="propriedades de colisão e rastreamento">super-hands=</a>"colliderEvent: raycaster-intersection; 
+           &lt;a-camera id="head" look-controls wasd-controls position="0 1 2" 
+             <a alt="interação com o cursor do mouse">cursor="rayOrigin:mouse"</a> static-body="shape: sphere; sphereRadius: 0.001" 
+             <a alt="propriedades de colisão e rastreamento">super-hands=</a>"colliderEvent: raycaster-intersection; 
              colliderEventProperty: els; colliderEndEvent:raycaster-intersection-cleared; colliderEndEventProperty: clearedEls;"&gt;&lt;/a-camera&gt;
            &lt;a-entity <a alt="teleporte nos cubos e no piso">teleport-controls=</a>"cameraRig: #cameraRig; collisionEntities: [mixin='cubo'],
-             [mixin='piso'] teleportOrigin: #head; button: grip;" <a alt="controle com a mão direita">hand-controls="hand: right"
-             gearvr-controls daydream-controls</a>&gt;&lt;/a-entity&gt;
-           &lt;a-entity <a alt="controle de manipulação da mão esquerda">id="lhand" mixin="controle" super-hands&gt;&lt;/a-entity&gt;
+             [mixin='piso'] teleportOrigin: #head; button: grip;" <a alt="controle com a mão direita">hand-controls="hand: right"</a>
+             gearvr-controls daydream-controls&gt;&lt;/a-entity&gt;
+           &lt;a-entity <a alt="controle de manipulação da mão esquerda">id="lhand" mixin="controle"</a> super-hands&gt;&lt;/a-entity&gt;
         &lt;/a-entity&gt;
         <a alt="posições dos objetos na cena">&lt;a-box mixin="piso"</a> class="piso" position="0 -1 0" material="color: rgb(100,180,100)"&gt;&lt;/a-box&gt;
         &lt;a-box class="cubo" mixin="cubo" position="0 1 -1.25" material="color: red"&gt;&lt;/a-box&gt;
