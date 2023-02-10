@@ -4119,8 +4119,7 @@ p.show()
            <a alt="texturas da cena">&lt;img id=</a>"ceu" src="imagens/bowling.jpg"&gt;
            &lt;img id="piso1" src="imagens/piso_madeira.jpg"&gt;
            &lt;img id="piso2" src="imagens/piso.jpg"&gt;
-           &lt;a-mixin <a alt="indicador de seleção de objetos">id="point"</a> raycaster="showLine: false; objects: .pino, .bola" 
-	   &lt;a-mixin <a alt="ponteiro para selecionar os objetos">id="pointer" phase-shift</a> raycaster="showLine: true; objects: .bola, a-sphere, 
+           &lt;a-mixin <a alt="ponteiro para selecionar os objetos">id="pointer" phase-shift</a> raycaster="showLine: true; objects: .bola, a-sphere, 
 	     .pino, a-gltf" collision-filter="collisionForces: false" static-body="shape: sphere; sphereRadius: 0.02" 
 	     super-hands="colliderEvent: raycaster-intersection; colliderEventProperty: els; 
 	     colliderEndEvent:raycaster-intersection-cleared; colliderEndEventProperty: clearedEls;"&gt;&lt;/a-mixin&gt;
