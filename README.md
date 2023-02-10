@@ -3739,41 +3739,55 @@ p.show()
   &lt;head&gt;
     &lt;title&gt;Interações com objetos de uma cena&lt;/title&gt;
     <a alt="referência da biblioteca com suporte de interações">&lt;script src="https://aframe.io/releases/1.1.0/aframe.min.js"&gt;&lt;/script&gt;</a>
+    <a alt="biblioteca de constroles para movimentar objetos">&lt;script src="https://unpkg.com/super-hands/dist/super-hands.min.js"&gt;&lt;/script&gt;</a>
+    <a alt="biblioteca de propriedades físicas">&lt;script src="https://rawgit.com/donmccurdy/aframe-physics-system/v4.0.0/dist/aframe-physics-system.min.js"&gt;&lt;/script&gt;</a>
     <a alt="biblioteca de interação">&lt;script src="https://unpkg.com/aframe-event-set-component@^4.1.1/dist/aframe-event-set-component.min.js"&gt;&lt;/script&gt;</a>
-    <a alt="biblioteca de constroles par movimentar objetos">&lt;script src="https://unpkg.com/super-hands@^3.0.3/dist/super-hands.min.js"&gt;&lt;/script&gt;</a>
+    <a alt="biblioteca com propriedades físicas adicionais">&lt;script src="https://unpkg.com/aframe-physics-extras/dist/aframe-physics-extras.min.js"&gt;&lt;/script&gt;</a>
     <a alt="biblioteca de teleporte">&lt;script src="https://fernandojsg.github.io/aframe-teleport-controls/dist/aframe-teleport-controls.min.js"&gt;&lt;/script&gt;</a>
-    <a alt="biblioteca de propriedades físicas">&lt;script src="https://rawgit.com/donmccurdy/aframe-physics-system/v3.2.0/dist/aframe-physics-system.min.js"&gt;&lt;/script&gt;</a>
-    <a alt="biblioteca com propriedades físicas adicionais">&lt;script src="https://unpkg.com/aframe-physics-extras@0.1.2/dist/aframe-physics-extras.min.js"&gt;&lt;/script&gt;</a>
+    &lt;script&gt; <a alt="função de melhoria das propriedades físicas">AFRAME.registerComponent('phase-shift', {</a>
+      init: function () {
+        var el = this.el
+        el.addEventListener('gripdown', function () {
+           el.setAttribute('collision-filter', {collisionForces: true})
+        })
+        el.addEventListener('gripup', function () {
+           el.setAttribute('collision-filter', {collisionForces: false})
+        })
+     }
+  });
+  &lt;/script&gt;
   &lt;/head&gt;
   &lt;body&gt;
     &lt;a-scene physics shadow="type: pcfsoft"&gt;
         &lt;a-assets&gt;
-           &lt;a-mixin id="cubo" geometry="primitive: box; width: 0.5; height: 0.5; depth: 0.5;" 
+           &lt;a-mixin id="cubo" geometry="width: 0.5; height: 0.5; depth: 0.5;" shadow 
              <a alt="propriedades para os cubos móveis">hoverable grabbable stretchable draggable droppable</a> event-set__hoveron="_event: hover-start; 
              material.opacity: 0.7; transparent: true" event-set__hoveroff="_event: hover-end; 
              material.opacity: 1; transparent: false" <a alt="propriedades físicas dos cubos">dynamic-body=</a>"linearDamping:0.1; 
-             angularDamping:0.8; mass:0.5;" shadow&gt;&lt;/a-mixin&gt;
-           &lt;a-mixin id="piso" geometry="primitive: box; width: 10; height: 0.3; depth: 10;" 
-             static-body shadow&gt;&lt;/a-mixin&gt;
+             angularDamping:0.8; mass:0.5;"&gt;&lt;/a-mixin&gt;
+           &lt;a-mixin id="piso" geometry="width: 10; height: 0.3; depth: 10;" static-body shadow&gt;&lt;/a-mixin&gt;
+	   &lt;a-mixin <a alt="propriedades para o ponteiro de interação com objetos">id="pointer" phase-shift</a> raycaster="showLine: true; objects: .cubo, a-box" 
+	     collision-filter="collisionForces: false" static-body="shape: sphere; sphereRadius: 0.02" 
+	     super-hands="colliderEvent: raycaster-intersection; colliderEventProperty: els;  
+	     colliderEndEvent:raycaster-intersection-cleared; colliderEndEventProperty: clearedEls;"&gt;&lt;/a-mixin&gt;
+	   &lt;a-mixin <a alt="controle para manipular objetos">id="controle" mixin="pointer"</a> hand-controls="hand: left"&gt;&lt;/a-mixin&gt;
         &lt;/a-assets&gt;
         &lt;a-entity <a alt="interações conectadas com a câmera">id="cameraRig"</a>&gt;
-           &lt;a-camera look-controls wasd-controls position="0 1 2" <a alt="interação com o cursor do mouse">capture-mouse raycaster=</a>"objects: .cubo" 
-             cursor="rayOrigin:mouse" static-body="shape: sphere; sphereRadius: 0.001" 
-             <a alt="propriedades de colisão e rastreamento">super-hands=</a>"colliderEvent: raycaster-intersection; colliderEventProperty: els; 
-             colliderEndEvent:raycaster-intersection-cleared; colliderEndEventProperty: clearedEls;"&gt;&lt;/a-camera&gt;
+           &lt;a-camera id="head" look-controls wasd-controls position="0 1 2" <a alt="interação com o cursor do mouse">cursor="rayOrigin:mouse"</a> 
+             static-body="shape: sphere; sphereRadius: 0.001" <a alt="propriedades de colisão e rastreamento">super-hands=</a>"colliderEvent: raycaster-intersection; 
+             colliderEventProperty: els; colliderEndEvent:raycaster-intersection-cleared; colliderEndEventProperty: clearedEls;"&gt;&lt;/a-camera&gt;
            &lt;a-entity <a alt="teleporte nos cubos e no piso">teleport-controls=</a>"cameraRig: #cameraRig; collisionEntities: [mixin='cubo'],
-             [mixin='piso']" <a alt="óculos gear e daydream">gearvr-controls daydream-controls</a>&gt;&lt;/a-entity&gt;
-           &lt;a-entity <a alt="controle de raio laser">laser-controls</a> raycaster="showLine:true; far:3;" line="color:rgb(0,255,0); opacity:0.33;"&gt;&lt;/a-entity&gt;
-           &lt;a-entity <a alt="controles de manipulação da mão esquerda">oculus-touch-controls=</a>"hand: left"&gt;&lt;/a-entity&gt;
-           &lt;a-entity <a alt="controles de manipulação da mão direita">oculus-touch-controls=</a>"hand: right"&gt;&lt;/a-entity&gt;
+             [mixin='piso'] teleportOrigin: #head; button: grip;" <a alt="controle com a mão direita">hand-controls="hand: right"
+             gearvr-controls daydream-controls</a>&gt;&lt;/a-entity&gt;
+           &lt;a-entity <a alt="controle de manipulação da mão esquerda">id="lhand" mixin="controle" super-hands&gt;&lt;/a-entity&gt;
         &lt;/a-entity&gt;
-        <a alt="posições dos objetos na cena">&lt;a-entity mixin="piso"</a> class="piso" position="0 -1 0" material="color: rgb(100,180,100)"&gt;&lt;/a-entity&gt;
-        &lt;a-entity class="cubo" mixin="cubo" position="0 1 -1.25" material="color: red"&gt;&lt;/a-entity&gt;
-        &lt;a-entity class="cubo" mixin="cubo" position="0 1.6 -1.5" material="color: red"&gt;&lt;/a-entity&gt;
-        &lt;a-entity class="cubo" mixin="cubo" position="-0.9 1 -0.9" material="color: blue"&gt;&lt;/a-entity&gt;
-        &lt;a-entity class="cubo" mixin="cubo" position="-1 1.6 -1" material="color: blue"&gt;&lt;/a-entity&gt;
-        &lt;a-entity class="cubo" mixin="cubo" position="0.9 1 -0.9" material="color: green"&gt;&lt;/a-entity&gt;
-        &lt;a-entity class="cubo" mixin="cubo" position="1 1.6 -1" material="color: green"&gt;&lt;/a-entity&gt;
+        <a alt="posições dos objetos na cena">&lt;a-box mixin="piso"</a> class="piso" position="0 -1 0" material="color: rgb(100,180,100)"&gt;&lt;/a-box&gt;
+        &lt;a-box class="cubo" mixin="cubo" position="0 1 -1.25" material="color: red"&gt;&lt;/a-box&gt;
+        &lt;a-box class="cubo" mixin="cubo" position="0 1.6 -1.5" material="color: red"&gt;&lt;/a-box&gt;
+        &lt;a-box class="cubo" mixin="cubo" position="-0.9 1 -0.9" material="color: blue"&gt;&lt;/a-box&gt;
+        &lt;a-box class="cubo" mixin="cubo" position="-1 1.6 -1" material="color: blue"&gt;&lt;/a-box&gt;
+        &lt;a-box class="cubo" mixin="cubo" position="0.9 1 -0.9" material="color: green"&gt;&lt;/a-box&gt;
+        &lt;a-box class="cubo" mixin="cubo" position="1 1.6 -1" material="color: green"&gt;&lt;/a-box&gt;
         &lt;a-light type="spot" intensity="0.8" color="white" position="1 3 0" angle="60" rotation="-90 0 0" penumbra="0.5" 
           light="castShadow:true;"&gt;&lt;/a-light&gt;
         &lt;a-light type="ambient" intensity="0.5" color="white"&gt;&lt;/a-light&gt;
