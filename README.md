@@ -3733,7 +3733,7 @@ p.show()
 		  <li>
 			   <input type="radio" id="046" name="sl">
 			   <label for="046"></label>
-			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod102', 'cd102')" onmouseout="outFunc('cd102')"><span class="tooltiptext" id="cd102">Copiar o código</span></button></div>Interação com objetos de uma cena:
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod102', 'cd102')" onmouseout="outFunc('cd102')"><span class="tooltiptext" id="cd102">Copiar o código</span></button></div>Interação com objetos de uma cena (raio laser):
 <pre><code id="cod102">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
@@ -3809,11 +3809,93 @@ p.show()
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-135a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-136.png" loading="lazy"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-136a.png" loading="lazy"/>
+  <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
+	<p>Veja o código HTML e a renderização da cena.</p>
+	  <ul class="slider">
+		  <li>
+			   <input type="radio" id="046bk" name="sl">
+			   <label for="046bk"></label>
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod102', 'cd102')" onmouseout="outFunc('cd102')"><span class="tooltiptext" id="cd102">Copiar o código</span></button></div>Interação com objetos de uma cena (mãos físicas):
+<pre><code id="cod102">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Interações com objetos de uma cena&lt;/title&gt;
+    <a alt="referência da biblioteca com suporte de interações">&lt;script src="https://aframe.io/releases/1.1.0/aframe.min.js"&gt;&lt;/script&gt;</a>
+    <a alt="biblioteca de controles para movimentar objetos">&lt;script src="https://unpkg.com/super-hands/dist/super-hands.min.js"&gt;&lt;/script&gt;</a>
+    <a alt="biblioteca de propriedades físicas">&lt;script src="https://rawgit.com/donmccurdy/aframe-physics-system/v4.0.0/dist/aframe-physics-system.min.js"&gt;&lt;/script&gt;</a>
+    <a alt="biblioteca de interação">&lt;script src="https://unpkg.com/aframe-event-set-component@^4.1.1/dist/aframe-event-set-component.min.js"&gt;&lt;/script&gt;</a>
+    <a alt="biblioteca com propriedades físicas adicionais">&lt;script src="https://unpkg.com/aframe-physics-extras/dist/aframe-physics-extras.min.js"&gt;&lt;/script&gt;</a>
+    <a alt="biblioteca de teleporte">&lt;script src="https://fernandojsg.github.io/aframe-teleport-controls/dist/aframe-teleport-controls.min.js"&gt;&lt;/script&gt;</a>
+    &lt;script&gt; <a alt="função de melhoria das propriedades físicas">AFRAME.registerComponent('phase-shift', {</a>
+      init: function () {
+        var el = this.el
+        el.addEventListener('gripdown', function () {
+           el.setAttribute('collision-filter', {collisionForces: true})
+        })
+        el.addEventListener('gripup', function () {
+           el.setAttribute('collision-filter', {collisionForces: false})
+        })
+      }
+    });
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;a-scene physics shadow="type: pcfsoft"&gt;
+        &lt;a-assets&gt;
+           &lt;a-mixin id="cubo" geometry="width: 0.5; height: 0.5; depth: 0.5;" shadow 
+             <a alt="propriedades para manipulação dos cubos">hoverable grabbable stretchable draggable droppable</a> event-set__hoveron="_event: hover-start; 
+             material.opacity: 0.7; transparent: true" event-set__hoveroff="_event: hover-end; 
+             material.opacity: 1; transparent: false" <a alt="propriedades físicas dos cubos">dynamic-body=</a>"linearDamping:0.1; 
+             angularDamping:0.8; mass:0.5;"&gt;&lt;/a-mixin&gt;
+           &lt;a-mixin <a alt="propriedades do piso">id="piso"</a> geometry="width: 10; height: 0.3; depth: 10;" static-body shadow&gt;&lt;/a-mixin&gt;
+	   &lt;a-mixin <a alt="propriedades para as mãos físicas usadas para interação">id="mfisicas" physics-collider phase-shift </a> collision-filter="collisionForces: false" 
+	     static-body="shape: sphere; sphereRadius: 0.02" super-hands="colliderEvent: collisions; 
+	     colliderEventProperty: els; colliderEndEvent: collisions; colliderEndEventProperty: clearedEls;"&gt;&lt;/a-mixin&gt;
+	   &lt;a-mixin <a alt="controle para manipular objetos">id="controle" mixin="pointer"</a> hand-controls="hand: left"&gt;&lt;/a-mixin&gt;
+        &lt;/a-assets&gt;
+        &lt;a-entity <a alt="interações conectadas com a câmera">id="cameraRig"</a>&gt;
+           &lt;a-camera id="head" look-controls wasd-controls position="0 1 2" 
+             <a alt="interação com o cursor do mouse">cursor="rayOrigin:mouse"</a> static-body="shape: sphere; sphereRadius: 0.001" 
+             <a alt="propriedades de colisão e rastreamento">super-hands=</a>"colliderEvent: raycaster-intersection; colliderEventProperty: els;
+             colliderEndEvent:raycaster-intersection-cleared; colliderEndEventProperty: clearedEls;"&gt;&lt;/a-camera&gt;
+           &lt;a-entity <a alt="teleporte nos cubos e no piso">teleport-controls=</a>"cameraRig: #cameraRig; collisionEntities: [mixin='cubo'],
+             [mixin='piso']; teleportOrigin: #head; button: grip;" <a alt="controle com a mão direita">hand-controls="hand: right"</a>
+             gearvr-controls daydream-controls&gt;&lt;/a-entity&gt;
+           &lt;a-entity <a alt="controle de manipulação da mão esquerda">id="lhand" mixin="mfisicas"</a> hand-controls="hand: left" super-hands&gt;&lt;/a-entity&gt;
+        &lt;/a-entity&gt;
+        <a alt="posições dos objetos na cena">&lt;a-box mixin="piso"</a> class="piso" position="0 -1 0" material="color: rgb(100,180,100)"&gt;&lt;/a-box&gt;
+        &lt;a-box class="cubo" mixin="cubo" position="0 1 -1.25" material="color: red"&gt;&lt;/a-box&gt;
+        &lt;a-box class="cubo" mixin="cubo" position="0 1.6 -1.5" material="color: red"&gt;&lt;/a-box&gt;
+        &lt;a-box class="cubo" mixin="cubo" position="-0.9 1 -0.9" material="color: blue"&gt;&lt;/a-box&gt;
+        &lt;a-box class="cubo" mixin="cubo" position="-1 1.6 -1" material="color: blue"&gt;&lt;/a-box&gt;
+        &lt;a-box class="cubo" mixin="cubo" position="0.9 1 -0.9" material="color: green"&gt;&lt;/a-box&gt;
+        &lt;a-box class="cubo" mixin="cubo" position="1 1.6 -1" material="color: green"&gt;&lt;/a-box&gt;
+        &lt;a-light type="spot" intensity="0.8" color="white" position="1 3 0" angle="60"  
+          rotation="-90 0 0" penumbra="0.5" light="castShadow:true;"&gt;&lt;/a-light&gt;
+        &lt;a-light type="ambient" intensity="0.5" color="white"&gt;&lt;/a-light&gt;
+    &lt;/a-scene&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></figcaption>
+		   </li>
+		   <li>
+			   <input type="radio" id="047bk" name="sl">
+			   <label for="047bk"></label>
+			   <div class="embed-container"><iframe width="100%" src="modulo8/exemplo18a1.htm" title="Interações com objetos" frameborder="0" loading="lazy"></iframe></div>
+			   <figcaption>Interações com cubos em uma cena.<br><a href="modulo8/exemplo18a1.htm" target="_blank">&#x1f517; link da página</a></figcaption>
+		   </li>
+		</ul>
+		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
+  </details></div>
+  <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-137.png" loading="lazy"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-137a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <div class="embed-containerA">
 		<iframe width="100%" src="https://www.youtube.com/embed/jU-GJ6S7blA" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
    </div> 
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-137.png" loading="lazy"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-138.png" loading="lazy"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
@@ -3856,7 +3938,7 @@ p.show()
 		</ul>
 		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
   </details></div>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-137a.png" loading="lazy"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-138a.png" loading="lazy"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
@@ -3906,9 +3988,9 @@ p.show()
 		</ul>
 		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
   </details></div>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-137b.png" loading="lazy"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-138b.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-138.png" loading="lazy"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-139.png" loading="lazy"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
@@ -3959,9 +4041,9 @@ p.show()
 		</ul>
 		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
   </details></div>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-138a.png" loading="lazy"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-139a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-139.png" loading="lazy"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-140.png" loading="lazy"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
@@ -4017,7 +4099,7 @@ p.show()
 		</ul>
 		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
   </details></div>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-139a.png" loading="lazy"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-140a.png" loading="lazy"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
@@ -4061,15 +4143,15 @@ p.show()
 		</ul>
 		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
   </details></div>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-139b.png" loading="lazy"/>
-  <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-140.png" loading="lazy"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-140b.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-141.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-142.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-143.png" loading="lazy"/>
+  <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-144.png" loading="lazy"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
 	  <ul class="slider">
@@ -4187,7 +4269,7 @@ p.show()
 		</ul>
 		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
   </details></div>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-143a.png" loading="lazy"/>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-144a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
 </details>
 
