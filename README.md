@@ -2710,7 +2710,7 @@ p.show()
 
 <details>
   <summary id="modulo8">8. Realidade Virtual</summary>
-  <p>Material da página 115 até a página 144.</p>
+  <p>Material da página 115 até a página 145.</p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-114.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <div class="embed-containerA">
@@ -4274,14 +4274,14 @@ p.show()
 
 <details style="border-bottom: 1px solid #a2dec0;">
   <summary id="modulo9">9. Realidade Aumentada</summary>
-  <p>Material da página 144 até a página 153.</p>
-  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-143.png" loading="lazy"/>
+  <p>Material da página 145 até a página 154.</p>
+  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-144.png" loading="lazy"/>
   <div class="embed-containerA">
 		<iframe width="100%" src="https://www.youtube.com/embed/9Ug6sSLWvf8" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
    </div> 
-  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-144.png" loading="lazy"/>
-  <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-145.png" loading="lazy"/>
+  <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
+  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-146.png" loading="lazy"/>
 <div class="combo"><details class="sub"><summary>&#x1f4c3; Código do cabeçalho</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod109', 'cd109')" onmouseout="outFunc('cd109')"><span class="tooltiptext" id="cd109">Copiar o código</span></button></div>Cabeçalho da página em RA de rastreamento de faces
 <pre><code id="cod109">&lt;!DOCTYPE html&gt;
@@ -4327,9 +4327,9 @@ p.show()
   &lt;/head&gt;
 </code></pre></figcaption>
   </details></div>
-  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-145a.png" loading="lazy"/>
+  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-146a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
-  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-146.png" loading="lazy"/>
+  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-147.png" loading="lazy"/>
 <div class="combo"><details class="sub"><summary>&#x1f4c3; Código do corpo da página</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod110', 'cd110')" onmouseout="outFunc('cd110')"><span class="tooltiptext" id="cd110">Copiar o código</span></button></div>Corpo da página em RA de rastreamento de faces
 <pre><code id="cod110">  &lt;body&gt;
@@ -4387,12 +4387,12 @@ p.show()
 </code></pre></figcaption>
 <p><a href="modulo9/exemplo1.htm" target="_blank">&#x1f517; link da página</a></p>
   </details></div>
-  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-146a.png" loading="lazy"/>
+  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-147a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
   <div class="embed-containerA">
 		<iframe width="100%" src="https://www.youtube.com/embed/JLvD8Xt5_kI" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
    </div> 
-  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-147.png" loading="lazy"/>
+  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-148.png" loading="lazy"/>
 <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod111', 'cd111')" onmouseout="outFunc('cd111')"><span class="tooltiptext" id="cd111">Copiar o código</span></button></div>Código da página em RA baseada em localização
 <pre><code id="cod111">&lt;!DOCTYPE html&gt;
@@ -4440,15 +4440,15 @@ p.show()
 </code></pre></figcaption>
 <p><a href="modulo9/exemplo2aVR.htm" target="_blank">&#x1f517; link da página do helicóptero em RV</a></p>
   </details></div>
-  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-147a.png" loading="lazy"/>
-  <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
-  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-148.png" loading="lazy"/>
-	<div class="combo"><details class="sub"><summary>&#x1f517; Link</summary>
-  <p>Padrões de QR codes 3x3 e 4x4: <a href="https://github.com/artoolkit/ARToolKit5/tree/master/doc/patterns" target="_blank">https://github.com/artoolkit/ARToolKit5/tree/master/doc/patterns</a>
-  </p></details></div>
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-148a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-149.png" loading="lazy"/>
+	<div class="combo"><details class="sub"><summary>&#x1f517; Link</summary>
+  <p>Padrões de QR codes 3x3 e 4x4: <a href="https://github.com/artoolkit/ARToolKit5/tree/master/doc/patterns" target="_blank">https://github.com/artoolkit/ARToolKit5/tree/master/doc/patterns</a>
+  </p></details></div>
+  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-149a.png" loading="lazy"/>
+  <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
+  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-150.png" loading="lazy"/>
 <div class="combo"><details class="sub"><summary>&#x1f4c3; Código</summary>
   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod112', 'cd112')" onmouseout="outFunc('cd112')"><span class="tooltiptext" id="cd112">Copiar o código</span></button></div>Código da página em RA baseada em marcadores QR codes impressos
 <pre><code id="cod112">&lt;!DOCTYPE html&gt;
@@ -4522,13 +4522,13 @@ p.show()
 </code></pre></figcaption>
 <p><a href="modulo9/exemplo3.htm" target="_blank">&#x1f517; link da página</a></p>
   </details></div>
-  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-149a.png" loading="lazy"/>
-  <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
-  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-150.png" loading="lazy"/>
+  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-150a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-151.png" loading="lazy"/>
   <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-152.png" loading="lazy"/>
+  <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
+  <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-153.png" loading="lazy"/>
   <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
 </details>
 
