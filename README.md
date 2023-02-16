@@ -3809,6 +3809,7 @@ p.show()
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-135a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-136.png" loading="lazy"/>
+  <img src="modulo8/objetos/cubos.gif" style="width: 80%;" loading="lazy"/>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-136a.png" loading="lazy"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
 	<p>Veja o código HTML e a renderização da cena.</p>
@@ -4268,6 +4269,7 @@ p.show()
 		</ul>
 		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
   </details></div>
+  <img src="modulo8/objetos/boliche.gif" style="width: 80%;" loading="lazy"/>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-144a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
 </details>
