@@ -4443,7 +4443,7 @@ p.show()
 <p><a href="modulo9/exemplo2aVR.htm" target="_blank">&#x1f517; link da página do helicóptero em RV</a></p>
   </details></div>
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-148a.png" loading="lazy"/>
-  <center><img src="modulo9/objetos/ra_local.gif" style="width: 35%; border-radius:5px" loading="lazy"/></center>
+  <center><img src="modulo9/objetos/ra_local.gif" style="width: 25%; border-radius:5px" loading="lazy"/></center>
   <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-149.png" loading="lazy"/>
 	<div class="combo"><details class="sub"><summary>&#x1f517; Link</summary>
@@ -4530,11 +4530,11 @@ p.show()
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-151.png" loading="lazy"/>
   <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-152.png" loading="lazy"/>
-  <center><img src="modulo9/objetos/ra_qr1.gif" style="width: 35%; border-radius:5px" loading="lazy"/>
-  <img src="modulo9/objetos/ra_qr2.gif" style="width: 35%; border-radius:5px" loading="lazy"/>
+  <center><img src="modulo9/objetos/ra_qr1.gif" style="width: 25%; border-radius:5px;" loading="lazy"/>
+  <img src="modulo9/objetos/ra_qr2.gif" style="width: 25%; border-radius:5px; margin-left:20px;" loading="lazy"/>
   </center>
-  <center><img src="modulo9/objetos/ra_qr3.gif" style="width: 35%; border-radius:5px" loading="lazy"/>
-  <img src="modulo9/objetos/ra_qr4.gif" style="width: 35%; border-radius:5px" loading="lazy"/>
+  <br><center><img src="modulo9/objetos/ra_qr3.gif" style="width: 25%; border-radius:5px" loading="lazy"/>
+  <img src="modulo9/objetos/ra_qr4.gif" style="width: 25%; border-radius:5px; margin-left:20px;" loading="lazy"/>
   </center>
   <p class="topop"><a href="#modulo9" class="topo">voltar ao topo</a></p>
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-153.png" loading="lazy"/>
