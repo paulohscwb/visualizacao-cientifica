@@ -115,7 +115,7 @@ plt.show()
   <p><a href="https://matplotlib.org/stable/gallery/color/named_colors.html" target="_blank">https://matplotlib.org/stable/gallery/color/named_colors.html</a></p></details></div>
   <div class="embed-containerA">
 		<iframe width="100%" src="https://www.youtube.com/embed/2gt9w7yPI7g" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div> 
+  </div>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-17a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo2" class="topo">voltar ao topo</a></p>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-18.png" loading="lazy"/>
