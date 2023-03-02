@@ -3845,7 +3845,7 @@ p.show()
     &lt;a-scene physics shadow="type: pcfsoft"&gt;
         &lt;a-assets&gt;
            &lt;a-mixin id="cubo" geometry="width: 0.5; height: 0.5; depth: 0.5;" shadow 
-             <a alt="propriedades para manipulação dos cubos">hoverable grabbable stretchable draggable droppable</a> event-set__hoveron="_event: hover-start; 
+             <a alt="propriedades para manipulação dos cubos">hoverable grabbable stretchable draggable droppable</a> event-set__hoveron="_event: hover-start;
              material.opacity: 0.7; transparent: true" event-set__hoveroff="_event: hover-end; 
              material.opacity: 1; transparent: false" <a alt="propriedades físicas dos cubos">dynamic-body=</a>"linearDamping:0.1; 
              angularDamping:0.8; mass:0.5;"&gt;&lt;/a-mixin&gt;
