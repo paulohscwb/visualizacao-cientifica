@@ -3950,7 +3950,7 @@ p.show()
 &lt;html&gt;
   &lt;head&gt;
     &lt;script src="https://aframe.io/releases/1.3.0/aframe.min.js"&gt;&lt;/script&gt;
-	<a alt="referência da biblioteca para animação nativa de objetos">&lt;script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"&gt;&lt;/script&gt;</a>
+    <a alt="referência da biblioteca para animação nativa de objetos">&lt;script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"&gt;&lt;/script&gt;</a>
     &lt;script src="https://unpkg.com/aframe-orbit-controls@1.3.0/dist/aframe-orbit-controls.min.js"&gt;&lt;/script&gt;
   &lt;/head&gt;
   &lt;body&gt;
