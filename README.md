@@ -3817,8 +3817,8 @@ p.show()
 		  <li>
 			   <input type="radio" id="046bk" name="sl">
 			   <label for="046bk"></label>
-			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod102', 'cd102')" onmouseout="outFunc('cd102')"><span class="tooltiptext" id="cd102">Copiar o código</span></button></div>Interação com objetos de uma cena (mãos físicas):
-<pre><code id="cod102">&lt;!DOCTYPE html&gt;
+			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod199', 'cd199')" onmouseout="outFunc('cd199')"><span class="tooltiptext" id="cd199">Copiar o código</span></button></div>Interação com objetos de uma cena (mãos físicas):
+<pre><code id="cod199">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;Interações com objetos de uma cena&lt;/title&gt;
