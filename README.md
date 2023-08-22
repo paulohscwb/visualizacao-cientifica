@@ -4551,7 +4551,7 @@ p.show()
 
 <h4>Como citar este trabalho:</h4> 
 <p>Siqueira, P.H., "Visualização Científica". Disponível em: <https://paulohscwb.github.io/visualizacao-cientifica/>, Agosto de 2022.</p>
-<br><a href="https://doi.org/10.5281/zenodo.8271445"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.8271445.svg" alt="DOI"></a>
+<br><a target="_blank" href="https://doi.org/10.5281/zenodo.8271445"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.8271445.svg" alt="DOI"></a>
 
 <h4>Referências:</h4>
 <ol>
