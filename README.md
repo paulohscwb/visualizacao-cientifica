@@ -367,7 +367,7 @@ plt.show()
 iris = pd.read_csv('C:/dados/iris.csv')
 
 sns.relplot(data = iris, x = 'Comprimento da Sépala', y = 'Comprimento da Pétala',
-    <a alt="separação de classes: atributo Espécie">hue =</a> 'Espécie', <a alt="marcadores triangulares">marker =</a> '>', <a alt="paleta de cores em tons de azul">palette =</a> 'Blues')</a>
+    <a alt="separação de classes: atributo Espécie">hue =</a> 'Espécie', <a alt="marcadores triangulares">marker =</a> '>', <a alt="paleta de cores em tons de azul">palette =</a> 'Blues')
 	
 </code></pre></figcaption>
   </details></div>
