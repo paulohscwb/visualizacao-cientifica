@@ -860,7 +860,8 @@ x3 = [6,6,4,3,9,7]
 			   <input type="radio" id="105" name="sl">
 			   <label for="105"></label>
 			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod996', 'cd996')" onmouseout="outFunc('cd996')"><span class="tooltiptext" id="cd996">Copiar o código</span></button></div>Eliminando uma coluna:
-<pre><code id="cod996">print(df.drop('x2', axis = 1))
+<pre><code id="cod996">df = df.drop('x2', axis = 1)
+print(df)
 </code></pre>
 <pre><code><a alt="dataframe modificado">	x1	x3	Classificação</a>
 0	1	6	Tipo 1
@@ -875,7 +876,8 @@ x3 = [6,6,4,3,9,7]
 			   <input type="radio" id="106" name="sl">
 			   <label for="106"></label>
 			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod995', 'cd995')" onmouseout="outFunc('cd995')"><span class="tooltiptext" id="cd995">Copiar o código</span></button></div>Selecionando somente os dados de Tipo 2:
-<pre><code id="cod995">print(df[df['Classificação'] == 'Tipo 2'])
+<pre><code id="cod995">df = df[df['Classificação'] == 'Tipo 2']
+print(df)
 </code></pre>
 <pre><code><a alt="dataframe modificado">	x1	x2	x3	Classificação</a>
 2	1	NaN	4	Tipo 2
