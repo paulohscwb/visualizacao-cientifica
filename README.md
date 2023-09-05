@@ -844,7 +844,7 @@ x3 = [6,6,4,3,9,7]
 
 <a alt="criação do dataframe">df =</a> pd.DataFrame ([x1,x2,x3,classificacao], index = ['x1', 'x2', 'x3', 'Classificação']).T
 
-<a alt="visualização do dataframe criado">df</a>
+<a alt="visualização do dataframe criado">print(df)</a>
 
 </code></pre>
 <pre><code><a alt="dataframe criado">	x1	x2	x3	Classificação</a>
@@ -860,7 +860,7 @@ x3 = [6,6,4,3,9,7]
 			   <input type="radio" id="105" name="sl">
 			   <label for="105"></label>
 			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod996', 'cd996')" onmouseout="outFunc('cd996')"><span class="tooltiptext" id="cd996">Copiar o código</span></button></div>Eliminando uma coluna:
-<pre><code id="cod996">df.drop ('x2', axis = 1)
+<pre><code id="cod996">print(df.drop('x2', axis = 1))
 </code></pre>
 <pre><code><a alt="dataframe modificado">	x1	x3	Classificação</a>
 0	1	6	Tipo 1
@@ -875,7 +875,7 @@ x3 = [6,6,4,3,9,7]
 			   <input type="radio" id="106" name="sl">
 			   <label for="106"></label>
 			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod995', 'cd995')" onmouseout="outFunc('cd995')"><span class="tooltiptext" id="cd995">Copiar o código</span></button></div>Selecionando somente os dados de Tipo 2:
-<pre><code id="cod995">df [df ['Classificação'] == 'Tipo 2']
+<pre><code id="cod995">print(df[df['Classificação'] == 'Tipo 2'])
 </code></pre>
 <pre><code><a alt="dataframe modificado">	x1	x2	x3	Classificação</a>
 2	1	NaN	4	Tipo 2
@@ -887,6 +887,7 @@ x3 = [6,6,4,3,9,7]
 			   <label for="107"></label>
 			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod994', 'cd994')" onmouseout="outFunc('cd994')"><span class="tooltiptext" id="cd994">Copiar o código</span></button></div>Preenchendo os valores vazios:
 <pre><code id="cod994">df.fillna(value=10, inplace = True)
+print(df)
 </code></pre>
 <pre><code><a alt="dataframe modificado">	x1	x2	x3	Classificação</a>
 0	1	7	6	Tipo 1
@@ -901,7 +902,7 @@ x3 = [6,6,4,3,9,7]
 			   <input type="radio" id="108" name="sl">
 			   <label for="108"></label>
 			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod993', 'cd993')" onmouseout="outFunc('cd993')"><span class="tooltiptext" id="cd993">Copiar o código</span></button></div>Calculando a média dos dados de cada atributo pra cada classificação:
-<pre><code id="cod993">df.groupby ('Classificação').mean ()
+<pre><code id="cod993">print(df.groupby('Classificação').mean())
 </code></pre>
 <pre><code><a alt="médias dos atributos">Classificação	x1	x2	x3</a>
 Tipo 1		1.5	7.5	6.0
@@ -913,24 +914,20 @@ Tipo 3		3.5	8.5	8.0
 			   <input type="radio" id="109" name="sl">
 			   <label for="109"></label>
 			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod992', 'cd992')" onmouseout="outFunc('cd992')"><span class="tooltiptext" id="cd992">Copiar o código</span></button></div>Descrevendo os dados:
-<pre><code id="cod992">df.describe ()
+<pre><code id="cod992">print(df.describe())
 </code></pre>
-<pre><code><a alt="descrição do dataframe criado">	x1		x2		x3</a>
-count	6.000000	6.000000	6.000000
-mean	2.000000	8.000000	5.833333
-std	1.264911	1.414214	2.136976
-min	1.000000 	6.000000 	3.000000
-25%	1.000000 	7.250000 	4.500000
-50%	1.500000 	8.000000 	6.000000
-75%	2.750000 	8.750000 	6.750000
-max	4.000000 	10.000000 	9.000000
+<pre><code><a alt="descrição do dataframe criado">	x1	x2	x3	Classificação</a>
+count	6	6	6	6
+unique	4	5	5	3
+top	1	8	6 	Tipo 1
+freq	3	2	2	2
 </code></pre></figcaption>
 		   </li>
 		   <li>
 			   <input type="radio" id="110" name="sl">
 			   <label for="110"></label>
 			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod991', 'cd991')" onmouseout="outFunc('cd991')"><span class="tooltiptext" id="cd991">Copiar o código</span></button></div>Somando 1 a mais nas duas primeiras colunas:
-<pre><code id="cod991">df.iloc [:, 0:2] + 1
+<pre><code id="cod991">print(df.iloc[:, 0:2] + 1)
 </code></pre>
 <pre><code><a alt="dataframe modificado">	x1	x2</a>
 0	2	8
