@@ -487,8 +487,6 @@ g.add_legend(title = '', adjust_subtitles = True)
 			   <label for="100"></label>
 			   <figcaption><div class="tooltip"><button type="button" onclick="copyEvent('cod999', 'cd999')" onmouseout="outFunc('cd999')"><span class="tooltiptext" id="cd999">Copiar o código</span></button></div>PCA aplicada ao conjunto Iris:
 <pre><code id="cod999"><a alt="importação das bibliotecas">import pandas as pd</a>
-import numpy as np
-import matplotlib.pyplot as plt
 
 from sklearn import decomposition
 from sklearn import datasets
