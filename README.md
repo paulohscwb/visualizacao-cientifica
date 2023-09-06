@@ -2452,8 +2452,8 @@ p.show()
 </details>
 
 <details>
-  <summary id="modulo7">7. Câmera</summary>
-  <p>Material da página 105 até a página 114.</p>
+  <summary id="modulo7">7. Câmera e Realidade Virtual - parte I</summary>
+  <p>Material da página 105 até a página 130.</p>
   <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-104.png" loading="lazy"/>
   <div class="embed-containerA">
 		<iframe width="100%" src="https://www.youtube.com/embed/0HnuLDxwu0Y" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -2703,12 +2703,7 @@ p.show()
   </details></div>
   <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-113a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo7" class="topo">voltar ao topo</a></p>
-</details>
-
-<details>
-  <summary id="modulo8">8. Realidade Virtual</summary>
-  <p>Material da página 115 até a página 145.</p>
-  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-114.png" loading="lazy"/>
+ <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-114.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <div class="embed-containerA">
 		<iframe width="100%" src="https://www.youtube.com/embed/PKF6a0Q_n5s" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -3550,6 +3545,12 @@ p.show()
   </details></div>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-129a.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
+  </details>
+
+<details>
+  <summary id="modulo8">8. Realidade Virtual - parte II</summary>
+  <p>Material da página 130 até a página 145.</p>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-129b.png" loading="lazy"/>
   <div class="embed-containerA">
 		<iframe width="100%" src="https://www.youtube.com/embed/r7XGkJEqSds" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
    </div> 
