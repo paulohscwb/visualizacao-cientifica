@@ -3492,6 +3492,7 @@ p.show()
 		</ul>
 		<img src="modulo6/0.png" class="fundo" style="visibility:hidden;" loading="lazy"/>
   </details></div>
+  <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-128b.png" loading="lazy"/>
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-129.png" loading="lazy"/>
   <div class="combo"><details class="sub" style="box-shadow: none;"><summary>&#x1f4c3; Código</summary>
