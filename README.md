@@ -45,7 +45,7 @@
    <p class="topop"><a href="#modulo1" class="topo">voltar ao topo</a></p>
 </details>
 
-<details open>
+<details>
   <summary id="modulo2">2. Conceitos básicos e estruturais de visualização</summary>
   <p>Material da página 14 até a página 24.</p>
   <img src="modulo2/59f0152f9f78561f6fb413c7e4f88ba0-13.png" loading="lazy"/>
@@ -955,7 +955,7 @@ freq	3	2	2	2
   <p class="topop"><a href="#modulo3" class="topo">voltar ao topo</a></p>
 </details>
 
-<details>
+<details open>
   <summary id="modulo4">4. Taxonomia dos dados</summary>
   <p>Material da página 54 até a página 81.</p>
   <img src="modulo4/59f0152f9f78561f6fb413c7e4f88ba0-53.png" loading="lazy"/>
