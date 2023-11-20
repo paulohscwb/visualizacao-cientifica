@@ -2451,7 +2451,7 @@ p.show()
   <p class="topop"><a href="#modulo6" class="topo">voltar ao topo</a></p>
 </details>
 
-<details open>
+<details>
   <summary id="modulo7">7. Câmera e Realidade Virtual - parte I</summary>
   <p>Material da página 105 até a página 130.</p>
   <img src="modulo7/59f0152f9f78561f6fb413c7e4f88ba0-104.png" loading="lazy"/>
@@ -4273,7 +4273,7 @@ p.show()
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
 </details>
 
-<details style="border-bottom: 1px solid #a2dec0;">
+<details open style="border-bottom: 1px solid #a2dec0;">
   <summary id="modulo9">9. Realidade Aumentada</summary>
   <p>Material da página 145 até a página 154.</p>
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-144.png" loading="lazy"/>
