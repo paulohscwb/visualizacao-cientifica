@@ -3548,7 +3548,7 @@ p.show()
   <p class="topop"><a href="#modulo7" class="topo">voltar ao topo</a></p>
   </details>
 
-<details open>
+<details>
   <summary id="modulo8">8. Realidade Virtual - parte II</summary>
   <p>Material da página 130 até a página 145.</p>
   <img src="modulo8/59f0152f9f78561f6fb413c7e4f88ba0-129b.png" loading="lazy"/>
