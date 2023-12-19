@@ -4273,7 +4273,7 @@ p.show()
   <p class="topop"><a href="#modulo8" class="topo">voltar ao topo</a></p>
 </details>
 
-<details open style="border-bottom: 1px solid #a2dec0;">
+<details style="border-bottom: 1px solid #a2dec0;">
   <summary id="modulo9">9. Realidade Aumentada</summary>
   <p>Material da página 145 até a página 154.</p>
   <img src="modulo9/59f0152f9f78561f6fb413c7e4f88ba0-144.png" loading="lazy"/>
