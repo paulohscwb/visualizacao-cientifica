@@ -2,10 +2,10 @@
 
 <h2 id="inicio">Códigos, algoritmos, exemplos e aplicações</h2>
 
-<div><img align="right" src="imagens/qr.png"/>Esta página contém os códigos, algoritmos e exemplos das técnicas mostradas na disciplina de Visualização Científica.
+<div><img align="right" src="imagens/qr.png"/><p>Esta página contém os códigos, algoritmos e exemplos das técnicas mostradas na disciplina de Visualização Científica.</p>
 <p>A apostila está disponível no link:</p>
 <center><a href="imagens/apostila_2022.pdf" target="_blank">apostila de Visualização Científica</a></center></div>
-
+<hr>
 <details>
   <summary id="modulo1">1. Introdução</summary>
   <p>Material da página 1 até a página 14.</p>
