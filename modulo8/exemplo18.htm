@@ -6,7 +6,7 @@
     <script src="https://unpkg.com/aframe-event-set-component@^4.1.1/dist/aframe-event-set-component.min.js"></script>
   <script src="https://unpkg.com/super-hands@^3.0.3/dist/super-hands.min.js"></script>
   <script src="https://fernandojsg.github.io/aframe-teleport-controls/dist/aframe-teleport-controls.min.js"></script>
-    <script src="https://rawgit.com/donmccurdy/aframe-physics-system/v3.2.0/dist/aframe-physics-system.min.js"></script>
+    <script src="https://unpkg.com/@c-frame/aframe-physics-system@4.2.4/dist/aframe-physics-system.min.js"></script>
     <script src="https://unpkg.com/aframe-physics-extras@0.1.2/dist/aframe-physics-extras.min.js"></script>
 	</head>
 <body>
@@ -18,7 +18,7 @@
 
 	  <a-entity camera look-controls position="0 1 2" capture-mouse raycaster="objects: .cube" cursor="rayOrigin:mouse" static-body="shape: sphere; sphereRadius: 0.0001" super-hands="colliderEvent: raycaster-intersection; colliderEventProperty: els; colliderEndEvent: raycaster-intersection-cleared; colliderEndEventProperty: clearedEls;"></a-entity>
 
-		<a-plane static-body width=10 height=10 rotation="-90 0 0" position="0 -1 0" color="rgb(100,180,100)" shadow></a-plane>
+		<a-box static-body width="10" height="10" rotation="-90 0 0" position="0 -1 0" color="rgb(100,180,100)" shadow></a-box>
       <a-entity class="cube" mixin="cube" position="0 1 -1.25" material="color: red"></a-entity>
       <a-entity class="cube" mixin="cube" position="0 1.6 -1.5" material="color: red"></a-entity>
       <a-entity class="cube" mixin="cube" position="-0.9 1 -0.9" material="color: blue"></a-entity>
