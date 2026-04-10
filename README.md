@@ -3743,7 +3743,7 @@ p.show()
     <a alt="biblioteca de propriedades físicas">&lt;script src="https://unpkg.com/@c-frame/aframe-physics-system@4.2.4/dist/aframe-physics-system.min.js"&gt;&lt;/script&gt;</a>
     <a alt="biblioteca de interação">&lt;script src="https://unpkg.com/aframe-event-set-component@^4.1.1/dist/aframe-event-set-component.min.js"&gt;&lt;/script&gt;</a>
     <a alt="biblioteca com propriedades físicas adicionais">&lt;script src="https://unpkg.com/aframe-physics-extras/dist/aframe-physics-extras.min.js"&gt;&lt;/script&gt;</a>
-    <a alt="biblioteca de teleporte">&lt;script src="https://fernandojsg.github.io/aframe-teleport-controls/dist/aframe-teleport-controls.min.js"&gt;&lt;/script&gt;</a>
+    <a alt="biblioteca de teleporte">&lt;script src="https://unpkg.com/aframe-teleport-controls@0.3.x/dist/aframe-teleport-controls.min.js"&gt;&lt;/script&gt;</a>
     &lt;script&gt; <a alt="função de melhoria das propriedades físicas">AFRAME.registerComponent('phase-shift', {</a>
       init: function () {
         var el = this.el
@@ -3827,7 +3827,7 @@ p.show()
     <a alt="biblioteca de propriedades físicas">&lt;script src="https://unpkg.com/@c-frame/aframe-physics-system@4.2.4/dist/aframe-physics-system.min.js"&gt;&lt;/script&gt;</a>
     <a alt="biblioteca de interação">&lt;script src="https://unpkg.com/aframe-event-set-component@^4.1.1/dist/aframe-event-set-component.min.js"&gt;&lt;/script&gt;</a>
     <a alt="biblioteca com propriedades físicas adicionais">&lt;script src="https://unpkg.com/aframe-physics-extras/dist/aframe-physics-extras.min.js"&gt;&lt;/script&gt;</a>
-    <a alt="biblioteca de teleporte">&lt;script src="https://fernandojsg.github.io/aframe-teleport-controls/dist/aframe-teleport-controls.min.js"&gt;&lt;/script&gt;</a>
+    <a alt="biblioteca de teleporte">&lt;script src="https://unpkg.com/aframe-teleport-controls@0.3.x/dist/aframe-teleport-controls.min.js"&gt;&lt;/script&gt;</a>
     &lt;script&gt; <a alt="função de melhoria das propriedades físicas">AFRAME.registerComponent('phase-shift', {</a>
       init: function () {
         var el = this.el
@@ -4055,7 +4055,7 @@ p.show()
 &lt;html&gt;
   &lt;head&gt;
     &lt;script src="https://aframe.io/releases/1.3.0/aframe.min.js"&gt;&lt;/script&gt;
-    &lt;script src="https://fernandojsg.github.io/aframe-teleport-controls/dist/aframe-teleport-controls.min.js"&gt;&lt;/script&gt;
+    &lt;script src="https://unpkg.com/aframe-teleport-controls@0.3.x/dist/aframe-teleport-controls.min.js"&gt;&lt;/script&gt;
   &lt;/head&gt;
   &lt;body&gt;
     &lt;a-scene reflection shadow="type: pcfsoft"&gt;
@@ -4168,7 +4168,7 @@ p.show()
     &lt;script src="https://unpkg.com/@c-frame/aframe-physics-system@4.2.4/dist/aframe-physics-system.min.js"&gt;&lt;/script&gt;
     &lt;script src="https://unpkg.com/aframe-event-set-component@^4.1.1/dist/aframe-event-set-component.min.js"&gt;&lt;/script&gt;
     &lt;script src="https://unpkg.com/aframe-physics-extras/dist/aframe-physics-extras.min.js"&gt;&lt;/script&gt;
-    &lt;script src="https://fernandojsg.github.io/aframe-teleport-controls/dist/aframe-teleport-controls.min.js"&gt;&lt;/script&gt;
+    &lt;script src="https://unpkg.com/aframe-teleport-controls@0.3.x/dist/aframe-teleport-controls.min.js"&gt;&lt;/script&gt;
     &lt;script&gt; AFRAME.registerComponent('phase-shift', {
     init: function () {
       var el = this.el
